@@ -1,0 +1,209 @@
+[
+ {
+  "name": "Appalachian State University",
+  "short_name": "Appalachian State",
+  "subdivision": "FBS",
+  "conference": "Sun Belt",
+  "athletics_website": "https://appstatesports.com",
+  "football_roster_url": "https://appstatesports.com/sports/football",
+  "email_domain": "appstate.edu"
+ },
+ {
+  "name": "Arkansas State University",
+  "short_name": "Arkansas State",
+  "subdivision": "FBS",
+  "conference": "Sun Belt",
+  "athletics_website": "https://astateredwolves.com",
+  "football_roster_url": "https://astateredwolves.com/sports/football",
+  "email_domain": "astate.edu"
+ },
+ {
+  "name": "Coastal Carolina University",
+  "short_name": "Coastal Carolina",
+  "subdivision": "FBS",
+  "conference": "Sun Belt",
+  "athletics_website": "https://goccusports.com",
+  "football_roster_url": "https://goccusports.com/sports/football",
+  "email_domain": "coastal.edu"
+ },
+ {
+  "name": "Georgia Southern University",
+  "short_name": "Georgia Southern",
+  "subdivision": "FBS",
+  "conference": "Sun Belt",
+  "athletics_website": "https://gseagles.com",
+  "football_roster_url": "https://gseagles.com/sports/football",
+  "email_domain": "georgiasouthern.edu"
+ },
+ {
+  "name": "Georgia State University",
+  "short_name": "Georgia State",
+  "subdivision": "FBS",
+  "conference": "Sun Belt",
+  "athletics_website": "https://georgiastatesports.com",
+  "football_roster_url": "https://georgiastatesports.com/sports/football",
+  "email_domain": "gsu.edu"
+ },
+ {
+  "name": "James Madison University",
+  "short_name": "James Madison",
+  "subdivision": "FBS",
+  "conference": "Sun Belt",
+  "athletics_website": "https://jmusports.com",
+  "football_roster_url": "https://jmusports.com/sports/football",
+  "email_domain": "jmu.edu"
+ },
+ {
+  "name": "Louisiana Tech University",
+  "short_name": "Louisiana Tech",
+  "subdivision": "FBS",
+  "conference": "Sun Belt",
+  "athletics_website": "https://latechsports.com",
+  "football_roster_url": "https://latechsports.com/sports/football",
+  "email_domain": "latech.edu"
+ },
+ {
+  "name": "Marshall University",
+  "short_name": "Marshall",
+  "subdivision": "FBS",
+  "conference": "Sun Belt",
+  "athletics_website": "https://herdzone.com",
+  "football_roster_url": "https://herdzone.com/sports/football",
+  "email_domain": "marshall.edu"
+ },
+ {
+  "name": "Old Dominion University",
+  "short_name": "Old Dominion",
+  "subdivision": "FBS",
+  "conference": "Sun Belt",
+  "athletics_website": "https://odusports.com",
+  "football_roster_url": "https://odusports.com/sports/football",
+  "email_domain": "odu.edu"
+ },
+ {
+  "name": "Troy University",
+  "short_name": "Troy",
+  "subdivision": "FBS",
+  "conference": "Sun Belt",
+  "athletics_website": "https://troytrojans.com",
+  "football_roster_url": "https://troytrojans.com/sports/football",
+  "email_domain": "troy.edu"
+ },
+ {
+  "name": "University of Louisiana at Lafayette",
+  "short_name": "Louisiana",
+  "subdivision": "FBS",
+  "conference": "Sun Belt",
+  "athletics_website": "https://ragincajuns.com",
+  "football_roster_url": "https://ragincajuns.com/sports/football",
+  "email_domain": "louisiana.edu"
+ },
+ {
+  "name": "University of Louisiana at Monroe",
+  "short_name": "ULM",
+  "subdivision": "FBS",
+  "conference": "Sun Belt",
+  "athletics_website": "https://ulmwarhawks.com",
+  "football_roster_url": "https://ulmwarhawks.com/sports/football",
+  "email_domain": "ulm.edu"
+ },
+ {
+  "name": "University of South Alabama",
+  "short_name": "South Alabama",
+  "subdivision": "FBS",
+  "conference": "Sun Belt",
+  "athletics_website": "https://usajaguars.com",
+  "football_roster_url": "https://usajaguars.com/sports/football",
+  "email_domain": "southalabama.edu"
+ },
+ {
+  "name": "University of Southern Mississippi",
+  "short_name": "Southern Miss",
+  "subdivision": "FBS",
+  "conference": "Sun Belt",
+  "athletics_website": "https://southernmiss.com",
+  "football_roster_url": "https://southernmiss.com/sports/football",
+  "email_domain": "usm.edu"
+ },
+ {
+  "name": "Bryant University",
+  "short_name": "Bryant",
+  "subdivision": "FCS",
+  "conference": "CAA",
+  "athletics_website": "https://bryantbulldogs.com",
+  "football_roster_url": "https://bryantbulldogs.com/sports/football",
+  "email_domain": "bryant.edu"
+ },
+ {
+  "name": "Campbell University",
+  "short_name": "Campbell",
+  "subdivision": "FCS",
+  "conference": "CAA",
+  "athletics_website": "https://gocamels.com",
+  "football_roster_url": "https://gocamels.com/sports/football",
+  "email_domain": "campbell.edu"
+ },
+ {
+  "name": "Elon University",
+  "short_name": "Elon",
+  "subdivision": "FCS",
+  "conference": "CAA",
+  "athletics_website": "https://elonphoenix.com",
+  "football_roster_url": "https://elonphoenix.com/sports/football",
+  "email_domain": "elon.edu"
+ },
+ {
+  "name": "Hampton University",
+  "short_name": "Hampton",
+  "subdivision": "FCS",
+  "conference": "CAA",
+  "athletics_website": "https://hamptonpirates.com",
+  "football_roster_url": "https://hamptonpirates.com/sports/football",
+  "email_domain": "hamptonu.edu"
+ },
+ {
+  "name": "Monmouth University",
+  "short_name": "Monmouth",
+  "subdivision": "FCS",
+  "conference": "CAA",
+  "athletics_website": "https://monmouthhawks.com",
+  "football_roster_url": "https://monmouthhawks.com/sports/football",
+  "email_domain": "monmouth.edu"
+ },
+ {
+  "name": "North Carolina A&T State University",
+  "short_name": "North Carolina A&T",
+  "subdivision": "FCS",
+  "conference": "CAA",
+  "athletics_website": "https://ncataggies.com",
+  "football_roster_url": "https://ncataggies.com/sports/football",
+  "email_domain": "ncat.edu"
+ },
+ {
+  "name": "Sacred Heart University",
+  "short_name": "Sacred Heart",
+  "subdivision": "FCS",
+  "conference": "CAA",
+  "athletics_website": "https://sacredheartpioneers.com",
+  "football_roster_url": "https://sacredheartpioneers.com/sports/football",
+  "email_domain": "sacredheart.edu"
+ },
+ {
+  "name": "Stony Brook University",
+  "short_name": "Stony Brook",
+  "subdivision": "FCS",
+  "conference": "CAA",
+  "athletics_website": "https://stonybrookathletics.com",
+  "football_roster_url": "https://stonybrookathletics.com/sports/football",
+  "email_domain": "stonybrook.edu"
+ },
+ {
+  "name": "Towson University",
+  "short_name": "Towson",
+  "subdivision": "FCS",
+  "conference": "CAA",
+  "athletics_website": "https://towsontigers.com",
+  "football_roster_url": "https://towsontigers.com/sports/football",
+  "email_domain": "towson.edu"
+ }
+]

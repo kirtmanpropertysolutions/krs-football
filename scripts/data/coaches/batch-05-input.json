@@ -1,0 +1,209 @@
+[
+ {
+  "name": "North Dakota State University",
+  "short_name": "North Dakota State",
+  "subdivision": "FBS",
+  "conference": "Mountain West",
+  "athletics_website": "https://gobison.com",
+  "football_roster_url": "https://gobison.com/sports/football",
+  "email_domain": "ndsu.edu"
+ },
+ {
+  "name": "Northern Illinois University",
+  "short_name": "Northern Illinois",
+  "subdivision": "FBS",
+  "conference": "Mountain West",
+  "athletics_website": "https://niuhuskies.com",
+  "football_roster_url": "https://niuhuskies.com/sports/football",
+  "email_domain": "niu.edu"
+ },
+ {
+  "name": "University of Hawaii at Manoa",
+  "short_name": "Hawaii",
+  "subdivision": "FBS",
+  "conference": "Mountain West",
+  "athletics_website": "https://hawaiiathletics.com",
+  "football_roster_url": "https://hawaiiathletics.com/sports/football",
+  "email_domain": "hawaii.edu"
+ },
+ {
+  "name": "University of New Mexico",
+  "short_name": "New Mexico",
+  "subdivision": "FBS",
+  "conference": "Mountain West",
+  "athletics_website": "https://golobos.com",
+  "football_roster_url": "https://golobos.com/sports/football",
+  "email_domain": "unm.edu"
+ },
+ {
+  "name": "University of Texas at El Paso",
+  "short_name": "UTEP",
+  "subdivision": "FBS",
+  "conference": "Mountain West",
+  "athletics_website": "https://utepminers.com",
+  "football_roster_url": "https://utepminers.com/sports/football",
+  "email_domain": "utep.edu"
+ },
+ {
+  "name": "University of Wyoming",
+  "short_name": "Wyoming",
+  "subdivision": "FBS",
+  "conference": "Mountain West",
+  "athletics_website": "https://gowyo.com",
+  "football_roster_url": "https://gowyo.com/sports/football",
+  "email_domain": "uwyo.edu"
+ },
+ {
+  "name": "Texas State University",
+  "short_name": "Texas State",
+  "subdivision": "FBS",
+  "conference": "Pac-12",
+  "athletics_website": "https://txst.com",
+  "football_roster_url": "https://txst.com/sports/football",
+  "email_domain": "txstate.edu"
+ },
+ {
+  "name": "Auburn University",
+  "short_name": "Auburn",
+  "subdivision": "FBS",
+  "conference": "SEC",
+  "athletics_website": "https://auburntigers.com",
+  "football_roster_url": "https://auburntigers.com/sports/football",
+  "email_domain": "auburn.edu"
+ },
+ {
+  "name": "Louisiana State University",
+  "short_name": "LSU",
+  "subdivision": "FBS",
+  "conference": "SEC",
+  "athletics_website": "https://lsusports.net",
+  "football_roster_url": "https://lsusports.net/sports/football",
+  "email_domain": "lsu.edu"
+ },
+ {
+  "name": "Mississippi State University",
+  "short_name": "Mississippi State",
+  "subdivision": "FBS",
+  "conference": "SEC",
+  "athletics_website": "https://hailstate.com",
+  "football_roster_url": "https://hailstate.com/sports/football",
+  "email_domain": "msstate.edu"
+ },
+ {
+  "name": "Texas A&M University",
+  "short_name": "Texas A&M",
+  "subdivision": "FBS",
+  "conference": "SEC",
+  "athletics_website": "https://12thman.com",
+  "football_roster_url": "https://12thman.com/sports/football",
+  "email_domain": "tamu.edu"
+ },
+ {
+  "name": "University of Alabama",
+  "short_name": "Alabama",
+  "subdivision": "FBS",
+  "conference": "SEC",
+  "athletics_website": "https://rolltide.com",
+  "football_roster_url": "https://rolltide.com/sports/football",
+  "email_domain": "ua.edu"
+ },
+ {
+  "name": "University of Arkansas",
+  "short_name": "Arkansas",
+  "subdivision": "FBS",
+  "conference": "SEC",
+  "athletics_website": "https://arkansasrazorbacks.com",
+  "football_roster_url": "https://arkansasrazorbacks.com/sports/football",
+  "email_domain": "uark.edu"
+ },
+ {
+  "name": "University of Florida",
+  "short_name": "Florida",
+  "subdivision": "FBS",
+  "conference": "SEC",
+  "athletics_website": "https://floridagators.com",
+  "football_roster_url": "https://floridagators.com/sports/football",
+  "email_domain": "ufl.edu"
+ },
+ {
+  "name": "University of Georgia",
+  "short_name": "Georgia",
+  "subdivision": "FBS",
+  "conference": "SEC",
+  "athletics_website": "https://georgiadogs.com",
+  "football_roster_url": "https://georgiadogs.com/sports/football",
+  "email_domain": "uga.edu"
+ },
+ {
+  "name": "University of Kentucky",
+  "short_name": "Kentucky",
+  "subdivision": "FBS",
+  "conference": "SEC",
+  "athletics_website": "https://ukathletics.com",
+  "football_roster_url": "https://ukathletics.com/sports/football",
+  "email_domain": "uky.edu"
+ },
+ {
+  "name": "University of Mississippi",
+  "short_name": "Ole Miss",
+  "subdivision": "FBS",
+  "conference": "SEC",
+  "athletics_website": "https://olemisssports.com",
+  "football_roster_url": "https://olemisssports.com/sports/football",
+  "email_domain": "olemiss.edu"
+ },
+ {
+  "name": "University of Missouri",
+  "short_name": "Missouri",
+  "subdivision": "FBS",
+  "conference": "SEC",
+  "athletics_website": "https://mutigers.com",
+  "football_roster_url": "https://mutigers.com/sports/football",
+  "email_domain": "missouri.edu"
+ },
+ {
+  "name": "University of Oklahoma",
+  "short_name": "Oklahoma",
+  "subdivision": "FBS",
+  "conference": "SEC",
+  "athletics_website": "https://soonersports.com",
+  "football_roster_url": "https://soonersports.com/sports/football",
+  "email_domain": "ou.edu"
+ },
+ {
+  "name": "University of South Carolina",
+  "short_name": "South Carolina",
+  "subdivision": "FBS",
+  "conference": "SEC",
+  "athletics_website": "https://gamecocksonline.com",
+  "football_roster_url": "https://gamecocksonline.com/sports/football",
+  "email_domain": "sc.edu"
+ },
+ {
+  "name": "University of Tennessee",
+  "short_name": "Tennessee",
+  "subdivision": "FBS",
+  "conference": "SEC",
+  "athletics_website": "https://utsports.com",
+  "football_roster_url": "https://utsports.com/sports/football",
+  "email_domain": "utk.edu"
+ },
+ {
+  "name": "University of Texas at Austin",
+  "short_name": "Texas",
+  "subdivision": "FBS",
+  "conference": "SEC",
+  "athletics_website": "https://texassports.com",
+  "football_roster_url": "https://texassports.com/sports/football",
+  "email_domain": "utexas.edu"
+ },
+ {
+  "name": "Vanderbilt University",
+  "short_name": "Vanderbilt",
+  "subdivision": "FBS",
+  "conference": "SEC",
+  "athletics_website": "https://vucommodores.com",
+  "football_roster_url": "https://vucommodores.com/sports/football",
+  "email_domain": "vanderbilt.edu"
+ }
+]

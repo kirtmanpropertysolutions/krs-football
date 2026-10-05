@@ -1,0 +1,119 @@
+[
+ {
+  "name": "Northwestern State University",
+  "short_name": "Northwestern State",
+  "subdivision": "FCS",
+  "conference": "Southland",
+  "athletics_website": "https://nsudemons.com",
+  "football_roster_url": "https://nsudemons.com/sports/football",
+  "email_domain": "nsula.edu"
+ },
+ {
+  "name": "Southeastern Louisiana University",
+  "short_name": "Southeastern Louisiana",
+  "subdivision": "FCS",
+  "conference": "Southland",
+  "athletics_website": "https://lionsports.net",
+  "football_roster_url": "https://lionsports.net/sports/football",
+  "email_domain": "southeastern.edu"
+ },
+ {
+  "name": "Stephen F. Austin State University",
+  "short_name": "Stephen F. Austin",
+  "subdivision": "FCS",
+  "conference": "Southland",
+  "athletics_website": "https://sfajacks.com",
+  "football_roster_url": "https://sfajacks.com/sports/football",
+  "email_domain": "sfasu.edu"
+ },
+ {
+  "name": "University of Texas Rio Grande Valley",
+  "short_name": "UTRGV",
+  "subdivision": "FCS",
+  "conference": "Southland",
+  "athletics_website": "https://goutrgv.com",
+  "football_roster_url": "https://goutrgv.com/sports/football",
+  "email_domain": "utrgv.edu"
+ },
+ {
+  "name": "University of the Incarnate Word",
+  "short_name": "Incarnate Word",
+  "subdivision": "FCS",
+  "conference": "Southland",
+  "athletics_website": "https://uiwcardinals.com",
+  "football_roster_url": "https://uiwcardinals.com/sports/football",
+  "email_domain": "uiwtx.edu"
+ },
+ {
+  "name": "Abilene Christian University",
+  "short_name": "Abilene Christian",
+  "subdivision": "FCS",
+  "conference": "United Athletic Conference",
+  "athletics_website": "https://acusports.com",
+  "football_roster_url": "https://acusports.com/sports/football",
+  "email_domain": "acu.edu"
+ },
+ {
+  "name": "Austin Peay State University",
+  "short_name": "Austin Peay",
+  "subdivision": "FCS",
+  "conference": "United Athletic Conference",
+  "athletics_website": "https://letsgopeay.com",
+  "football_roster_url": "https://letsgopeay.com/sports/football",
+  "email_domain": "apsu.edu"
+ },
+ {
+  "name": "Eastern Kentucky University",
+  "short_name": "Eastern Kentucky",
+  "subdivision": "FCS",
+  "conference": "United Athletic Conference",
+  "athletics_website": "https://ekusports.com",
+  "football_roster_url": "https://ekusports.com/sports/football",
+  "email_domain": "eku.edu"
+ },
+ {
+  "name": "Tarleton State University",
+  "short_name": "Tarleton State",
+  "subdivision": "FCS",
+  "conference": "United Athletic Conference",
+  "athletics_website": "https://tarletonsports.com",
+  "football_roster_url": "https://tarletonsports.com/sports/football",
+  "email_domain": "tarleton.edu"
+ },
+ {
+  "name": "University of Central Arkansas",
+  "short_name": "Central Arkansas",
+  "subdivision": "FCS",
+  "conference": "United Athletic Conference",
+  "athletics_website": "https://ucasports.com",
+  "football_roster_url": "https://ucasports.com/sports/football",
+  "email_domain": "uca.edu"
+ },
+ {
+  "name": "University of North Alabama",
+  "short_name": "North Alabama",
+  "subdivision": "FCS",
+  "conference": "United Athletic Conference",
+  "athletics_website": "https://roarlions.com",
+  "football_roster_url": "https://roarlions.com/sports/football",
+  "email_domain": "una.edu"
+ },
+ {
+  "name": "University of West Florida",
+  "short_name": "West Florida",
+  "subdivision": "FCS",
+  "conference": "United Athletic Conference",
+  "athletics_website": "https://goargos.com",
+  "football_roster_url": "https://goargos.com/sports/football",
+  "email_domain": "uwf.edu"
+ },
+ {
+  "name": "University of West Georgia",
+  "short_name": "West Georgia",
+  "subdivision": "FCS",
+  "conference": "United Athletic Conference",
+  "athletics_website": "https://uwgathletics.com",
+  "football_roster_url": "https://uwgathletics.com/sports/football",
+  "email_domain": "westga.edu"
+ }
+]

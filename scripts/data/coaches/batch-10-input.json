@@ -1,0 +1,209 @@
+[
+ {
+  "name": "Florida A&M University",
+  "short_name": "Florida A&M",
+  "subdivision": "FCS",
+  "conference": "SWAC",
+  "athletics_website": "https://famuathletics.com",
+  "football_roster_url": "https://famuathletics.com/sports/football",
+  "email_domain": "famu.edu"
+ },
+ {
+  "name": "Grambling State University",
+  "short_name": "Grambling State",
+  "subdivision": "FCS",
+  "conference": "SWAC",
+  "athletics_website": "https://gsutigers.com",
+  "football_roster_url": "https://gsutigers.com/sports/football",
+  "email_domain": "gram.edu"
+ },
+ {
+  "name": "Jackson State University",
+  "short_name": "Jackson State",
+  "subdivision": "FCS",
+  "conference": "SWAC",
+  "athletics_website": "https://gojsutigers.com",
+  "football_roster_url": "https://gojsutigers.com/sports/football",
+  "email_domain": "jsums.edu"
+ },
+ {
+  "name": "Mississippi Valley State University",
+  "short_name": "Mississippi Valley State",
+  "subdivision": "FCS",
+  "conference": "SWAC",
+  "athletics_website": "https://mvsusports.com",
+  "football_roster_url": "https://mvsusports.com/sports/football",
+  "email_domain": "mvsu.edu"
+ },
+ {
+  "name": "Prairie View A&M University",
+  "short_name": "Prairie View A&M",
+  "subdivision": "FCS",
+  "conference": "SWAC",
+  "athletics_website": "https://pvpanthers.com",
+  "football_roster_url": "https://pvpanthers.com/sports/football",
+  "email_domain": "pvamu.edu"
+ },
+ {
+  "name": "Southern University",
+  "short_name": "Southern",
+  "subdivision": "FCS",
+  "conference": "SWAC",
+  "athletics_website": "https://gojagsports.com",
+  "football_roster_url": "https://gojagsports.com/sports/football",
+  "email_domain": "subr.edu"
+ },
+ {
+  "name": "Texas Southern University",
+  "short_name": "Texas Southern",
+  "subdivision": "FCS",
+  "conference": "SWAC",
+  "athletics_website": "https://tsusports.com",
+  "football_roster_url": "https://tsusports.com/sports/football",
+  "email_domain": "tsu.edu"
+ },
+ {
+  "name": "University of Arkansas at Pine Bluff",
+  "short_name": "Arkansas-Pine Bluff",
+  "subdivision": "FCS",
+  "conference": "SWAC",
+  "athletics_website": "https://uapblionsroar.com",
+  "football_roster_url": "https://uapblionsroar.com/sports/football",
+  "email_domain": "uapb.edu"
+ },
+ {
+  "name": "East Tennessee State University",
+  "short_name": "East Tennessee State",
+  "subdivision": "FCS",
+  "conference": "SoCon",
+  "athletics_website": "https://etsubucs.com",
+  "football_roster_url": "https://etsubucs.com/sports/football",
+  "email_domain": "etsu.edu"
+ },
+ {
+  "name": "Furman University",
+  "short_name": "Furman",
+  "subdivision": "FCS",
+  "conference": "SoCon",
+  "athletics_website": "https://furmanpaladins.com",
+  "football_roster_url": "https://furmanpaladins.com/sports/football",
+  "email_domain": "furman.edu"
+ },
+ {
+  "name": "Mercer University",
+  "short_name": "Mercer",
+  "subdivision": "FCS",
+  "conference": "SoCon",
+  "athletics_website": "https://mercerbears.com",
+  "football_roster_url": "https://mercerbears.com/sports/football",
+  "email_domain": "mercer.edu"
+ },
+ {
+  "name": "Samford University",
+  "short_name": "Samford",
+  "subdivision": "FCS",
+  "conference": "SoCon",
+  "athletics_website": "https://samfordsports.com",
+  "football_roster_url": "https://samfordsports.com/sports/football",
+  "email_domain": "samford.edu"
+ },
+ {
+  "name": "Tennessee Technological University",
+  "short_name": "Tennessee Tech",
+  "subdivision": "FCS",
+  "conference": "SoCon",
+  "athletics_website": "https://ttusports.com",
+  "football_roster_url": "https://ttusports.com/sports/football",
+  "email_domain": "tntech.edu"
+ },
+ {
+  "name": "The Citadel",
+  "short_name": "The Citadel",
+  "subdivision": "FCS",
+  "conference": "SoCon",
+  "athletics_website": "https://citadelsports.com",
+  "football_roster_url": "https://citadelsports.com/sports/football",
+  "email_domain": "citadel.edu"
+ },
+ {
+  "name": "University of Tennessee at Chattanooga",
+  "short_name": "Chattanooga",
+  "subdivision": "FCS",
+  "conference": "SoCon",
+  "athletics_website": "https://gomocs.com",
+  "football_roster_url": "https://gomocs.com/sports/football",
+  "email_domain": "utc.edu"
+ },
+ {
+  "name": "Virginia Military Institute",
+  "short_name": "VMI",
+  "subdivision": "FCS",
+  "conference": "SoCon",
+  "athletics_website": "https://vmikeydets.com",
+  "football_roster_url": "https://vmikeydets.com/sports/football",
+  "email_domain": "vmi.edu"
+ },
+ {
+  "name": "Western Carolina University",
+  "short_name": "Western Carolina",
+  "subdivision": "FCS",
+  "conference": "SoCon",
+  "athletics_website": "https://catamountsports.com",
+  "football_roster_url": "https://catamountsports.com/sports/football",
+  "email_domain": "wcu.edu"
+ },
+ {
+  "name": "Wofford College",
+  "short_name": "Wofford",
+  "subdivision": "FCS",
+  "conference": "SoCon",
+  "athletics_website": "https://woffordterriers.com",
+  "football_roster_url": "https://woffordterriers.com/sports/football",
+  "email_domain": "wofford.edu"
+ },
+ {
+  "name": "East Texas A&M University",
+  "short_name": "East Texas A&M",
+  "subdivision": "FCS",
+  "conference": "Southland",
+  "athletics_website": "https://lionathletics.com",
+  "football_roster_url": "https://lionathletics.com/sports/football",
+  "email_domain": "etamu.edu"
+ },
+ {
+  "name": "Houston Christian University",
+  "short_name": "Houston Christian",
+  "subdivision": "FCS",
+  "conference": "Southland",
+  "athletics_website": "https://hcuhuskies.com",
+  "football_roster_url": "https://hcuhuskies.com/sports/football",
+  "email_domain": "hc.edu"
+ },
+ {
+  "name": "Lamar University",
+  "short_name": "Lamar",
+  "subdivision": "FCS",
+  "conference": "Southland",
+  "athletics_website": "https://lamarcardinals.com",
+  "football_roster_url": "https://lamarcardinals.com/sports/football",
+  "email_domain": "lamar.edu"
+ },
+ {
+  "name": "McNeese State University",
+  "short_name": "McNeese",
+  "subdivision": "FCS",
+  "conference": "Southland",
+  "athletics_website": "https://mcneesesports.com",
+  "football_roster_url": "https://mcneesesports.com/sports/football",
+  "email_domain": "mcneese.edu"
+ },
+ {
+  "name": "Nicholls State University",
+  "short_name": "Nicholls",
+  "subdivision": "FCS",
+  "conference": "Southland",
+  "athletics_website": "https://geauxcolonels.com",
+  "football_roster_url": "https://geauxcolonels.com/sports/football",
+  "email_domain": "nicholls.edu"
+ }
+]

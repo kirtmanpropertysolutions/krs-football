@@ -1,0 +1,1159 @@
+[
+ {
+  "name": "Oklahoma State University",
+  "questionnaire_url": null,
+  "questionnaire_found_on": null,
+  "program_email": null,
+  "coaches": [
+   {
+    "name": "Eric Morris",
+    "title": "Head Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Drew Svoboda",
+    "title": "Associate Head Coach / Special Teams Coordinator / Tight Ends",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Sean Brophy",
+    "title": "Offensive Coordinator / Quarterbacks",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Skyler Cassity",
+    "title": "Defensive Coordinator",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Patrick Cobbs",
+    "title": "Run Game Coordinator / Running Backs",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Cody Crill",
+    "title": "Offensive Line",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Nick Edwards",
+    "title": "Wide Receivers",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Reggie Johnson",
+    "title": "Linebackers",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Jordan Malone",
+    "title": "Defensive Backs (Nickels / Safeties)",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Greg Richmond",
+    "title": "Defensive Line",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Julian Wilson",
+    "title": "Defensive Backs (Cornerbacks)",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Ike Eguae",
+    "title": "Assistant Defensive Line",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Mike O'Guin",
+    "title": "Assistant Defensive Line",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Luke Brockermeyer",
+    "title": "Assistant Outside Linebackers",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Dan Conwell",
+    "title": "Assistant Special Teams",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Boone Feldt",
+    "title": "Assistant Offensive Line",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Robbie Gordon",
+    "title": "Assistant Inside Linebackers",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Taylor Grimes",
+    "title": "Assistant Wide Receivers",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Deion Harris",
+    "title": "Assistant Offensive Line",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Kevin Kilmer",
+    "title": "Sr. Offensive Analyst / Assistant Quarterbacks",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Mason Moss",
+    "title": "Assistant Defensive Backs (Cornerbacks)",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Luke Pardee",
+    "title": "Assistant Tight Ends",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Ryan Roberts",
+    "title": "Assistant Defensive Backs (Safeties)",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Rolando Surita",
+    "title": "Chief of Staff",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Raj Murti",
+    "title": "General Manager",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "George Matsakis",
+    "title": "Director of Football Operations",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Trey Klose",
+    "title": "Assistant Director of Player Personnel",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Andrew Lee",
+    "title": "Assistant Director of Player Personnel",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Jason Martinez",
+    "title": "Assistant Director of Player Personnel",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "O'nalisa Hall",
+    "title": "Director of On-Campus Recruiting",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Meghan Bartlett",
+    "title": "Assistant Director of On-Campus Recruiting",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Ethan Russo",
+    "title": "Executive Director of Player Personnel",
+    "email": "ethan.russo@okstate.edu",
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Wes Drake",
+    "title": "Director of Scouting",
+    "email": "wes.drake@okstate.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Rod Johnson",
+    "title": "Director of Player Engagement / Alumni Relations",
+    "email": "rod.johnson@okstate.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Aditya Keshavapatnam",
+    "title": "Data Scientist",
+    "email": "aditya.keshavapatnam@okstate.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Chris Deal",
+    "title": "Director of Football Creative Services",
+    "email": "chris.deal@okstate.edu",
+    "phone": "(405) 744-3652",
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   },
+   {
+    "name": "Sean Maguire",
+    "title": "Director of Football Communications",
+    "email": "sean.maguire@okstate.edu",
+    "phone": "(405) 744-6963",
+    "is_recruiting_contact": false,
+    "source_url": "https://okstate.com/sports/football/coaches"
+   }
+  ],
+  "notes": "No individual emails for on-field coaches on coaches page or staff directory; only personnel/support staff emails listed. No football recruiting questionnaire found on coaches page, /sports/football, or /sports/football/recruiting (404). Football office phone (405) 744-5737 per staff directory."
+ },
+ {
+  "name": "Texas Christian University",
+  "questionnaire_url": null,
+  "questionnaire_found_on": null,
+  "program_email": null,
+  "coaches": [
+   {
+    "name": "Sonny Dykes",
+    "title": "Head Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Andy Avalos",
+    "title": "Defensive Coordinator",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Gordon Sammis",
+    "title": "Offensive Coordinator",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Malcolm Kelly",
+    "title": "Assistant Head Coach / Wide Receivers",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "A.J. Ricker",
+    "title": "Co-Offensive Coordinator / Offensive Line",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Tre Watson",
+    "title": "Passing Game Coordinator / Safeties/Nickels",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Benny Boyd",
+    "title": "Cornerbacks Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Mitch Kirsch",
+    "title": "Run Game Coordinator / Tight Ends Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "JaMarkus McFarland",
+    "title": "Defensive Line Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Brad Robbins",
+    "title": "Quarterbacks Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Antonio Wilcox",
+    "title": "Running Backs Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Ken Wilson",
+    "title": "Linebackers Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Mark Tommerdahl",
+    "title": "Special Assistant to the Head Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Kam Benjamin",
+    "title": "Assistant Wide Receivers Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Julius Brown",
+    "title": "Assistant Cornerbacks Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Cal Criner",
+    "title": "Assistant Linebackers Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Carter Foster",
+    "title": "Assistant Tight Ends Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Aaron Green",
+    "title": "Assistant Running Backs Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Barry Held",
+    "title": "Assistant Offensive Line Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Tyrone Hopper",
+    "title": "Assistant Defensive Tackles Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Julius Lewis",
+    "title": "Assistant Safeties Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Kharyee Marshall",
+    "title": "Assistant Edges Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Casey Petree",
+    "title": "Assistant Special Teams Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "De'Andre Pierce",
+    "title": "Assistant Safeties Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Ryan Swingle",
+    "title": "Assistant Offensive Line Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Shaun Taylor",
+    "title": "Assistant Quarterbacks Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Bob Wager",
+    "title": "Director of High School Relations",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Ryan Dorchester",
+    "title": "General Manager",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/staff-directory"
+   },
+   {
+    "name": "Jeff Jordan",
+    "title": "Assistant Athletics Director for Player Personnel",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://gofrogs.com/staff-directory"
+   },
+   {
+    "name": "Tyler Olker",
+    "title": "Assistant General Manager",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/staff-directory"
+   },
+   {
+    "name": "Cobe Bryant",
+    "title": "Assistant Director of Player Personnel",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://gofrogs.com/staff-directory"
+   },
+   {
+    "name": "Brett Cumnock",
+    "title": "Assistant Director of Player Personnel",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://gofrogs.com/staff-directory"
+   },
+   {
+    "name": "Joshua Drayden",
+    "title": "Assistant Director of Player Personnel",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://gofrogs.com/staff-directory"
+   },
+   {
+    "name": "Chris Owens",
+    "title": "Assistant Director of Player Personnel",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://gofrogs.com/staff-directory"
+   },
+   {
+    "name": "Lauren Craine",
+    "title": "Director of On-Campus Recruiting",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://gofrogs.com/staff-directory"
+   },
+   {
+    "name": "Aja Hogan",
+    "title": "Coordinator of Football Recruiting and Operations",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://gofrogs.com/staff-directory"
+   },
+   {
+    "name": "Sarah Woodruff",
+    "title": "Assistant Athletics Director, Football Operations",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/staff-directory"
+   },
+   {
+    "name": "Andrea Roberts",
+    "title": "Assistant to the Head Football Coach",
+    "email": "andrea.roberts@tcu.edu",
+    "phone": "(817) 257-7986",
+    "is_recruiting_contact": false,
+    "source_url": "https://gofrogs.com/sports/football/coaches"
+   }
+  ],
+  "notes": "Coaches have no listed emails on coaches page or staff directory; only the head coach's assistant has one. No recruiting questionnaire found (only a 'THSCA Ticket Requests' armssoftware ticket link, not a questionnaire); /sports/football/recruiting 404. Football office phone (817) 257-7970."
+ },
+ {
+  "name": "Texas Tech University",
+  "questionnaire_url": "https://texastech.com/sports/2020/9/29/psa-questionnaire",
+  "questionnaire_found_on": "https://texastech.com/sports/football/coaches",
+  "program_email": null,
+  "coaches": [
+   {
+    "name": "Joey McGuire",
+    "title": "Head Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://texastech.com/sports/football/coaches"
+   },
+   {
+    "name": "Kenny Perry",
+    "title": "Associate Head Coach / Special Teams Coordinator",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://texastech.com/sports/football/coaches"
+   },
+   {
+    "name": "Justin Johnson",
+    "title": "Assistant Head Coach / Passing Game Coordinator / WRs",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://texastech.com/sports/football/coaches"
+   },
+   {
+    "name": "Mack Leftwich",
+    "title": "Offensive Coordinator / Quarterbacks",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://texastech.com/sports/football/coaches"
+   },
+   {
+    "name": "Shiel Wood",
+    "title": "Defensive Coordinator / Inside Linebackers",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://texastech.com/sports/football/coaches"
+   },
+   {
+    "name": "Imarjaye Albury Sr.",
+    "title": "Defensive Line Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://texastech.com/sports/football/coaches"
+   },
+   {
+    "name": "Josh Cochran",
+    "title": "Run Game Coordinator / Tight Ends Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://texastech.com/sports/football/coaches"
+   },
+   {
+    "name": "Rob Greene",
+    "title": "Co-Defensive Coordinator / Safeties Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://texastech.com/sports/football/coaches"
+   },
+   {
+    "name": "Darcel McBath",
+    "title": "Cornerbacks Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://texastech.com/sports/football/coaches"
+   },
+   {
+    "name": "Clay McGuire",
+    "title": "Offensive Line Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://texastech.com/sports/football/coaches"
+   },
+   {
+    "name": "Garret McGuire",
+    "title": "Running Backs Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://texastech.com/sports/football/coaches"
+   },
+   {
+    "name": "Jacquies Smith",
+    "title": "Outside Linebackers Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://texastech.com/sports/football/coaches"
+   },
+   {
+    "name": "Mac Alexander",
+    "title": "Assistant Special Teams Coordinator",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://texastech.com/sports/football/coaches"
+   },
+   {
+    "name": "Jah'Shawn Johnson",
+    "title": "Assistant Defensive Backs Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://texastech.com/sports/football/coaches"
+   },
+   {
+    "name": "Lindsey Scott Jr.",
+    "title": "Assistant Quarterbacks Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://texastech.com/sports/football/coaches"
+   },
+   {
+    "name": "Taylor Young",
+    "title": "Assistant Inside Linebackers Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://texastech.com/sports/football/coaches"
+   },
+   {
+    "name": "Dave Martin",
+    "title": "Director of Player Development",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://texastech.com/sports/football/coaches"
+   },
+   {
+    "name": "James Blanchard",
+    "title": "General Manager",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://texastech.com/staff-directory"
+   },
+   {
+    "name": "Brian Nance",
+    "title": "Assistant General Manager / High School Personnel",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://texastech.com/staff-directory"
+   },
+   {
+    "name": "Alayshia Green",
+    "title": "Director of On-Campus Recruiting",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://texastech.com/staff-directory"
+   },
+   {
+    "name": "Katie Meade",
+    "title": "Coordinator, On-Campus Recruiting",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://texastech.com/staff-directory"
+   },
+   {
+    "name": "Sean Kenney",
+    "title": "Director of Player Personnel",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://texastech.com/staff-directory"
+   },
+   {
+    "name": "Freddie Johnson",
+    "title": "Associate Director of High School Scouting",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://texastech.com/staff-directory"
+   }
+  ],
+  "notes": "No emails listed for any football staff on coaches page or staff directory. Questionnaire link is the generic all-sports 'PSA Questionnaires' page (no football-specific form found)."
+ },
+ {
+  "name": "University of Central Florida",
+  "questionnaire_url": null,
+  "questionnaire_found_on": null,
+  "program_email": "ucffbrecruiting@athletics.ucf.edu",
+  "coaches": [
+   {
+    "name": "Scott Frost",
+    "title": "Head Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://ucfknights.com/staff-directory"
+   },
+   {
+    "name": "Pete Alamar",
+    "title": "Special Teams Coordinator",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://ucfknights.com/staff-directory"
+   },
+   {
+    "name": "Steve Cooper",
+    "title": "Offensive Coordinator",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://ucfknights.com/staff-directory"
+   },
+   {
+    "name": "Alex Grinch",
+    "title": "Defensive Coordinator/Safeties",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://ucfknights.com/staff-directory"
+   },
+   {
+    "name": "Sean Beckton Sr.",
+    "title": "Associate Head Coach/Wide Receivers",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://ucfknights.com/staff-directory"
+   },
+   {
+    "name": "Cooper Bassett",
+    "title": "Tight Ends",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://ucfknights.com/staff-directory"
+   },
+   {
+    "name": "Jimmy Beal",
+    "title": "Running Backs",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://ucfknights.com/staff-directory"
+   },
+   {
+    "name": "AJ Blazek",
+    "title": "Offensive Line",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://ucfknights.com/staff-directory"
+   },
+   {
+    "name": "Mike Dawson",
+    "title": "Defensive Run Game Coordinator/Edge Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://ucfknights.com/staff-directory"
+   },
+   {
+    "name": "Mark D'Onofrio",
+    "title": "Linebackers",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://ucfknights.com/staff-directory"
+   },
+   {
+    "name": "Kenny Martin",
+    "title": "Defensive Tackles",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://ucfknights.com/staff-directory"
+   },
+   {
+    "name": "McKenzie Milton",
+    "title": "Quarterbacks",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://ucfknights.com/staff-directory"
+   },
+   {
+    "name": "David Overstreet II",
+    "title": "Cornerbacks",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://ucfknights.com/staff-directory"
+   },
+   {
+    "name": "Kefense Hynson",
+    "title": "Pass Game Coordinator",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://ucfknights.com/staff-directory"
+   },
+   {
+    "name": "Andrew Sims",
+    "title": "Chief of Staff",
+    "email": "asims@athletics.ucf.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://ucfknights.com/staff-directory"
+   },
+   {
+    "name": "Trent Mossbrucker",
+    "title": "General Manager of Football Player Personnel, Acquisitions and Roster Management",
+    "email": "tmossbrucker@athletics.ucf.edu",
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://ucfknights.com/staff-directory"
+   },
+   {
+    "name": "Ryan Callaghan",
+    "title": "Senior Director, Football Operations & Recruiting",
+    "email": "rcallaghan@athletics.ucf.edu",
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://ucfknights.com/staff-directory"
+   },
+   {
+    "name": "Lauryn Ford",
+    "title": "Assistant Director, Operations",
+    "email": "lford@athletics.ucf.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://ucfknights.com/staff-directory"
+   },
+   {
+    "name": "Trey Neyer",
+    "title": "Assistant General Manager",
+    "email": "tneyer@athletics.ucf.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://ucfknights.com/staff-directory"
+   },
+   {
+    "name": "Ryan Beer",
+    "title": "Director, Player Personnel",
+    "email": "rbeer@athletics.ucf.edu",
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://ucfknights.com/staff-directory"
+   },
+   {
+    "name": "Dan Pirtle",
+    "title": "Director of Player Personnel",
+    "email": "dpirtle@athletics.ucf.edu",
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://ucfknights.com/staff-directory"
+   },
+   {
+    "name": "Malcolm Folk",
+    "title": "Player Personnel Analyst, Football",
+    "email": "mfolk@athletics.ucf.edu",
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://ucfknights.com/staff-directory"
+   },
+   {
+    "name": "Leah Harlow",
+    "title": "On-Campus Recruiting Coordinator, Football",
+    "email": "lharlow@athletics.ucf.edu",
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://ucfknights.com/staff-directory"
+   },
+   {
+    "name": "Drico Johnson",
+    "title": "Player Development Coordinator",
+    "email": "djohnson@athletics.ucf.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://ucfknights.com/staff-directory"
+   },
+   {
+    "name": "Jordan Litten",
+    "title": "Director, Football Advancement, NIL Operations & Athlete Branding",
+    "email": "jlitten@athletics.ucf.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://ucfknights.com/staff-directory"
+   }
+  ],
+  "notes": "/sports/football/coaches returned 404; data from staff directory. Every on-field coach's email in the directory is the shared ucffbrecruiting@athletics.ucf.edu inbox, so it is recorded as program_email rather than per coach. No questionnaire link found on /sports/football or staff directory."
+ },
+ {
+  "name": "University of Cincinnati",
+  "questionnaire_url": "http://college.jumpforward.com/questionnaire.aspx?iid=379&sportid=18",
+  "questionnaire_found_on": "https://gobearcats.com/sports/football",
+  "program_email": null,
+  "coaches": [
+   {
+    "name": "Scott Satterfield",
+    "title": "Head Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gobearcats.com/sports/football/roster"
+   },
+   {
+    "name": "Nate Woody",
+    "title": "Defensive Coordinator",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gobearcats.com/sports/football/roster"
+   },
+   {
+    "name": "Mark Speir",
+    "title": "Assistant Head Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gobearcats.com/sports/football/roster"
+   },
+   {
+    "name": "Cortney Braswell",
+    "title": "Co-Defensive Coordinator / Inside Linebackers",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gobearcats.com/sports/football/roster"
+   },
+   {
+    "name": "Nic Cardwell",
+    "title": "Co-Offensive Coordinator / Offensive Line",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gobearcats.com/sports/football/roster"
+   },
+   {
+    "name": "Pete Thomas",
+    "title": "Co-Offensive Coordinator / Quarterbacks",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gobearcats.com/sports/football/roster"
+   },
+   {
+    "name": "Luke Paschall",
+    "title": "Special Teams Coordinator",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gobearcats.com/sports/football/roster"
+   },
+   {
+    "name": "Adam Braithwaite",
+    "title": "Assistant Coach / Outside Linebackers",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gobearcats.com/sports/football/roster"
+   },
+   {
+    "name": "Sean Dawkins",
+    "title": "Assistant Coach / Running Backs",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gobearcats.com/sports/football/roster"
+   },
+   {
+    "name": "David Rowe",
+    "title": "Assistant Coach / Safeties",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gobearcats.com/sports/football/roster"
+   },
+   {
+    "name": "Josh Stepp",
+    "title": "Assistant Coach / Tight Ends",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gobearcats.com/sports/football/roster"
+   },
+   {
+    "name": "Walter Stewart",
+    "title": "Assistant Coach / Defensive Line",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gobearcats.com/sports/football/roster"
+   },
+   {
+    "name": "Vijay Stingley",
+    "title": "Assistant Coach / Wide Receivers",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gobearcats.com/sports/football/roster"
+   },
+   {
+    "name": "Larry Murphy",
+    "title": "Assistant Coach / Cornerbacks",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gobearcats.com/sports/football/roster"
+   },
+   {
+    "name": "Robert Nunn",
+    "title": "Assistant Coach / Edge Rushers",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gobearcats.com/sports/football/roster"
+   },
+   {
+    "name": "Eric Szczepinski",
+    "title": "Senior Director, Communications (FB)",
+    "email": "szczepet@ucmail.uc.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gobearcats.com/staff-directory"
+   }
+  ],
+  "notes": "/sports/football/coaches returned 404; coaches taken from roster page coaching staff section (no emails). Staff directory lists no football coach emails; football office phone 513-556-8494."
+ }
+]

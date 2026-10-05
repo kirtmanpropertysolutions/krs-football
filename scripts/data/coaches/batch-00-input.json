@@ -1,0 +1,209 @@
+[
+ {
+  "name": "Stanford University",
+  "short_name": "Stanford",
+  "subdivision": "FBS",
+  "conference": "ACC",
+  "athletics_website": "https://gostanford.com",
+  "football_roster_url": "https://gostanford.com/sports/football",
+  "email_domain": "stanford.edu"
+ },
+ {
+  "name": "University of California, Berkeley",
+  "short_name": "California",
+  "subdivision": "FBS",
+  "conference": "ACC",
+  "athletics_website": "https://calbears.com",
+  "football_roster_url": "https://calbears.com/sports/football",
+  "email_domain": "berkeley.edu"
+ },
+ {
+  "name": "Arizona State University",
+  "short_name": "Arizona State",
+  "subdivision": "FBS",
+  "conference": "Big 12",
+  "athletics_website": "https://thesundevils.com",
+  "football_roster_url": "https://thesundevils.com/sports/football",
+  "email_domain": "asu.edu"
+ },
+ {
+  "name": "Brigham Young University",
+  "short_name": "BYU",
+  "subdivision": "FBS",
+  "conference": "Big 12",
+  "athletics_website": "https://byucougars.com",
+  "football_roster_url": "https://byucougars.com/sports/football",
+  "email_domain": "byu.edu"
+ },
+ {
+  "name": "University of Arizona",
+  "short_name": "Arizona",
+  "subdivision": "FBS",
+  "conference": "Big 12",
+  "athletics_website": "https://arizonawildcats.com",
+  "football_roster_url": "https://arizonawildcats.com/sports/football",
+  "email_domain": "arizona.edu"
+ },
+ {
+  "name": "University of Colorado Boulder",
+  "short_name": "Colorado",
+  "subdivision": "FBS",
+  "conference": "Big 12",
+  "athletics_website": "https://cubuffs.com",
+  "football_roster_url": "https://cubuffs.com/sports/football",
+  "email_domain": "colorado.edu"
+ },
+ {
+  "name": "University of Utah",
+  "short_name": "Utah",
+  "subdivision": "FBS",
+  "conference": "Big 12",
+  "athletics_website": "https://utahutes.com",
+  "football_roster_url": "https://utahutes.com/sports/football",
+  "email_domain": "utah.edu"
+ },
+ {
+  "name": "University of California, Los Angeles",
+  "short_name": "UCLA",
+  "subdivision": "FBS",
+  "conference": "Big Ten",
+  "athletics_website": "https://uclabruins.com",
+  "football_roster_url": "https://uclabruins.com/sports/football",
+  "email_domain": "ucla.edu"
+ },
+ {
+  "name": "University of Oregon",
+  "short_name": "Oregon",
+  "subdivision": "FBS",
+  "conference": "Big Ten",
+  "athletics_website": "https://goducks.com",
+  "football_roster_url": "https://goducks.com/sports/football",
+  "email_domain": "uoregon.edu"
+ },
+ {
+  "name": "University of Southern California",
+  "short_name": "USC",
+  "subdivision": "FBS",
+  "conference": "Big Ten",
+  "athletics_website": "https://usctrojans.com",
+  "football_roster_url": "https://usctrojans.com/sports/football",
+  "email_domain": "usc.edu"
+ },
+ {
+  "name": "University of Washington",
+  "short_name": "Washington",
+  "subdivision": "FBS",
+  "conference": "Big Ten",
+  "athletics_website": "https://gohuskies.com",
+  "football_roster_url": "https://gohuskies.com/sports/football",
+  "email_domain": "uw.edu"
+ },
+ {
+  "name": "Sacramento State University",
+  "short_name": "Sacramento State",
+  "subdivision": "FBS",
+  "conference": "MAC",
+  "athletics_website": "https://hornetsports.com",
+  "football_roster_url": "https://hornetsports.com/sports/football",
+  "email_domain": "csus.edu"
+ },
+ {
+  "name": "San Jose State University",
+  "short_name": "San Jose State",
+  "subdivision": "FBS",
+  "conference": "Mountain West",
+  "athletics_website": "https://sjsuspartans.com",
+  "football_roster_url": "https://sjsuspartans.com/sports/football",
+  "email_domain": "sjsu.edu"
+ },
+ {
+  "name": "United States Air Force Academy",
+  "short_name": "Air Force",
+  "subdivision": "FBS",
+  "conference": "Mountain West",
+  "athletics_website": "https://goairforcefalcons.com",
+  "football_roster_url": "https://goairforcefalcons.com/sports/football",
+  "email_domain": "afacademy.af.edu"
+ },
+ {
+  "name": "University of Nevada, Las Vegas",
+  "short_name": "UNLV",
+  "subdivision": "FBS",
+  "conference": "Mountain West",
+  "athletics_website": "https://unlvrebels.com",
+  "football_roster_url": "https://unlvrebels.com/sports/football",
+  "email_domain": "unlv.edu"
+ },
+ {
+  "name": "University of Nevada, Reno",
+  "short_name": "Nevada",
+  "subdivision": "FBS",
+  "conference": "Mountain West",
+  "athletics_website": "https://nevadawolfpack.com",
+  "football_roster_url": "https://nevadawolfpack.com/sports/football",
+  "email_domain": "unr.edu"
+ },
+ {
+  "name": "Boise State University",
+  "short_name": "Boise State",
+  "subdivision": "FBS",
+  "conference": "Pac-12",
+  "athletics_website": "https://broncosports.com",
+  "football_roster_url": "https://broncosports.com/sports/football",
+  "email_domain": "boisestate.edu"
+ },
+ {
+  "name": "California State University, Fresno",
+  "short_name": "Fresno State",
+  "subdivision": "FBS",
+  "conference": "Pac-12",
+  "athletics_website": "https://gobulldogs.com",
+  "football_roster_url": "https://gobulldogs.com/sports/football",
+  "email_domain": "csufresno.edu"
+ },
+ {
+  "name": "Colorado State University",
+  "short_name": "Colorado State",
+  "subdivision": "FBS",
+  "conference": "Pac-12",
+  "athletics_website": "https://csurams.com",
+  "football_roster_url": "https://csurams.com/sports/football",
+  "email_domain": "colostate.edu"
+ },
+ {
+  "name": "Oregon State University",
+  "short_name": "Oregon State",
+  "subdivision": "FBS",
+  "conference": "Pac-12",
+  "athletics_website": "https://osubeavers.com",
+  "football_roster_url": "https://osubeavers.com/sports/football",
+  "email_domain": "oregonstate.edu"
+ },
+ {
+  "name": "San Diego State University",
+  "short_name": "San Diego State",
+  "subdivision": "FBS",
+  "conference": "Pac-12",
+  "athletics_website": "https://goaztecs.com",
+  "football_roster_url": "https://goaztecs.com/sports/football",
+  "email_domain": "sdsu.edu"
+ },
+ {
+  "name": "Utah State University",
+  "short_name": "Utah State",
+  "subdivision": "FBS",
+  "conference": "Pac-12",
+  "athletics_website": "https://utahstateaggies.com",
+  "football_roster_url": "https://utahstateaggies.com/sports/football",
+  "email_domain": "usu.edu"
+ },
+ {
+  "name": "Washington State University",
+  "short_name": "Washington State",
+  "subdivision": "FBS",
+  "conference": "Pac-12",
+  "athletics_website": "https://wsucougars.com",
+  "football_roster_url": "https://wsucougars.com/sports/football",
+  "email_domain": "wsu.edu"
+ }
+]

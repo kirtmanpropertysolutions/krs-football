@@ -1,0 +1,209 @@
+[
+ {
+  "name": "Oklahoma State University",
+  "short_name": "Oklahoma State",
+  "subdivision": "FBS",
+  "conference": "Big 12",
+  "athletics_website": "https://okstate.com",
+  "football_roster_url": "https://okstate.com/sports/football",
+  "email_domain": "okstate.edu"
+ },
+ {
+  "name": "Texas Christian University",
+  "short_name": "TCU",
+  "subdivision": "FBS",
+  "conference": "Big 12",
+  "athletics_website": "https://gofrogs.com",
+  "football_roster_url": "https://gofrogs.com/sports/football",
+  "email_domain": "tcu.edu"
+ },
+ {
+  "name": "Texas Tech University",
+  "short_name": "Texas Tech",
+  "subdivision": "FBS",
+  "conference": "Big 12",
+  "athletics_website": "https://texastech.com",
+  "football_roster_url": "https://texastech.com/sports/football",
+  "email_domain": "ttu.edu"
+ },
+ {
+  "name": "University of Central Florida",
+  "short_name": "UCF",
+  "subdivision": "FBS",
+  "conference": "Big 12",
+  "athletics_website": "https://ucfknights.com",
+  "football_roster_url": "https://ucfknights.com/sports/football",
+  "email_domain": "ucf.edu"
+ },
+ {
+  "name": "University of Cincinnati",
+  "short_name": "Cincinnati",
+  "subdivision": "FBS",
+  "conference": "Big 12",
+  "athletics_website": "https://gobearcats.com",
+  "football_roster_url": "https://gobearcats.com/sports/football",
+  "email_domain": "uc.edu"
+ },
+ {
+  "name": "University of Houston",
+  "short_name": "Houston",
+  "subdivision": "FBS",
+  "conference": "Big 12",
+  "athletics_website": "https://uhcougars.com",
+  "football_roster_url": "https://uhcougars.com/sports/football",
+  "email_domain": "uh.edu"
+ },
+ {
+  "name": "University of Kansas",
+  "short_name": "Kansas",
+  "subdivision": "FBS",
+  "conference": "Big 12",
+  "athletics_website": "https://kuathletics.com",
+  "football_roster_url": "https://kuathletics.com/sports/football",
+  "email_domain": "ku.edu"
+ },
+ {
+  "name": "West Virginia University",
+  "short_name": "West Virginia",
+  "subdivision": "FBS",
+  "conference": "Big 12",
+  "athletics_website": "https://wvusports.com",
+  "football_roster_url": "https://wvusports.com/sports/football",
+  "email_domain": "wvu.edu"
+ },
+ {
+  "name": "Indiana University",
+  "short_name": "Indiana",
+  "subdivision": "FBS",
+  "conference": "Big Ten",
+  "athletics_website": "https://iuhoosiers.com",
+  "football_roster_url": "https://iuhoosiers.com/sports/football",
+  "email_domain": "iu.edu"
+ },
+ {
+  "name": "Michigan State University",
+  "short_name": "Michigan State",
+  "subdivision": "FBS",
+  "conference": "Big Ten",
+  "athletics_website": "https://msuspartans.com",
+  "football_roster_url": "https://msuspartans.com/sports/football",
+  "email_domain": "msu.edu"
+ },
+ {
+  "name": "Northwestern University",
+  "short_name": "Northwestern",
+  "subdivision": "FBS",
+  "conference": "Big Ten",
+  "athletics_website": "https://nusports.com",
+  "football_roster_url": "https://nusports.com/sports/football",
+  "email_domain": "northwestern.edu"
+ },
+ {
+  "name": "Ohio State University",
+  "short_name": "Ohio State",
+  "subdivision": "FBS",
+  "conference": "Big Ten",
+  "athletics_website": "https://ohiostatebuckeyes.com",
+  "football_roster_url": "https://ohiostatebuckeyes.com/sports/football",
+  "email_domain": "osu.edu"
+ },
+ {
+  "name": "Pennsylvania State University",
+  "short_name": "Penn State",
+  "subdivision": "FBS",
+  "conference": "Big Ten",
+  "athletics_website": "https://gopsusports.com",
+  "football_roster_url": "https://gopsusports.com/sports/football",
+  "email_domain": "psu.edu"
+ },
+ {
+  "name": "Purdue University",
+  "short_name": "Purdue",
+  "subdivision": "FBS",
+  "conference": "Big Ten",
+  "athletics_website": "https://purduesports.com",
+  "football_roster_url": "https://purduesports.com/sports/football",
+  "email_domain": "purdue.edu"
+ },
+ {
+  "name": "Rutgers University",
+  "short_name": "Rutgers",
+  "subdivision": "FBS",
+  "conference": "Big Ten",
+  "athletics_website": "https://scarletknights.com",
+  "football_roster_url": "https://scarletknights.com/sports/football",
+  "email_domain": "rutgers.edu"
+ },
+ {
+  "name": "University of Illinois Urbana-Champaign",
+  "short_name": "Illinois",
+  "subdivision": "FBS",
+  "conference": "Big Ten",
+  "athletics_website": "https://fightingillini.com",
+  "football_roster_url": "https://fightingillini.com/sports/football",
+  "email_domain": "illinois.edu"
+ },
+ {
+  "name": "University of Iowa",
+  "short_name": "Iowa",
+  "subdivision": "FBS",
+  "conference": "Big Ten",
+  "athletics_website": "https://hawkeyesports.com",
+  "football_roster_url": "https://hawkeyesports.com/sports/football",
+  "email_domain": "uiowa.edu"
+ },
+ {
+  "name": "University of Maryland",
+  "short_name": "Maryland",
+  "subdivision": "FBS",
+  "conference": "Big Ten",
+  "athletics_website": "https://umterps.com",
+  "football_roster_url": "https://umterps.com/sports/football",
+  "email_domain": "umd.edu"
+ },
+ {
+  "name": "University of Michigan",
+  "short_name": "Michigan",
+  "subdivision": "FBS",
+  "conference": "Big Ten",
+  "athletics_website": "https://mgoblue.com",
+  "football_roster_url": "https://mgoblue.com/sports/football",
+  "email_domain": "umich.edu"
+ },
+ {
+  "name": "University of Minnesota",
+  "short_name": "Minnesota",
+  "subdivision": "FBS",
+  "conference": "Big Ten",
+  "athletics_website": "https://gophersports.com",
+  "football_roster_url": "https://gophersports.com/sports/football",
+  "email_domain": "umn.edu"
+ },
+ {
+  "name": "University of Nebraska-Lincoln",
+  "short_name": "Nebraska",
+  "subdivision": "FBS",
+  "conference": "Big Ten",
+  "athletics_website": "https://huskers.com",
+  "football_roster_url": "https://huskers.com/sports/football",
+  "email_domain": "unl.edu"
+ },
+ {
+  "name": "University of Wisconsin-Madison",
+  "short_name": "Wisconsin",
+  "subdivision": "FBS",
+  "conference": "Big Ten",
+  "athletics_website": "https://uwbadgers.com",
+  "football_roster_url": "https://uwbadgers.com/sports/football",
+  "email_domain": "wisc.edu"
+ },
+ {
+  "name": "Florida International University",
+  "short_name": "FIU",
+  "subdivision": "FBS",
+  "conference": "Conference USA",
+  "athletics_website": "https://fiusports.com",
+  "football_roster_url": "https://fiusports.com/sports/football",
+  "email_domain": "fiu.edu"
+ }
+]

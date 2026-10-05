@@ -1,0 +1,951 @@
+[
+ {
+  "name": "Appalachian State University",
+  "questionnaire_url": null,
+  "questionnaire_found_on": null,
+  "program_email": null,
+  "coaches": [
+   {
+    "name": "Dowell Loggains",
+    "title": "Head Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://appstatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Clyde Christensen",
+    "title": "Associate Head Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://appstatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "DJ Smith",
+    "title": "Defensive Coordinator/Linebackers",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://appstatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Mike Anthony",
+    "title": "Offensive Coordinator",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://appstatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Tyler Zielenske",
+    "title": "Special Teams Coordinator",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://appstatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Curtis Fuller",
+    "title": "Defensive Pass Game Coordinator/Defensive Backs",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://appstatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Anthony Shakir",
+    "title": "Defensive Recruiting Coordinator/Edges",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://appstatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Aaron Fierbaugh",
+    "title": "Safeties",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://appstatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Justin Harper",
+    "title": "Wide Receivers",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://appstatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Antonio James",
+    "title": "Defensive Line",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://appstatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Tyler Kelley",
+    "title": "Running Backs",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://appstatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Ryan Pugh",
+    "title": "Offensive Line",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://appstatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Riley Watkins",
+    "title": "Quarterbacks",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://appstatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Ryan Yurachek",
+    "title": "Tight Ends",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://appstatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Kevin Higgins",
+    "title": "Chief of Staff/Pass Game Specialist",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://appstatesports.com/staff-directory"
+   },
+   {
+    "name": "Macho Arza",
+    "title": "Assistant Wide Receivers Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://appstatesports.com/staff-directory"
+   },
+   {
+    "name": "Devin Coleman",
+    "title": "Assistant Secondary Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://appstatesports.com/staff-directory"
+   },
+   {
+    "name": "Grier Hodge",
+    "title": "Director of Recruiting Relations",
+    "email": "hodgegs1@appstate.edu",
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://appstatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Ryan Huff",
+    "title": "Director of Player Development and NIL",
+    "email": "huffrt@appstate.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://appstatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Kaleb Moore",
+    "title": "Assistant Director of Football Operations",
+    "email": "moorek8@appstate.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://appstatesports.com/sports/football/coaches"
+   }
+  ],
+  "notes": "No coach emails listed on coaches page or staff directory; only support staff emails. Staff directory lists football phone 828-262-6280. No questionnaire link found on coaches, football, or /recruiting (404) pages."
+ },
+ {
+  "name": "Arkansas State University",
+  "questionnaire_url": null,
+  "questionnaire_found_on": null,
+  "program_email": null,
+  "coaches": [
+   {
+    "name": "Butch Jones",
+    "title": "Head Coach",
+    "email": null,
+    "phone": "870-972-2082",
+    "is_recruiting_contact": false,
+    "source_url": "https://astateredwolves.com/sports/football/coaches"
+   },
+   {
+    "name": "Jalen Ortiz",
+    "title": "Associate Head Coach/Cornerbacks",
+    "email": null,
+    "phone": "870-972-2082",
+    "is_recruiting_contact": false,
+    "source_url": "https://astateredwolves.com/sports/football/coaches"
+   },
+   {
+    "name": "Garrett Altman",
+    "title": "Offensive Coordinator",
+    "email": null,
+    "phone": "870-972-2082",
+    "is_recruiting_contact": false,
+    "source_url": "https://astateredwolves.com/sports/football/coaches"
+   },
+   {
+    "name": "Griff McCarley",
+    "title": "Defensive Coordinator",
+    "email": null,
+    "phone": "870-972-2082",
+    "is_recruiting_contact": false,
+    "source_url": "https://astateredwolves.com/sports/football/coaches"
+   },
+   {
+    "name": "Kwame Agyeman",
+    "title": "Safeties",
+    "email": null,
+    "phone": "870-972-2082",
+    "is_recruiting_contact": false,
+    "source_url": "https://astateredwolves.com/sports/football/coaches"
+   },
+   {
+    "name": "Nick Grimes",
+    "title": "Offensive Line/Run Game Coordinator",
+    "email": null,
+    "phone": "870-972-2082",
+    "is_recruiting_contact": false,
+    "source_url": "https://astateredwolves.com/sports/football/coaches"
+   },
+   {
+    "name": "Kenny Hill",
+    "title": "Running Backs",
+    "email": null,
+    "phone": "870-972-2082",
+    "is_recruiting_contact": false,
+    "source_url": "https://astateredwolves.com/sports/football/coaches"
+   },
+   {
+    "name": "Alex Jones",
+    "title": "Tight Ends",
+    "email": null,
+    "phone": "870-972-2082",
+    "is_recruiting_contact": false,
+    "source_url": "https://astateredwolves.com/sports/football/coaches"
+   },
+   {
+    "name": "Derrick Lett",
+    "title": "Wide Receivers",
+    "email": null,
+    "phone": "870-972-2082",
+    "is_recruiting_contact": false,
+    "source_url": "https://astateredwolves.com/sports/football/coaches"
+   },
+   {
+    "name": "Rashad Pittman",
+    "title": "Defensive Tackles",
+    "email": null,
+    "phone": "870-972-2082",
+    "is_recruiting_contact": false,
+    "source_url": "https://astateredwolves.com/sports/football/coaches"
+   },
+   {
+    "name": "Malcolm Robinson",
+    "title": "Defensive Ends",
+    "email": null,
+    "phone": "870-972-2082",
+    "is_recruiting_contact": false,
+    "source_url": "https://astateredwolves.com/sports/football/coaches"
+   },
+   {
+    "name": "Kody Schexnayder",
+    "title": "Special Teams Coordinator",
+    "email": null,
+    "phone": "870-972-2082",
+    "is_recruiting_contact": false,
+    "source_url": "https://astateredwolves.com/sports/football/coaches"
+   },
+   {
+    "name": "Jake Balliu",
+    "title": "Chief of Staff",
+    "email": "jballiu@astate.edu",
+    "phone": "870-972-2082",
+    "is_recruiting_contact": false,
+    "source_url": "https://astateredwolves.com/sports/football/coaches"
+   },
+   {
+    "name": "Nicholas Welsh",
+    "title": "Special Assistant to Head Coach & Director of High School Recruiting",
+    "email": null,
+    "phone": "870-972-2082",
+    "is_recruiting_contact": true,
+    "source_url": "https://astateredwolves.com/staff-directory"
+   },
+   {
+    "name": "Isabella Bogdan",
+    "title": "Director of Football Operations & Player Relations",
+    "email": null,
+    "phone": "870-972-2082",
+    "is_recruiting_contact": false,
+    "source_url": "https://astateredwolves.com/staff-directory"
+   },
+   {
+    "name": "Connor Lawson",
+    "title": "Director of Player Personnel",
+    "email": null,
+    "phone": "870-972-2082",
+    "is_recruiting_contact": true,
+    "source_url": "https://astateredwolves.com/staff-directory"
+   },
+   {
+    "name": "Kevin Cohn",
+    "title": "Director of Scouting",
+    "email": null,
+    "phone": "870-972-2082",
+    "is_recruiting_contact": false,
+    "source_url": "https://astateredwolves.com/staff-directory"
+   },
+   {
+    "name": "Grace Wright",
+    "title": "Director of Recruiting Strategy",
+    "email": null,
+    "phone": "870-972-2082",
+    "is_recruiting_contact": true,
+    "source_url": "https://astateredwolves.com/staff-directory"
+   },
+   {
+    "name": "Nick Valente",
+    "title": "Assistant Director of Scouting",
+    "email": null,
+    "phone": "870-972-2082",
+    "is_recruiting_contact": false,
+    "source_url": "https://astateredwolves.com/staff-directory"
+   }
+  ],
+  "notes": "All staff share office phone 870-972-2082; only chief of staff (and video director) have emails listed. No questionnaire link found; /sports/football/recruiting 404."
+ },
+ {
+  "name": "Coastal Carolina University",
+  "questionnaire_url": null,
+  "questionnaire_found_on": null,
+  "program_email": null,
+  "coaches": [
+   {
+    "name": "Ryan Beard",
+    "title": "Head Football Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://goccusports.com/sports/football/coaches"
+   },
+   {
+    "name": "Nick Petrino",
+    "title": "Offensive Coordinator / Quarterbacks Coach",
+    "email": "dpetrino@coastal.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://goccusports.com/sports/football/coaches"
+   },
+   {
+    "name": "L.D. Scott",
+    "title": "Defensive Coordinator / Defensive Line Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://goccusports.com/sports/football/coaches"
+   },
+   {
+    "name": "Nelson Fishback",
+    "title": "Special Teams Coordinator / Assistant Quarterbacks Coach",
+    "email": "nfishback@coastal.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://goccusports.com/sports/football/coaches"
+   },
+   {
+    "name": "Everette Sands",
+    "title": "Running Backs Coach",
+    "email": "wsands@coastal.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://goccusports.com/sports/football/coaches"
+   },
+   {
+    "name": "David Clowney",
+    "title": "Wide Receivers Coach",
+    "email": "dclowney1@coastal.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://goccusports.com/sports/football/coaches"
+   },
+   {
+    "name": "Ronnie Fouch",
+    "title": "Tight Ends Coach",
+    "email": "rfouch@coastal.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://goccusports.com/sports/football/coaches"
+   },
+   {
+    "name": "Nick Gilbert",
+    "title": "Offensive Line Coach",
+    "email": "ngilbert@coastal.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://goccusports.com/sports/football/coaches"
+   },
+   {
+    "name": "Connor Benado",
+    "title": "Inside Linebackers Coach",
+    "email": "cbenado@coastal.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://goccusports.com/sports/football/coaches"
+   },
+   {
+    "name": "Michael Downing",
+    "title": "Outside Linebackers/Nickel Coach",
+    "email": "mdowning1@coastal.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://goccusports.com/sports/football/coaches"
+   },
+   {
+    "name": "Tramain Thomas",
+    "title": "Defensive Backs/Safeties Coach",
+    "email": "tthomas7@coastal.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://goccusports.com/sports/football/coaches"
+   },
+   {
+    "name": "Chris Franklin",
+    "title": "Defensive Backs/Corners Coach",
+    "email": "cfranklin@coastal.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://goccusports.com/sports/football/coaches"
+   },
+   {
+    "name": "Max Franey",
+    "title": "Chief of Staff",
+    "email": "mfraney@coastal.edu",
+    "phone": "843-349-4131",
+    "is_recruiting_contact": false,
+    "source_url": "https://goccusports.com/sports/football/coaches"
+   },
+   {
+    "name": "Scott Aligo",
+    "title": "General Manager",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://goccusports.com/sports/football/coaches"
+   },
+   {
+    "name": "Fred Proesel",
+    "title": "Director of Football Operations",
+    "email": "fproesel@coastal.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://goccusports.com/sports/football/coaches"
+   }
+  ],
+  "notes": "No recruiting questionnaire found on coaches/football pages; /sports/football/recruiting 404. Only a media credential form (sportssystems.com) is linked."
+ },
+ {
+  "name": "Georgia Southern University",
+  "questionnaire_url": null,
+  "questionnaire_found_on": null,
+  "program_email": "gsfootball@georgiasouthern.edu",
+  "coaches": [
+   {
+    "name": "Clay Helton",
+    "title": "Head Coach",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Ryan Aplin",
+    "title": "Offensive Coordinator/Quarterbacks Coach",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Kevon Beckwith",
+    "title": "Defensive Line Coach",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Andre Crenshaw",
+    "title": "Running Backs Coach",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Prather Hudson",
+    "title": "Safeties Coach",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Zach Lankford",
+    "title": "Offensive Line Coach/Run Game Coordinator",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Zak Mizell",
+    "title": "Outside Receivers Coach",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Mike Mutz",
+    "title": "Defensive Coordinator",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Andrew Neupert",
+    "title": "Outside Linebackers Coach",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Taylor Reed",
+    "title": "Tight Ends Coach",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Darius Safford",
+    "title": "Assistant Head Coach/Defensive Backs Coach",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Damion Willis",
+    "title": "Inside Receivers Coach",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Blake Wilson",
+    "title": "Special Teams Coordinator",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Jack Witte",
+    "title": "Inside Linebackers Coach",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Ben Aigamaua",
+    "title": "Offensive Assistant (QB)",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Anthony Beck II",
+    "title": "Assistant Special Teams Coach/Specialists",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Khalil Crowder",
+    "title": "Offensive Assistant (OL)",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Tyrell Davis",
+    "title": "Defensive Assistant (DB)",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Caleb Heintz",
+    "title": "Offensive Assistant (QB)",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Chip Horton",
+    "title": "Defensive Assistant (DL)",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Tate Yancey",
+    "title": "Defensive Assistant (LB)",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Matt Hassan",
+    "title": "Assistant Athletics Director, Football Chief of Staff",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Andrew Bevill",
+    "title": "General Manager, Football",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Chase Akin",
+    "title": "Director, Player Personnel (Defense)",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": true,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Brayden Curry",
+    "title": "Director, Player Personnel (Offense)",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": true,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Riley Galpin",
+    "title": "Director of Recruiting Operations",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": true,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Keenan Murphy",
+    "title": "Director of Player and Recruiting Relations/Offensive Assistant (OL)",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": true,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Alexis Villarreal",
+    "title": "Director of Football Operations",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Elease Ryals",
+    "title": "Assistant Director of Football Operations",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Alesandra Santo",
+    "title": "Assistant Director, Recruiting Operations",
+    "email": null,
+    "phone": "912-478-5522",
+    "is_recruiting_contact": true,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   },
+   {
+    "name": "Adrian Peterson",
+    "title": "Director of Student-Athlete Development",
+    "email": "apeterson@georgiasouthern.edu",
+    "phone": "912-478-5522",
+    "is_recruiting_contact": false,
+    "source_url": "https://gseagles.com/sports/football/coaches"
+   }
+  ],
+  "notes": "Coaches page lists the shared office address gsfootball@georgiasouthern.edu and phone 912-478-5522 for every coach (recorded as program_email, not per-coach). No questionnaire link on official pages; a FieldLevel recruiting page exists (fieldlevel.com/georgiasouthern/football/recruiting) but was not linked from the athletics site."
+ },
+ {
+  "name": "Georgia State University",
+  "questionnaire_url": null,
+  "questionnaire_found_on": null,
+  "program_email": "footballrecruiting@gsu.edu",
+  "coaches": [
+   {
+    "name": "Dell McGee",
+    "title": "Head Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Dameyune Craig",
+    "title": "Assistant Head Coach/ Wide Receivers",
+    "email": "dcraig17@gsu.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Hue Jackson",
+    "title": "Offensive Coordinator",
+    "email": "hjackson42@gsu.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Cam Clark",
+    "title": "Co-Defensive Coordinator",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "John Haneline",
+    "title": "Co-Defensive Coordinator",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Zach Conowal",
+    "title": "Special Teams Coordinator",
+    "email": "zconowal1@gsu.edu",
+    "phone": "(404) 413-4120",
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Enrique Davis",
+    "title": "Co-Special Teams Coordinator/ Running Backs",
+    "email": "edavis137@gsu.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Troy Douglas",
+    "title": "Assistant Coach- Cornerbacks",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Casey Roddick",
+    "title": "Assistant Coach- Offensive Line",
+    "email": "croddick@gsu.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Chaz Scales",
+    "title": "Assistant Coach- Nickels",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Cam Spence",
+    "title": "Assistant Coach- Defensive Line",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Juwan Taylor",
+    "title": "Assistant Coach- Inside Linebackers",
+    "email": "jtaylor322@gsu.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Ryan Williams",
+    "title": "Assistant Coach - Quarterbacks",
+    "email": "rwilliams316@gsu.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Tristan Henderson",
+    "title": "Offensive Analyst",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Jes Sutherland",
+    "title": "Offensive Analyst- Tight Ends",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Colby Brown Sr.",
+    "title": "Assistant- Defensive Backs",
+    "email": "cbrownsr@gsu.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Mike Eason",
+    "title": "Assistant- Quarterbacks",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Zach Gibson",
+    "title": "Assistant- Safeties",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Josh Jynes",
+    "title": "Assistant- Defensive Line",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "TaQuon Marshall",
+    "title": "Assistant- Offense/ Wide Receivers",
+    "email": "tmarshall42@gsu.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Daniel Minenok",
+    "title": "Assistant- Defense",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Eli Peugh",
+    "title": "Assistant- Running Backs",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Brandon Wright",
+    "title": "Assistant- Special Teams",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Cameron Lemons",
+    "title": "Director of Football Operations",
+    "email": "clemons3@gsu.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Joe Windon",
+    "title": "General Manager",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Nyeja Warner",
+    "title": "Player Personnel and Special Assistant to Head Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Rod Rook-Chungong",
+    "title": "Director of Player Development & Community Engagement",
+    "email": "rrookchungong@gsu.edu",
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Joshua Bailey",
+    "title": "Director of Recruiting",
+    "email": "jbailey113@gsu.edu",
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://georgiastatesports.com/sports/football/coaches"
+   }
+  ],
+  "notes": "footballrecruiting@gsu.edu appears as the listed email for Jes Sutherland; recorded as program_email. No questionnaire link found; /sports/football/recruiting 404."
+ }
+]

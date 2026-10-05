@@ -1,0 +1,209 @@
+[
+ {
+  "name": "South Dakota State University",
+  "short_name": "South Dakota State",
+  "subdivision": "FCS",
+  "conference": "Missouri Valley",
+  "athletics_website": "https://gojacks.com",
+  "football_roster_url": "https://gojacks.com/sports/football",
+  "email_domain": "sdstate.edu"
+ },
+ {
+  "name": "Southern Illinois University",
+  "short_name": "Southern Illinois",
+  "subdivision": "FCS",
+  "conference": "Missouri Valley",
+  "athletics_website": "https://siusalukis.com",
+  "football_roster_url": "https://siusalukis.com/sports/football",
+  "email_domain": "siu.edu"
+ },
+ {
+  "name": "University of North Dakota",
+  "short_name": "North Dakota",
+  "subdivision": "FCS",
+  "conference": "Missouri Valley",
+  "athletics_website": "https://fightinghawks.com",
+  "football_roster_url": "https://fightinghawks.com/sports/football",
+  "email_domain": "und.edu"
+ },
+ {
+  "name": "University of Northern Iowa",
+  "short_name": "Northern Iowa",
+  "subdivision": "FCS",
+  "conference": "Missouri Valley",
+  "athletics_website": "https://unipanthers.com",
+  "football_roster_url": "https://unipanthers.com/sports/football",
+  "email_domain": "uni.edu"
+ },
+ {
+  "name": "University of South Dakota",
+  "short_name": "South Dakota",
+  "subdivision": "FCS",
+  "conference": "Missouri Valley",
+  "athletics_website": "https://goyotes.com",
+  "football_roster_url": "https://goyotes.com/sports/football",
+  "email_domain": "usd.edu"
+ },
+ {
+  "name": "Youngstown State University",
+  "short_name": "Youngstown State",
+  "subdivision": "FCS",
+  "conference": "Missouri Valley",
+  "athletics_website": "https://ysusports.com",
+  "football_roster_url": "https://ysusports.com/sports/football",
+  "email_domain": "ysu.edu"
+ },
+ {
+  "name": "Central Connecticut State University",
+  "short_name": "Central Connecticut",
+  "subdivision": "FCS",
+  "conference": "NEC",
+  "athletics_website": "https://ccsubluedevils.com",
+  "football_roster_url": "https://ccsubluedevils.com/sports/football",
+  "email_domain": "ccsu.edu"
+ },
+ {
+  "name": "Duquesne University",
+  "short_name": "Duquesne",
+  "subdivision": "FCS",
+  "conference": "NEC",
+  "athletics_website": "https://goduquesne.com",
+  "football_roster_url": "https://goduquesne.com/sports/football",
+  "email_domain": "duq.edu"
+ },
+ {
+  "name": "Long Island University",
+  "short_name": "LIU",
+  "subdivision": "FCS",
+  "conference": "NEC",
+  "athletics_website": "https://liuathletics.com",
+  "football_roster_url": "https://liuathletics.com/sports/football",
+  "email_domain": "liu.edu"
+ },
+ {
+  "name": "Mercyhurst University",
+  "short_name": "Mercyhurst",
+  "subdivision": "FCS",
+  "conference": "NEC",
+  "athletics_website": "https://hurstathletics.com",
+  "football_roster_url": "https://hurstathletics.com/sports/football",
+  "email_domain": "mercyhurst.edu"
+ },
+ {
+  "name": "Robert Morris University",
+  "short_name": "Robert Morris",
+  "subdivision": "FCS",
+  "conference": "NEC",
+  "athletics_website": "https://rmucolonials.com",
+  "football_roster_url": "https://rmucolonials.com/sports/football",
+  "email_domain": "rmu.edu"
+ },
+ {
+  "name": "Stonehill College",
+  "short_name": "Stonehill",
+  "subdivision": "FCS",
+  "conference": "NEC",
+  "athletics_website": "https://stonehillskyhawks.com",
+  "football_roster_url": "https://stonehillskyhawks.com/sports/football",
+  "email_domain": "stonehill.edu"
+ },
+ {
+  "name": "University of New Haven",
+  "short_name": "New Haven",
+  "subdivision": "FCS",
+  "conference": "NEC",
+  "athletics_website": "https://newhavenchargers.com",
+  "football_roster_url": "https://newhavenchargers.com/sports/football",
+  "email_domain": "newhaven.edu"
+ },
+ {
+  "name": "Wagner College",
+  "short_name": "Wagner",
+  "subdivision": "FCS",
+  "conference": "NEC",
+  "athletics_website": "https://wagnerathletics.com",
+  "football_roster_url": "https://wagnerathletics.com/sports/football",
+  "email_domain": "wagner.edu"
+ },
+ {
+  "name": "Charleston Southern University",
+  "short_name": "Charleston Southern",
+  "subdivision": "FCS",
+  "conference": "Ohio Valley",
+  "athletics_website": "https://csusports.com",
+  "football_roster_url": "https://csusports.com/sports/football",
+  "email_domain": "csuniv.edu"
+ },
+ {
+  "name": "Eastern Illinois University",
+  "short_name": "Eastern Illinois",
+  "subdivision": "FCS",
+  "conference": "Ohio Valley",
+  "athletics_website": "https://eiupanthers.com",
+  "football_roster_url": "https://eiupanthers.com/sports/football",
+  "email_domain": "eiu.edu"
+ },
+ {
+  "name": "Gardner-Webb University",
+  "short_name": "Gardner-Webb",
+  "subdivision": "FCS",
+  "conference": "Ohio Valley",
+  "athletics_website": "https://gwusports.com",
+  "football_roster_url": "https://gwusports.com/sports/football",
+  "email_domain": "gardner-webb.edu"
+ },
+ {
+  "name": "Lindenwood University",
+  "short_name": "Lindenwood",
+  "subdivision": "FCS",
+  "conference": "Ohio Valley",
+  "athletics_website": "https://lindenwoodlions.com",
+  "football_roster_url": "https://lindenwoodlions.com/sports/football",
+  "email_domain": "lindenwood.edu"
+ },
+ {
+  "name": "Southeast Missouri State University",
+  "short_name": "Southeast Missouri",
+  "subdivision": "FCS",
+  "conference": "Ohio Valley",
+  "athletics_website": "https://gosoutheast.com",
+  "football_roster_url": "https://gosoutheast.com/sports/football",
+  "email_domain": "semo.edu"
+ },
+ {
+  "name": "Tennessee State University",
+  "short_name": "Tennessee State",
+  "subdivision": "FCS",
+  "conference": "Ohio Valley",
+  "athletics_website": "https://tsutigers.com",
+  "football_roster_url": "https://tsutigers.com/sports/football",
+  "email_domain": "tnstate.edu"
+ },
+ {
+  "name": "University of Tennessee at Martin",
+  "short_name": "UT Martin",
+  "subdivision": "FCS",
+  "conference": "Ohio Valley",
+  "athletics_website": "https://utmsports.com",
+  "football_roster_url": "https://utmsports.com/sports/football",
+  "email_domain": "utm.edu"
+ },
+ {
+  "name": "Western Illinois University",
+  "short_name": "Western Illinois",
+  "subdivision": "FCS",
+  "conference": "Ohio Valley",
+  "athletics_website": "https://goleathernecks.com",
+  "football_roster_url": "https://goleathernecks.com/sports/football",
+  "email_domain": "wiu.edu"
+ },
+ {
+  "name": "Bucknell University",
+  "short_name": "Bucknell",
+  "subdivision": "FCS",
+  "conference": "Patriot League",
+  "athletics_website": "https://bucknellbison.com",
+  "football_roster_url": "https://bucknellbison.com/sports/football",
+  "email_domain": "bucknell.edu"
+ }
+]

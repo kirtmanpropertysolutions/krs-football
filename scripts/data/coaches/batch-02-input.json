@@ -1,0 +1,209 @@
+[
+ {
+  "name": "University of Miami",
+  "short_name": "Miami",
+  "subdivision": "FBS",
+  "conference": "ACC",
+  "athletics_website": "https://miamihurricanes.com",
+  "football_roster_url": "https://miamihurricanes.com/sports/football",
+  "email_domain": "miami.edu"
+ },
+ {
+  "name": "University of North Carolina at Chapel Hill",
+  "short_name": "North Carolina",
+  "subdivision": "FBS",
+  "conference": "ACC",
+  "athletics_website": "https://goheels.com",
+  "football_roster_url": "https://goheels.com/sports/football",
+  "email_domain": "unc.edu"
+ },
+ {
+  "name": "University of Pittsburgh",
+  "short_name": "Pittsburgh",
+  "subdivision": "FBS",
+  "conference": "ACC",
+  "athletics_website": "https://pittsburghpanthers.com",
+  "football_roster_url": "https://pittsburghpanthers.com/sports/football",
+  "email_domain": "pitt.edu"
+ },
+ {
+  "name": "University of Virginia",
+  "short_name": "Virginia",
+  "subdivision": "FBS",
+  "conference": "ACC",
+  "athletics_website": "https://virginiasports.com",
+  "football_roster_url": "https://virginiasports.com/sports/football",
+  "email_domain": "virginia.edu"
+ },
+ {
+  "name": "Virginia Polytechnic Institute and State University",
+  "short_name": "Virginia Tech",
+  "subdivision": "FBS",
+  "conference": "ACC",
+  "athletics_website": "https://hokiesports.com",
+  "football_roster_url": "https://hokiesports.com/sports/football",
+  "email_domain": "vt.edu"
+ },
+ {
+  "name": "Wake Forest University",
+  "short_name": "Wake Forest",
+  "subdivision": "FBS",
+  "conference": "ACC",
+  "athletics_website": "https://godeacs.com",
+  "football_roster_url": "https://godeacs.com/sports/football",
+  "email_domain": "wfu.edu"
+ },
+ {
+  "name": "East Carolina University",
+  "short_name": "East Carolina",
+  "subdivision": "FBS",
+  "conference": "American",
+  "athletics_website": "https://ecupirates.com",
+  "football_roster_url": "https://ecupirates.com/sports/football",
+  "email_domain": "ecu.edu"
+ },
+ {
+  "name": "Florida Atlantic University",
+  "short_name": "Florida Atlantic",
+  "subdivision": "FBS",
+  "conference": "American",
+  "athletics_website": "https://fausports.com",
+  "football_roster_url": "https://fausports.com/sports/football",
+  "email_domain": "fau.edu"
+ },
+ {
+  "name": "Rice University",
+  "short_name": "Rice",
+  "subdivision": "FBS",
+  "conference": "American",
+  "athletics_website": "https://riceowls.com",
+  "football_roster_url": "https://riceowls.com/sports/football",
+  "email_domain": "rice.edu"
+ },
+ {
+  "name": "Temple University",
+  "short_name": "Temple",
+  "subdivision": "FBS",
+  "conference": "American",
+  "athletics_website": "https://owlsports.com",
+  "football_roster_url": "https://owlsports.com/sports/football",
+  "email_domain": "temple.edu"
+ },
+ {
+  "name": "Tulane University",
+  "short_name": "Tulane",
+  "subdivision": "FBS",
+  "conference": "American",
+  "athletics_website": "https://tulanegreenwave.com",
+  "football_roster_url": "https://tulanegreenwave.com/sports/football",
+  "email_domain": "tulane.edu"
+ },
+ {
+  "name": "United States Military Academy",
+  "short_name": "Army",
+  "subdivision": "FBS",
+  "conference": "American",
+  "athletics_website": "https://goarmywestpoint.com",
+  "football_roster_url": "https://goarmywestpoint.com/sports/football",
+  "email_domain": "westpoint.edu"
+ },
+ {
+  "name": "United States Naval Academy",
+  "short_name": "Navy",
+  "subdivision": "FBS",
+  "conference": "American",
+  "athletics_website": "https://navysports.com",
+  "football_roster_url": "https://navysports.com/sports/football",
+  "email_domain": "usna.edu"
+ },
+ {
+  "name": "University of Alabama at Birmingham",
+  "short_name": "UAB",
+  "subdivision": "FBS",
+  "conference": "American",
+  "athletics_website": "https://uabsports.com",
+  "football_roster_url": "https://uabsports.com/sports/football",
+  "email_domain": "uab.edu"
+ },
+ {
+  "name": "University of Memphis",
+  "short_name": "Memphis",
+  "subdivision": "FBS",
+  "conference": "American",
+  "athletics_website": "https://gotigersgo.com",
+  "football_roster_url": "https://gotigersgo.com/sports/football",
+  "email_domain": "memphis.edu"
+ },
+ {
+  "name": "University of North Carolina at Charlotte",
+  "short_name": "Charlotte",
+  "subdivision": "FBS",
+  "conference": "American",
+  "athletics_website": "https://charlotte49ers.com",
+  "football_roster_url": "https://charlotte49ers.com/sports/football",
+  "email_domain": "charlotte.edu"
+ },
+ {
+  "name": "University of North Texas",
+  "short_name": "North Texas",
+  "subdivision": "FBS",
+  "conference": "American",
+  "athletics_website": "https://meangreensports.com",
+  "football_roster_url": "https://meangreensports.com/sports/football",
+  "email_domain": "unt.edu"
+ },
+ {
+  "name": "University of South Florida",
+  "short_name": "South Florida",
+  "subdivision": "FBS",
+  "conference": "American",
+  "athletics_website": "https://gousfbulls.com",
+  "football_roster_url": "https://gousfbulls.com/sports/football",
+  "email_domain": "usf.edu"
+ },
+ {
+  "name": "University of Texas at San Antonio",
+  "short_name": "UTSA",
+  "subdivision": "FBS",
+  "conference": "American",
+  "athletics_website": "https://goutsa.com",
+  "football_roster_url": "https://goutsa.com/sports/football",
+  "email_domain": "utsa.edu"
+ },
+ {
+  "name": "University of Tulsa",
+  "short_name": "Tulsa",
+  "subdivision": "FBS",
+  "conference": "American",
+  "athletics_website": "https://tulsahurricane.com",
+  "football_roster_url": "https://tulsahurricane.com/sports/football",
+  "email_domain": "utulsa.edu"
+ },
+ {
+  "name": "Baylor University",
+  "short_name": "Baylor",
+  "subdivision": "FBS",
+  "conference": "Big 12",
+  "athletics_website": "https://baylorbears.com",
+  "football_roster_url": "https://baylorbears.com/sports/football",
+  "email_domain": "baylor.edu"
+ },
+ {
+  "name": "Iowa State University",
+  "short_name": "Iowa State",
+  "subdivision": "FBS",
+  "conference": "Big 12",
+  "athletics_website": "https://cyclones.com",
+  "football_roster_url": "https://cyclones.com/sports/football",
+  "email_domain": "iastate.edu"
+ },
+ {
+  "name": "Kansas State University",
+  "short_name": "Kansas State",
+  "subdivision": "FBS",
+  "conference": "Big 12",
+  "athletics_website": "https://kstatesports.com",
+  "football_roster_url": "https://kstatesports.com/sports/football",
+  "email_domain": "k-state.edu"
+ }
+]

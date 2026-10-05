@@ -1,0 +1,209 @@
+[
+ {
+  "name": "California Polytechnic State University",
+  "short_name": "Cal Poly",
+  "subdivision": "FCS",
+  "conference": "Big Sky",
+  "athletics_website": "https://gopoly.com",
+  "football_roster_url": "https://gopoly.com/sports/football",
+  "email_domain": "calpoly.edu"
+ },
+ {
+  "name": "Eastern Washington University",
+  "short_name": "Eastern Washington",
+  "subdivision": "FCS",
+  "conference": "Big Sky",
+  "athletics_website": "https://goeags.com",
+  "football_roster_url": "https://goeags.com/sports/football",
+  "email_domain": "ewu.edu"
+ },
+ {
+  "name": "Idaho State University",
+  "short_name": "Idaho State",
+  "subdivision": "FCS",
+  "conference": "Big Sky",
+  "athletics_website": "https://isubengals.com",
+  "football_roster_url": "https://isubengals.com/sports/football",
+  "email_domain": "isu.edu"
+ },
+ {
+  "name": "Montana State University",
+  "short_name": "Montana State",
+  "subdivision": "FCS",
+  "conference": "Big Sky",
+  "athletics_website": "https://msubobcats.com",
+  "football_roster_url": "https://msubobcats.com/sports/football",
+  "email_domain": "montana.edu"
+ },
+ {
+  "name": "Northern Arizona University",
+  "short_name": "Northern Arizona",
+  "subdivision": "FCS",
+  "conference": "Big Sky",
+  "athletics_website": "https://nauathletics.com",
+  "football_roster_url": "https://nauathletics.com/sports/football",
+  "email_domain": "nau.edu"
+ },
+ {
+  "name": "Portland State University",
+  "short_name": "Portland State",
+  "subdivision": "FCS",
+  "conference": "Big Sky",
+  "athletics_website": "https://goviks.com",
+  "football_roster_url": "https://goviks.com/sports/football",
+  "email_domain": "pdx.edu"
+ },
+ {
+  "name": "Southern Utah University",
+  "short_name": "Southern Utah",
+  "subdivision": "FCS",
+  "conference": "Big Sky",
+  "athletics_website": "https://suutbirds.com",
+  "football_roster_url": "https://suutbirds.com/sports/football",
+  "email_domain": "suu.edu"
+ },
+ {
+  "name": "University of California, Davis",
+  "short_name": "UC Davis",
+  "subdivision": "FCS",
+  "conference": "Big Sky",
+  "athletics_website": "https://ucdavisaggies.com",
+  "football_roster_url": "https://ucdavisaggies.com/sports/football",
+  "email_domain": "ucdavis.edu"
+ },
+ {
+  "name": "University of Idaho",
+  "short_name": "Idaho",
+  "subdivision": "FCS",
+  "conference": "Big Sky",
+  "athletics_website": "https://govandals.com",
+  "football_roster_url": "https://govandals.com/sports/football",
+  "email_domain": "uidaho.edu"
+ },
+ {
+  "name": "University of Montana",
+  "short_name": "Montana",
+  "subdivision": "FCS",
+  "conference": "Big Sky",
+  "athletics_website": "https://gogriz.com",
+  "football_roster_url": "https://gogriz.com/sports/football",
+  "email_domain": "umontana.edu"
+ },
+ {
+  "name": "University of Northern Colorado",
+  "short_name": "Northern Colorado",
+  "subdivision": "FCS",
+  "conference": "Big Sky",
+  "athletics_website": "https://uncbears.com",
+  "football_roster_url": "https://uncbears.com/sports/football",
+  "email_domain": "unco.edu"
+ },
+ {
+  "name": "Utah Tech University",
+  "short_name": "Utah Tech",
+  "subdivision": "FCS",
+  "conference": "Big Sky",
+  "athletics_website": "https://utahtechtrailblazers.com",
+  "football_roster_url": "https://utahtechtrailblazers.com/sports/football",
+  "email_domain": "utahtech.edu"
+ },
+ {
+  "name": "Weber State University",
+  "short_name": "Weber State",
+  "subdivision": "FCS",
+  "conference": "Big Sky",
+  "athletics_website": "https://weberstatesports.com",
+  "football_roster_url": "https://weberstatesports.com/sports/football",
+  "email_domain": "weber.edu"
+ },
+ {
+  "name": "University of San Diego",
+  "short_name": "San Diego",
+  "subdivision": "FCS",
+  "conference": "Pioneer",
+  "athletics_website": "https://usdtoreros.com",
+  "football_roster_url": "https://usdtoreros.com/sports/football",
+  "email_domain": "sandiego.edu"
+ },
+ {
+  "name": "Boston College",
+  "short_name": "Boston College",
+  "subdivision": "FBS",
+  "conference": "ACC",
+  "athletics_website": "https://bceagles.com",
+  "football_roster_url": "https://bceagles.com/sports/football",
+  "email_domain": "bc.edu"
+ },
+ {
+  "name": "Clemson University",
+  "short_name": "Clemson",
+  "subdivision": "FBS",
+  "conference": "ACC",
+  "athletics_website": "https://clemsontigers.com",
+  "football_roster_url": "https://clemsontigers.com/sports/football",
+  "email_domain": "clemson.edu"
+ },
+ {
+  "name": "Duke University",
+  "short_name": "Duke",
+  "subdivision": "FBS",
+  "conference": "ACC",
+  "athletics_website": "https://goduke.com",
+  "football_roster_url": "https://goduke.com/sports/football",
+  "email_domain": "duke.edu"
+ },
+ {
+  "name": "Florida State University",
+  "short_name": "Florida State",
+  "subdivision": "FBS",
+  "conference": "ACC",
+  "athletics_website": "https://seminoles.com",
+  "football_roster_url": "https://seminoles.com/sports/football",
+  "email_domain": "fsu.edu"
+ },
+ {
+  "name": "Georgia Institute of Technology",
+  "short_name": "Georgia Tech",
+  "subdivision": "FBS",
+  "conference": "ACC",
+  "athletics_website": "https://ramblinwreck.com",
+  "football_roster_url": "https://ramblinwreck.com/sports/football",
+  "email_domain": "gatech.edu"
+ },
+ {
+  "name": "North Carolina State University",
+  "short_name": "NC State",
+  "subdivision": "FBS",
+  "conference": "ACC",
+  "athletics_website": "https://gopack.com",
+  "football_roster_url": "https://gopack.com/sports/football",
+  "email_domain": "ncsu.edu"
+ },
+ {
+  "name": "Southern Methodist University",
+  "short_name": "SMU",
+  "subdivision": "FBS",
+  "conference": "ACC",
+  "athletics_website": "https://smumustangs.com",
+  "football_roster_url": "https://smumustangs.com/sports/football",
+  "email_domain": "smu.edu"
+ },
+ {
+  "name": "Syracuse University",
+  "short_name": "Syracuse",
+  "subdivision": "FBS",
+  "conference": "ACC",
+  "athletics_website": "https://cuse.com",
+  "football_roster_url": "https://cuse.com/sports/football",
+  "email_domain": "syr.edu"
+ },
+ {
+  "name": "University of Louisville",
+  "short_name": "Louisville",
+  "subdivision": "FBS",
+  "conference": "ACC",
+  "athletics_website": "https://gocards.com",
+  "football_roster_url": "https://gocards.com/sports/football",
+  "email_domain": "louisville.edu"
+ }
+]

@@ -1,0 +1,209 @@
+[
+ {
+  "name": "Jacksonville State University",
+  "short_name": "Jacksonville State",
+  "subdivision": "FBS",
+  "conference": "Conference USA",
+  "athletics_website": "https://jaxstatesports.com",
+  "football_roster_url": "https://jaxstatesports.com/sports/football",
+  "email_domain": "jsu.edu"
+ },
+ {
+  "name": "Kennesaw State University",
+  "short_name": "Kennesaw State",
+  "subdivision": "FBS",
+  "conference": "Conference USA",
+  "athletics_website": "https://ksuowls.com",
+  "football_roster_url": "https://ksuowls.com/sports/football",
+  "email_domain": "kennesaw.edu"
+ },
+ {
+  "name": "Liberty University",
+  "short_name": "Liberty",
+  "subdivision": "FBS",
+  "conference": "Conference USA",
+  "athletics_website": "https://libertyflames.com",
+  "football_roster_url": "https://libertyflames.com/sports/football",
+  "email_domain": "liberty.edu"
+ },
+ {
+  "name": "Middle Tennessee State University",
+  "short_name": "Middle Tennessee",
+  "subdivision": "FBS",
+  "conference": "Conference USA",
+  "athletics_website": "https://goblueraiders.com",
+  "football_roster_url": "https://goblueraiders.com/sports/football",
+  "email_domain": "mtsu.edu"
+ },
+ {
+  "name": "Missouri State University",
+  "short_name": "Missouri State",
+  "subdivision": "FBS",
+  "conference": "Conference USA",
+  "athletics_website": "https://missouristatebears.com",
+  "football_roster_url": "https://missouristatebears.com/sports/football",
+  "email_domain": "missouristate.edu"
+ },
+ {
+  "name": "New Mexico State University",
+  "short_name": "New Mexico State",
+  "subdivision": "FBS",
+  "conference": "Conference USA",
+  "athletics_website": "https://nmstatesports.com",
+  "football_roster_url": "https://nmstatesports.com/sports/football",
+  "email_domain": "nmsu.edu"
+ },
+ {
+  "name": "Sam Houston State University",
+  "short_name": "Sam Houston",
+  "subdivision": "FBS",
+  "conference": "Conference USA",
+  "athletics_website": "https://gobearkats.com",
+  "football_roster_url": "https://gobearkats.com/sports/football",
+  "email_domain": "shsu.edu"
+ },
+ {
+  "name": "University of Delaware",
+  "short_name": "Delaware",
+  "subdivision": "FBS",
+  "conference": "Conference USA",
+  "athletics_website": "https://bluehens.com",
+  "football_roster_url": "https://bluehens.com/sports/football",
+  "email_domain": "udel.edu"
+ },
+ {
+  "name": "Western Kentucky University",
+  "short_name": "Western Kentucky",
+  "subdivision": "FBS",
+  "conference": "Conference USA",
+  "athletics_website": "https://wkusports.com",
+  "football_roster_url": "https://wkusports.com/sports/football",
+  "email_domain": "wku.edu"
+ },
+ {
+  "name": "University of Connecticut",
+  "short_name": "UConn",
+  "subdivision": "FBS",
+  "conference": "FBS Independent",
+  "athletics_website": "https://uconnhuskies.com",
+  "football_roster_url": "https://uconnhuskies.com/sports/football",
+  "email_domain": "uconn.edu"
+ },
+ {
+  "name": "University of Notre Dame",
+  "short_name": "Notre Dame",
+  "subdivision": "FBS",
+  "conference": "FBS Independent",
+  "athletics_website": "https://fightingirish.com",
+  "football_roster_url": "https://fightingirish.com/sports/football",
+  "email_domain": "nd.edu"
+ },
+ {
+  "name": "Ball State University",
+  "short_name": "Ball State",
+  "subdivision": "FBS",
+  "conference": "MAC",
+  "athletics_website": "https://ballstatesports.com",
+  "football_roster_url": "https://ballstatesports.com/sports/football",
+  "email_domain": "bsu.edu"
+ },
+ {
+  "name": "Bowling Green State University",
+  "short_name": "Bowling Green",
+  "subdivision": "FBS",
+  "conference": "MAC",
+  "athletics_website": "https://bgsufalcons.com",
+  "football_roster_url": "https://bgsufalcons.com/sports/football",
+  "email_domain": "bgsu.edu"
+ },
+ {
+  "name": "Central Michigan University",
+  "short_name": "Central Michigan",
+  "subdivision": "FBS",
+  "conference": "MAC",
+  "athletics_website": "https://cmuchippewas.com",
+  "football_roster_url": "https://cmuchippewas.com/sports/football",
+  "email_domain": "cmich.edu"
+ },
+ {
+  "name": "Eastern Michigan University",
+  "short_name": "Eastern Michigan",
+  "subdivision": "FBS",
+  "conference": "MAC",
+  "athletics_website": "https://emueagles.com",
+  "football_roster_url": "https://emueagles.com/sports/football",
+  "email_domain": "emich.edu"
+ },
+ {
+  "name": "Kent State University",
+  "short_name": "Kent State",
+  "subdivision": "FBS",
+  "conference": "MAC",
+  "athletics_website": "https://kentstatesports.com",
+  "football_roster_url": "https://kentstatesports.com/sports/football",
+  "email_domain": "kent.edu"
+ },
+ {
+  "name": "Miami University (Ohio)",
+  "short_name": "Miami (OH)",
+  "subdivision": "FBS",
+  "conference": "MAC",
+  "athletics_website": "https://miamiredhawks.com",
+  "football_roster_url": "https://miamiredhawks.com/sports/football",
+  "email_domain": "miamioh.edu"
+ },
+ {
+  "name": "Ohio University",
+  "short_name": "Ohio",
+  "subdivision": "FBS",
+  "conference": "MAC",
+  "athletics_website": "https://ohiobobcats.com",
+  "football_roster_url": "https://ohiobobcats.com/sports/football",
+  "email_domain": "ohio.edu"
+ },
+ {
+  "name": "University at Buffalo",
+  "short_name": "Buffalo",
+  "subdivision": "FBS",
+  "conference": "MAC",
+  "athletics_website": "https://ubbulls.com",
+  "football_roster_url": "https://ubbulls.com/sports/football",
+  "email_domain": "buffalo.edu"
+ },
+ {
+  "name": "University of Akron",
+  "short_name": "Akron",
+  "subdivision": "FBS",
+  "conference": "MAC",
+  "athletics_website": "https://gozips.com",
+  "football_roster_url": "https://gozips.com/sports/football",
+  "email_domain": "uakron.edu"
+ },
+ {
+  "name": "University of Massachusetts Amherst",
+  "short_name": "UMass",
+  "subdivision": "FBS",
+  "conference": "MAC",
+  "athletics_website": "https://umassathletics.com",
+  "football_roster_url": "https://umassathletics.com/sports/football",
+  "email_domain": "umass.edu"
+ },
+ {
+  "name": "University of Toledo",
+  "short_name": "Toledo",
+  "subdivision": "FBS",
+  "conference": "MAC",
+  "athletics_website": "https://utrockets.com",
+  "football_roster_url": "https://utrockets.com/sports/football",
+  "email_domain": "utoledo.edu"
+ },
+ {
+  "name": "Western Michigan University",
+  "short_name": "Western Michigan",
+  "subdivision": "FBS",
+  "conference": "MAC",
+  "athletics_website": "https://wmubroncos.com",
+  "football_roster_url": "https://wmubroncos.com/sports/football",
+  "email_domain": "wmich.edu"
+ }
+]

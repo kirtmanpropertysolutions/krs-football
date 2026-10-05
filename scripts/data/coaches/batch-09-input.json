@@ -1,0 +1,209 @@
+[
+ {
+  "name": "Colgate University",
+  "short_name": "Colgate",
+  "subdivision": "FCS",
+  "conference": "Patriot League",
+  "athletics_website": "https://gocolgateraiders.com",
+  "football_roster_url": "https://gocolgateraiders.com/sports/football",
+  "email_domain": "colgate.edu"
+ },
+ {
+  "name": "College of the Holy Cross",
+  "short_name": "Holy Cross",
+  "subdivision": "FCS",
+  "conference": "Patriot League",
+  "athletics_website": "https://goholycross.com",
+  "football_roster_url": "https://goholycross.com/sports/football",
+  "email_domain": "holycross.edu"
+ },
+ {
+  "name": "Fordham University",
+  "short_name": "Fordham",
+  "subdivision": "FCS",
+  "conference": "Patriot League",
+  "athletics_website": "https://fordhamsports.com",
+  "football_roster_url": "https://fordhamsports.com/sports/football",
+  "email_domain": "fordham.edu"
+ },
+ {
+  "name": "Georgetown University",
+  "short_name": "Georgetown",
+  "subdivision": "FCS",
+  "conference": "Patriot League",
+  "athletics_website": "https://guhoyas.com",
+  "football_roster_url": "https://guhoyas.com/sports/football",
+  "email_domain": "georgetown.edu"
+ },
+ {
+  "name": "Lafayette College",
+  "short_name": "Lafayette",
+  "subdivision": "FCS",
+  "conference": "Patriot League",
+  "athletics_website": "https://goleopards.com",
+  "football_roster_url": "https://goleopards.com/sports/football",
+  "email_domain": "lafayette.edu"
+ },
+ {
+  "name": "Lehigh University",
+  "short_name": "Lehigh",
+  "subdivision": "FCS",
+  "conference": "Patriot League",
+  "athletics_website": "https://lehighsports.com",
+  "football_roster_url": "https://lehighsports.com/sports/football",
+  "email_domain": "lehigh.edu"
+ },
+ {
+  "name": "University of Richmond",
+  "short_name": "Richmond",
+  "subdivision": "FCS",
+  "conference": "Patriot League",
+  "athletics_website": "https://richmondspiders.com",
+  "football_roster_url": "https://richmondspiders.com/sports/football",
+  "email_domain": "richmond.edu"
+ },
+ {
+  "name": "Villanova University",
+  "short_name": "Villanova",
+  "subdivision": "FCS",
+  "conference": "Patriot League",
+  "athletics_website": "https://villanova.com",
+  "football_roster_url": "https://villanova.com/sports/football",
+  "email_domain": "villanova.edu"
+ },
+ {
+  "name": "William & Mary",
+  "short_name": "William & Mary",
+  "subdivision": "FCS",
+  "conference": "Patriot League",
+  "athletics_website": "https://tribeathletics.com",
+  "football_roster_url": "https://tribeathletics.com/sports/football",
+  "email_domain": "wm.edu"
+ },
+ {
+  "name": "Butler University",
+  "short_name": "Butler",
+  "subdivision": "FCS",
+  "conference": "Pioneer",
+  "athletics_website": "https://butlersports.com",
+  "football_roster_url": "https://butlersports.com/sports/football",
+  "email_domain": "butler.edu"
+ },
+ {
+  "name": "Davidson College",
+  "short_name": "Davidson",
+  "subdivision": "FCS",
+  "conference": "Pioneer",
+  "athletics_website": "https://davidsonwildcats.com",
+  "football_roster_url": "https://davidsonwildcats.com/sports/football",
+  "email_domain": "davidson.edu"
+ },
+ {
+  "name": "Drake University",
+  "short_name": "Drake",
+  "subdivision": "FCS",
+  "conference": "Pioneer",
+  "athletics_website": "https://godrakebulldogs.com",
+  "football_roster_url": "https://godrakebulldogs.com/sports/football",
+  "email_domain": "drake.edu"
+ },
+ {
+  "name": "Marist University",
+  "short_name": "Marist",
+  "subdivision": "FCS",
+  "conference": "Pioneer",
+  "athletics_website": "https://goredfoxes.com",
+  "football_roster_url": "https://goredfoxes.com/sports/football",
+  "email_domain": "marist.edu"
+ },
+ {
+  "name": "Morehead State University",
+  "short_name": "Morehead State",
+  "subdivision": "FCS",
+  "conference": "Pioneer",
+  "athletics_website": "https://msueagles.com",
+  "football_roster_url": "https://msueagles.com/sports/football",
+  "email_domain": "moreheadstate.edu"
+ },
+ {
+  "name": "Presbyterian College",
+  "short_name": "Presbyterian",
+  "subdivision": "FCS",
+  "conference": "Pioneer",
+  "athletics_website": "https://gobluehose.com",
+  "football_roster_url": "https://gobluehose.com/sports/football",
+  "email_domain": "presby.edu"
+ },
+ {
+  "name": "Stetson University",
+  "short_name": "Stetson",
+  "subdivision": "FCS",
+  "conference": "Pioneer",
+  "athletics_website": "https://gohatters.com",
+  "football_roster_url": "https://gohatters.com/sports/football",
+  "email_domain": "stetson.edu"
+ },
+ {
+  "name": "University of Dayton",
+  "short_name": "Dayton",
+  "subdivision": "FCS",
+  "conference": "Pioneer",
+  "athletics_website": "https://daytonflyers.com",
+  "football_roster_url": "https://daytonflyers.com/sports/football",
+  "email_domain": "udayton.edu"
+ },
+ {
+  "name": "University of St. Thomas",
+  "short_name": "St. Thomas",
+  "subdivision": "FCS",
+  "conference": "Pioneer",
+  "athletics_website": "https://tommiesports.com",
+  "football_roster_url": "https://tommiesports.com/sports/football",
+  "email_domain": "stthomas.edu"
+ },
+ {
+  "name": "Valparaiso University",
+  "short_name": "Valparaiso",
+  "subdivision": "FCS",
+  "conference": "Pioneer",
+  "athletics_website": "https://valpoathletics.com",
+  "football_roster_url": "https://valpoathletics.com/sports/football",
+  "email_domain": "valpo.edu"
+ },
+ {
+  "name": "Alabama A&M University",
+  "short_name": "Alabama A&M",
+  "subdivision": "FCS",
+  "conference": "SWAC",
+  "athletics_website": "https://aamusports.com",
+  "football_roster_url": "https://aamusports.com/sports/football",
+  "email_domain": "aamu.edu"
+ },
+ {
+  "name": "Alabama State University",
+  "short_name": "Alabama State",
+  "subdivision": "FCS",
+  "conference": "SWAC",
+  "athletics_website": "https://bamastatesports.com",
+  "football_roster_url": "https://bamastatesports.com/sports/football",
+  "email_domain": "alasu.edu"
+ },
+ {
+  "name": "Alcorn State University",
+  "short_name": "Alcorn State",
+  "subdivision": "FCS",
+  "conference": "SWAC",
+  "athletics_website": "https://alcornsports.com",
+  "football_roster_url": "https://alcornsports.com/sports/football",
+  "email_domain": "alcorn.edu"
+ },
+ {
+  "name": "Bethune-Cookman University",
+  "short_name": "Bethune-Cookman",
+  "subdivision": "FCS",
+  "conference": "SWAC",
+  "athletics_website": "https://bcuathletics.com",
+  "football_roster_url": "https://bcuathletics.com/sports/football",
+  "email_domain": "cookman.edu"
+ }
+]

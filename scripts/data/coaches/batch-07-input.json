@@ -1,0 +1,209 @@
+[
+ {
+  "name": "University at Albany",
+  "short_name": "Albany",
+  "subdivision": "FCS",
+  "conference": "CAA",
+  "athletics_website": "https://ualbanysports.com",
+  "football_roster_url": "https://ualbanysports.com/sports/football",
+  "email_domain": "albany.edu"
+ },
+ {
+  "name": "University of Maine",
+  "short_name": "Maine",
+  "subdivision": "FCS",
+  "conference": "CAA",
+  "athletics_website": "https://goblackbears.com",
+  "football_roster_url": "https://goblackbears.com/sports/football",
+  "email_domain": "maine.edu"
+ },
+ {
+  "name": "University of New Hampshire",
+  "short_name": "New Hampshire",
+  "subdivision": "FCS",
+  "conference": "CAA",
+  "athletics_website": "https://unhwildcats.com",
+  "football_roster_url": "https://unhwildcats.com/sports/football",
+  "email_domain": "unh.edu"
+ },
+ {
+  "name": "University of Rhode Island",
+  "short_name": "Rhode Island",
+  "subdivision": "FCS",
+  "conference": "CAA",
+  "athletics_website": "https://gorhody.com",
+  "football_roster_url": "https://gorhody.com/sports/football",
+  "email_domain": "uri.edu"
+ },
+ {
+  "name": "Chicago State University",
+  "short_name": "Chicago State",
+  "subdivision": "FCS",
+  "conference": "FCS Independent",
+  "athletics_website": "https://gocsucougars.com",
+  "football_roster_url": "https://gocsucougars.com/sports/football",
+  "email_domain": "csu.edu"
+ },
+ {
+  "name": "Merrimack College",
+  "short_name": "Merrimack",
+  "subdivision": "FCS",
+  "conference": "FCS Independent",
+  "athletics_website": "https://merrimackathletics.com",
+  "football_roster_url": "https://merrimackathletics.com/sports/football",
+  "email_domain": "merrimack.edu"
+ },
+ {
+  "name": "Brown University",
+  "short_name": "Brown",
+  "subdivision": "FCS",
+  "conference": "Ivy League",
+  "athletics_website": "https://brownbears.com",
+  "football_roster_url": "https://brownbears.com/sports/football",
+  "email_domain": "brown.edu"
+ },
+ {
+  "name": "Columbia University",
+  "short_name": "Columbia",
+  "subdivision": "FCS",
+  "conference": "Ivy League",
+  "athletics_website": "https://gocolumbialions.com",
+  "football_roster_url": "https://gocolumbialions.com/sports/football",
+  "email_domain": "columbia.edu"
+ },
+ {
+  "name": "Cornell University",
+  "short_name": "Cornell",
+  "subdivision": "FCS",
+  "conference": "Ivy League",
+  "athletics_website": "https://cornellbigred.com",
+  "football_roster_url": "https://cornellbigred.com/sports/football",
+  "email_domain": "cornell.edu"
+ },
+ {
+  "name": "Dartmouth College",
+  "short_name": "Dartmouth",
+  "subdivision": "FCS",
+  "conference": "Ivy League",
+  "athletics_website": "https://dartmouthsports.com",
+  "football_roster_url": "https://dartmouthsports.com/sports/football",
+  "email_domain": "dartmouth.edu"
+ },
+ {
+  "name": "Harvard University",
+  "short_name": "Harvard",
+  "subdivision": "FCS",
+  "conference": "Ivy League",
+  "athletics_website": "https://gocrimson.com",
+  "football_roster_url": "https://gocrimson.com/sports/football",
+  "email_domain": "harvard.edu"
+ },
+ {
+  "name": "Princeton University",
+  "short_name": "Princeton",
+  "subdivision": "FCS",
+  "conference": "Ivy League",
+  "athletics_website": "https://goprincetontigers.com",
+  "football_roster_url": "https://goprincetontigers.com/sports/football",
+  "email_domain": "princeton.edu"
+ },
+ {
+  "name": "University of Pennsylvania",
+  "short_name": "Penn",
+  "subdivision": "FCS",
+  "conference": "Ivy League",
+  "athletics_website": "https://pennathletics.com",
+  "football_roster_url": "https://pennathletics.com/sports/football",
+  "email_domain": "upenn.edu"
+ },
+ {
+  "name": "Yale University",
+  "short_name": "Yale",
+  "subdivision": "FCS",
+  "conference": "Ivy League",
+  "athletics_website": "https://yalebulldogs.com",
+  "football_roster_url": "https://yalebulldogs.com/sports/football",
+  "email_domain": "yale.edu"
+ },
+ {
+  "name": "Delaware State University",
+  "short_name": "Delaware State",
+  "subdivision": "FCS",
+  "conference": "MEAC",
+  "athletics_website": "https://dsuhornets.com",
+  "football_roster_url": "https://dsuhornets.com/sports/football",
+  "email_domain": "desu.edu"
+ },
+ {
+  "name": "Howard University",
+  "short_name": "Howard",
+  "subdivision": "FCS",
+  "conference": "MEAC",
+  "athletics_website": "https://hubison.com",
+  "football_roster_url": "https://hubison.com/sports/football",
+  "email_domain": "howard.edu"
+ },
+ {
+  "name": "Morgan State University",
+  "short_name": "Morgan State",
+  "subdivision": "FCS",
+  "conference": "MEAC",
+  "athletics_website": "https://morganstatebears.com",
+  "football_roster_url": "https://morganstatebears.com/sports/football",
+  "email_domain": "morgan.edu"
+ },
+ {
+  "name": "Norfolk State University",
+  "short_name": "Norfolk State",
+  "subdivision": "FCS",
+  "conference": "MEAC",
+  "athletics_website": "https://nsuspartans.com",
+  "football_roster_url": "https://nsuspartans.com/sports/football",
+  "email_domain": "nsu.edu"
+ },
+ {
+  "name": "North Carolina Central University",
+  "short_name": "North Carolina Central",
+  "subdivision": "FCS",
+  "conference": "MEAC",
+  "athletics_website": "https://nccueaglepride.com",
+  "football_roster_url": "https://nccueaglepride.com/sports/football",
+  "email_domain": "nccu.edu"
+ },
+ {
+  "name": "South Carolina State University",
+  "short_name": "South Carolina State",
+  "subdivision": "FCS",
+  "conference": "MEAC",
+  "athletics_website": "https://scsuathletics.com",
+  "football_roster_url": "https://scsuathletics.com/sports/football",
+  "email_domain": "scsu.edu"
+ },
+ {
+  "name": "Illinois State University",
+  "short_name": "Illinois State",
+  "subdivision": "FCS",
+  "conference": "Missouri Valley",
+  "athletics_website": "https://goredbirds.com",
+  "football_roster_url": "https://goredbirds.com/sports/football",
+  "email_domain": "ilstu.edu"
+ },
+ {
+  "name": "Indiana State University",
+  "short_name": "Indiana State",
+  "subdivision": "FCS",
+  "conference": "Missouri Valley",
+  "athletics_website": "https://gosycamores.com",
+  "football_roster_url": "https://gosycamores.com/sports/football",
+  "email_domain": "indstate.edu"
+ },
+ {
+  "name": "Murray State University",
+  "short_name": "Murray State",
+  "subdivision": "FCS",
+  "conference": "Missouri Valley",
+  "athletics_website": "https://goracers.com",
+  "football_roster_url": "https://goracers.com/sports/football",
+  "email_domain": "murraystate.edu"
+ }
+]
