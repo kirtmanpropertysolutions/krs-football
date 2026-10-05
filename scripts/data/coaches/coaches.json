@@ -78,7 +78,8 @@
     "source_url": "https://rolltide.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Arkansas",
@@ -351,7 +352,8 @@
     "source_url": "https://arkansasrazorbacks.com/staff-directory/"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 0
  },
  {
   "name": "Auburn University",
@@ -704,7 +706,8 @@
     "source_url": "https://auburntigers.com/staff-directory"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 0
  },
  {
   "name": "University of Florida",
@@ -1225,7 +1228,8 @@
     "source_url": "https://floridagators.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Georgia",
@@ -1284,18 +1288,18 @@
    {
     "name": "Larry Knight",
     "title": "Assistant Coach - Outside Linebackers",
-    "email": null,
+    "email": "larry.knight@uga.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://georgiadogs.com/sports/football/coaches"
+    "source_url": "https://georgiadogs.com/sports/football/roster/coaches/larry-knight/3832"
    },
    {
     "name": "Phil Rauscher",
     "title": "Assistant Coach - Offensive Line",
-    "email": null,
+    "email": "philip.rauscher@uga.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://georgiadogs.com/sports/football/coaches"
+    "source_url": "https://georgiadogs.com/sports/football/roster/coaches/phil-rauscher/3740"
    },
    {
     "name": "Travaris Robinson",
@@ -1324,10 +1328,10 @@
    {
     "name": "Andrew Thacker",
     "title": "Assistant Coach - Nickels/Stars",
-    "email": null,
+    "email": "andrew.thacker@uga.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://georgiadogs.com/sports/football/coaches"
+    "source_url": "https://georgiadogs.com/sports/football/roster/coaches/andrew-thacker/3739"
    },
    {
     "name": "Donte Williams",
@@ -1642,7 +1646,8 @@
     "source_url": "https://georgiadogs.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 3
  },
  {
   "name": "University of Kentucky",
@@ -1899,7 +1904,8 @@
     "source_url": "https://ukathletics.com/staff-directory/"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Louisiana State University",
@@ -2188,7 +2194,8 @@
     "source_url": "https://lsusports.net/staff-directory"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 7
  },
  {
   "name": "University of Mississippi",
@@ -2549,13 +2556,14 @@
     "source_url": "https://olemisssports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 17
  },
  {
   "name": "Mississippi State University",
   "questionnaire_url": "https://tickets.formstack.com/forms/mississippi_state_football_questionnaire",
   "questionnaire_found_on": "https://hailstate.com",
-  "program_email": null,
+  "program_email": "nfl33@msstate.edu",
   "coaches": [
    {
     "name": "Jeff Lebby",
@@ -2563,7 +2571,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/jeff-lebby/3343"
    },
    {
     "name": "Philip Montgomery",
@@ -2571,7 +2579,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/philip-montgomery/3425"
    },
    {
     "name": "Anthony Tucker",
@@ -2579,7 +2587,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/anthony-tucker/3346"
    },
    {
     "name": "Zach Arnett",
@@ -2587,7 +2595,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/zach-arnett/3401"
    },
    {
     "name": "Matt Brock",
@@ -2595,7 +2603,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/matt-brock/3412"
    },
    {
     "name": "Corey Bell",
@@ -2603,7 +2611,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/corey-bell/3372"
    },
    {
     "name": "Jon Cooper",
@@ -2611,7 +2619,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/jon-cooper/3367"
    },
    {
     "name": "Vincent Dancy",
@@ -2619,7 +2627,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/vincent-dancy/3386"
    },
    {
     "name": "Kevin Johns",
@@ -2627,7 +2635,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/kevin-johns/3414"
    },
    {
     "name": "Phil Loadholt",
@@ -2635,7 +2643,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/phil-loadholt/3365"
    },
    {
     "name": "Cliff Odom",
@@ -2643,7 +2651,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/cliff-odom/3373"
    },
    {
     "name": "Evan Harvey",
@@ -2651,7 +2659,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/evan-harvey/3362"
    },
    {
     "name": "Kevie Thompson",
@@ -2659,7 +2667,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/kevie-thompson/3416"
    },
    {
     "name": "Ty Warren",
@@ -2667,7 +2675,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/ty-warren/3422"
    },
    {
     "name": "Paul Rhoads",
@@ -2675,7 +2683,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/paul-rhoads/3366"
    },
    {
     "name": "Desmond Lindsey",
@@ -2683,7 +2691,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/desmond-lindsey/3413"
    },
    {
     "name": "Jermauria Rasco",
@@ -2691,7 +2699,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/jermauria-rasco/3420"
    },
    {
     "name": "Joey Connors",
@@ -2699,7 +2707,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/joey-connors/3378"
    },
    {
     "name": "Tanner Schafer",
@@ -2707,7 +2715,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/tanner-schafer/3377"
    },
    {
     "name": "Ben Tawwater",
@@ -2715,7 +2723,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/ben-tawwater/3389"
    },
    {
     "name": "Brandon Fusco",
@@ -2723,12 +2731,12 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/brandon-fusco/3463"
    },
    {
     "name": "Nick Licostie",
     "title": "Defensive Analyst",
-    "email": "nfl33@msstate.edu",
+    "email": null,
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://hailstate.com/sports/football/coaches"
@@ -2739,7 +2747,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/chad-stalnaker/3388"
    },
    {
     "name": "Erroll Thompson",
@@ -2747,7 +2755,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/erroll-thompson/3390"
    },
    {
     "name": "Jett Johnson",
@@ -2755,7 +2763,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/jett-johnson/3423"
    },
    {
     "name": "Dalton White",
@@ -2763,7 +2771,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/dalton-white/3385"
    },
    {
     "name": "Shaud Williams",
@@ -2771,7 +2779,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/shaud-williams/3368"
    },
    {
     "name": "Erich Anthony",
@@ -2779,7 +2787,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/erich-anthony/3350"
    },
    {
     "name": "Jarwarski Beckum",
@@ -2787,7 +2795,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/jarwarski-beckum/3374"
    },
    {
     "name": "Christian Buchanan",
@@ -2795,7 +2803,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/christian-buchanan/3351"
    },
    {
     "name": "David Underwood",
@@ -2803,7 +2811,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://hailstate.com/sports/football/coaches"
+    "source_url": "https://hailstate.com/sports/football/roster/coaches/david-underwood/3375"
    },
    {
     "name": "Mason Walters",
@@ -2902,7 +2910,8 @@
     "source_url": "https://hailstate.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 30
  },
  {
   "name": "University of Missouri",
@@ -3207,7 +3216,8 @@
     "source_url": "https://mutigers.com/staff-directory"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 37
  },
  {
   "name": "University of Oklahoma",
@@ -3221,7 +3231,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://soonersports.com/sports/football/coaches"
+    "source_url": "https://soonersports.com/sports/football/roster/coaches/brent-venables/1296"
    },
    {
     "name": "Ben Arbuckle",
@@ -3229,7 +3239,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://soonersports.com/sports/football/coaches"
+    "source_url": "https://soonersports.com/sports/football/roster/coaches/ben-arbuckle/1303"
    },
    {
     "name": "Todd Bates",
@@ -3237,7 +3247,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://soonersports.com/sports/football/coaches"
+    "source_url": "https://soonersports.com/sports/football/roster/coaches/todd-bates/1298"
    },
    {
     "name": "Doug Deakin",
@@ -3245,7 +3255,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://soonersports.com/sports/football/coaches"
+    "source_url": "https://soonersports.com/sports/football/roster/coaches/doug-deakin/1305"
    },
    {
     "name": "Nate Dreiling",
@@ -3253,7 +3263,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://soonersports.com/sports/football/coaches"
+    "source_url": "https://soonersports.com/sports/football/roster/coaches/nate-dreiling/1304"
    },
    {
     "name": "Emmett Jones",
@@ -3261,7 +3271,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://soonersports.com/sports/football/coaches"
+    "source_url": "https://soonersports.com/sports/football/roster/coaches/emmett-jones/1301"
    },
    {
     "name": "John Kuceyeski",
@@ -3269,7 +3279,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://soonersports.com/sports/football/coaches"
+    "source_url": "https://soonersports.com/sports/football/roster/coaches/john-kuceyeski/1307"
    },
    {
     "name": "Kevin Wilson",
@@ -3277,7 +3287,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://soonersports.com/sports/football/coaches"
+    "source_url": "https://soonersports.com/sports/football/roster/coaches/kevin-wilson/1308"
    },
    {
     "name": "Jason Witten",
@@ -3285,7 +3295,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://soonersports.com/sports/football/coaches"
+    "source_url": "https://soonersports.com/sports/football/roster/coaches/jason-witten/1306"
    },
    {
     "name": "Xavier Brewer",
@@ -3293,7 +3303,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://soonersports.com/sports/football/coaches"
+    "source_url": "https://soonersports.com/sports/football/roster/coaches/xavier-brewer/1327"
    },
    {
     "name": "Drew Hill",
@@ -3464,7 +3474,8 @@
     "source_url": "https://soonersports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 10
  },
  {
   "name": "University of South Carolina",
@@ -3745,7 +3756,8 @@
     "source_url": "https://gamecocksonline.com/staff-directory/"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Tennessee",
@@ -4138,7 +4150,8 @@
     "source_url": "https://utsports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Texas at Austin",
@@ -4443,7 +4456,8 @@
     "source_url": "https://texaslonghorns.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Texas A&M University",
@@ -4844,7 +4858,8 @@
     "source_url": "https://12thman.com/staff-directory"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 0
  },
  {
   "name": "Vanderbilt University",
@@ -5103,7 +5118,7 @@
    {
     "name": "Ben Cauthen",
     "title": "Chief of Staff",
-    "email": "football@vanderbilt.edu",
+    "email": null,
     "phone": "615.322.3565",
     "is_recruiting_contact": false,
     "source_url": "https://vucommodores.com/staff-directory"
@@ -5111,7 +5126,7 @@
    {
     "name": "Molly Hart",
     "title": "Executive Assistant to the Head Coach \u2022 Operations Coordinator",
-    "email": "football@vanderbilt.edu",
+    "email": null,
     "phone": "615.322.3565",
     "is_recruiting_contact": false,
     "source_url": "https://vucommodores.com/staff-directory"
@@ -5165,7 +5180,8 @@
     "source_url": "https://vucommodores.com/staff-directory"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 39
  },
  {
   "name": "University of Illinois Urbana-Champaign",
@@ -5173,7 +5189,8 @@
   "questionnaire_found_on": "https://fightingillini.com",
   "program_email": null,
   "coaches": [],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Indiana University",
@@ -5414,7 +5431,8 @@
     "source_url": "https://iuhoosiers.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 28
  },
  {
   "name": "University of Iowa",
@@ -5599,7 +5617,8 @@
     "source_url": "https://hawkeyesports.com/staff-directory"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 2
  },
  {
   "name": "University of Maryland",
@@ -5624,7 +5643,8 @@
     "source_url": "https://umterps.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Michigan",
@@ -5697,7 +5717,8 @@
     "source_url": "https://mgoblue.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Michigan State University",
@@ -6066,7 +6087,8 @@
     "source_url": "https://msuspartans.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 42
  },
  {
   "name": "University of Minnesota",
@@ -6085,10 +6107,10 @@
    {
     "name": "Greg Harbaugh Jr.",
     "title": "Offensive Coordinator / Quarterbacks",
-    "email": null,
+    "email": "cjrichar@umn.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://gophersports.com/sports/football/coaches"
+    "source_url": "https://gophersports.com/sports/football/roster/coaches/greg-harbaugh-jr/3705"
    },
    {
     "name": "Danny Collins",
@@ -6157,10 +6179,10 @@
    {
     "name": "Steve Stanard",
     "title": "Rush Ends Coach",
-    "email": null,
+    "email": "stana039@umn.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://gophersports.com/sports/football/coaches"
+    "source_url": "https://gophersports.com/sports/football/roster/coaches/steve-stanard/3742"
    },
    {
     "name": "Daniel Da Prato",
@@ -6173,10 +6195,10 @@
    {
     "name": "Matt Limegrover",
     "title": "Assistant Offensive Line Coach",
-    "email": null,
+    "email": "mlimegro@umn.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://gophersports.com/sports/football/coaches"
+    "source_url": "https://gophersports.com/sports/football/roster/coaches/matt-limegrover/3725"
    },
    {
     "name": "Keegan O'Hara",
@@ -6221,10 +6243,10 @@
    {
     "name": "Brandon Bostick",
     "title": "Offensive Analyst",
-    "email": null,
+    "email": "bbostick@umn.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://gophersports.com/sports/football/coaches"
+    "source_url": "https://gophersports.com/sports/football/roster/coaches/brandon-bostick/3744"
    },
    {
     "name": "Karter Johnson",
@@ -6237,10 +6259,10 @@
    {
     "name": "Mike Scott",
     "title": "Defensive Analyst",
-    "email": null,
+    "email": "mlscott@umn.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://gophersports.com/sports/football/coaches"
+    "source_url": "https://gophersports.com/sports/football/roster/coaches/mike-scott/3743"
    },
    {
     "name": "Dan Nichol",
@@ -6355,7 +6377,8 @@
     "source_url": "https://gophersports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 5
  },
  {
   "name": "University of Nebraska-Lincoln",
@@ -6676,7 +6699,8 @@
     "source_url": "https://huskers.com/staff-directory"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 17
  },
  {
   "name": "Northwestern University",
@@ -6941,7 +6965,8 @@
     "source_url": "https://nusports.com/staff-directory"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 4
  },
  {
   "name": "Ohio State University",
@@ -6968,18 +6993,18 @@
    {
     "name": "Larry Johnson",
     "title": "Associate Head Coach / Defensive Line Coach",
-    "email": null,
+    "email": "johnson.3366@osu.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://ohiostatebuckeyes.com/sports/football/coaches"
+    "source_url": "https://ohiostatebuckeyes.com/sports/football/roster/coaches/larry-johnson/2335"
    },
    {
     "name": "Tim Walton",
     "title": "Co-Defensive Coordinator / Asst. Head Coach / Secondary Coach",
-    "email": null,
+    "email": "walton.684@osu.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://ohiostatebuckeyes.com/sports/football/coaches"
+    "source_url": "https://ohiostatebuckeyes.com/sports/football/roster/coaches/tim-walton/2336"
    },
    {
     "name": "Matt Guerrieri",
@@ -7168,10 +7193,10 @@
    {
     "name": "Monica Johnson",
     "title": "Player and Family Relations / Community Engagement Coordinator",
-    "email": null,
+    "email": "johnson.3366@osu.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://ohiostatebuckeyes.com/sports/football/coaches"
+    "source_url": "https://ohiostatebuckeyes.com/sports/football/roster/coaches/monica-johnson/2401"
    },
    {
     "name": "Adam Stewart",
@@ -7182,7 +7207,8 @@
     "source_url": "https://ohiostatebuckeyes.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 3
  },
  {
   "name": "University of Oregon",
@@ -7359,7 +7385,8 @@
     "source_url": "https://goducks.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Pennsylvania State University",
@@ -7624,7 +7651,8 @@
     "source_url": "https://gopsusports.com/staff-directory"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 0
  },
  {
   "name": "Purdue University",
@@ -7865,13 +7893,14 @@
     "source_url": "https://purduesports.com/staff-directory"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 39
  },
  {
   "name": "Rutgers University",
   "questionnaire_url": "https://scarletknights.com/form/3",
   "questionnaire_found_on": "https://scarletknights.com",
-  "program_email": null,
+  "program_email": "d.tolman@scarletknights.com",
   "coaches": [
    {
     "name": "Greg Schiano",
@@ -7879,12 +7908,12 @@
     "email": null,
     "phone": "732-445-6200",
     "is_recruiting_contact": false,
-    "source_url": "https://scarletknights.com/sports/football/coaches"
+    "source_url": "https://scarletknights.com/sports/football/roster/coaches/greg-schiano/6284"
    },
    {
     "name": "Dillon Tolman",
     "title": "Assistant to the Head Coach",
-    "email": "d.tolman@scarletknights.com",
+    "email": null,
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://scarletknights.com/sports/football/coaches"
@@ -7895,7 +7924,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://scarletknights.com/sports/football/coaches"
+    "source_url": "https://scarletknights.com/sports/football/roster/coaches/kirk-ciarrocca/6286"
    },
    {
     "name": "Travis Johansen",
@@ -7903,7 +7932,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://scarletknights.com/sports/football/coaches"
+    "source_url": "https://scarletknights.com/sports/football/roster/coaches/travis-johansen/6294"
    },
    {
     "name": "Damiere Shaw",
@@ -7911,7 +7940,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://scarletknights.com/sports/football/coaches"
+    "source_url": "https://scarletknights.com/sports/football/roster/coaches/damiere-shaw/6285"
    },
    {
     "name": "Eddie Allen",
@@ -8082,7 +8111,8 @@
     "source_url": "https://scarletknights.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 4
  },
  {
   "name": "University of California, Los Angeles",
@@ -8411,7 +8441,8 @@
     "source_url": "https://uclabruins.com/staff-directory"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 0
  },
  {
   "name": "University of Southern California",
@@ -8716,7 +8747,8 @@
     "source_url": "https://usctrojans.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 10
  },
  {
   "name": "University of Washington",
@@ -9029,7 +9061,8 @@
     "source_url": "https://gohuskies.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Wisconsin-Madison",
@@ -9043,7 +9076,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uwbadgers.com/sports/football/coaches"
+    "source_url": "https://uwbadgers.com/sports/football/roster/coaches/luke-fickell/2804"
    },
    {
     "name": "Jeff Grimes",
@@ -9051,7 +9084,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uwbadgers.com/sports/football/coaches"
+    "source_url": "https://uwbadgers.com/sports/football/roster/coaches/jeff-grimes/2839"
    },
    {
     "name": "Mike Tressel",
@@ -9059,7 +9092,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uwbadgers.com/sports/football/coaches"
+    "source_url": "https://uwbadgers.com/sports/football/roster/coaches/mike-tressel/2828"
    },
    {
     "name": "Nate Letton",
@@ -9067,7 +9100,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uwbadgers.com/sports/football/coaches"
+    "source_url": "https://uwbadgers.com/sports/football/roster/coaches/nate-letton/2809"
    },
    {
     "name": "Matt Mitchell",
@@ -9075,7 +9108,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uwbadgers.com/sports/football/coaches"
+    "source_url": "https://uwbadgers.com/sports/football/roster/coaches/matt-mitchell/2830"
    },
    {
     "name": "Bob Ligashesky",
@@ -9083,7 +9116,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uwbadgers.com/sports/football/coaches"
+    "source_url": "https://uwbadgers.com/sports/football/roster/coaches/bob-ligashesky/2864"
    },
    {
     "name": "Joe Ludwig",
@@ -9091,7 +9124,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uwbadgers.com/sports/football/coaches"
+    "source_url": "https://uwbadgers.com/sports/football/roster/coaches/joe-ludwig/2841"
    },
    {
     "name": "Casey Rabach",
@@ -9099,7 +9132,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uwbadgers.com/sports/football/coaches"
+    "source_url": "https://uwbadgers.com/sports/football/roster/coaches/casey-rabach/2815"
    },
    {
     "name": "Michael Cibene",
@@ -9107,7 +9140,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uwbadgers.com/sports/football/coaches"
+    "source_url": "https://uwbadgers.com/sports/football/roster/coaches/michael-cibene/2844"
    },
    {
     "name": "Cam Odom",
@@ -9115,7 +9148,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uwbadgers.com/sports/football/coaches"
+    "source_url": "https://uwbadgers.com/sports/football/roster/coaches/cam-odom/2866"
    },
    {
     "name": "Blake Rolan",
@@ -9123,7 +9156,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uwbadgers.com/sports/football/coaches"
+    "source_url": "https://uwbadgers.com/sports/football/roster/coaches/blake-rolan/2842"
    },
    {
     "name": "Chris Worley",
@@ -9131,7 +9164,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uwbadgers.com/sports/football/coaches"
+    "source_url": "https://uwbadgers.com/sports/football/roster/coaches/chris-worley/2867"
    },
    {
     "name": "Tyler Gibson",
@@ -9139,7 +9172,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uwbadgers.com/sports/football/coaches"
+    "source_url": "https://uwbadgers.com/sports/football/roster/coaches/tyler-gibson/2822"
    },
    {
     "name": "Landon Fickell",
@@ -9147,7 +9180,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uwbadgers.com/sports/football/coaches"
+    "source_url": "https://uwbadgers.com/sports/football/roster/coaches/landon-fickell/2846"
    },
    {
     "name": "Cam Large",
@@ -9155,7 +9188,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uwbadgers.com/sports/football/coaches"
+    "source_url": "https://uwbadgers.com/sports/football/roster/coaches/cam-large/2878"
    },
    {
     "name": "Drayton Joseph",
@@ -9163,7 +9196,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uwbadgers.com/sports/football/coaches"
+    "source_url": "https://uwbadgers.com/sports/football/roster/coaches/drayton-joseph/2879"
    },
    {
     "name": "Greg Gillum",
@@ -9238,7 +9271,8 @@
     "source_url": "https://uwbadgers.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 16
  },
  {
   "name": "University of Arizona",
@@ -9487,7 +9521,8 @@
     "source_url": "https://arizonawildcats.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 12
  },
  {
   "name": "Arizona State University",
@@ -9784,7 +9819,8 @@
     "source_url": "https://thesundevils.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Baylor University",
@@ -10057,7 +10093,8 @@
     "source_url": "https://baylorbears.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Brigham Young University",
@@ -10354,7 +10391,8 @@
     "source_url": "https://byucougars.com/staff-directory"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 0
  },
  {
   "name": "University of Cincinnati",
@@ -10579,13 +10617,14 @@
     "source_url": "https://gobearcats.com/staff-directory"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 4
  },
  {
   "name": "University of Colorado Boulder",
   "questionnaire_url": "http://college.jumpforward.com/questionnaire.aspx?iid=1684&sportid=18",
   "questionnaire_found_on": "https://cubuffs.com",
-  "program_email": null,
+  "program_email": "andreu.swasey@colorado.edu",
   "coaches": [
    {
     "name": "Brennan Marion",
@@ -10593,7 +10632,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/brennan-marion/4739"
    },
    {
     "name": "Chris Marve",
@@ -10601,7 +10640,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/chris-marve/4747"
    },
    {
     "name": "Vonn Bell",
@@ -10609,7 +10648,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/vonn-bell/4751"
    },
    {
     "name": "Dante Carter",
@@ -10617,7 +10656,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/dante-carter/4719"
    },
    {
     "name": "Rashad Davis",
@@ -10625,7 +10664,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/rashad-davis/4688"
    },
    {
     "name": "Aaron Fletcher",
@@ -10633,7 +10672,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/aaron-fletcher/4748"
    },
    {
     "name": "Andre Gurode",
@@ -10641,7 +10680,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/andre-gurode/4716"
    },
    {
     "name": "Andre' Hart",
@@ -10649,7 +10688,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/andre-hart/4685"
    },
    {
     "name": "George Hegamin",
@@ -10657,7 +10696,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/george-hegamin/4707"
    },
    {
     "name": "George Helow",
@@ -10665,7 +10704,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/george-helow/4714"
    },
    {
     "name": "Johnnie Mack",
@@ -10673,7 +10712,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/johnnie-mack/4718"
    },
    {
     "name": "Kevin Mathis",
@@ -10681,7 +10720,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/kevin-mathis/4686"
    },
    {
     "name": "Josh Niblett",
@@ -10689,7 +10728,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/josh-niblett/4749"
    },
    {
     "name": "Gunnar White",
@@ -10697,7 +10736,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/gunnar-white/4690"
    },
    {
     "name": "Clancy Pendergast",
@@ -10705,7 +10744,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/clancy-pendergast/4750"
    },
    {
     "name": "Xavier Adibi",
@@ -10713,7 +10752,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/xavier-adibi/4789"
    },
    {
     "name": "Oliver Clear",
@@ -10721,7 +10760,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/oliver-clear/4790"
    },
    {
     "name": "Grant Hammer",
@@ -10729,7 +10768,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/grant-hammer/4711"
    },
    {
     "name": "Justin Houlihan",
@@ -10737,7 +10776,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/justin-houlihan/4753"
    },
    {
     "name": "Kenny Ingram",
@@ -10745,7 +10784,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/kenny-ingram/4752"
    },
    {
     "name": "Pierson Prioleau",
@@ -10753,7 +10792,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/pierson-prioleau/4791"
    },
    {
     "name": "AJ Smith",
@@ -10761,7 +10800,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/aj-smith/4792"
    },
    {
     "name": "Joc Upton",
@@ -10769,7 +10808,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/joc-upton/4727"
    },
    {
     "name": "Kyle Wagner",
@@ -10777,7 +10816,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/kyle-wagner/4754"
    },
    {
     "name": "Jordan Griffin",
@@ -10785,7 +10824,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/jordan-griffin/4793"
    },
    {
     "name": "Jacob Heavers",
@@ -10793,7 +10832,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/jacob-heavers/4794"
    },
    {
     "name": "Desmond Moultrie",
@@ -10801,7 +10840,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/desmond-moultrie/4755"
    },
    {
     "name": "Joby Schneider",
@@ -10809,7 +10848,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cubuffs.com/sports/football/coaches"
+    "source_url": "https://cubuffs.com/sports/football/roster/coaches/joby-schneider/4795"
    },
    {
     "name": "Rodney Forsett",
@@ -10878,7 +10917,7 @@
    {
     "name": "Maileka Slayton",
     "title": "Director of On-Campus Recruiting",
-    "email": "footballrecruiting@colorado.edu",
+    "email": null,
     "phone": null,
     "is_recruiting_contact": true,
     "source_url": "https://cubuffs.com/sports/football/coaches"
@@ -10932,13 +10971,14 @@
     "source_url": "https://cubuffs.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 28
  },
  {
   "name": "University of Houston",
   "questionnaire_url": "https://my.armssoftware.com/arms/public/questionnaire/9ff8090d45d9",
   "questionnaire_found_on": "https://uhcougars.com",
-  "program_email": null,
+  "program_email": "jhunter7@cougarnet.uh.edu",
   "coaches": [
    {
     "name": "Willie Fritz",
@@ -10946,7 +10986,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uhcougars.com/sports/football/coaches"
+    "source_url": "https://uhcougars.com/sports/football/roster/coaches/willie-fritz/1726"
    },
    {
     "name": "Slade Nagle",
@@ -10954,7 +10994,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uhcougars.com/sports/football/coaches"
+    "source_url": "https://uhcougars.com/sports/football/roster/coaches/slade-nagle/1734"
    },
    {
     "name": "Austin Armstrong",
@@ -10962,7 +11002,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uhcougars.com/sports/football/coaches"
+    "source_url": "https://uhcougars.com/sports/football/roster/coaches/austin-armstrong/1735"
    },
    {
     "name": "Shawn Bell",
@@ -10970,7 +11010,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uhcougars.com/sports/football/coaches"
+    "source_url": "https://uhcougars.com/sports/football/roster/coaches/shawn-bell/1728"
    },
    {
     "name": "James Ross III",
@@ -10978,7 +11018,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uhcougars.com/sports/football/coaches"
+    "source_url": "https://uhcougars.com/sports/football/roster/coaches/james-ross-iii/1731"
    },
    {
     "name": "Chris Couch",
@@ -10986,7 +11026,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uhcougars.com/sports/football/coaches"
+    "source_url": "https://uhcougars.com/sports/football/roster/coaches/chris-couch/1737"
    },
    {
     "name": "Dre Fusilier",
@@ -10994,7 +11034,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uhcougars.com/sports/football/coaches"
+    "source_url": "https://uhcougars.com/sports/football/roster/coaches/dre-fusilier/1744"
    },
    {
     "name": "Garrison Vaughn",
@@ -11002,7 +11042,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uhcougars.com/sports/football/coaches"
+    "source_url": "https://uhcougars.com/sports/football/roster/coaches/garrison-vaughn/1745"
    },
    {
     "name": "Eric Osborne",
@@ -11010,7 +11050,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uhcougars.com/sports/football/coaches"
+    "source_url": "https://uhcougars.com/sports/football/roster/coaches/eric-osborne/1746"
    },
    {
     "name": "RJ Sneed",
@@ -11018,7 +11058,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uhcougars.com/sports/football/coaches"
+    "source_url": "https://uhcougars.com/sports/football/roster/coaches/rj-sneed/1772"
    },
    {
     "name": "Shane Meyer",
@@ -11061,7 +11101,8 @@
     "source_url": "https://uhcougars.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 10
  },
  {
   "name": "Iowa State University",
@@ -11214,7 +11255,8 @@
     "source_url": "https://cyclones.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Kansas",
@@ -11327,7 +11369,8 @@
     "source_url": "https://kuathletics.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 13
  },
  {
   "name": "Kansas State University",
@@ -11488,13 +11531,14 @@
     "source_url": "https://www.kstatesports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Oklahoma State University",
   "questionnaire_url": "https://okstate.com/form/3",
   "questionnaire_found_on": "https://okstate.com",
-  "program_email": null,
+  "program_email": "gary.calcagno@okstate.edu",
   "coaches": [
    {
     "name": "Eric Morris",
@@ -11502,7 +11546,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://okstate.com/sports/football/coaches"
+    "source_url": "https://okstate.com/sports/football/roster/coaches/eric-morris/3698"
    },
    {
     "name": "Drew Svoboda",
@@ -11510,7 +11554,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://okstate.com/sports/football/coaches"
+    "source_url": "https://okstate.com/sports/football/roster/coaches/drew-svoboda/3709"
    },
    {
     "name": "Sean Brophy",
@@ -11518,7 +11562,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://okstate.com/sports/football/coaches"
+    "source_url": "https://okstate.com/sports/football/roster/coaches/sean-brophy/3699"
    },
    {
     "name": "Skyler Cassity",
@@ -11526,7 +11570,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://okstate.com/sports/football/coaches"
+    "source_url": "https://okstate.com/sports/football/roster/coaches/skyler-cassity/3700"
    },
    {
     "name": "Patrick Cobbs",
@@ -11534,7 +11578,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://okstate.com/sports/football/coaches"
+    "source_url": "https://okstate.com/sports/football/roster/coaches/patrick-cobbs/3701"
    },
    {
     "name": "Kevin Kilmer",
@@ -11542,7 +11586,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://okstate.com/sports/football/coaches"
+    "source_url": "https://okstate.com/sports/football/roster/coaches/kevin-kilmer/3718"
    },
    {
     "name": "Tyler Gilliam",
@@ -11550,7 +11594,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://okstate.com/sports/football/coaches"
+    "source_url": "https://okstate.com/sports/football/roster/coaches/tyler-gilliam/3728"
    },
    {
     "name": "Beau Kelly",
@@ -11558,7 +11602,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://okstate.com/sports/football/coaches"
+    "source_url": "https://okstate.com/sports/football/roster/coaches/beau-kelly/3721"
    },
    {
     "name": "Rolando Surita",
@@ -11665,7 +11709,8 @@
     "source_url": "https://okstate.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 8
  },
  {
   "name": "Texas Christian University",
@@ -11954,7 +11999,8 @@
     "source_url": "https://gofrogs.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Texas Tech University",
@@ -11968,7 +12014,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://texastech.com/sports/football/coaches"
+    "source_url": "https://texastech.com/sports/football/roster/coaches/joey-mcguire/4291"
    },
    {
     "name": "Kenny Perry",
@@ -11976,7 +12022,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://texastech.com/sports/football/coaches"
+    "source_url": "https://texastech.com/sports/football/roster/coaches/kenny-perry/4292"
    },
    {
     "name": "Justin Johnson",
@@ -11984,7 +12030,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://texastech.com/sports/football/coaches"
+    "source_url": "https://texastech.com/sports/football/roster/coaches/justin-johnson/4296"
    },
    {
     "name": "Mack Leftwich",
@@ -11992,7 +12038,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://texastech.com/sports/football/coaches"
+    "source_url": "https://texastech.com/sports/football/roster/coaches/mack-leftwich/4306"
    },
    {
     "name": "Shiel Wood",
@@ -12000,7 +12046,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://texastech.com/sports/football/coaches"
+    "source_url": "https://texastech.com/sports/football/roster/coaches/shiel-wood/4305"
    },
    {
     "name": "Imarjaye Albury Sr.",
@@ -12008,7 +12054,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://texastech.com/sports/football/coaches"
+    "source_url": "https://texastech.com/sports/football/roster/coaches/imarjaye-albury-sr/4321"
    },
    {
     "name": "Josh Cochran",
@@ -12016,7 +12062,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://texastech.com/sports/football/coaches"
+    "source_url": "https://texastech.com/sports/football/roster/coaches/josh-cochran/4293"
    },
    {
     "name": "Rob Greene",
@@ -12024,7 +12070,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://texastech.com/sports/football/coaches"
+    "source_url": "https://texastech.com/sports/football/roster/coaches/rob-greene/4308"
    },
    {
     "name": "Darcel McBath",
@@ -12032,7 +12078,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://texastech.com/sports/football/coaches"
+    "source_url": "https://texastech.com/sports/football/roster/coaches/darcel-mcbath/4304"
    },
    {
     "name": "Clay McGuire",
@@ -12040,7 +12086,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://texastech.com/sports/football/coaches"
+    "source_url": "https://texastech.com/sports/football/roster/coaches/clay-mcguire/4297"
    },
    {
     "name": "Garret McGuire",
@@ -12048,7 +12094,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://texastech.com/sports/football/coaches"
+    "source_url": "https://texastech.com/sports/football/roster/coaches/garret-mcguire/4307"
    },
    {
     "name": "Jacquies Smith",
@@ -12056,7 +12102,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://texastech.com/sports/football/coaches"
+    "source_url": "https://texastech.com/sports/football/roster/coaches/jacquies-smith/4322"
    },
    {
     "name": "Jack Teachey",
@@ -12064,7 +12110,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://texastech.com/sports/football/coaches"
+    "source_url": "https://texastech.com/sports/football/roster/coaches/jack-teachey/4310"
    },
    {
     "name": "Mac Alexander",
@@ -12072,7 +12118,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://texastech.com/sports/football/coaches"
+    "source_url": "https://texastech.com/sports/football/roster/coaches/mac-alexander/4319"
    },
    {
     "name": "Jah'Shawn Johnson",
@@ -12080,7 +12126,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://texastech.com/sports/football/coaches"
+    "source_url": "https://texastech.com/sports/football/roster/coaches/jahshawn-johnson/4299"
    },
    {
     "name": "Lindsey Scott Jr.",
@@ -12088,7 +12134,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://texastech.com/sports/football/coaches"
+    "source_url": "https://texastech.com/sports/football/roster/coaches/lindsey-scott-jr/4309"
    },
    {
     "name": "Taylor Young",
@@ -12096,7 +12142,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://texastech.com/sports/football/coaches"
+    "source_url": "https://texastech.com/sports/football/roster/coaches/taylor-young/4303"
    },
    {
     "name": "Brian Nance",
@@ -12131,7 +12177,8 @@
     "source_url": "https://texastech.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 17
  },
  {
   "name": "University of Central Florida",
@@ -12308,7 +12355,8 @@
     "source_url": "https://ucfknights.com/staff-directory"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 22
  },
  {
   "name": "University of Utah",
@@ -12397,7 +12445,8 @@
     "source_url": "https://utahutes.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "West Virginia University",
@@ -12536,10 +12585,10 @@
    {
     "name": "Pat White",
     "title": "Assistant Quarterbacks Coach/Assistant to the Head Coach",
-    "email": null,
+    "email": "pwhitema@mail.wvu.edu",
     "phone": "(304) 293-4194",
     "is_recruiting_contact": false,
-    "source_url": "https://wvusports.com/sports/football/coaches"
+    "source_url": "https://wvusports.com/sports/football/roster/coaches/pat-white/4661"
    },
    {
     "name": "Chris Haering",
@@ -12662,21 +12711,22 @@
     "source_url": "https://wvusports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 1
  },
  {
   "name": "Boston College",
   "questionnaire_url": "http://my.armssoftware.com/arms/public/questionnaire/07e441a89486",
   "questionnaire_found_on": "https://bceagles.com",
-  "program_email": null,
+  "program_email": "bc.football@bc.edu",
   "coaches": [
    {
     "name": "Bill O'Brien",
     "title": "Gregory P. Barber \u201969 and Family Head Coach/ Edward F. Connelly Offensive Coordinator",
-    "email": null,
+    "email": "obriengv@bc.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://bceagles.com/sports/football/coaches"
+    "source_url": "https://bceagles.com/sports/football/roster/coaches/bill-obrien/2929"
    },
    {
     "name": "Ted Roof",
@@ -12761,7 +12811,7 @@
    {
     "name": "Rob Chudzinski",
     "title": "Senior Offensive Analyst",
-    "email": "bc.football@bc.edu",
+    "email": null,
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://bceagles.com/sports/football/coaches"
@@ -12855,7 +12905,8 @@
     "source_url": "https://bceagles.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 1
  },
  {
   "name": "University of California, Berkeley",
@@ -13120,7 +13171,8 @@
     "source_url": "https://calbears.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 1
  },
  {
   "name": "Clemson University",
@@ -13577,7 +13629,8 @@
     "source_url": "https://clemsontigers.com/staff-directory"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 0
  },
  {
   "name": "Duke University",
@@ -13802,7 +13855,8 @@
     "source_url": "https://goduke.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 16
  },
  {
   "name": "Florida State University",
@@ -13987,7 +14041,8 @@
     "source_url": "https://seminoles.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Georgia Institute of Technology",
@@ -14260,7 +14315,8 @@
     "source_url": "https://ramblinwreck.com/staff-directory"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 1
  },
  {
   "name": "University of Louisville",
@@ -14421,7 +14477,8 @@
     "source_url": "https://gocards.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Miami",
@@ -14742,7 +14799,8 @@
     "source_url": "https://miamihurricanes.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of North Carolina at Chapel Hill",
@@ -14863,7 +14921,8 @@
     "source_url": "https://goheels.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "North Carolina State University",
@@ -15120,13 +15179,14 @@
     "source_url": "https://gopack.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Pittsburgh",
   "questionnaire_url": "https://pittsburghpanthers.com/sports/2017/6/17/ot-recruit-questionnaires-html",
   "questionnaire_found_on": "https://pittsburghpanthers.com",
-  "program_email": null,
+  "program_email": "mstacchiotti@athletics.pitt.edu",
   "coaches": [
    {
     "name": "Pat Narduzzi",
@@ -15134,7 +15194,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://pittsburghpanthers.com/sports/football/coaches"
+    "source_url": "https://pittsburghpanthers.com/sports/football/roster/coaches/pat-narduzzi/2499"
    },
    {
     "name": "Harlon Barnett",
@@ -15142,7 +15202,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://pittsburghpanthers.com/sports/football/coaches"
+    "source_url": "https://pittsburghpanthers.com/sports/football/roster/coaches/harlon-barnett/2520"
    },
    {
     "name": "Cory Sanders",
@@ -15150,7 +15210,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://pittsburghpanthers.com/sports/football/coaches"
+    "source_url": "https://pittsburghpanthers.com/sports/football/roster/coaches/cory-sanders/2501"
    },
    {
     "name": "Kade Bell",
@@ -15158,7 +15218,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://pittsburghpanthers.com/sports/football/coaches"
+    "source_url": "https://pittsburghpanthers.com/sports/football/roster/coaches/kade-bell/2512"
    },
    {
     "name": "Mike Priefer",
@@ -15166,7 +15226,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://pittsburghpanthers.com/sports/football/coaches"
+    "source_url": "https://pittsburghpanthers.com/sports/football/roster/coaches/mike-priefer/2517"
    },
    {
     "name": "Joe Bowen",
@@ -15174,7 +15234,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://pittsburghpanthers.com/sports/football/coaches"
+    "source_url": "https://pittsburghpanthers.com/sports/football/roster/coaches/joe-bowen/2518"
    },
    {
     "name": "Mark Diethorn",
@@ -15257,7 +15317,8 @@
     "source_url": "https://pittsburghpanthers.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 6
  },
  {
   "name": "Southern Methodist University",
@@ -15562,7 +15623,8 @@
     "source_url": "https://smumustangs.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 28
  },
  {
   "name": "Stanford University",
@@ -15739,7 +15801,8 @@
     "source_url": "https://gostanford.com/staff-directory"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 0
  },
  {
   "name": "Syracuse University",
@@ -15988,7 +16051,8 @@
     "source_url": "https://cuse.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Virginia",
@@ -16221,7 +16285,8 @@
     "source_url": "https://virginiasports.com/staff-directory"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 6
  },
  {
   "name": "Virginia Polytechnic Institute and State University",
@@ -16590,7 +16655,8 @@
     "source_url": "https://hokiesports.com/staff-directory"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 0
  },
  {
   "name": "Wake Forest University",
@@ -16799,7 +16865,8 @@
     "source_url": "https://godeacs.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Boise State University",
@@ -16922,7 +16989,7 @@
    {
     "name": "Benjamin Hilgart",
     "title": "Director, Sports Performance Coach",
-    "email": "footballrecruiting@boisestate.edu",
+    "email": null,
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://broncosports.com/sports/football/coaches"
@@ -16992,7 +17059,8 @@
     "source_url": "https://broncosports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 16
  },
  {
   "name": "Colorado State University",
@@ -17006,7 +17074,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://csurams.com/sports/football/coaches"
+    "source_url": "https://csurams.com/sports/football/roster/coaches/jim-mora/3603"
    },
    {
     "name": "Pryce Tracy",
@@ -17014,7 +17082,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://csurams.com/sports/football/coaches"
+    "source_url": "https://csurams.com/sports/football/roster/coaches/pryce-tracy/3604"
    },
    {
     "name": "Kyle Krantz",
@@ -17022,7 +17090,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://csurams.com/sports/football/coaches"
+    "source_url": "https://csurams.com/sports/football/roster/coaches/kyle-krantz/3616"
    },
    {
     "name": "Christian Pace",
@@ -17030,7 +17098,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://csurams.com/sports/football/coaches"
+    "source_url": "https://csurams.com/sports/football/roster/coaches/christian-pace/3605"
    },
    {
     "name": "Kenny McClendon",
@@ -17038,7 +17106,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://csurams.com/sports/football/coaches"
+    "source_url": "https://csurams.com/sports/football/roster/coaches/kenny-mcclendon/3617"
    },
    {
     "name": "Matt Mitchell",
@@ -17046,7 +17114,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://csurams.com/sports/football/coaches"
+    "source_url": "https://csurams.com/sports/football/roster/coaches/matt-mitchell/3606"
    },
    {
     "name": "Kort Shankweiler",
@@ -17054,7 +17122,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://csurams.com/sports/football/coaches"
+    "source_url": "https://csurams.com/sports/football/roster/coaches/kort-shankweiler/3609"
    },
    {
     "name": "William Vlachos",
@@ -17062,7 +17130,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://csurams.com/sports/football/coaches"
+    "source_url": "https://csurams.com/sports/football/roster/coaches/william-vlachos/3645"
    },
    {
     "name": "Colton Bosnos",
@@ -17129,18 +17197,19 @@
     "source_url": "https://csurams.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 8
  },
  {
   "name": "California State University, Fresno",
   "questionnaire_url": "https://my.armssoftware.com/arms/public/questionnaire/43d0748bd98a",
   "questionnaire_found_on": "https://gobulldogs.com",
-  "program_email": null,
+  "program_email": "headfootballcoach@mail.fresnostate.edu",
   "coaches": [
    {
     "name": "Matt Entz",
     "title": "Head Coach",
-    "email": "headfootballcoach@mail.fresnostate.edu",
+    "email": null,
     "phone": "559-278-3015",
     "is_recruiting_contact": false,
     "source_url": "https://gobulldogs.com/sports/football/coaches"
@@ -17151,7 +17220,7 @@
     "email": null,
     "phone": "559-278-3015",
     "is_recruiting_contact": false,
-    "source_url": "https://gobulldogs.com/sports/football/coaches"
+    "source_url": "https://gobulldogs.com/sports/football/roster/coaches/nick-benedetto/4809"
    },
    {
     "name": "Josh Davis",
@@ -17159,7 +17228,7 @@
     "email": null,
     "phone": "559-278-3015",
     "is_recruiting_contact": false,
-    "source_url": "https://gobulldogs.com/sports/football/coaches"
+    "source_url": "https://gobulldogs.com/sports/football/roster/coaches/josh-davis/4810"
    },
    {
     "name": "John Baxter",
@@ -17167,7 +17236,7 @@
     "email": null,
     "phone": "559-278-3015",
     "is_recruiting_contact": false,
-    "source_url": "https://gobulldogs.com/sports/football/coaches"
+    "source_url": "https://gobulldogs.com/sports/football/roster/coaches/john-baxter/4811"
    },
    {
     "name": "Jordan Gigli",
@@ -17175,7 +17244,7 @@
     "email": null,
     "phone": "559-278-3015",
     "is_recruiting_contact": false,
-    "source_url": "https://gobulldogs.com/sports/football/coaches"
+    "source_url": "https://gobulldogs.com/sports/football/roster/coaches/jordan-gigli/4818"
    },
    {
     "name": "Justin Bailey",
@@ -17183,7 +17252,7 @@
     "email": null,
     "phone": "559-278-3015",
     "is_recruiting_contact": false,
-    "source_url": "https://gobulldogs.com/sports/football/coaches"
+    "source_url": "https://gobulldogs.com/sports/football/roster/coaches/justin-bailey/4820"
    },
    {
     "name": "Tyrone Terrell",
@@ -17191,7 +17260,7 @@
     "email": null,
     "phone": "559-278-3015",
     "is_recruiting_contact": false,
-    "source_url": "https://gobulldogs.com/sports/football/coaches"
+    "source_url": "https://gobulldogs.com/sports/football/roster/coaches/tyrone-terrell/4825"
    },
    {
     "name": "Johnathan Whitfield",
@@ -17199,7 +17268,7 @@
     "email": null,
     "phone": "559-278-3015",
     "is_recruiting_contact": false,
-    "source_url": "https://gobulldogs.com/sports/football/coaches"
+    "source_url": "https://gobulldogs.com/sports/football/roster/coaches/johnathan-whitfield/4824"
    },
    {
     "name": "Alyssa De La Vega",
@@ -17250,7 +17319,8 @@
     "source_url": "https://gobulldogs.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 7
  },
  {
   "name": "Oregon State University",
@@ -17499,7 +17569,8 @@
     "source_url": "https://osubeavers.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "San Diego State University",
@@ -17700,7 +17771,8 @@
     "source_url": "https://goaztecs.com/staff-directory"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 23
  },
  {
   "name": "Texas State University",
@@ -17845,13 +17917,14 @@
     "source_url": "https://txst.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Utah State University",
   "questionnaire_url": "https://utahstateaggies.com/sb_output.aspx?form=3",
   "questionnaire_found_on": "https://utahstateaggies.com",
-  "program_email": null,
+  "program_email": "usuathletics@aggies.usu.edu",
   "coaches": [
    {
     "name": "Bronco Mendenhall",
@@ -17859,7 +17932,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://utahstateaggies.com/sports/football/coaches"
+    "source_url": "https://utahstateaggies.com/sports/football/roster/coaches/bronco-mendenhall/1096"
    },
    {
     "name": "Robert Anae",
@@ -17867,7 +17940,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://utahstateaggies.com/sports/football/coaches"
+    "source_url": "https://utahstateaggies.com/sports/football/roster/coaches/robert-anae/1120"
    },
    {
     "name": "Nick Howell",
@@ -17875,7 +17948,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://utahstateaggies.com/sports/football/coaches"
+    "source_url": "https://utahstateaggies.com/sports/football/roster/coaches/nick-howell/1098"
    },
    {
     "name": "Shane Hunter",
@@ -17883,7 +17956,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://utahstateaggies.com/sports/football/coaches"
+    "source_url": "https://utahstateaggies.com/sports/football/roster/coaches/shane-hunter/1099"
    },
    {
     "name": "Mario Acitelli",
@@ -18038,7 +18111,8 @@
     "source_url": "https://utahstateaggies.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 4
  },
  {
   "name": "Washington State University",
@@ -18263,7 +18337,8 @@
     "source_url": "https://wsucougars.com/staff-directory"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 0
  },
  {
   "name": "United States Air Force Academy",
@@ -18368,7 +18443,8 @@
     "source_url": "https://goairforcefalcons.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Hawaii at Manoa",
@@ -18489,7 +18565,8 @@
     "source_url": "https://hawaiiathletics.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 10
  },
  {
   "name": "University of Nevada, Reno",
@@ -18640,9 +18717,18 @@
     "phone": null,
     "is_recruiting_contact": true,
     "source_url": "https://nevadawolfpack.com/sports/football/coaches"
+   },
+   {
+    "name": "Ryder Meyer",
+    "title": "Defensive Graduate Assistant",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://nevadawolfpack.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of New Mexico",
@@ -18747,7 +18833,8 @@
     "source_url": "https://golobos.com/staff-directory"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 11
  },
  {
   "name": "North Dakota State University",
@@ -18932,7 +19019,8 @@
     "source_url": "https://gobison.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Northern Illinois University",
@@ -19045,13 +19133,14 @@
     "source_url": "https://niuhuskies.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "San Jose State University",
   "questionnaire_url": "https://questionnaires.armssoftware.com/a685a82d7583",
   "questionnaire_found_on": "https://sjsuspartans.com",
-  "program_email": null,
+  "program_email": "footballrecruiting@sjsu.edu",
   "coaches": [
    {
     "name": "Ken Niumatalolo",
@@ -19136,7 +19225,7 @@
    {
     "name": "Michael Smith",
     "title": "Running Backs Coach",
-    "email": "footballrecruiting@sjsu.edu",
+    "email": null,
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://sjsuspartans.com/staff-directory"
@@ -19222,7 +19311,8 @@
     "source_url": "https://sjsuspartans.com/staff-directory"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 0
  },
  {
   "name": "University of Nevada, Las Vegas",
@@ -19373,9 +19463,26 @@
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://unlvrebels.com/sports/football/coaches"
+   },
+   {
+    "name": "Akeem Davis",
+    "title": "Cornerbacks/Pass Game Defense Coordinator",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://unlvrebels.com/staff-directory"
+   },
+   {
+    "name": "Riley Simonds",
+    "title": "Offensive Analyst",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://unlvrebels.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Texas at El Paso",
@@ -19520,7 +19627,8 @@
     "source_url": "https://utepminers.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 9
  },
  {
   "name": "University of Wyoming",
@@ -19647,9 +19755,42 @@
     "phone": "(307) 766-3155",
     "is_recruiting_contact": true,
     "source_url": "https://gowyo.com/sports/football/coaches"
+   },
+   {
+    "name": "Victor Evans",
+    "title": "Associate Sports Performance Coach for Football",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gowyo.com/staff-directory"
+   },
+   {
+    "name": "Robert Marco",
+    "title": "Associate Sports Performance Coach for Football",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gowyo.com/staff-directory"
+   },
+   {
+    "name": "Adam Lange",
+    "title": "Assistant Sports Performance Coach for Football",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gowyo.com/staff-directory"
+   },
+   {
+    "name": "Jake Tuttle",
+    "title": "Assistant Sports Performance Coach for Football",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gowyo.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "United States Military Academy",
@@ -19794,7 +19935,8 @@
     "source_url": "https://goarmywestpoint.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 1
  },
  {
   "name": "University of North Carolina at Charlotte",
@@ -20003,7 +20145,8 @@
     "source_url": "https://charlotte49ers.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "East Carolina University",
@@ -20172,7 +20315,8 @@
     "source_url": "https://ecupirates.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Florida Atlantic University",
@@ -20341,7 +20485,8 @@
     "source_url": "https://fausports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Memphis",
@@ -20590,7 +20735,8 @@
     "source_url": "https://gotigersgo.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "United States Naval Academy",
@@ -20719,7 +20865,8 @@
     "source_url": "https://navysports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 10
  },
  {
   "name": "University of North Texas",
@@ -20928,7 +21075,8 @@
     "source_url": "https://meangreensports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 16
  },
  {
   "name": "Rice University",
@@ -21089,7 +21237,8 @@
     "source_url": "https://riceowls.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 19
  },
  {
   "name": "University of South Florida",
@@ -21418,7 +21567,8 @@
     "source_url": "https://gousfbulls.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Temple University",
@@ -21635,7 +21785,8 @@
     "source_url": "https://owlsports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Tulane University",
@@ -21694,10 +21845,10 @@
    {
     "name": "Bryan Berezowitz",
     "title": "Passing Game Coordinator/Safeties",
-    "email": null,
+    "email": "bberezowitz@tulane.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://tulanegreenwave.com/sports/football/coaches"
+    "source_url": "https://tulanegreenwave.com/sports/football/roster/coaches/bryan-berezowitz/8110"
    },
    {
     "name": "Ricky Figurell",
@@ -21780,7 +21931,8 @@
     "source_url": "https://tulanegreenwave.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 1
  },
  {
   "name": "University of Tulsa",
@@ -21989,7 +22141,8 @@
     "source_url": "https://tulsahurricane.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Alabama at Birmingham",
@@ -22150,7 +22303,8 @@
     "source_url": "https://uabsports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Texas at San Antonio",
@@ -22158,7 +22312,8 @@
   "questionnaire_found_on": "https://goutsa.com",
   "program_email": "football.recruiting@utsa.edu",
   "coaches": [],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 0
  },
  {
   "name": "Appalachian State University",
@@ -22397,9 +22552,18 @@
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://appstatesports.com/sports/football/coaches"
+   },
+   {
+    "name": "Ryan Yurachek",
+    "title": "Run Game Coordinator/Tight Ends",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://appstatesports.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Arkansas State University",
@@ -22560,7 +22724,8 @@
     "source_url": "https://astateredwolves.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Coastal Carolina University",
@@ -22817,7 +22982,8 @@
     "source_url": "https://goccusports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Georgia Southern University",
@@ -23042,13 +23208,14 @@
     "source_url": "https://gseagles.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 26
  },
  {
   "name": "Georgia State University",
   "questionnaire_url": "https://georgiastatesports.com/sb_output.aspx?form=3",
   "questionnaire_found_on": "https://georgiastatesports.com",
-  "program_email": null,
+  "program_email": "footballrecruiting@gsu.edu",
   "coaches": [
    {
     "name": "Dell McGee",
@@ -23165,7 +23332,7 @@
    {
     "name": "Jes Sutherland",
     "title": "Offensive Analyst- Tight Ends",
-    "email": "footballrecruiting@gsu.edu",
+    "email": null,
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://georgiastatesports.com/sports/football/coaches"
@@ -23195,7 +23362,8 @@
     "source_url": "https://georgiastatesports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "James Madison University",
@@ -23316,7 +23484,8 @@
     "source_url": "https://jmusports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Louisiana at Lafayette",
@@ -23517,7 +23686,8 @@
     "source_url": "https://ragincajuns.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Louisiana at Monroe",
@@ -23678,7 +23848,8 @@
     "source_url": "https://ulmwarhawks.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Louisiana Tech University",
@@ -23705,10 +23876,10 @@
    {
     "name": "Luke Olson",
     "title": "Defensive Coordinator",
-    "email": null,
+    "email": "lolson@latech.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://latechsports.com/sports/football/coaches"
+    "source_url": "https://latechsports.com/sports/football/roster/coaches/luke-olson/3283"
    },
    {
     "name": "Nathan Young",
@@ -23721,50 +23892,50 @@
    {
     "name": "Lorenzo Joe",
     "title": "Wide Receivers Coach",
-    "email": null,
+    "email": "ljoe@latech.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://latechsports.com/sports/football/coaches"
+    "source_url": "https://latechsports.com/sports/football/roster/coaches/lorenzo-joe/3285"
    },
    {
     "name": "Teddy Veal",
     "title": "Running Backs Coach",
-    "email": null,
+    "email": "nveal@latech.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://latechsports.com/sports/football/coaches"
+    "source_url": "https://latechsports.com/sports/football/roster/coaches/teddy-veal/3286"
    },
    {
     "name": "Carlton Buckels",
     "title": "Cornerbacks/Defensive Pass Game Coordinator",
-    "email": null,
+    "email": "cbuckels@latech.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://latechsports.com/sports/football/coaches"
+    "source_url": "https://latechsports.com/sports/football/roster/coaches/carlton-buckels/3287"
    },
    {
     "name": "Paul Randolph",
     "title": "Defensive Line Coach",
-    "email": null,
+    "email": "prandolph@latech.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://latechsports.com/sports/football/coaches"
+    "source_url": "https://latechsports.com/sports/football/roster/coaches/paul-randolph/3288"
    },
    {
     "name": "Josh Creech",
     "title": "Linebackers Coach",
-    "email": null,
+    "email": "jcreech@latech.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://latechsports.com/sports/football/coaches"
+    "source_url": "https://latechsports.com/sports/football/roster/coaches/josh-creech/3289"
    },
    {
     "name": "Isaiah Graham",
     "title": "Wide Receivers Coach",
-    "email": null,
+    "email": "igraham@latech.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://latechsports.com/sports/football/coaches"
+    "source_url": "https://latechsports.com/sports/football/roster/coaches/isaiah-graham/3294"
    },
    {
     "name": "Dexter McCoil Sr.",
@@ -23841,18 +24012,18 @@
    {
     "name": "Bill Best",
     "title": "Run Game Coordinator",
-    "email": null,
+    "email": "bbest@latech.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://latechsports.com/sports/football/coaches"
+    "source_url": "https://latechsports.com/sports/football/roster/coaches/bill-best/3304"
    },
    {
     "name": "Ryan Crouch",
     "title": "Assistant Special Teams/Inside WRs Coach",
-    "email": null,
+    "email": "rcrouch@office.latech.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://latechsports.com/sports/football/coaches"
+    "source_url": "https://latechsports.com/sports/football/roster/coaches/ryan-crouch/3342"
    },
    {
     "name": "Antonio Carter",
@@ -23887,7 +24058,8 @@
     "source_url": "https://latechsports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 9
  },
  {
   "name": "Marshall University",
@@ -24000,7 +24172,8 @@
     "source_url": "https://herdzone.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Old Dominion University",
@@ -24113,13 +24286,14 @@
     "source_url": "https://odusports.com/staff-directory"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 0
  },
  {
   "name": "University of South Alabama",
   "questionnaire_url": null,
   "questionnaire_found_on": null,
-  "program_email": null,
+  "program_email": "tjarome@southalabama.edu",
   "coaches": [
    {
     "name": "Major Applewhite",
@@ -24127,7 +24301,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://usajaguars.com/sports/football/coaches"
+    "source_url": "https://usajaguars.com/sports/football/roster/coaches/major-applewhite/2647"
    },
    {
     "name": "Todd Orlando",
@@ -24223,7 +24397,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://usajaguars.com/sports/football/coaches"
+    "source_url": "https://usajaguars.com/sports/football/roster/coaches/xavier-henderson/2657"
    },
    {
     "name": "Kent Foster",
@@ -24231,7 +24405,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://usajaguars.com/sports/football/coaches"
+    "source_url": "https://usajaguars.com/sports/football/roster/coaches/kent-foster/2663"
    },
    {
     "name": "Kade Bryant",
@@ -24239,7 +24413,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://usajaguars.com/sports/football/coaches"
+    "source_url": "https://usajaguars.com/sports/football/roster/coaches/kade-bryant/2664"
    },
    {
     "name": "JT May",
@@ -24288,9 +24462,18 @@
     "phone": null,
     "is_recruiting_contact": true,
     "source_url": "https://usajaguars.com/sports/football/coaches"
+   },
+   {
+    "name": "Daughtry McGhee",
+    "title": "Defensive Graduate Assistant",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://usajaguars.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 4
  },
  {
   "name": "University of Southern Mississippi",
@@ -24403,7 +24586,8 @@
     "source_url": "https://southernmiss.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Troy University",
@@ -24532,7 +24716,8 @@
     "source_url": "https://troytrojans.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 17
  },
  {
   "name": "University of Delaware",
@@ -24669,7 +24854,8 @@
     "source_url": "https://bluehens.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Florida International University",
@@ -24862,7 +25048,8 @@
     "source_url": "https://fiusports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Jacksonville State University",
@@ -25079,7 +25266,8 @@
     "source_url": "https://jaxstatesports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Kennesaw State University",
@@ -25192,7 +25380,8 @@
     "source_url": "https://ksuowls.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 1
  },
  {
   "name": "Liberty University",
@@ -25513,18 +25702,19 @@
     "source_url": "https://libertyflames.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 13
  },
  {
   "name": "Middle Tennessee State University",
   "questionnaire_url": null,
   "questionnaire_found_on": null,
-  "program_email": null,
+  "program_email": "kim.spurlock@mtsu.edu",
   "coaches": [
    {
     "name": "Derek Mason",
     "title": "Head Coach",
-    "email": "kim.spurlock@mtsu.edu",
+    "email": null,
     "phone": "615-898-2926",
     "is_recruiting_contact": false,
     "source_url": "https://goblueraiders.com/sports/football/coaches"
@@ -25535,7 +25725,7 @@
     "email": null,
     "phone": "615-898-2926",
     "is_recruiting_contact": false,
-    "source_url": "https://goblueraiders.com/sports/football/coaches"
+    "source_url": "https://goblueraiders.com/sports/football/roster/coaches/brian-stewart/2287"
    },
    {
     "name": "Anthony Scelfo",
@@ -25543,7 +25733,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://goblueraiders.com/sports/football/coaches"
+    "source_url": "https://goblueraiders.com/sports/football/roster/coaches/anthony-scelfo/2303"
    },
    {
     "name": "Louie Cioffi",
@@ -25551,7 +25741,7 @@
     "email": null,
     "phone": "615-898-2926",
     "is_recruiting_contact": false,
-    "source_url": "https://goblueraiders.com/sports/football/coaches"
+    "source_url": "https://goblueraiders.com/sports/football/roster/coaches/louie-cioffi/2301"
    },
    {
     "name": "LJ Leonard",
@@ -25559,7 +25749,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://goblueraiders.com/sports/football/coaches"
+    "source_url": "https://goblueraiders.com/sports/football/roster/coaches/lj-leonard/2323"
    },
    {
     "name": "Nash Stidham",
@@ -25567,7 +25757,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://goblueraiders.com/sports/football/coaches"
+    "source_url": "https://goblueraiders.com/sports/football/roster/coaches/nash-stidham/2305"
    },
    {
     "name": "Mikel Riggs",
@@ -25588,7 +25778,7 @@
    {
     "name": "Kim Spurlock",
     "title": "Football Office Coordinator",
-    "email": "kim.spurlock@mtsu.edu",
+    "email": null,
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://goblueraiders.com/sports/football/coaches"
@@ -25626,7 +25816,8 @@
     "source_url": "https://goblueraiders.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 5
  },
  {
   "name": "Missouri State University",
@@ -25645,10 +25836,10 @@
    {
     "name": "Jack Curtis",
     "title": "Defensive Coordinator / Safeties",
-    "email": null,
+    "email": "jcurtis@missouristate.edu",
     "phone": "(417) 836-6829",
     "is_recruiting_contact": false,
-    "source_url": "https://missouristatebears.com/sports/football/coaches"
+    "source_url": "https://missouristatebears.com/sports/football/roster/coaches/jack-curtis/1351"
    },
    {
     "name": "Mark Cala",
@@ -25717,10 +25908,10 @@
    {
     "name": "Blake Shrader",
     "title": "Linebackers Coach / Defensive Special Teams",
-    "email": null,
+    "email": "bshrader@missouristate.edu",
     "phone": "(417) 836-6829",
     "is_recruiting_contact": false,
-    "source_url": "https://missouristatebears.com/sports/football/coaches"
+    "source_url": "https://missouristatebears.com/sports/football/roster/coaches/blake-shrader/1353"
    },
    {
     "name": "Jacoby Walker",
@@ -25733,18 +25924,18 @@
    {
     "name": "Jermaine Saffold",
     "title": "Assistant Wide Receivers Coach",
-    "email": null,
+    "email": "jermainesaffold@missouristate.edu",
     "phone": "(417) 836-6829",
     "is_recruiting_contact": false,
-    "source_url": "https://missouristatebears.com/sports/football/coaches"
+    "source_url": "https://missouristatebears.com/sports/football/roster/coaches/jermaine-saffold/1389"
    },
    {
     "name": "Adam Ieyoub",
     "title": "Assistant Special Teams Coach",
-    "email": null,
+    "email": "adamieyoub@missouristate.edu",
     "phone": "(417) 836-6829",
     "is_recruiting_contact": false,
-    "source_url": "https://missouristatebears.com/sports/football/coaches"
+    "source_url": "https://missouristatebears.com/sports/football/roster/coaches/adam-ieyoub/1391"
    },
    {
     "name": "Harrison Buecking",
@@ -25803,7 +25994,8 @@
     "source_url": "https://missouristatebears.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 4
  },
  {
   "name": "New Mexico State University",
@@ -25948,7 +26140,8 @@
     "source_url": "https://nmstatesports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Sam Houston State University",
@@ -26037,7 +26230,8 @@
     "source_url": "https://gobearkats.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Western Kentucky University",
@@ -26224,10 +26418,10 @@
    {
     "name": "KaRon White",
     "title": "Quality Control \u2013 Outside Linebackers",
-    "email": null,
+    "email": "bryan.applewhite@wku.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://wkusports.com/sports/football/coaches"
+    "source_url": "https://wkusports.com/sports/football/roster/coaches/karon-white/1323"
    },
    {
     "name": "Zach Kramme",
@@ -26262,7 +26456,8 @@
     "source_url": "https://wkusports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 2
  },
  {
   "name": "University of Akron",
@@ -26375,7 +26570,8 @@
     "source_url": "https://gozips.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Ball State University",
@@ -26576,7 +26772,8 @@
     "source_url": "https://ballstatesports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 15
  },
  {
   "name": "Bowling Green State University",
@@ -26753,7 +26950,8 @@
     "source_url": "https://bgsufalcons.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 19
  },
  {
   "name": "University at Buffalo",
@@ -26898,18 +27096,19 @@
     "source_url": "https://ubbulls.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 1
  },
  {
   "name": "Central Michigan University",
   "questionnaire_url": "http://my.armssoftware.com/arms/public/questionnaire/b0507cdd55b6",
   "questionnaire_found_on": "https://cmuchippewas.com",
-  "program_email": null,
+  "program_email": "fbrecruiting@cmich.edu",
   "coaches": [
    {
     "name": "Matt Drinkall",
     "title": "Head Coach",
-    "email": "fbrecruiting@cmich.edu",
+    "email": null,
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://cmuchippewas.com/sports/football/coaches"
@@ -26920,7 +27119,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cmuchippewas.com/sports/football/coaches"
+    "source_url": "https://cmuchippewas.com/sports/football/roster/coaches/jim-chapin/1452"
    },
    {
     "name": "Sean Cronin",
@@ -26928,7 +27127,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cmuchippewas.com/sports/football/coaches"
+    "source_url": "https://cmuchippewas.com/sports/football/roster/coaches/sean-cronin/1453"
    },
    {
     "name": "Christian Dukes",
@@ -26936,7 +27135,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cmuchippewas.com/sports/football/coaches"
+    "source_url": "https://cmuchippewas.com/sports/football/roster/coaches/christian-dukes/1458"
    },
    {
     "name": "Brandon Johnson-Farrell",
@@ -26944,7 +27143,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cmuchippewas.com/sports/football/coaches"
+    "source_url": "https://cmuchippewas.com/sports/football/roster/coaches/brandon-johnson-farrell/1459"
    },
    {
     "name": "Wes Fleming",
@@ -26952,7 +27151,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cmuchippewas.com/sports/football/coaches"
+    "source_url": "https://cmuchippewas.com/sports/football/roster/coaches/wes-fleming/1457"
    },
    {
     "name": "Derek Fulton",
@@ -26960,7 +27159,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cmuchippewas.com/sports/football/coaches"
+    "source_url": "https://cmuchippewas.com/sports/football/roster/coaches/derek-fulton/1454"
    },
    {
     "name": "Hayden Mace",
@@ -26968,7 +27167,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cmuchippewas.com/sports/football/coaches"
+    "source_url": "https://cmuchippewas.com/sports/football/roster/coaches/hayden-mace/1455"
    },
    {
     "name": "Keith Murphy",
@@ -26976,7 +27175,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cmuchippewas.com/sports/football/coaches"
+    "source_url": "https://cmuchippewas.com/sports/football/roster/coaches/keith-murphy/1449"
    },
    {
     "name": "Tesfa Smith",
@@ -26984,7 +27183,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cmuchippewas.com/sports/football/coaches"
+    "source_url": "https://cmuchippewas.com/sports/football/roster/coaches/tesfa-smith/1460"
    },
    {
     "name": "Charles Walker",
@@ -26992,7 +27191,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cmuchippewas.com/sports/football/coaches"
+    "source_url": "https://cmuchippewas.com/sports/football/roster/coaches/charles-walker/1467"
    },
    {
     "name": "Aaron Coeling",
@@ -27000,7 +27199,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cmuchippewas.com/sports/football/coaches"
+    "source_url": "https://cmuchippewas.com/sports/football/roster/coaches/aaron-coeling/1489"
    },
    {
     "name": "Tommy Restivo",
@@ -27008,7 +27207,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cmuchippewas.com/sports/football/coaches"
+    "source_url": "https://cmuchippewas.com/sports/football/roster/coaches/tommy-restivo/1491"
    },
    {
     "name": "Nick Belay",
@@ -27016,7 +27215,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cmuchippewas.com/sports/football/coaches"
+    "source_url": "https://cmuchippewas.com/sports/football/roster/coaches/nick-belay/1461"
    },
    {
     "name": "Jackson Riley",
@@ -27024,7 +27223,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cmuchippewas.com/sports/football/coaches"
+    "source_url": "https://cmuchippewas.com/sports/football/roster/coaches/jackson-riley/1477"
    },
    {
     "name": "Tanner Deveans",
@@ -27032,7 +27231,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cmuchippewas.com/sports/football/coaches"
+    "source_url": "https://cmuchippewas.com/sports/football/roster/coaches/tanner-deveans/1465"
    },
    {
     "name": "Calvin Pimpleton",
@@ -27040,7 +27239,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cmuchippewas.com/sports/football/coaches"
+    "source_url": "https://cmuchippewas.com/sports/football/roster/coaches/calvin-pimpleton/1464"
    },
    {
     "name": "Sarah Furlong",
@@ -27091,7 +27290,8 @@
     "source_url": "https://cmuchippewas.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 18
  },
  {
   "name": "Eastern Michigan University",
@@ -27268,7 +27468,8 @@
     "source_url": "https://emueagles.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Kent State University",
@@ -27461,7 +27662,8 @@
     "source_url": "https://kentstatesports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 14
  },
  {
   "name": "Miami University (Ohio)",
@@ -27566,7 +27768,8 @@
     "source_url": "https://miamiredhawks.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Ohio University",
@@ -27673,7 +27876,7 @@
    {
     "name": "Joe Tresey",
     "title": "Defensive Assistant Coach / Director of Staff",
-    "email": "tresey@ohio.edu",
+    "email": null,
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://ohiobobcats.com/sports/football/coaches"
@@ -27692,7 +27895,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://ohiobobcats.com/sports/football/coaches"
+    "source_url": "https://ohiobobcats.com/sports/football/roster/coaches/keye-thompson/839"
    },
    {
     "name": "Ethan Gaspar",
@@ -27708,7 +27911,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://ohiobobcats.com/sports/football/coaches"
+    "source_url": "https://ohiobobcats.com/sports/football/roster/coaches/eddie-faulkner/827"
    },
    {
     "name": "Emily Tabeek",
@@ -27743,7 +27946,8 @@
     "source_url": "https://ohiobobcats.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 17
  },
  {
   "name": "Sacramento State University",
@@ -27936,7 +28140,8 @@
     "source_url": "https://hornetsports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 30
  },
  {
   "name": "University of Toledo",
@@ -28113,7 +28318,8 @@
     "source_url": "https://utrockets.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Massachusetts Amherst",
@@ -28290,7 +28496,8 @@
     "source_url": "https://umassathletics.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Western Michigan University",
@@ -28489,9 +28696,42 @@
     "phone": null,
     "is_recruiting_contact": true,
     "source_url": "https://wmubroncos.com/sports/football/coaches"
+   },
+   {
+    "name": "Kyle Schmidt",
+    "title": "Quaterbacks Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://wmubroncos.com/staff-directory"
+   },
+   {
+    "name": "Jack Neumann",
+    "title": "Defensive Graduate Assistant",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://wmubroncos.com/staff-directory"
+   },
+   {
+    "name": "Will Carter",
+    "title": "Special Teams Analyst",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://wmubroncos.com/staff-directory"
+   },
+   {
+    "name": "Peyton Ross",
+    "title": "Coordinator of Recruiting Operations",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://wmubroncos.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Notre Dame",
@@ -28772,7 +29012,8 @@
     "source_url": "https://fightingirish.com/staff-directory"
    }
   ],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 0
  },
  {
   "name": "University of Connecticut",
@@ -29013,7 +29254,8 @@
     "source_url": "https://uconnhuskies.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Eastern Washington University",
@@ -29134,7 +29376,8 @@
     "source_url": "https://goeags.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Idaho",
@@ -29279,7 +29522,8 @@
     "source_url": "https://govandals.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Idaho State University",
@@ -29298,10 +29542,10 @@
    {
     "name": "Buddy Blevins",
     "title": "Co-Offensive Coordinator / Inside Receivers",
-    "email": null,
+    "email": "jamesblevins@isu.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://isubengals.com/sports/football/coaches"
+    "source_url": "https://isubengals.com/sports/football/roster/coaches/buddy-blevins/1820"
    },
    {
     "name": "Grant Duff",
@@ -29314,34 +29558,34 @@
    {
     "name": "Scott Thiessen",
     "title": "Special Teams Coordinator / Nickels",
-    "email": null,
+    "email": "scottthiessen@isu.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://isubengals.com/sports/football/coaches"
+    "source_url": "https://isubengals.com/sports/football/roster/coaches/scott-thiessen/1813"
    },
    {
     "name": "Jacob Thomas",
     "title": "Running Backs / Run Game Coordinator",
-    "email": null,
+    "email": "jacobthomas3@isu.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://isubengals.com/sports/football/coaches"
+    "source_url": "https://isubengals.com/sports/football/roster/coaches/jacob-thomas/1818"
    },
    {
     "name": "John Hughes",
     "title": "Co-Offensive Coordinator / Offensive Line Coach",
-    "email": null,
+    "email": "johnhughes@isu.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://isubengals.com/sports/football/coaches"
+    "source_url": "https://isubengals.com/sports/football/roster/coaches/john-hughes/1816"
    },
    {
     "name": "Devin Holiday",
     "title": "Corners Coach",
-    "email": null,
+    "email": "devinholiday@isu.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://isubengals.com/sports/football/coaches"
+    "source_url": "https://isubengals.com/sports/football/roster/coaches/devin-holiday/1814"
    },
    {
     "name": "Bobby Jay",
@@ -29448,7 +29692,8 @@
     "source_url": "https://isubengals.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 5
  },
  {
   "name": "University of Montana",
@@ -29561,7 +29806,8 @@
     "source_url": "https://gogriz.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 15
  },
  {
   "name": "Montana State University",
@@ -29626,7 +29872,8 @@
     "source_url": "https://msubobcats.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 6
  },
  {
   "name": "Northern Arizona University",
@@ -29859,7 +30106,8 @@
     "source_url": "https://nauathletics.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 15
  },
  {
   "name": "University of Northern Colorado",
@@ -29945,7 +30193,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uncbears.com/sports/football/coaches"
+    "source_url": "https://uncbears.com/sports/football/roster/coaches/josh-thornton/3517"
    },
    {
     "name": "Jack Grauberger",
@@ -29953,7 +30201,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uncbears.com/sports/football/coaches"
+    "source_url": "https://uncbears.com/sports/football/roster/coaches/jack-grauberger/3527"
    },
    {
     "name": "Justin Jenkins",
@@ -29961,7 +30209,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uncbears.com/sports/football/coaches"
+    "source_url": "https://uncbears.com/sports/football/roster/coaches/justin-jenkins/3524"
    },
    {
     "name": "Nolan Steckel",
@@ -29969,7 +30217,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uncbears.com/sports/football/coaches"
+    "source_url": "https://uncbears.com/sports/football/roster/coaches/nolan-steckel/3526"
    },
    {
     "name": "Charlie Haake",
@@ -29985,7 +30233,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uncbears.com/sports/football/coaches"
+    "source_url": "https://uncbears.com/sports/football/roster/coaches/ashton-buckalew/3665"
    },
    {
     "name": "Ashley Cornwell",
@@ -29993,7 +30241,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uncbears.com/sports/football/coaches"
+    "source_url": "https://uncbears.com/sports/football/roster/coaches/ashley-cornwell/3667"
    },
    {
     "name": "Josh Cisneros",
@@ -30001,7 +30249,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uncbears.com/sports/football/coaches"
+    "source_url": "https://uncbears.com/sports/football/roster/coaches/josh-cisneros/3668"
    },
    {
     "name": "John Dietrick",
@@ -30009,7 +30257,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uncbears.com/sports/football/coaches"
+    "source_url": "https://uncbears.com/sports/football/roster/coaches/john-dietrick/3669"
    },
    {
     "name": "James Pazak",
@@ -30044,7 +30292,8 @@
     "source_url": "https://uncbears.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 21
  },
  {
   "name": "Portland State University",
@@ -30165,7 +30414,8 @@
     "source_url": "https://goviks.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Weber State University",
@@ -30326,7 +30576,8 @@
     "source_url": "https://weberstatesports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "California Polytechnic State University",
@@ -30487,7 +30738,8 @@
     "source_url": "https://gopoly.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of California, Davis",
@@ -30648,7 +30900,8 @@
     "source_url": "https://ucdavisaggies.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Southern Utah University",
@@ -30785,7 +31038,8 @@
     "source_url": "https://suutbirds.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Utah Tech University",
@@ -30922,7 +31176,8 @@
     "source_url": "https://utahtechtrailblazers.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University at Albany",
@@ -31051,18 +31306,19 @@
     "source_url": "https://ualbanysports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Bryant University",
   "questionnaire_url": "https://bryantbulldogs.com/sb_output.aspx?form=3",
   "questionnaire_found_on": "https://bryantbulldogs.com",
-  "program_email": null,
+  "program_email": "football@bryant.edu",
   "coaches": [
    {
     "name": "Chris Merritt",
     "title": "Head Coach",
-    "email": "football@bryant.edu",
+    "email": null,
     "phone": "401-232-6399",
     "is_recruiting_contact": false,
     "source_url": "https://bryantbulldogs.com/sports/football/coaches"
@@ -31242,9 +31498,18 @@
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://bryantbulldogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Eric Sampson",
+    "title": "Defensive Quality Control",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://bryantbulldogs.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Campbell University",
@@ -31347,9 +31612,18 @@
     "phone": null,
     "is_recruiting_contact": true,
     "source_url": "https://gocamels.com/sports/football/coaches"
+   },
+   {
+    "name": "Landon Smith",
+    "title": "Director of Player Personnel",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://gocamels.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Elon University",
@@ -31478,7 +31752,8 @@
     "source_url": "https://elonphoenix.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Hampton University",
@@ -31599,7 +31874,8 @@
     "source_url": "https://hamptonpirates.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Maine",
@@ -31688,7 +31964,8 @@
     "source_url": "https://goblackbears.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Monmouth University",
@@ -31769,18 +32046,19 @@
     "source_url": "https://monmouthhawks.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 1
  },
  {
   "name": "University of New Hampshire",
   "questionnaire_url": "https://unhwildcats.com/sports/2020/6/19/prospective-student-athlete-questionnaires",
   "questionnaire_found_on": "https://unhwildcats.com",
-  "program_email": null,
+  "program_email": "unh.football@unh.edu",
   "coaches": [
    {
     "name": "Sean Goldrich",
     "title": "Head Coach",
-    "email": "unh.football@unh.edu",
+    "email": null,
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://unhwildcats.com/sports/football/coaches"
@@ -31791,7 +32069,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://unhwildcats.com/sports/football/coaches"
+    "source_url": "https://unhwildcats.com/sports/football/roster/coaches/tyshon-fogg/2472"
    },
    {
     "name": "Nic Keene",
@@ -31799,7 +32077,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://unhwildcats.com/sports/football/coaches"
+    "source_url": "https://unhwildcats.com/sports/football/roster/coaches/nic-keene/2469"
    },
    {
     "name": "Gage Hayes",
@@ -31807,7 +32085,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://unhwildcats.com/sports/football/coaches"
+    "source_url": "https://unhwildcats.com/sports/football/roster/coaches/gage-hayes/2470"
    },
    {
     "name": "Joe Bick",
@@ -31815,7 +32093,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": true,
-    "source_url": "https://unhwildcats.com/sports/football/coaches"
+    "source_url": "https://unhwildcats.com/sports/football/roster/coaches/joe-bick/2471"
    },
    {
     "name": "KJ Parmer",
@@ -31823,7 +32101,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://unhwildcats.com/sports/football/coaches"
+    "source_url": "https://unhwildcats.com/sports/football/roster/coaches/kj-parmer/2473"
    },
    {
     "name": "Joe Rankin",
@@ -31831,7 +32109,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://unhwildcats.com/sports/football/coaches"
+    "source_url": "https://unhwildcats.com/sports/football/roster/coaches/joe-rankin/2474"
    },
    {
     "name": "Tom Manley",
@@ -31839,7 +32117,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://unhwildcats.com/sports/football/coaches"
+    "source_url": "https://unhwildcats.com/sports/football/roster/coaches/tom-manley/2495"
    },
    {
     "name": "Luke Stam",
@@ -31847,7 +32125,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://unhwildcats.com/sports/football/coaches"
+    "source_url": "https://unhwildcats.com/sports/football/roster/coaches/luke-stam/2494"
    },
    {
     "name": "Jake Cuddire",
@@ -31855,7 +32133,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://unhwildcats.com/sports/football/coaches"
+    "source_url": "https://unhwildcats.com/sports/football/roster/coaches/jake-cuddire/2490"
    },
    {
     "name": "Cam Daniels",
@@ -31863,7 +32141,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://unhwildcats.com/sports/football/coaches"
+    "source_url": "https://unhwildcats.com/sports/football/roster/coaches/cam-daniels/2478"
    },
    {
     "name": "Matt Dzierski",
@@ -31871,7 +32149,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://unhwildcats.com/sports/football/coaches"
+    "source_url": "https://unhwildcats.com/sports/football/roster/coaches/matt-dzierski/2479"
    },
    {
     "name": "Michael Bergeron",
@@ -31879,7 +32157,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://unhwildcats.com/sports/football/coaches"
+    "source_url": "https://unhwildcats.com/sports/football/roster/coaches/michael-bergeron/2493"
    },
    {
     "name": "Cooper Dempsey",
@@ -31887,7 +32165,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://unhwildcats.com/sports/football/coaches"
+    "source_url": "https://unhwildcats.com/sports/football/roster/coaches/cooper-dempsey/2519"
    },
    {
     "name": "Ryan Boyce",
@@ -31922,7 +32200,8 @@
     "source_url": "https://unhwildcats.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 13
  },
  {
   "name": "North Carolina A&T State University",
@@ -32001,9 +32280,34 @@
     "phone": null,
     "is_recruiting_contact": true,
     "source_url": "https://ncataggies.com/sports/football/coaches"
+   },
+   {
+    "name": "Donovan Jackson",
+    "title": "Offensive Line/Run Game Coordinator",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://ncataggies.com/staff-directory"
+   },
+   {
+    "name": "Tony McRae",
+    "title": "Defensive Backs/Special Teams Coordinator/Pro Liaison",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://ncataggies.com/staff-directory"
+   },
+   {
+    "name": "Alvance Robinson",
+    "title": "Wide Receivers/Passing Game Coordinator",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://ncataggies.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Rhode Island",
@@ -32074,9 +32378,18 @@
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://gorhody.com/sports/football/coaches"
+   },
+   {
+    "name": "Robert Wainman",
+    "title": "Defensive Quality Control/Defensive Backs Assistant",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gorhody.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Stony Brook University",
@@ -32221,7 +32534,8 @@
     "source_url": "https://stonybrookathletics.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Towson University",
@@ -32340,9 +32654,26 @@
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://towsontigers.com/sports/football/coaches"
+   },
+   {
+    "name": "Maurice \"Moe\" Banks",
+    "title": "Director of Football Operations",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://towsontigers.com/staff-directory"
+   },
+   {
+    "name": "Nick Thorn",
+    "title": "Director of Player Personnel",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://towsontigers.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Sacred Heart University",
@@ -32455,7 +32786,8 @@
     "source_url": "https://sacredheartpioneers.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Brown University",
@@ -32576,18 +32908,19 @@
     "source_url": "https://brownbears.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Columbia University",
   "questionnaire_url": "https://questionnaires.armssoftware.com/a11c89254bde",
   "questionnaire_found_on": "https://gocolumbialions.com",
-  "program_email": null,
+  "program_email": "football@columbia.edu",
   "coaches": [
    {
     "name": "Jon Poppe",
     "title": "Patricia & Shepard Alexander Head Coach of Football",
-    "email": "football@columbia.edu",
+    "email": null,
     "phone": "212-854-7062",
     "is_recruiting_contact": false,
     "source_url": "https://gocolumbialions.com/sports/football/coaches"
@@ -32713,18 +33046,19 @@
     "source_url": "https://gocolumbialions.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Cornell University",
   "questionnaire_url": "https://cornellbigred.com/sb_output.aspx?form=3",
   "questionnaire_found_on": "https://cornellbigred.com",
-  "program_email": null,
+  "program_email": "football@cornell.edu",
   "coaches": [
    {
     "name": "Dan Swanstrom",
     "title": "The Roger J. Weiss Head Coach of Cornell Football",
-    "email": "football@cornell.edu",
+    "email": null,
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://cornellbigred.com/sports/football/coaches"
@@ -32828,18 +33162,18 @@
    {
     "name": "Andrew Heffler",
     "title": "Offensive Analyst",
-    "email": null,
+    "email": "web-accessibility@cornell.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cornellbigred.com/sports/football/coaches"
+    "source_url": "https://cornellbigred.com/sports/football/roster/coaches/andrew-heffler/12051"
    },
    {
     "name": "Cole Smith",
     "title": "Special Teams Analyst",
-    "email": null,
+    "email": "web-accessibility@cornell.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://cornellbigred.com/sports/football/coaches"
+    "source_url": "https://cornellbigred.com/sports/football/roster/coaches/cole-smith/12052"
    },
    {
     "name": "Bryan Chung",
@@ -32850,7 +33184,8 @@
     "source_url": "https://cornellbigred.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 2
  },
  {
   "name": "Dartmouth College",
@@ -32995,7 +33330,8 @@
     "source_url": "https://dartmouthsports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Harvard University",
@@ -33124,18 +33460,19 @@
     "source_url": "https://gocrimson.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Pennsylvania",
   "questionnaire_url": "https://my.armssoftware.com/arms/public/questionnaire/a8e4bf5dd078?path=football",
   "questionnaire_found_on": "https://pennathletics.com",
-  "program_email": null,
+  "program_email": "football@pobox.upenn.edu",
   "coaches": [
    {
     "name": "Rick Santos",
     "title": "George A. Munger Head Coach",
-    "email": "football@pobox.upenn.edu",
+    "email": null,
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://pennathletics.com/sports/football/coaches"
@@ -33211,20 +33548,53 @@
     "phone": null,
     "is_recruiting_contact": true,
     "source_url": "https://pennathletics.com/sports/football/coaches"
+   },
+   {
+    "name": "Jon Dupont",
+    "title": "William R. Wagner Head Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://pennathletics.com/staff-directory"
+   },
+   {
+    "name": "Bill Wagner",
+    "title": "Head Coach Emeritus",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://pennathletics.com/staff-directory"
+   },
+   {
+    "name": "Rob Carter",
+    "title": "Offensive Coordinator/QB's Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://pennathletics.com/staff-directory"
+   },
+   {
+    "name": "Ben Bruce",
+    "title": "Director of Football Operations & Personnel",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://pennathletics.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Princeton University",
   "questionnaire_url": "https://goprincetontigers.com/form/3",
   "questionnaire_found_on": "https://goprincetontigers.com",
-  "program_email": null,
+  "program_email": "football@princeton.edu",
   "coaches": [
    {
     "name": "Bob Surace",
     "title": "Charles W. Caldwell Jr. '25 Head Coach of Football",
-    "email": "football@princeton.edu",
+    "email": null,
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://goprincetontigers.com/sports/football/coaches"
@@ -33334,7 +33704,8 @@
     "source_url": "https://goprincetontigers.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Yale University",
@@ -33421,9 +33792,34 @@
     "phone": null,
     "is_recruiting_contact": true,
     "source_url": "https://yalebulldogs.com/sports/football/coaches"
+   },
+   {
+    "name": "Kevin Cahill",
+    "title": "Joel E. Smilow '54 Head Coach of Football",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://yalebulldogs.com/staff-directory"
+   },
+   {
+    "name": "Kalus Murphy",
+    "title": "Assistant Coach, Cornerbacks",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://yalebulldogs.com/staff-directory"
+   },
+   {
+    "name": "Elijah Weeks",
+    "title": "Chief of Staff, Director of Player Development",
+    "email": null,
+    "phone": "203-432-1490",
+    "is_recruiting_contact": false,
+    "source_url": "https://yalebulldogs.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Delaware State University",
@@ -33600,18 +33996,19 @@
     "source_url": "https://dsuhornets.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 18
  },
  {
   "name": "Howard University",
   "questionnaire_url": "https://questionnaires.armssoftware.com/9ff7e3dc728b",
   "questionnaire_found_on": "https://hubison.com",
-  "program_email": null,
+  "program_email": "football@howard.edu",
   "coaches": [
    {
     "name": "Ted White",
     "title": "Head Coach",
-    "email": "football@howard.edu",
+    "email": null,
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://hubison.com/sports/football/coaches"
@@ -33769,7 +34166,8 @@
     "source_url": "https://hubison.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Morgan State University",
@@ -33896,9 +34294,26 @@
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://morganstatebears.com/sports/football/coaches"
+   },
+   {
+    "name": "Richard Johnson",
+    "title": "Assistant Wide Receivers Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://morganstatebears.com/staff-directory"
+   },
+   {
+    "name": "Marcus Bradley",
+    "title": "Assistant Coach - Defense",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://morganstatebears.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Norfolk State University",
@@ -34035,7 +34450,8 @@
     "source_url": "https://nsuspartans.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "North Carolina Central University",
@@ -34156,7 +34572,8 @@
     "source_url": "https://nccueaglepride.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 2
  },
  {
   "name": "South Carolina State University",
@@ -34277,7 +34694,8 @@
     "source_url": "https://www.scsuathletics.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Illinois State University",
@@ -34396,9 +34814,18 @@
     "phone": "671 438-8671",
     "is_recruiting_contact": true,
     "source_url": "https://goredbirds.com/sports/football/coaches"
+   },
+   {
+    "name": "Brianna Keegan",
+    "title": "Operations & Recruiting",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://goredbirds.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 9
  },
  {
   "name": "Indiana State University",
@@ -34461,9 +34888,50 @@
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://gosycamores.com/sports/football/coaches"
+   },
+   {
+    "name": "Ryan Cook",
+    "title": "Assistant Coach / Running Backs",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gosycamores.com/staff-directory"
+   },
+   {
+    "name": "Manny Harris",
+    "title": "Assistant Coach / Wide Receivers",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gosycamores.com/staff-directory"
+   },
+   {
+    "name": "JJ Henderson",
+    "title": "Assistant Coach / Cornerbacks",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gosycamores.com/staff-directory"
+   },
+   {
+    "name": "Austin Flyger",
+    "title": "Assistant Coach / Defensive Line",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gosycamores.com/staff-directory"
+   },
+   {
+    "name": "Edward Warinner",
+    "title": "Assistant Coach / Safeties",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://gosycamores.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 4
  },
  {
   "name": "Murray State University",
@@ -34592,7 +35060,8 @@
     "source_url": "https://goracers.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of North Dakota",
@@ -34705,7 +35174,8 @@
     "source_url": "https://fightinghawks.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Northern Iowa",
@@ -34778,7 +35248,8 @@
     "source_url": "https://unipanthers.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of South Dakota",
@@ -34867,7 +35338,8 @@
     "source_url": "https://goyotes.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "South Dakota State University",
@@ -34878,10 +35350,10 @@
    {
     "name": "Dan Jackson",
     "title": "Head Coach",
-    "email": null,
+    "email": "isaiah.jackson@sdstate.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://gojacks.com/sports/football/coaches"
+    "source_url": "https://gojacks.com/sports/football/roster/coaches/dan-jackson/2779"
    },
    {
     "name": "Eric Eidsness",
@@ -35060,7 +35532,8 @@
     "source_url": "https://gojacks.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 1
  },
  {
   "name": "Southern Illinois University",
@@ -35149,7 +35622,8 @@
     "source_url": "https://siusalukis.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Youngstown State University",
@@ -35326,7 +35800,8 @@
     "source_url": "https://ysusports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Central Connecticut State University",
@@ -35334,7 +35809,8 @@
   "questionnaire_found_on": null,
   "program_email": null,
   "coaches": [],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 0
  },
  {
   "name": "Duquesne University",
@@ -35431,7 +35907,8 @@
     "source_url": "https://goduquesne.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 12
  },
  {
   "name": "Long Island University",
@@ -35544,7 +36021,8 @@
     "source_url": "https://www.liuathletics.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Mercyhurst University",
@@ -35647,20 +36125,29 @@
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://hurstathletics.com/sports/football/coaches"
+   },
+   {
+    "name": "Brandan Rivers",
+    "title": "Assistant Coach (Defensive Backs)",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://hurstathletics.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of New Haven",
   "questionnaire_url": "https://newhavenchargers.com/sb_output.aspx?form=3",
   "questionnaire_found_on": "https://newhavenchargers.com",
-  "program_email": null,
+  "program_email": "football@newhaven.edu",
   "coaches": [
    {
     "name": "Mark Powell",
     "title": "Head Football Coach/Defensive Coordinator",
-    "email": "football@newhaven.edu",
+    "email": null,
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://newhavenchargers.com/sports/football/coaches"
@@ -35668,7 +36155,7 @@
    {
     "name": "Brian Scott",
     "title": "Offensive Coordinator/Quarterbacks Coach",
-    "email": "football@newhaven.edu",
+    "email": null,
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://newhavenchargers.com/sports/football/coaches"
@@ -35856,9 +36343,26 @@
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://newhavenchargers.com/sports/football/coaches"
+   },
+   {
+    "name": "Walter King",
+    "title": "Student Manager/Coaching",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://newhavenchargers.com/staff-directory"
+   },
+   {
+    "name": "Jhadelyn Castillo",
+    "title": "Student Manager/Recruiting",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": true,
+    "source_url": "https://newhavenchargers.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Robert Morris University",
@@ -35977,9 +36481,18 @@
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://rmucolonials.com/sports/football/coaches"
+   },
+   {
+    "name": "Bernard Clark, Jr.",
+    "title": "Head Coach",
+    "email": null,
+    "phone": "(412) 397-4935",
+    "is_recruiting_contact": false,
+    "source_url": "https://rmucolonials.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Stonehill College",
@@ -36026,20 +36539,29 @@
     "phone": "(508) 565-1212",
     "is_recruiting_contact": false,
     "source_url": "https://stonehillskyhawks.com/sports/football/coaches"
+   },
+   {
+    "name": "Dylan Berardelli",
+    "title": "Run Game Coordinator/Offensive Line",
+    "email": null,
+    "phone": "(508) 565-1692",
+    "is_recruiting_contact": false,
+    "source_url": "https://stonehillskyhawks.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Wagner College",
   "questionnaire_url": null,
   "questionnaire_found_on": null,
-  "program_email": null,
+  "program_email": "football.recruiting@wagner.edu",
   "coaches": [
    {
     "name": "Tom Masella",
     "title": "Head Coach",
-    "email": "football.recruiting@wagner.edu",
+    "email": null,
     "phone": "(718) 390-3171",
     "is_recruiting_contact": false,
     "source_url": "https://wagnerathletics.com/sports/football/coaches"
@@ -36141,7 +36663,8 @@
     "source_url": "https://wagnerathletics.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Charleston Southern University",
@@ -36152,10 +36675,10 @@
    {
     "name": "Gabe Giardina",
     "title": "Head Coach",
-    "email": null,
+    "email": "vgiardina@csuniv.edu",
     "phone": "(843) 863-7018",
     "is_recruiting_contact": false,
-    "source_url": "https://csusports.com/sports/football/coaches"
+    "source_url": "https://csusports.com/sports/football/roster/coaches/gabe-giardina/802"
    },
    {
     "name": "Seth Strickland",
@@ -36238,7 +36761,8 @@
     "source_url": "https://csusports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 1
  },
  {
   "name": "Eastern Illinois University",
@@ -36383,7 +36907,8 @@
     "source_url": "https://eiupanthers.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Gardner-Webb University",
@@ -36512,7 +37037,8 @@
     "source_url": "https://gwusports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Lindenwood University",
@@ -36673,7 +37199,8 @@
     "source_url": "https://lindenwoodlions.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Southeast Missouri State University",
@@ -36681,7 +37208,8 @@
   "questionnaire_found_on": null,
   "program_email": null,
   "coaches": [],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 0
  },
  {
   "name": "Tennessee State University",
@@ -36730,7 +37258,8 @@
     "source_url": "https://tsutigers.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Tennessee at Martin",
@@ -36867,7 +37396,8 @@
     "source_url": "https://utmsports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 1
  },
  {
   "name": "Western Illinois University",
@@ -37020,7 +37550,8 @@
     "source_url": "https://goleathernecks.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Bucknell University",
@@ -37047,10 +37578,10 @@
    {
     "name": "Jeffrey Long Jr.",
     "title": "Defensive Coordinator",
-    "email": null,
+    "email": "jrc068@bucknell.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://bucknellbison.com/sports/football/coaches"
+    "source_url": "https://bucknellbison.com/sports/football/roster/coaches/jeffrey-long-jr/1923"
    },
    {
     "name": "Rex Rover",
@@ -37117,7 +37648,8 @@
     "source_url": "https://bucknellbison.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 1
  },
  {
   "name": "Colgate University",
@@ -37125,7 +37657,8 @@
   "questionnaire_found_on": null,
   "program_email": null,
   "coaches": [],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 0
  },
  {
   "name": "Fordham University",
@@ -37244,20 +37777,29 @@
     "phone": "718-817-4280",
     "is_recruiting_contact": false,
     "source_url": "https://fordhamsports.com/sports/football/coaches"
+   },
+   {
+    "name": "Vincent DiGaetano",
+    "title": "Volunteer Defensive & Special Teams Quality Control",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://fordhamsports.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Georgetown University",
   "questionnaire_url": "https://guhoyas.com/sb_output.aspx?form=3",
   "questionnaire_found_on": "https://guhoyas.com",
-  "program_email": null,
+  "program_email": "football@georgetown.edu",
   "coaches": [
    {
     "name": "Rob Sgarlata",
     "title": "Head Coach",
-    "email": "football@georgetown.edu",
+    "email": null,
     "phone": "202-687-8361",
     "is_recruiting_contact": false,
     "source_url": "https://guhoyas.com/sports/football/coaches"
@@ -37292,7 +37834,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://guhoyas.com/sports/football/coaches"
+    "source_url": "https://guhoyas.com/staff-directory"
    },
    {
     "name": "Gary Ramey Jr.",
@@ -37316,7 +37858,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://guhoyas.com/sports/football/coaches"
+    "source_url": "https://guhoyas.com/staff-directory"
    },
    {
     "name": "Lex Briggs",
@@ -37324,7 +37866,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://guhoyas.com/sports/football/coaches"
+    "source_url": "https://guhoyas.com/staff-directory"
    },
    {
     "name": "Kevin Quinn",
@@ -37332,7 +37874,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://guhoyas.com/sports/football/coaches"
+    "source_url": "https://guhoyas.com/staff-directory"
    },
    {
     "name": "Trey Henderson",
@@ -37357,9 +37899,18 @@
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://guhoyas.com/sports/football/coaches"
+   },
+   {
+    "name": "Jack Elliott",
+    "title": "Director of Football Operations",
+    "email": null,
+    "phone": "202-687-6700",
+    "is_recruiting_contact": false,
+    "source_url": "https://guhoyas.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 5
  },
  {
   "name": "College of the Holy Cross",
@@ -37496,7 +38047,8 @@
     "source_url": "https://goholycross.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Lafayette College",
@@ -37601,7 +38153,8 @@
     "source_url": "https://goleopards.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Lehigh University",
@@ -37738,7 +38291,8 @@
     "source_url": "https://lehighsports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Richmond",
@@ -37851,7 +38405,8 @@
     "source_url": "https://richmondspiders.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Villanova University",
@@ -37938,9 +38493,18 @@
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://villanova.com/sports/football/coaches"
+   },
+   {
+    "name": "Joan McGuckin",
+    "title": "Director of Football Operations",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://villanova.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "William & Mary",
@@ -38101,7 +38665,8 @@
     "source_url": "https://tribeathletics.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Butler University",
@@ -38190,7 +38755,8 @@
     "source_url": "https://butlersports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Davidson College",
@@ -38271,18 +38837,19 @@
     "source_url": "https://davidsonwildcats.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 5
  },
  {
   "name": "University of Dayton",
   "questionnaire_url": null,
   "questionnaire_found_on": null,
-  "program_email": null,
+  "program_email": "football@udayton.edu",
   "coaches": [
    {
     "name": "Trevor Andrews",
     "title": "Head Coach",
-    "email": "football@udayton.edu",
+    "email": null,
     "phone": "(937) 229-4423",
     "is_recruiting_contact": false,
     "source_url": "https://daytonflyers.com/sports/football/coaches"
@@ -38306,7 +38873,7 @@
    {
     "name": "Tony Aker",
     "title": "Assistant Coach / Wide Receivers",
-    "email": "footballrecruiting@udayton.edu",
+    "email": null,
     "phone": "(937) 229-4423",
     "is_recruiting_contact": false,
     "source_url": "https://daytonflyers.com/sports/football/coaches"
@@ -38384,7 +38951,8 @@
     "source_url": "https://daytonflyers.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Drake University",
@@ -38521,7 +39089,8 @@
     "source_url": "https://godrakebulldogs.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Marist University",
@@ -38602,7 +39171,8 @@
     "source_url": "https://goredfoxes.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 8
  },
  {
   "name": "Morehead State University",
@@ -38651,7 +39221,8 @@
     "source_url": "https://msueagles.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Presbyterian College",
@@ -38764,18 +39335,19 @@
     "source_url": "https://gobluehose.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of St. Thomas",
   "questionnaire_url": "https://tommiesports.com/form/3",
   "questionnaire_found_on": "https://tommiesports.com",
-  "program_email": null,
+  "program_email": "football@stthomas.edu",
   "coaches": [
    {
     "name": "Glenn Caruso",
     "title": "Head Coach",
-    "email": "football@stthomas.edu",
+    "email": null,
     "phone": "651-962-7900",
     "is_recruiting_contact": false,
     "source_url": "https://tommiesports.com/sports/football/coaches"
@@ -38853,7 +39425,8 @@
     "source_url": "https://tommiesports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of San Diego",
@@ -38940,20 +39513,37 @@
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://usdtoreros.com/sports/football/coaches"
+   },
+   {
+    "name": "Richard Brown",
+    "title": "Wide Receivers Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://usdtoreros.com/staff-directory"
+   },
+   {
+    "name": "Alec Rozmus",
+    "title": "Running Backs Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://usdtoreros.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 8
  },
  {
   "name": "Stetson University",
   "questionnaire_url": "https://gohatters.com/sb_output.aspx?form=3",
   "questionnaire_found_on": "https://gohatters.com",
-  "program_email": null,
+  "program_email": "football@stetson.edu",
   "coaches": [
    {
     "name": "Mike Jasper",
     "title": "Head Coach",
-    "email": "football@stetson.edu",
+    "email": null,
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://gohatters.com/sports/football/coaches"
@@ -39015,7 +39605,8 @@
     "source_url": "https://gohatters.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 1
  },
  {
   "name": "Valparaiso University",
@@ -39128,7 +39719,8 @@
     "source_url": "https://valpoathletics.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Tennessee at Chattanooga",
@@ -39273,7 +39865,8 @@
     "source_url": "https://gomocs.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "The Citadel",
@@ -39442,7 +40035,8 @@
     "source_url": "https://citadelsports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 20
  },
  {
   "name": "East Tennessee State University",
@@ -39561,9 +40155,18 @@
     "phone": null,
     "is_recruiting_contact": true,
     "source_url": "https://etsubucs.com/sports/football/coaches"
+   },
+   {
+    "name": "Cade Salyers",
+    "title": "Assistant Offensive Line Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://etsubucs.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 14
  },
  {
   "name": "Furman University",
@@ -39676,7 +40279,8 @@
     "source_url": "https://furmanpaladins.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Mercer University",
@@ -39687,10 +40291,10 @@
    {
     "name": "Joel Taylor",
     "title": "Head Coach",
-    "email": null,
+    "email": "taylor_b@mercer.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://mercerbears.com/sports/football/coaches"
+    "source_url": "https://mercerbears.com/sports/football/roster/coaches/joel-taylor/3300"
    },
    {
     "name": "Sumner Ellis",
@@ -39757,7 +40361,8 @@
     "source_url": "https://mercerbears.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 1
  },
  {
   "name": "Samford University",
@@ -39918,7 +40523,8 @@
     "source_url": "https://samfordsports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Western Carolina University",
@@ -40090,12 +40696,13 @@
     "name": "Madelyn Lee",
     "title": "Director of Recruiting",
     "email": null,
-    "phone": null,
+    "phone": "(828) 227-7395",
     "is_recruiting_contact": true,
     "source_url": "https://catamountsports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Virginia Military Institute",
@@ -40152,7 +40759,8 @@
     "source_url": "https://vmikeydets.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Wofford College",
@@ -40287,9 +40895,18 @@
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://woffordterriers.com/sports/football/coaches"
+   },
+   {
+    "name": "Jackson Manchego",
+    "title": "Tight Ends Coach",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://woffordterriers.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Tennessee Technological University",
@@ -40297,7 +40914,8 @@
   "questionnaire_found_on": null,
   "program_email": null,
   "coaches": [],
-  "notes": "coaches page not reachable"
+  "notes": "coaches page not reachable; coaches page still unreachable",
+  "added_emails": 0
  },
  {
   "name": "East Texas A&M University",
@@ -40386,7 +41004,8 @@
     "source_url": "https://lionathletics.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Houston Christian University",
@@ -40473,15 +41092,24 @@
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://hcuhuskies.com/sports/football/coaches"
+   },
+   {
+    "name": "Dorien Robinson",
+    "title": "Quality Control/Running Backs",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://hcuhuskies.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of the Incarnate Word",
   "questionnaire_url": "https://uiwcardinals.com/sb_output.aspx?form=3",
   "questionnaire_found_on": "https://uiwcardinals.com",
-  "program_email": null,
+  "program_email": "uiwathletics@uiwtx.edu",
   "coaches": [
    {
     "name": "Clint Killough",
@@ -40505,7 +41133,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uiwcardinals.com/sports/football/coaches"
+    "source_url": "https://uiwcardinals.com/sports/football/roster/coaches/justin-bane/3614"
    },
    {
     "name": "Willis White",
@@ -40529,7 +41157,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uiwcardinals.com/sports/football/coaches"
+    "source_url": "https://uiwcardinals.com/sports/football/roster/coaches/ashaad-mabry/3615"
    },
    {
     "name": "Darrin Walls",
@@ -40537,7 +41165,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uiwcardinals.com/sports/football/coaches"
+    "source_url": "https://uiwcardinals.com/sports/football/roster/coaches/darrin-walls/3616"
    },
    {
     "name": "Cole McDowell",
@@ -40545,7 +41173,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": true,
-    "source_url": "https://uiwcardinals.com/sports/football/coaches"
+    "source_url": "https://uiwcardinals.com/sports/football/roster/coaches/cole-mcdowell/3617"
    },
    {
     "name": "Adrian Duncan",
@@ -40553,7 +41181,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uiwcardinals.com/sports/football/coaches"
+    "source_url": "https://uiwcardinals.com/sports/football/roster/coaches/adrian-duncan/3618"
    },
    {
     "name": "Braden Strauss",
@@ -40561,7 +41189,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uiwcardinals.com/sports/football/coaches"
+    "source_url": "https://uiwcardinals.com/sports/football/roster/coaches/braden-strauss/3608"
    },
    {
     "name": "Dalton Meyer",
@@ -40569,7 +41197,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": true,
-    "source_url": "https://uiwcardinals.com/sports/football/coaches"
+    "source_url": "https://uiwcardinals.com/sports/football/roster/coaches/dalton-meyer/3611"
    },
    {
     "name": "Reagan Longoria",
@@ -40585,7 +41213,7 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uiwcardinals.com/sports/football/coaches"
+    "source_url": "https://uiwcardinals.com/sports/football/roster/coaches/jaxson-crawford/3621"
    },
    {
     "name": "Mason Williams",
@@ -40593,10 +41221,11 @@
     "email": null,
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uiwcardinals.com/sports/football/coaches"
+    "source_url": "https://uiwcardinals.com/sports/football/roster/coaches/mason-williams/3622"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 9
  },
  {
   "name": "Lamar University",
@@ -40741,7 +41370,8 @@
     "source_url": "https://lamarcardinals.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 3
  },
  {
   "name": "McNeese State University",
@@ -40870,7 +41500,8 @@
     "source_url": "https://mcneesesports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Nicholls State University",
@@ -40951,7 +41582,8 @@
     "source_url": "https://geauxcolonels.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Northwestern State University",
@@ -41080,7 +41712,8 @@
     "source_url": "https://nsudemons.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Southeastern Louisiana University",
@@ -41185,7 +41818,8 @@
     "source_url": "https://lionsports.net/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Stephen F. Austin State University",
@@ -41306,7 +41940,8 @@
     "source_url": "https://sfajacks.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 16
  },
  {
   "name": "University of Texas Rio Grande Valley",
@@ -41443,7 +42078,8 @@
     "source_url": "https://goutrgv.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Alabama A&M University",
@@ -41556,7 +42192,8 @@
     "source_url": "https://aamusports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 11
  },
  {
   "name": "Alabama State University",
@@ -41709,7 +42346,8 @@
     "source_url": "https://bamastatesports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Bethune-Cookman University",
@@ -41790,7 +42428,8 @@
     "source_url": "https://bcuathletics.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Florida A&M University",
@@ -41895,7 +42534,8 @@
     "source_url": "https://famuathletics.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Jackson State University",
@@ -42008,7 +42648,8 @@
     "source_url": "https://gojsutigers.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 12
  },
  {
   "name": "Mississippi Valley State University",
@@ -42105,18 +42746,19 @@
     "source_url": "https://mvsusports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 3
  },
  {
   "name": "Alcorn State University",
   "questionnaire_url": "https://alcornsports.com/sb_output.aspx?form=3",
   "questionnaire_found_on": "https://alcornsports.com",
-  "program_email": null,
+  "program_email": "athletics@alcorn.edu",
   "coaches": [
    {
     "name": "Cedric Thomas",
     "title": "Head Coach",
-    "email": "athletics@alcorn.edu",
+    "email": null,
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://alcornsports.com/sports/football/coaches"
@@ -42168,9 +42810,58 @@
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://alcornsports.com/sports/football/coaches"
+   },
+   {
+    "name": "Derrien Covington",
+    "title": "Assistant Coach (Defensive Line)",
+    "email": null,
+    "phone": "601-877-2357",
+    "is_recruiting_contact": false,
+    "source_url": "https://alcornsports.com/staff-directory"
+   },
+   {
+    "name": "Cadron Davis",
+    "title": "Assistant Coach (Outside Linebackers)",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://alcornsports.com/staff-directory"
+   },
+   {
+    "name": "Tavarian McCullum",
+    "title": "Assistant Coach (Nickels)",
+    "email": null,
+    "phone": "601-877-3988",
+    "is_recruiting_contact": false,
+    "source_url": "https://alcornsports.com/staff-directory"
+   },
+   {
+    "name": "Channing Burks Jr.",
+    "title": "Graduate Assistant (Offensive Line)",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://alcornsports.com/staff-directory"
+   },
+   {
+    "name": "Semaj Mitchell",
+    "title": "Assistant Coach (Receivers)",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://alcornsports.com/staff-directory"
+   },
+   {
+    "name": "Duane Taylor",
+    "title": "Assistant Coach (Tight Ends)",
+    "email": null,
+    "phone": null,
+    "is_recruiting_contact": false,
+    "source_url": "https://alcornsports.com/staff-directory"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of Arkansas at Pine Bluff",
@@ -42291,7 +42982,8 @@
     "source_url": "https://uapblionsroar.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Grambling State University",
@@ -42340,18 +43032,19 @@
     "source_url": "https://gsutigers.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Prairie View A&M University",
   "questionnaire_url": "https://pvpanthers.com/sb_output.aspx?form=3",
   "questionnaire_found_on": "https://pvpanthers.com",
-  "program_email": null,
+  "program_email": "football@pvamu.edu",
   "coaches": [
    {
     "name": "Tremaine Jackson",
     "title": "Head Football Coach",
-    "email": "football@pvamu.edu",
+    "email": null,
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://pvpanthers.com/sports/football/coaches"
@@ -42359,7 +43052,7 @@
    {
     "name": "Trent Earley",
     "title": "Associate Head Coach | Co-Defensive Coordinator",
-    "email": "football@pvamu.edu",
+    "email": null,
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://pvpanthers.com/sports/football/coaches"
@@ -42517,7 +43210,8 @@
     "source_url": "https://pvpanthers.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Southern University",
@@ -42646,7 +43340,8 @@
     "source_url": "https://gojagsports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Texas Southern University",
@@ -42719,7 +43414,8 @@
     "source_url": "https://tsusports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 4
  },
  {
   "name": "Abilene Christian University",
@@ -42808,7 +43504,8 @@
     "source_url": "https://acusports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Austin Peay State University",
@@ -43409,7 +44106,8 @@
     "source_url": "https://letsgopeay.com/sports/football/staff"
    }
   ],
-  "notes": null
+  "notes": "coaches page still unreachable",
+  "added_emails": 0
  },
  {
   "name": "University of Central Arkansas",
@@ -43594,7 +44292,8 @@
     "source_url": "https://ucasports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Eastern Kentucky University",
@@ -43755,7 +44454,8 @@
     "source_url": "https://ekusports.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "University of North Alabama",
@@ -43852,7 +44552,8 @@
     "source_url": "https://roarlions.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Tarleton State University",
@@ -44413,7 +45114,8 @@
     "source_url": "https://tarletonsports.com/sports/football/staff"
    }
   ],
-  "notes": null
+  "notes": "coaches page still unreachable",
+  "added_emails": 0
  },
  {
   "name": "University of West Georgia",
@@ -44448,26 +45150,26 @@
    {
     "name": "George Schodowski",
     "title": "Director of Football Operations",
-    "email": null,
+    "email": "gschodow@westga.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uwgathletics.com/sports/football/coaches"
+    "source_url": "https://uwgathletics.com/sports/football/roster/coaches/george-schodowski/879"
    },
    {
     "name": "Devin Bice",
     "title": "Offensive Line/Tight Ends and Offensive Recruiting Coordinator",
-    "email": null,
+    "email": "dbice@westga.edu",
     "phone": null,
     "is_recruiting_contact": true,
-    "source_url": "https://uwgathletics.com/sports/football/coaches"
+    "source_url": "https://uwgathletics.com/sports/football/roster/coaches/devin-bice/880"
    },
    {
     "name": "Michael Sewell Jr.",
     "title": "Defensive Backs and Defensive Pass Game Coordinator",
-    "email": null,
+    "email": "msewellj@westga.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uwgathletics.com/sports/football/coaches"
+    "source_url": "https://uwgathletics.com/sports/football/roster/coaches/michael-sewell-jr-/883"
    },
    {
     "name": "Liam Smith",
@@ -44480,10 +45182,10 @@
    {
     "name": "Tyus Alcorn",
     "title": "Wide Receivers and Co-Special Teams Coordinator",
-    "email": null,
+    "email": "talcorn@westga.edu",
     "phone": null,
     "is_recruiting_contact": false,
-    "source_url": "https://uwgathletics.com/sports/football/coaches"
+    "source_url": "https://uwgathletics.com/sports/football/roster/coaches/tyus-alcorn/888"
    },
    {
     "name": "Will Carter",
@@ -44534,7 +45236,8 @@
     "source_url": "https://uwgathletics.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 4
  },
  {
   "name": "University of West Florida",
@@ -44607,18 +45310,19 @@
     "source_url": "https://goargos.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Chicago State University",
   "questionnaire_url": "https://questionnaires.armssoftware.com/f7beecc4d37d",
   "questionnaire_found_on": "https://gocsucougars.com",
-  "program_email": null,
+  "program_email": "football@csu.edu",
   "coaches": [
    {
     "name": "Bobby Rome II",
     "title": "Head Football Coach",
-    "email": "football@csu.edu",
+    "email": null,
     "phone": null,
     "is_recruiting_contact": false,
     "source_url": "https://www.gocsucougars.com/sports/football/coaches"
@@ -44720,7 +45424,8 @@
     "source_url": "https://www.gocsucougars.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  },
  {
   "name": "Merrimack College",
@@ -44841,6 +45546,7 @@
     "source_url": "https://merrimackathletics.com/sports/football/coaches"
    }
   ],
-  "notes": null
+  "notes": null,
+  "added_emails": 0
  }
 ]

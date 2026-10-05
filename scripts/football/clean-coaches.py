@@ -12,7 +12,8 @@ import json, pathlib, re
 from collections import Counter
 
 root = pathlib.Path(__file__).resolve().parents[2]
-src = json.load(open(root / 'scripts/data/coaches/scraped.json'))
+import sys
+src = json.load(open(root / 'scripts/data/coaches' / (sys.argv[1] if len(sys.argv) > 1 else 'scraped.json')))
 schools = {s['name']: s for s in json.load(open(root / 'scripts/data/football-fbs-2026.json')) + json.load(open(root / 'scripts/data/football-fcs-2026.json'))}
 
 TITLE_WORDS = re.compile(r'(coach|coordinator|recruit|personnel|director|chief of staff|quality control|analyst|graduate assistant|assistant)', re.I)
@@ -30,8 +31,11 @@ for r in src:
     if program_email and (OTHER_SPORTS.search(program_email.split('@')[0]) and 'football' not in program_email):
         program_email = None
         stats['dropped_other_sport_program_email'] += 1
-    if shared and not program_email:
-        program_email = sorted(shared, key=lambda e: -counts[e])[0]
+    good_shared = [e for e in shared if not re.search(r'ticket|contactus|webmaster|compliance|marketing|media|sid@|info@', e) and not OTHER_SPORTS.search(e.split('@')[0])]
+    if good_shared:
+        preferred = sorted(good_shared, key=lambda e: (not re.search(r'football|fb|recruit', e.split('@')[0]), -counts[e]))[0]
+        if not program_email or (re.search(r'football|fb|recruit', preferred) and not re.search(r'football|fb|recruit', program_email)):
+            program_email = preferred
     clean = []
     for c in coaches:
         name = (c.get('name') or '').strip()
@@ -50,6 +54,11 @@ for r in src:
         if email in shared:
             email = None
             stats['removed_shared_email'] += 1
+        # Office / role inboxes (football@, recruiting@, athletics@ ...) are not a person's address
+        if email and re.search(r'^(football|fb|recruit|athletics|ath|info|admin|office|staff|.*football.*|.*adcats.*)@', email.split('+')[0]) and not re.search(r'[a-z]{3,}', email.split('@')[0].replace('football','').replace('recruiting','').replace('athletics','')):
+            program_email = program_email or email
+            email = None
+            stats['moved_role_inbox'] += 1
         if email and not re.match(r'^[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$', email):
             email = None
         clean.append({**c, 'name': name, 'title': title[:140], 'email': email,
@@ -62,6 +71,6 @@ for r in src:
 
 json.dump(out, open(root / 'scripts/data/coaches/coaches.json', 'w'), indent=1)
 co = [c for r in out for c in r['coaches']]
-print('schools', len(out), 'coaches', len(co), 'with_email', sum(1 for c in co if c['email']),
+print('program_emails', sum(1 for r in out if r['program_email']), 'schools', len(out), 'coaches', len(co), 'with_email', sum(1 for c in co if c['email']),
       'schools_with_any_email', sum(1 for r in out if any(c['email'] for c in r['coaches']) or r['program_email']),
       'questionnaires', sum(1 for r in out if r['questionnaire_url']), dict(stats))
