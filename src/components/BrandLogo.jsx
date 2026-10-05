@@ -1,5 +1,5 @@
-// Program logo. Placeholder "MI" shield until official Mercer Island assets
-// are supplied — swap public/brand/logo.svg (and BRAND.logoPath) to update.
+// Program logo — official Mercer Island football mark. To change it, replace
+// public/brand/logo.png (and BRAND.logoPath).
 import { BRAND } from '../lib/brand.js'
 
 export default function BrandLogo({ size = 48, className }) {

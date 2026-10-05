@@ -27,7 +27,7 @@
  * automatically because every build produces a different bundle.)
  */
 
-const CACHE_VERSION = 'krsf-v1'
+const CACHE_VERSION = 'krsf-v2'
 const SHELL_CACHE = `${CACHE_VERSION}-shell`
 const ASSET_CACHE = `${CACHE_VERSION}-assets`
 
@@ -36,7 +36,7 @@ const ASSET_CACHE = `${CACHE_VERSION}-assets`
 // (the build outputs different names every time), so we precache
 // only the root document; runtime fetch handlers cache assets as
 // they're requested.
-const PRECACHE_URLS = ['/', '/manifest.json', '/brand/logo.svg', '/brand/icon-192.png', '/favicon.svg']
+const PRECACHE_URLS = ['/', '/manifest.json', '/brand/logo.png', '/brand/icon-192.png', '/favicon.png']
 
 self.addEventListener('install', (event) => {
   event.waitUntil(

@@ -70,7 +70,7 @@ UPDATE public.organizations
    SET theme_primary = '#B03056',
        theme_secondary = '#FFFFFF',
        theme_neutral_dark = '#0a0e1a',
-       theme_logo_url = '/brand/logo.svg'
+       theme_logo_url = '/brand/logo.png'
  WHERE id = 'b0000000-0000-0000-0000-000000000001';
 
 -- ─── 6. Invite codes: role + full admin policies ──────────────────────────

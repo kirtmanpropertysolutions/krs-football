@@ -1,7 +1,7 @@
 // Single source of truth for program branding.
-// PLACEHOLDERS: the logo (public/brand/logo.svg) is a generic "MI" shield and
-// the colors approximate Mercer Island's maroon & white. Swap in official
-// MIHS assets here and in src/index.css (--crimson tokens) when available.
+// Logo: official Mercer Island football "MI" mark (public/brand/logo.png). The
+// UI maroon is a brighter tint of the logo maroon (#581F1E) for contrast on the
+// dark theme; change here and in src/index.css (--crimson tokens).
 
 export const BRAND = {
   appName: 'KRS College Connect',
@@ -11,7 +11,7 @@ export const BRAND = {
   orgShortName: 'Mercer Island',
   teamName: 'Mercer Island Football',
   location: 'Mercer Island, WA',
-  logoPath: '/brand/logo.svg',
+  logoPath: '/brand/logo.png',
   logoAlt: 'Mercer Island Football',
   primaryColor: '#B03056', // maroon (matches --crimson in src/index.css)
   secondaryColor: '#FFFFFF', // white
