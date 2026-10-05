@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Loader2, Check, AlertCircle } from 'lucide-react'
 import { supabase } from '../lib/supabase'
+import { sortCoaches } from '../lib/coaches.js'
 import { useAuth } from '../hooks/authContext'
 import { getFitScoreBadge } from '../lib/fitScore'
 import { logActivity } from '../lib/activity.js'
@@ -41,6 +42,7 @@ export default function SchoolDetailModal({
   const subdivision = school?.subdivision ?? school?.schools?.subdivision ?? null
   const athleticsUrl = withProtocol(school?.athletics_website ?? school?.schools?.athletics_website ?? null)
   const footballUrl = withProtocol(school?.football_roster_url ?? school?.schools?.football_roster_url ?? null)
+  const questionnaireUrlFromProps = withProtocol(school?.recruiting_questionnaire_url ?? school?.schools?.recruiting_questionnaire_url ?? null)
 
   const [activeTab, setActiveTab] = useState('COACHES')
   const [notes, setNotes] = useState('')
@@ -60,6 +62,22 @@ export default function SchoolDetailModal({
   // in the database. This fixes that without making every caller do the
   // join itself.
   const [loadedCoaches, setLoadedCoaches] = useState(null)
+  // Recruiting questionnaire link — callers don't always pass it on the school object.
+  const [loadedQuestionnaire, setLoadedQuestionnaire] = useState(null)
+  useEffect(() => {
+    if (!isOpen || !realSchoolId) return
+    if (school?.recruiting_questionnaire_url || school?.schools?.recruiting_questionnaire_url) return
+    let cancelled = false
+    ;(async () => {
+      const { data } = await supabase
+        .from('schools')
+        .select('recruiting_questionnaire_url')
+        .eq('id', realSchoolId)
+        .maybeSingle()
+      if (!cancelled) setLoadedQuestionnaire(data?.recruiting_questionnaire_url || null)
+    })()
+    return () => { cancelled = true }
+  }, [isOpen, realSchoolId, school?.recruiting_questionnaire_url, school?.schools?.recruiting_questionnaire_url])
 
   // Auto-load coaches when the parent didn't include them. We only hit
   // the database when school.coaches is missing/empty, so CoachFinder
@@ -86,7 +104,7 @@ export default function SchoolDetailModal({
     ;(async () => {
       const { data, error } = await supabase
         .from('coaches')
-        .select('id, name, title, email, school_id')
+        .select('id, name, title, email, phone, school_id, is_recruiting_contact, source_url')
         .eq('school_id', realSchoolId)
       if (cancelled) return
       if (error) {
@@ -278,11 +296,12 @@ export default function SchoolDetailModal({
     (Array.isArray(school.coaches) && school.coaches.length > 0
       ? school.coaches
       : loadedCoaches) || []
-  const realCoaches = allCoaches.filter(c =>
+  const realCoaches = sortCoaches(allCoaches.filter(c =>
     !c.name.includes('Needs Verification') &&
     !c.name.includes('Support Staff') &&
     c.name !== 'Administrative Support Staff'
-  )
+  ))
+  const questionnaireUrl = questionnaireUrlFromProps || withProtocol(loadedQuestionnaire)
   const placeholderCoaches = allCoaches.filter(c => c.name.includes('Needs Verification'))
 
   // Fit score badge
@@ -547,6 +566,21 @@ export default function SchoolDetailModal({
             <div className="flex-1 px-5 py-5 md:p-6 md:overflow-y-auto">
               {activeTab === 'COACHES' && (
                 <div className="space-y-4">
+                  {/* Recruiting questionnaire — the first thing a football staff asks for */}
+                  {questionnaireUrl && (
+                    <a
+                      href={questionnaireUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-between gap-3 rounded-lg p-4 border border-club-primary bg-club-primary/10 hover:bg-club-primary/20 transition-colors"
+                    >
+                      <div className="min-w-0">
+                        <p className="text-fg-primary font-semibold">Fill out the recruiting questionnaire</p>
+                        <p className="text-text-tertiary text-xs">Puts you in the staff's recruiting database. Do this before you email.</p>
+                      </div>
+                      <span className="shrink-0 px-3 py-2 bg-club-primary text-white text-xs font-bold rounded">OPEN FORM</span>
+                    </a>
+                  )}
                   {/* Real coaches */}
                   {realCoaches.length > 0 ? (
                     realCoaches.map((coach) => {
@@ -561,6 +595,11 @@ export default function SchoolDetailModal({
                             <div className="flex-1 min-w-0">
                               <h4 className="font-semibold text-fg-primary truncate">{coach.full_name || coach.name}</h4>
                               <p className="text-sm text-text-secondary">{coach.title || 'Football Coach'}</p>
+                              {coach.is_recruiting_contact && (
+                                <span className="inline-block mt-1 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-club-primary/20 text-club-primary-light">
+                                  Recruiting contact
+                                </span>
+                              )}
                               {coach.email && (
                                 <p className="text-xs text-text-tertiary truncate flex items-center gap-1 mt-1">
                                   <span className={`inline-block w-2 h-2 rounded-full ${verification.dot}`}/>
@@ -575,7 +614,7 @@ export default function SchoolDetailModal({
                               }}
                               className="px-3 py-2 bg-club-primary hover:bg-club-primary-dark text-white text-xs font-semibold rounded shrink-0"
                             >
-                              EMAIL COACH
+                              {coach.email ? 'EMAIL COACH' : 'DETAILS'}
                             </button>
                           </div>
                         </div>

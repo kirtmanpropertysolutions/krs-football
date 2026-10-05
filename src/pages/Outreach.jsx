@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from 'react'
 import { useAuth } from '../hooks/authContext'
 import { useNavigate, useSearchParams, Link } from 'react-router-dom'
 import { supabase } from '../lib/supabase'
+import { loadAllCoaches, bestContact } from '../lib/coaches.js'
 import { getPipelineWithStats } from '../lib/pipelineWithStats'
 import { timeAgo } from '../lib/timeAgo'
 import { logActivity } from '../lib/activity'
@@ -90,11 +91,11 @@ export default function Outreach() {
         const { data: schoolCoaches } = await supabase
           .from('coaches')
           .select('*')
-          .eq('school', schoolName)
+          .eq('school_id', school.id)
 
-        if (schoolCoaches && schoolCoaches.length === 1) {
-          setSelectedCoach(schoolCoaches[0])
-        }
+        // Pre-pick the best contact (recruiting coordinator with a public email first)
+        const pick = bestContact(schoolCoaches)
+        if (pick) setSelectedCoach(pick)
       }
     } catch (error) {
       console.error('Error pre-selecting school:', error)
@@ -176,10 +177,7 @@ export default function Outreach() {
 
     try {
       const [coachesRes, schoolsRes, templatesRes, pipelineStats, historyRes, athleteRes, recentCoachesRes] = await Promise.all([
-        supabase
-          .from('coaches')
-          .select('*, schools(name, id)')
-          .order('name'),
+        loadAllCoaches('*, schools(name, id)'),
 
         supabase
           .from('schools')
@@ -284,12 +282,9 @@ export default function Outreach() {
 
     // If school has only 1 coach, auto-select it. (Resolver will still
     // pick that coach over the program email — see resolveRecipient.)
-    if (school.coach_count === 1) {
-      const schoolCoach = coaches.find(c => c.schools?.name === school.school)
-      if (schoolCoach) {
-        setSelectedCoach(schoolCoach)
-      }
-    }
+    // Pre-pick the best contact (recruiting coordinator with a public email first)
+    const pick = bestContact(coaches.filter(c => c.schools?.name === school.school))
+    if (pick) setSelectedCoach(pick)
 
     // Scroll to top
     window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -314,12 +309,9 @@ export default function Outreach() {
       program_email: school.program_email || fullSchool.program_email || null,
     })
 
-    if (school.coach_count === 1) {
-      const schoolCoach = coaches.find(c => c.schools?.name === school.school)
-      if (schoolCoach) {
-        setSelectedCoach(schoolCoach)
-      }
-    }
+    // Pre-pick the best contact (recruiting coordinator with a public email first)
+    const pick = bestContact(coaches.filter(c => c.schools?.name === school.school))
+    if (pick) setSelectedCoach(pick)
   }
 
   // Handle selecting a recent coach
@@ -1157,6 +1149,16 @@ export default function Outreach() {
                             </>
                           )}
                         </p>
+                      )}
+                      {selectedSchool?.recruiting_questionnaire_url && (
+                        <a
+                          href={/^https?:\/\//i.test(selectedSchool.recruiting_questionnaire_url) ? selectedSchool.recruiting_questionnaire_url : `https://${selectedSchool.recruiting_questionnaire_url}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-club-primary-light underline"
+                        >
+                          Fill out {selectedSchool?.short_name || selectedSchool?.name}'s recruiting questionnaire <ExternalLink className="w-3 h-3" />
+                        </a>
                       )}
                       {/* Inline COPY ADDRESS removed — it's now a
                           first-class secondary button in the send-action

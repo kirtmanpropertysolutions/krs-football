@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo } from 'react'
 import { supabase } from '../lib/supabase'
+import { loadAllCoaches, sortCoaches } from '../lib/coaches.js'
 import { useAuth } from '../hooks/authContext'
 import { useNavigate } from 'react-router-dom'
 import AthleteLayout from '../components/AthleteLayout.jsx'
@@ -64,9 +65,7 @@ export default function CoachFinder() {
         }
 
         // Load coaches
-        const { data: coachesData, error: coachesError } = await supabase
-          .from('coaches')
-          .select('*, schools(name, short_name)')
+        const { data: coachesData, error: coachesError } = await loadAllCoaches('*, schools(name, short_name)')
 
         if (coachesError) {
           console.error('Error loading coaches:', coachesError)
@@ -207,7 +206,7 @@ export default function CoachFinder() {
 
   // Get coaches for a specific school
   const getSchoolCoaches = (schoolId) => {
-    return coaches.filter(coach => coach.school_id === schoolId)
+    return sortCoaches(coaches.filter(coach => coach.school_id === schoolId))
   }
 
   // Get coach counts
@@ -302,7 +301,7 @@ export default function CoachFinder() {
     // Attach coaches to school object
     const schoolWithCoaches = {
       ...school,
-      coaches: coaches.filter(c => c.school_id === school.id)
+      coaches: sortCoaches(coaches.filter(c => c.school_id === school.id))
     }
     setModalSchool(schoolWithCoaches)
   }
@@ -324,9 +323,7 @@ export default function CoachFinder() {
       }
 
       // Reload coaches
-      const { data: coachesData } = await supabase
-        .from('coaches')
-        .select('*, schools(name, short_name)')
+      const { data: coachesData } = await loadAllCoaches('*, schools(name, short_name)')
 
       setCoaches(coachesData || [])
       setShowAddCoachModal(false)
