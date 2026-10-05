@@ -8,6 +8,10 @@ camps & combines, and coach outreach.
 This is a **separate app**: its own repo, its own Supabase project, its own Vercel project.
 Nothing here touches the soccer app.
 
+## Live
+- App: https://krs-football.vercel.app (Vercel project `krs-football`, deploys on every push to `main`)
+- Repo: https://github.com/kirtmanpropertysolutions/krs-football
+
 ## Stack
 React 19 + Vite + Tailwind 3 · Supabase (Postgres, Auth, RLS, Storage) · Vercel
 
