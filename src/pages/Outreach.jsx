@@ -262,6 +262,22 @@ export default function Outreach() {
   // resolver couldn't see the school's program inbox and blocked the
   // send). We forward it explicitly here so selectedSchool has the same
   // shape regardless of which entry point set it.
+  // Choose the best coach to email at a school. Uses the coaches already
+  // loaded on the page, and falls back to asking the database directly so a
+  // stale or partial list never leaves the athlete with "no email".
+  const pickBestCoachForSchool = async (schoolId, schoolName) => {
+    let list = coaches.filter(c => (schoolId && c.school_id === schoolId) || c.schools?.name === schoolName)
+    if (list.length === 0 && schoolId) {
+      const { data } = await supabase
+        .from('coaches')
+        .select('*, schools(name, id)')
+        .eq('school_id', schoolId)
+      list = data || []
+    }
+    const pick = bestContact(list)
+    if (pick) setSelectedCoach(pick)
+  }
+
   const handleSelectSchool = (school) => {
     setActiveTab('compose')
     // Merge the full schools row (when loaded) so the recipient resolver
@@ -283,8 +299,7 @@ export default function Outreach() {
     // If school has only 1 coach, auto-select it. (Resolver will still
     // pick that coach over the program email — see resolveRecipient.)
     // Pre-pick the best contact (recruiting coordinator with a public email first)
-    const pick = bestContact(coaches.filter(c => c.schools?.name === school.school))
-    if (pick) setSelectedCoach(pick)
+    pickBestCoachForSchool(school.school_id, school.school)
 
     // Scroll to top
     window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -310,8 +325,7 @@ export default function Outreach() {
     })
 
     // Pre-pick the best contact (recruiting coordinator with a public email first)
-    const pick = bestContact(coaches.filter(c => c.schools?.name === school.school))
-    if (pick) setSelectedCoach(pick)
+    pickBestCoachForSchool(school.school_id, school.school)
   }
 
   // Handle selecting a recent coach
