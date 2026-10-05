@@ -1,0 +1,747 @@
+import { useState, useEffect, useCallback } from 'react'
+import { useAuth } from '../hooks/authContext'
+import { useNavigate } from 'react-router-dom'
+import { supabase } from '../lib/supabase'
+import { DndContext, DragOverlay, useSensor, useSensors, PointerSensor, pointerWithin, useDroppable } from '@dnd-kit/core'
+import { SortableContext, useSortable, verticalListSortingStrategy } from '@dnd-kit/sortable'
+import { CSS } from '@dnd-kit/utilities'
+import { MoreVertical } from 'lucide-react'
+import AthleteLayout from '../components/AthleteLayout.jsx'
+import SchoolDetailModal from '../components/SchoolDetailModal.jsx'
+import SchoolBadge from '../components/SchoolBadge.jsx'
+import { getSchoolColors, isLightColor } from '../lib/schoolColors'
+import { calculateFitScore, getFitScoreBadge } from '../lib/fitScore.js'
+import { logActivity } from '../lib/activity.js'
+
+const STAGES = [
+  { id: 'interested', name: 'INTERESTED', hint: 'On your list', color: 'bg-text-muted', textColor: 'text-white' },
+  { id: 'contacted', name: 'CONTACTED', hint: 'Emailed staff or filled out the questionnaire', color: 'bg-blue-600', textColor: 'text-white' },
+  { id: 'visiting', name: 'VISITING', hint: 'Camp, junior day, or official / unofficial visit', color: 'bg-brand-gold', textColor: 'text-black' },
+  { id: 'offer', name: 'OFFER', hint: 'Scholarship or PWO offer', color: 'bg-orange-500', textColor: 'text-white' },
+  { id: 'committed', name: 'COMMITTED', hint: 'Verbal or signed', color: 'bg-green-600', textColor: 'text-white' }
+]
+
+// Subdivision (FBS/FCS) for a pipeline row — falls back to division for
+// any legacy row that hasn't been matched to a football school.
+const subdivisionOf = (school) => school.schools?.subdivision || school.subdivision || school.schools?.division || null
+
+// Football program link for a pipeline row: roster page first, then athletics site.
+const programUrlOf = (school) => {
+  const url = school.schools?.football_roster_url || school.football_roster_url ||
+    school.schools?.athletics_website || school.athletics_website || null
+  return url && !/^https?:\/\//i.test(url) ? `https://${url}` : url
+}
+
+function SchoolCard({ school, onEmailCoach, onViewSchool, onRemove, onChangeStage }) {
+  const [showMenu, setShowMenu] = useState(false)
+  const schoolName = school.schools?.name || school.school
+  const schoolColors = getSchoolColors(schoolName)
+
+  const {
+    attributes,
+    listeners,
+    setNodeRef,
+    transform,
+    transition,
+    isDragging
+  } = useSortable({ id: school.id })
+
+  const style = {
+    transform: CSS.Transform.toString(transform),
+    transition,
+    opacity: isDragging ? 0.5 : 1,
+    cursor: isDragging ? 'grabbing' : 'grab'
+  }
+
+  // Calculate fit score if available
+  const fitScore = school.quiz_responses ? calculateFitScore(school, school.quiz_responses, school.profile) : null
+  const fitBadge = fitScore ? getFitScoreBadge(fitScore, true) : null
+
+  // Calculate last contact
+  const getLastContact = () => {
+    if (school.last_outreach_date) {
+      const daysSince = Math.floor((new Date() - new Date(school.last_outreach_date)) / (1000 * 60 * 60 * 24))
+      return daysSince === 0 ? 'Today' : `${daysSince}d ago`
+    }
+    return 'Never contacted'
+  }
+
+  // Use secondary color for light primaries
+  const accentColor = isLightColor(schoolColors.primary) ? schoolColors.secondary : schoolColors.primary
+  const tintColor = isLightColor(schoolColors.primary) ? schoolColors.secondary : schoolColors.primary
+
+  return (
+    <div
+      ref={setNodeRef}
+      style={{
+        ...style,
+        borderLeft: `3px solid ${accentColor}`,
+        background: `linear-gradient(135deg, ${tintColor}10 0%, ${tintColor}05 50%, transparent 100%), #111827`
+      }}
+      {...attributes}
+      {...listeners}
+      className="rounded-lg p-3 mb-3 cursor-grab active:cursor-grabbing relative group hover:bg-card-hover transition-colors border border-card-border border-l-0"
+    >
+      {/* Fit score badge */}
+      {fitScore && (
+        <span className={`absolute top-2 right-2 px-2 py-1 rounded text-xs font-bold ${fitBadge.className} z-10`}>
+          {fitScore}
+        </span>
+      )}
+
+      <div className="flex items-center gap-3 mb-2 pr-8">
+        <SchoolBadge schoolName={school.schools?.name || school.school} size="md" />
+        <h3 className="text-fg-primary font-medium text-[13px] truncate flex-1">
+          {school.schools?.name || school.school}
+        </h3>
+      </div>
+
+      <div className="flex items-center gap-2 mb-2">
+        {subdivisionOf(school) && (
+          <span className="px-2 py-1 rounded-lg text-[10px] font-medium text-white bg-text-muted">
+            {subdivisionOf(school)}
+          </span>
+        )}
+        {school.schools?.conference && (
+          <span className="text-[10px] text-text-tertiary">
+            {school.schools.conference}
+          </span>
+        )}
+      </div>
+
+      <p className="text-text-tertiary text-[11px]">
+        Last contact: {getLastContact()}
+      </p>
+
+      {/* 3-dot menu */}
+      <div className="absolute top-2 right-8">
+        <button
+          onClick={(e) => {
+            e.stopPropagation()
+            setShowMenu(!showMenu)
+          }}
+          className="opacity-0 group-hover:opacity-100 transition-opacity p-1 rounded hover:bg-navy-800"
+        >
+          <MoreVertical size={16} className="text-text-tertiary" />
+        </button>
+
+        {showMenu && (
+          <div className="absolute right-0 top-8 bg-navy-800 border border-gray-600 rounded-lg py-2 min-w-[150px] z-20">
+            <button
+              onClick={() => {
+                onEmailCoach(school)
+                setShowMenu(false)
+              }}
+              className="w-full text-left px-4 py-2 text-fg-primary text-sm hover:bg-surface-card-hover"
+            >
+              Email Coach
+            </button>
+            <button
+              onClick={() => {
+                onViewSchool(school)
+                setShowMenu(false)
+              }}
+              className="w-full text-left px-4 py-2 text-fg-primary text-sm hover:bg-surface-card-hover"
+            >
+              View School
+            </button>
+            {programUrlOf(school) && (
+              <a
+                href={programUrlOf(school)}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setShowMenu(false)}
+                className="block w-full text-left px-4 py-2 text-fg-primary text-sm hover:bg-surface-card-hover"
+              >
+                Football Site
+              </a>
+            )}
+
+            <div className="border-t border-gray-600 my-2"></div>
+
+            {STAGES.filter(stage => stage.id !== school.stage).map(stage => (
+              <button
+                key={stage.id}
+                onClick={() => {
+                  onChangeStage(school, stage.id)
+                  setShowMenu(false)
+                }}
+                className="w-full text-left px-4 py-2 text-blue-400 text-sm hover:bg-navy-700"
+              >
+                Move to {stage.name}
+              </button>
+            ))}
+
+            <div className="border-t border-gray-600 my-2"></div>
+
+            <button
+              onClick={() => {
+                onRemove(school)
+                setShowMenu(false)
+              }}
+              className="w-full text-left px-4 py-2 text-red-400 text-sm hover:bg-navy-700"
+            >
+              Remove from Pipeline
+            </button>
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}
+
+function SchoolCardPreview({ school }) {
+  if (!school) return null
+
+  const fitScore = school.quiz_responses ? calculateFitScore(school, school.quiz_responses, school.profile) : null
+  const fitBadge = fitScore ? getFitScoreBadge(fitScore, true) : null
+
+  return (
+    <div className="bg-navy-900 rounded-lg p-4 opacity-90 rotate-2 shadow-xl border border-club-primary border-opacity-30">
+      {/* Fit score badge */}
+      {fitScore && (
+        <span className={`absolute top-2 right-2 px-2 py-1 rounded text-xs font-bold ${fitBadge.className} z-10`}>
+          {fitScore}
+        </span>
+      )}
+
+      <h3 className="text-fg-primary font-semibold text-sm mb-2 pr-8 truncate">
+        {school.schools?.name || school.school}
+      </h3>
+
+      {subdivisionOf(school) && (
+        <span
+          className="inline-block px-2 py-1 rounded text-xs font-bold text-white"
+          style={{ backgroundColor: school.schools?.primary_color || '#dc2626' }}
+        >
+          {subdivisionOf(school)}
+        </span>
+      )}
+    </div>
+  )
+}
+
+function Column({ stage, schools, onEmailCoach, onViewSchool, onRemove, onChangeStage }) {
+  const { setNodeRef, isOver } = useDroppable({
+    id: `column-${stage.id}`,
+    data: { type: 'column', stage: stage.id }
+  })
+
+  return (
+    <div
+      ref={setNodeRef}
+      className={`design-card p-4 min-h-[400px] min-w-[280px] transition-all duration-200 ${
+        isOver ? 'bg-card-hover ring-2 ring-brand-primary ring-opacity-50' : ''
+      }`}
+    >
+      <div className="flex items-center justify-between mb-4">
+        <h2 className="text-fg-primary text-[16px] font-medium" title={stage.hint}>{stage.name}</h2>
+        <span className={`${stage.color} ${stage.textColor} text-[10px] px-2 py-1 rounded-full font-medium`}>
+          {schools.length}
+        </span>
+      </div>
+
+      <SortableContext items={schools.map(s => s.id)} strategy={verticalListSortingStrategy}>
+        {schools.length > 0 ? (
+          schools.map(school => (
+            <SchoolCard
+              key={school.id}
+              school={school}
+              onEmailCoach={onEmailCoach}
+              onViewSchool={onViewSchool}
+              onRemove={onRemove}
+              onChangeStage={onChangeStage}
+            />
+          ))
+        ) : (
+          <div className={`border-2 border-dashed rounded-lg p-8 text-center transition-colors ${
+            isOver ? 'border-brand-primary bg-brand-primary bg-opacity-10' : 'border-card-border'
+          }`} style={{ pointerEvents: 'none' }}>
+            <p className={`text-[13px] ${isOver ? 'text-brand-primary' : 'text-text-tertiary'}`}>
+              Drop schools here
+            </p>
+            {stage.hint && (
+              <p className="text-[11px] text-text-muted mt-1">{stage.hint}</p>
+            )}
+          </div>
+        )}
+      </SortableContext>
+    </div>
+  )
+}
+
+// Mobile-only card for a single school inside an expanded stage section.
+// Hoisted to module scope (was inside MySchools) so React doesn't reset its
+// state on every parent render. Closed-over setters are passed as props.
+function MobileSchoolCard({ school, setShowStageModal, setSelectedSchool }) {
+  const schoolName = school.schools?.name || school.school
+  const schoolColors = getSchoolColors(schoolName)
+  const accentColor = isLightColor(schoolColors.primary) ? schoolColors.secondary : schoolColors.primary
+  const tintColor = isLightColor(schoolColors.primary) ? schoolColors.secondary : schoolColors.primary
+  const fitScore = school.quiz_responses ? calculateFitScore(school, school.quiz_responses, school.profile) : null
+  const fitBadge = fitScore ? getFitScoreBadge(fitScore, true) : null
+
+  const getLastContact = () => {
+    if (school.last_outreach_date) {
+      const daysSince = Math.floor((new Date() - new Date(school.last_outreach_date)) / (1000 * 60 * 60 * 24))
+      return daysSince === 0 ? 'Today' : `${daysSince}d ago`
+    }
+    return 'Never contacted'
+  }
+
+  return (
+    <div
+      style={{
+        borderLeft: `3px solid ${accentColor}`,
+        background: `linear-gradient(135deg, ${tintColor}10 0%, ${tintColor}05 50%, transparent 100%), #111827`
+      }}
+      className="rounded-lg p-4 mb-3 border border-card-border border-l-0 relative"
+    >
+      {fitScore && (
+        <span className={`absolute top-3 right-3 px-2 py-1 rounded text-xs font-bold ${fitBadge.className} z-10`}>
+          {fitScore}
+        </span>
+      )}
+
+      <div className="flex items-center gap-3 mb-3 pr-12">
+        <SchoolBadge schoolName={schoolName} size="md" />
+        <div className="flex-1">
+          <h3 className="text-fg-primary font-medium text-sm truncate">
+            {schoolName}
+          </h3>
+          <div className="flex items-center gap-2 mt-1">
+            {subdivisionOf(school) && (
+              <span className="px-2 py-1 rounded text-xs font-medium text-white bg-text-muted">
+                {subdivisionOf(school)}
+              </span>
+            )}
+            {school.schools?.conference && (
+              <span className="text-xs text-text-tertiary">
+                {school.schools.conference}
+              </span>
+            )}
+          </div>
+        </div>
+      </div>
+
+      <p className="text-text-tertiary text-xs mb-3">
+        Last contact: {getLastContact()}
+      </p>
+
+      <div className="flex gap-2">
+        <button
+          onClick={() => setShowStageModal(school)}
+          className="flex-1 bg-brand-primary text-white px-3 py-2 rounded text-xs font-medium"
+        >
+          Change Stage
+        </button>
+        <button
+          onClick={() => setSelectedSchool(school)}
+          className="flex-1 bg-surface-card-hover text-fg-primary px-3 py-2 rounded text-xs font-medium border border-border-default"
+        >
+          View Details
+        </button>
+      </div>
+    </div>
+  )
+}
+
+// Stage-by-stage accordion shown on mobile in place of the kanban board.
+// Hoisted alongside MobileSchoolCard for the same lifecycle reason.
+function MobileStageView({ groupedSchools, expandedSections, toggleSection, setShowStageModal, setSelectedSchool }) {
+  return (
+    <div className="space-y-4">
+      {STAGES.map(stage => {
+        const stageSchools = groupedSchools[stage.id] || []
+        const isExpanded = expandedSections[stage.id]
+
+        return (
+          <div key={stage.id} className="design-card overflow-hidden">
+            <button
+              onClick={() => toggleSection(stage.id)}
+              className="w-full p-4 flex items-center justify-between text-left"
+            >
+              <div className="flex items-center gap-3">
+                <h2 className="text-fg-primary text-sm font-medium">{stage.name}</h2>
+                <span className={`${stage.color} ${stage.textColor} text-xs px-2 py-1 rounded-full font-medium`}>
+                  {stageSchools.length}
+                </span>
+              </div>
+              <div className={`transform transition-transform ${isExpanded ? 'rotate-180' : ''}`}>
+                <svg className="w-5 h-5 text-text-tertiary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </button>
+
+            {isExpanded && (
+              <div className="px-4 pb-4">
+                {stageSchools.length > 0 ? (
+                  stageSchools.map(school => (
+                    <MobileSchoolCard
+                      key={school.id}
+                      school={school}
+                      setShowStageModal={setShowStageModal}
+                      setSelectedSchool={setSelectedSchool}
+                    />
+                  ))
+                ) : (
+                  <div className="border-2 border-dashed border-gray-600 rounded-lg p-6 text-center">
+                    <p className="text-text-tertiary text-sm">No schools in {stage.name.toLowerCase()}{stage.hint ? ` — ${stage.hint.toLowerCase()}` : ''}</p>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+        )
+      })}
+    </div>
+  )
+}
+
+// Bottom-sheet modal used by mobile to move a school between stages.
+// Hoisted to module scope; STAGES is already module-scoped above.
+function StageModal({ school, onClose, onChangeStage }) {
+  if (!school) return null
+
+  return (
+    <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-end">
+      <div className="bg-navy-900 w-full rounded-t-xl p-6 animate-slide-up">
+        <div className="flex items-center justify-between mb-4">
+          <h3 className="text-fg-primary font-medium">Move {school.schools?.name || school.school}</h3>
+          <button onClick={onClose} className="text-text-tertiary text-xl">×</button>
+        </div>
+
+        <div className="space-y-2">
+          {STAGES.filter(stage => stage.id !== school.stage).map(stage => (
+            <button
+              key={stage.id}
+              onClick={() => {
+                onChangeStage(school, stage.id)
+                onClose()
+              }}
+              className="w-full text-left p-3 rounded bg-surface-card-hover text-fg-primary hover:bg-surface-card transition-colors"
+            >
+              Move to {stage.name}
+            </button>
+          ))}
+        </div>
+
+        <button
+          onClick={onClose}
+          className="w-full mt-4 p-3 bg-surface-card-hover text-fg-primary rounded border border-border-default"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  )
+}
+
+export default function MySchools() {
+  const { user, profile } = useAuth()
+  const navigate = useNavigate()
+
+  const [schools, setSchools] = useState([])
+  const [loading, setLoading] = useState(true)
+  const [selectedSchool, setSelectedSchool] = useState(null)
+  const [activeId, setActiveId] = useState(null)
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
+  const [expandedSections, setExpandedSections] = useState({ interested: true })
+  const [showStageModal, setShowStageModal] = useState(null)
+
+  const sensors = useSensors(
+    useSensor(PointerSensor, {
+      activationConstraint: { distance: 5 }  // 5px movement before drag starts
+    })
+  )
+
+  const loadPipeline = useCallback(async (userId) => {
+    if (!userId) return
+
+    try {
+      // Step 1: Get pipeline data
+      const { data, error } = await supabase
+        .from('pipelines')
+        .select('*')
+        .eq('athlete_id', userId)
+
+      if (error) throw error
+
+      // Step 2: Lookup school details for ALL pipeline entries in one
+      // round-trip. The previous implementation issued one .single()
+      // query per pipeline row — for an athlete with 20 schools in the
+      // pipeline that's 20 sequential network calls before the page
+      // could render. The .in() batched query returns the same data
+      // in one trip; we hydrate via a Map lookup by school name.
+      let pipelinesWithSchools = []
+      const rows = data || []
+      if (rows.length > 0) {
+        const schoolNames = rows.map((p) => p.school)
+        const { data: schoolsData } = await supabase
+          .from('schools')
+          .select('*')
+          .in('name', schoolNames)
+
+        const byName = new Map((schoolsData || []).map((s) => [s.name, s]))
+        pipelinesWithSchools = rows.map((pipeline) => {
+          const schoolData = byName.get(pipeline.school) || null
+          return {
+            ...(schoolData || {}),         // school fields at top level
+            ...pipeline,                  // pipeline fields override (id, stage, etc.)
+            name: schoolData?.name || pipeline.school,  // fallback to text name
+            schools: schoolData || { name: pipeline.school }   // also keep nested for components that expect it
+          }
+        })
+      }
+
+      setSchools(pipelinesWithSchools)
+    } catch (error) {
+      console.error('Error loading pipeline:', error)
+    } finally {
+      setLoading(false)
+    }
+  }, [])
+
+  useEffect(() => {
+    if (user?.id) {
+      // Sync-with-external-state: load pipeline rows for the signed-in athlete.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      loadPipeline(user.id)
+    }
+  }, [user?.id, loadPipeline])
+
+  useEffect(() => {
+    const handler = () => setIsMobile(window.innerWidth < 768)
+    window.addEventListener('resize', handler)
+    return () => window.removeEventListener('resize', handler)
+  }, [])
+
+  const handleDragStart = (event) => {
+    if (import.meta.env.DEV) console.log('🟡 Drag started:', event.active.id)
+    setActiveId(event.active.id)
+  }
+
+  const handleDragEnd = async (event) => {
+    const { active, over } = event
+    setActiveId(null)
+
+    if (!over) return
+
+    const draggedSchool = schools.find(s => s.id === active.id)
+    if (!draggedSchool) return
+
+    // Determine destination stage
+    let destStage
+    if (over.data.current?.type === 'column') {
+      destStage = over.data.current.stage
+    } else {
+      const overSchool = schools.find(s => s.id === over.id)
+      if (!overSchool) return
+      destStage = overSchool.stage
+    }
+
+    if (destStage === draggedSchool.stage) return // no change
+
+    // Optimistic update
+    const oldStage = draggedSchool.stage
+    setSchools(prev => prev.map(school =>
+      school.id === draggedSchool.id
+        ? { ...school, stage: destStage, stage_updated_at: new Date().toISOString() }
+        : school
+    ))
+
+    // Persist to database
+    try {
+      const { error } = await supabase
+        .from('pipelines')
+        .update({
+          stage: destStage,
+          stage_updated_at: new Date().toISOString()
+        })
+        .eq('id', draggedSchool.id)
+
+      if (error) {
+        console.error('Drag persist failed:', error)
+        // Revert
+        setSchools(prev => prev.map(school =>
+          school.id === draggedSchool.id
+            ? { ...school, stage: oldStage }
+            : school
+        ))
+      }
+    } catch (error) {
+      console.error('Drag persist failed:', error)
+      // Revert
+      setSchools(prev => prev.map(school =>
+        school.id === draggedSchool.id
+          ? { ...school, stage: oldStage }
+          : school
+      ))
+    }
+  }
+
+  const handleRemoveSchool = async (school) => {
+    if (!confirm(`Remove ${school.schools?.name || 'this school'} from your pipeline?`)) return
+
+    try {
+      const { error } = await supabase
+        .from('pipelines')
+        .delete()
+        .eq('id', school.id)
+
+      if (error) throw error
+
+      setSchools(schools.filter(s => s.id !== school.id))
+    } catch (error) {
+      console.error('Error removing school:', error)
+    }
+  }
+
+  const handleChangeStage = async (school, newStage) => {
+    const stageName = STAGES.find(s => s.id === newStage)?.name || newStage
+    if (import.meta.env.DEV) console.log('🔄 Changing stage:', school.schools?.name, 'to', stageName)
+
+    try {
+      // Update database
+      const { error } = await supabase
+        .from('pipelines')
+        .update({
+          stage: newStage,
+          stage_updated_at: new Date().toISOString(),
+          last_activity_at: new Date().toISOString()
+        })
+        .eq('id', school.id)
+
+      if (error) throw error
+
+      // Update local state
+      setSchools(schools.map(s =>
+        s.id === school.id
+          ? { ...s, stage: newStage, stage_updated_at: new Date().toISOString() }
+          : s
+      ))
+
+      // Log activity
+      await logActivity(user.id, 'stage_changed', {
+        school_name: school.schools?.name || school.school,
+        from_stage: school.stage,
+        to_stage: newStage
+      })
+
+      if (import.meta.env.DEV) console.log('✅ Stage changed successfully')
+    } catch (error) {
+      console.error('❌ Error changing stage:', error)
+    }
+  }
+
+  const groupedSchools = STAGES.reduce((acc, stage) => {
+    acc[stage.id] = schools.filter(school => school.stage === stage.id)
+    return acc
+  }, {})
+
+  const toggleSection = (stageId) => {
+    setExpandedSections(prev => ({
+      ...prev,
+      [stageId]: !prev[stageId]
+    }))
+  }
+
+  if (loading) {
+    return (
+      <AthleteLayout>
+        <div className="p-4 md:p-8">
+          <div className="text-fg-primary">Loading pipeline...</div>
+        </div>
+      </AthleteLayout>
+    )
+  }
+
+  return (
+    <AthleteLayout>
+      <div className="max-w-full overflow-x-hidden px-4 md:px-8 py-8">
+        <div style={{ marginBottom: '28px' }}>
+          <div className="flex items-center gap-3 mb-2">
+            <div className="h-px w-8" style={{ background: 'var(--crimson)' }} />
+            <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson)' }}>Recruiting Pipeline</span>
+          </div>
+          <h1 className="display-font text-fg-primary" style={{ fontSize: '36px', margin: 0 }}>My Schools</h1>
+          <p className="text-text-secondary text-sm mt-1">Track every football program in your recruiting pipeline</p>
+        </div>
+
+        {schools.length === 0 && (
+          <div className="design-card p-6 mb-6 text-center">
+            <p className="text-text-secondary mb-3 text-[13px]">No schools in your pipeline yet</p>
+            <button
+              onClick={() => navigate('/coach-finder')}
+              className="text-brand-gold text-[11px] hover:text-fg-primary transition-colors"
+            >
+              FIND SCHOOLS →
+            </button>
+          </div>
+        )}
+
+{isMobile ? (
+          <MobileStageView
+            groupedSchools={groupedSchools}
+            expandedSections={expandedSections}
+            toggleSection={toggleSection}
+            setShowStageModal={setShowStageModal}
+            setSelectedSchool={setSelectedSchool}
+          />
+        ) : (
+          <DndContext
+            sensors={sensors}
+            collisionDetection={pointerWithin}
+            onDragStart={handleDragStart}
+            onDragEnd={handleDragEnd}
+            onDragCancel={() => setActiveId(null)}
+          >
+            <div className="overflow-x-auto pb-4">
+              <div className="flex gap-6 min-w-max">
+                {STAGES.map(stage => (
+                  <Column
+                    key={stage.id}
+                    stage={stage}
+                    schools={groupedSchools[stage.id] || []}
+                    onEmailCoach={(school) => navigate(`/outreach?school=${encodeURIComponent(school.schools?.name || school.school)}`)}
+                    onViewSchool={setSelectedSchool}
+                    onRemove={handleRemoveSchool}
+                    onChangeStage={handleChangeStage}
+                  />
+                ))}
+              </div>
+            </div>
+
+            <DragOverlay>
+              {activeId ? (
+                <SchoolCardPreview school={schools.find(s => s.id === activeId)} />
+              ) : null}
+            </DragOverlay>
+          </DndContext>
+        )}
+
+        {/* School Detail Modal */}
+        <SchoolDetailModal
+          school={selectedSchool}
+          isOpen={selectedSchool !== null}
+          onClose={() => setSelectedSchool(null)}
+          athleteProfile={profile}
+          onAddToPipeline={() => {}} // No-op since already in pipeline
+          onRemoveFromPipeline={handleRemoveSchool}
+          isInPipeline={true}
+          fitScore={selectedSchool ? calculateFitScore(selectedSchool, null, profile) : null}
+        />
+
+        {/* Mobile Stage Change Modal */}
+        {showStageModal && (
+          <StageModal
+            school={showStageModal}
+            onClose={() => setShowStageModal(null)}
+            onChangeStage={handleChangeStage}
+          />
+        )}
+      </div>
+    </AthleteLayout>
+  )
+}

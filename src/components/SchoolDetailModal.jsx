@@ -1,0 +1,745 @@
+import { useState, useEffect, useCallback } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { Loader2, Check, AlertCircle } from 'lucide-react'
+import { supabase } from '../lib/supabase'
+import { useAuth } from '../hooks/authContext'
+import { getFitScoreBadge } from '../lib/fitScore'
+import { logActivity } from '../lib/activity.js'
+import CoachPopover from './CoachPopover.jsx'
+
+export default function SchoolDetailModal({
+  school,
+  isOpen,
+  onClose,
+  onAddToPipeline,
+  onRemoveFromPipeline,
+  isInPipeline,
+  fitScore
+}) {
+  const navigate = useNavigate()
+  const { user } = useAuth()
+  const userId = user?.id
+  const schoolRowId = school?.id
+  const schoolRowName = school?.name
+
+  // ── ID normalization ────────────────────────────────────────────────
+  // Callers pass `school` in two different shapes:
+  //   • CoachFinder / Dashboard hand us a plain schools row, where
+  //     `school.id` IS the schools.id we want.
+  //   • MySchools / pipeline rows are merged like {...schoolData,
+  //     ...pipeline} — the spread order means `pipeline.id` (a
+  //     pipelines row id) clobbers schoolData.id. We have to dig the
+  //     real school id out of the nested `school.schools.id` instead.
+  //
+  // Without this normalization, the "Email Program" button passes a
+  // pipeline row id as ?school_id=, Outreach can't find a schools row
+  // with that id, and the recipient field never fills.
+  const realSchoolId = school?.schools?.id || school?.id
+  const realProgramEmail =
+    school?.schools?.program_email ?? school?.program_email ?? null
+  const withProtocol = (url) => (url && !/^https?:\/\//i.test(url) ? `https://${url}` : url)
+  const subdivision = school?.subdivision ?? school?.schools?.subdivision ?? null
+  const athleticsUrl = withProtocol(school?.athletics_website ?? school?.schools?.athletics_website ?? null)
+  const footballUrl = withProtocol(school?.football_roster_url ?? school?.schools?.football_roster_url ?? null)
+
+  const [activeTab, setActiveTab] = useState('COACHES')
+  const [notes, setNotes] = useState('')
+  const [saveStatus, setSaveStatus] = useState('') // '', 'saving', 'saved', 'error'
+  const [expandedPlaceholders, setExpandedPlaceholders] = useState(false)
+  // Only the setter is wired today — the modal itself isn't mounted here yet;
+  // the button just flags interest for the parent flow. Keeps the future-modal
+  // hook in place without surfacing an unused state value.
+  const [, setShowAddCoachModal] = useState(false)
+  const [showRemoveDropdown, setShowRemoveDropdown] = useState(false)
+  const [saveTimeout, setSaveTimeout] = useState(null)
+  const [activeCoachPopover, setActiveCoachPopover] = useState(null)
+  // Coaches we look up ourselves when the parent doesn't pre-load them.
+  // CoachFinder always passes `school.coaches`, but Dashboard / MySchools
+  // / SchoolFitQuiz open this modal with a bare school object and we
+  // were showing "no coaches" even when the school had verified coaches
+  // in the database. This fixes that without making every caller do the
+  // join itself.
+  const [loadedCoaches, setLoadedCoaches] = useState(null)
+
+  // Auto-load coaches when the parent didn't include them. We only hit
+  // the database when school.coaches is missing/empty, so CoachFinder
+  // (which pre-joins) takes the fast path with zero extra queries.
+  //
+  // CRUCIAL: clear `loadedCoaches` IMMEDIATELY when `school?.id` changes.
+  // The modal stays mounted across school selections on MySchools and
+  // the dashboard, so without this reset the user sees the previous
+  // school's coaches for a beat before the new query lands — visible
+  // as a "wrong coaches" bug on mobile where loading is slower.
+  useEffect(() => {
+    if (!isOpen || !realSchoolId) return
+    if (Array.isArray(school.coaches) && school.coaches.length > 0) {
+      // Sync-with-external-state: the parent already preloaded the join.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setLoadedCoaches(school.coaches)
+      return
+    }
+
+    // Wipe stale data the instant the school changes
+    setLoadedCoaches(null)
+
+    let cancelled = false
+    ;(async () => {
+      const { data, error } = await supabase
+        .from('coaches')
+        .select('id, name, title, email, school_id')
+        .eq('school_id', realSchoolId)
+      if (cancelled) return
+      if (error) {
+        console.error('SchoolDetailModal: failed to load coaches', error)
+        setLoadedCoaches([])
+        return
+      }
+      setLoadedCoaches(data || [])
+    })()
+    return () => {
+      cancelled = true
+    }
+  }, [isOpen, realSchoolId, school?.coaches])
+
+  const updateLastActivity = useCallback(async () => {
+    if (!isInPipeline || !userId || !schoolRowName) return
+
+    try {
+      await supabase
+        .from('pipelines')
+        .update({
+          last_activity_at: new Date().toISOString()
+        })
+        .eq('athlete_id', userId)
+        .eq('school', schoolRowName)
+    } catch (error) {
+      console.error('Error updating last activity:', error)
+    }
+  }, [isInPipeline, userId, schoolRowName])
+
+  // ESC key handler
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === 'Escape' && isOpen) {
+        onClose()
+      }
+    }
+
+    if (isOpen) {
+      document.addEventListener('keydown', handleEsc)
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleEsc)
+      document.body.style.overflow = 'unset'
+    }
+  }, [isOpen, onClose])
+
+  const loadNotes = useCallback(async () => {
+    if (!userId || !schoolRowId) return
+    try {
+      const { data } = await supabase
+        .from('school_notes')
+        .select('notes')
+        .eq('user_id', userId)
+        .eq('school_id', schoolRowId)
+        .single()
+
+      setNotes(data?.notes || '')
+    } catch {
+      // Notes don't exist yet, that's fine
+      setNotes('')
+    }
+  }, [userId, schoolRowId])
+
+  // Load notes when modal opens
+  useEffect(() => {
+    if (isOpen && school && user) {
+      // Sync-with-external-state: pull saved notes + bump last-activity timestamp.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      loadNotes()
+      updateLastActivity()
+    }
+  }, [isOpen, school, user, loadNotes, updateLastActivity])
+
+  const saveNotes = async () => {
+    if (!user || !school) return
+
+    if (import.meta.env.DEV) console.log('🔄 Setting saveStatus to saving')
+    setSaveStatus('saving')
+    try {
+      await supabase
+        .from('school_notes')
+        .upsert({
+          user_id: user.id,
+          school_id: school.id,
+          notes: notes.trim(),
+          updated_at: new Date().toISOString()
+        }, {
+          onConflict: 'user_id,school_id'
+        })
+
+      if (import.meta.env.DEV) console.log('✅ Setting saveStatus to saved')
+      setSaveStatus('saved')
+
+      // Log activity
+      await logActivity(user.id, 'note_saved', { school_name: school?.name })
+
+      setTimeout(() => {
+        if (import.meta.env.DEV) console.log('⏰ Clearing saveStatus')
+        setSaveStatus('')
+      }, 2000)
+    } catch (error) {
+      console.error('❌ Error saving notes:', error)
+      setSaveStatus('error')
+      setTimeout(() => setSaveStatus(''), 3000)
+    }
+  }
+
+  const handleNotesChange = (e) => {
+    setNotes(e.target.value)
+
+    // Clear existing timeout
+    if (saveTimeout) {
+      clearTimeout(saveTimeout)
+    }
+
+    // Set new timeout for debounced save (1.5 seconds)
+    const newTimeout = setTimeout(() => {
+      saveNotes()
+    }, 1500)
+
+    setSaveTimeout(newTimeout)
+  }
+
+  const handleNotesBlur = () => {
+    // Save immediately on blur if there are unsaved changes
+    if (saveTimeout) {
+      clearTimeout(saveTimeout)
+      setSaveTimeout(null)
+      saveNotes()
+    }
+  }
+
+  const getVerificationStatus = (coach) => {
+    if (!coach.verified_at) {
+      return { dot: 'bg-red-500', tooltip: 'Not yet verified' }
+    }
+
+    const daysSince = Math.floor((new Date() - new Date(coach.verified_at)) / (1000 * 60 * 60 * 24))
+    if (daysSince <= 30) {
+      return { dot: 'bg-green-500', tooltip: `Verified ${daysSince} days ago` }
+    } else if (daysSince <= 90) {
+      return { dot: 'bg-club-secondary', tooltip: `Verified ${daysSince} days ago` }
+    } else {
+      return { dot: 'bg-red-500', tooltip: `Verified ${daysSince} days ago (stale)` }
+    }
+  }
+
+  const navigateToOutreach = (coach, schoolData) => {
+    const schoolName = schoolData.name || schoolData.school
+    const url = `/outreach?school=${encodeURIComponent(schoolName)}&coach_id=${coach.id}`
+    navigate(url)
+  }
+
+  // Preserved for the per-coach "Email" button on coach rows. The current
+  // modal layout funnels users through handleEmailProgram instead, so this
+  // helper isn't wired up — keeping the navigateToOutreach call shape here
+  // so the row-level CTA can be reintroduced without re-deriving the URL.
+  // const handleEmailCoach = (coach) => navigateToOutreach(coach, school)
+
+  const handleEmailProgram = () => {
+    // Use the normalized real school id (pipeline.id would be wrong here)
+    if (!realSchoolId || !realProgramEmail) {
+      navigate('/outreach')
+      return
+    }
+    navigate(
+      `/outreach?school_id=${realSchoolId}&program_email=${encodeURIComponent(realProgramEmail)}`
+    )
+  }
+
+  const copyToClipboard = async (text) => {
+    try {
+      await navigator.clipboard.writeText(text)
+    } catch (error) {
+      console.error('Failed to copy:', error)
+    }
+  }
+
+  if (!isOpen || !school) return null
+
+  // Get coaches — prefer what the parent passed, fall back to what we
+  // loaded ourselves on open, then to empty array.
+  const allCoaches =
+    (Array.isArray(school.coaches) && school.coaches.length > 0
+      ? school.coaches
+      : loadedCoaches) || []
+  const realCoaches = allCoaches.filter(c =>
+    !c.name.includes('Needs Verification') &&
+    !c.name.includes('Support Staff') &&
+    c.name !== 'Administrative Support Staff'
+  )
+  const placeholderCoaches = allCoaches.filter(c => c.name.includes('Needs Verification'))
+
+  // Fit score badge
+  const fitBadge = fitScore !== null ? getFitScoreBadge(fitScore) : null
+
+  const buildAboutDescription = () => {
+    const parts = []
+
+    // Build program description
+    let programDesc = ''
+    if (subdivision || school.division) {
+      programDesc = subdivision
+        ? `NCAA Division I ${subdivision} football program`
+        : `Division ${school.division} football program`
+      if (school.conference) {
+        programDesc += ` in ${school.conference}`
+      }
+    }
+    if (programDesc) parts.push(programDesc)
+
+    // Add location
+    if (school.city || school.state) {
+      parts.push(`Located in ${[school.city, school.state].filter(Boolean).join(', ')}`)
+    }
+
+    // Add enrollment
+    if (school.enrollment) {
+      parts.push(`Current enrollment: ${school.enrollment.toLocaleString()} students`)
+    }
+
+    return parts.length > 0 ? parts.join('. ') + '.' : 'Information coming soon.'
+  }
+
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center"
+      style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}
+      onClick={onClose}
+    >
+      {/* Mobile: fills the screen, scrolls top to bottom, respects iPhone
+          notch via safe-area-inset-top. Desktop: centered card with a
+          max height, content inside scrolls. */}
+      <div
+        className="fixed inset-0 md:inset-auto md:max-w-[900px] md:max-h-[85vh] md:rounded-xl md:m-auto bg-surface-card shadow-2xl border border-border-default w-full overflow-y-auto animate-fadeIn"
+        style={{ paddingTop: 'env(safe-area-inset-top, 0px)' }}
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* Header with gradient — uses the school's primary color as a
+            tint over deep navy. We keep navy as the second stop in both
+            themes so the header remains dark and text-white stays
+            readable; this also keeps the school-color tint visible. */}
+        <div
+          className="sticky z-10 relative px-5 py-5 md:p-6 text-white"
+          style={{
+            top: 'env(safe-area-inset-top, 0px)',
+            background: `linear-gradient(135deg, ${school.primary_color}66 0%, #0F1E36 100%)`,
+          }}
+        >
+          {/* Close button — pushed below the notch on iPhone via the
+              container's safe-area padding. Sized as a real tap target. */}
+          <button
+            onClick={onClose}
+            className="absolute h-11 w-11 md:h-10 md:w-10 flex items-center justify-center rounded-full bg-black bg-opacity-40 hover:bg-opacity-60 text-white text-xl leading-none"
+            style={{ top: '12px', right: '12px' }}
+            aria-label="Close"
+          >
+            ×
+          </button>
+
+          {/* Fit score badge */}
+          {fitBadge && (
+            <div className="absolute top-4 right-16">
+              <span className={`px-2 py-1 rounded text-xs font-bold ${fitBadge.className}`}>
+                {fitScore}
+              </span>
+            </div>
+          )}
+
+          {/* School info — extra right padding so the title doesn't
+              crash into the close button on narrow phones. */}
+          <div className="pr-14 md:pr-20">
+            <h1 className="display-font text-2xl md:text-3xl font-bold mb-2 leading-tight">
+              {school.name}
+            </h1>
+
+            <div className="flex items-center gap-3 mb-4">
+              {(subdivision || school.division) && (
+                <span
+                  className="px-2 py-1 rounded text-xs font-bold text-white"
+                  style={{ backgroundColor: school.primary_color || '#dc2626' }}
+                >
+                  {subdivision || school.division}
+                </span>
+              )}
+              {school.conference && (
+                <span className="text-text-secondary text-sm">{school.conference}</span>
+              )}
+              {(school.city || school.state) && (
+                <span className="text-text-secondary text-sm">
+                  {[school.city, school.state].filter(Boolean).join(', ')}
+                </span>
+              )}
+            </div>
+
+            {isInPipeline ? (
+              <div className="relative">
+                <button
+                  onClick={() => setShowRemoveDropdown(!showRemoveDropdown)}
+                  className="bg-green-600 text-white hover:bg-green-700 px-6 py-2 rounded font-bold flex items-center gap-2"
+                >
+                  ADDED ✓
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+
+                {showRemoveDropdown && (
+                  <div className="absolute right-0 top-10 bg-surface-card-hover border border-border-default rounded-lg py-2 min-w-[200px] z-30">
+                    <button
+                      onClick={() => {
+                        if (onRemoveFromPipeline) onRemoveFromPipeline(school)
+                        setShowRemoveDropdown(false)
+                      }}
+                      className="w-full text-left px-4 py-2 text-red-500 text-sm hover:bg-surface-card"
+                    >
+                      Remove from Pipeline
+                    </button>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <button
+                onClick={() => onAddToPipeline(school)}
+                className="bg-club-primary text-white hover:bg-club-primary-dark px-6 py-2 rounded font-bold"
+              >
+                ADD TO PIPELINE
+              </button>
+            )}
+          </div>
+        </div>
+
+        {/* Body — on mobile, content scrolls naturally with the outer
+            container (no nested scroll, no forced 384px ceiling that
+            was clipping everything). On desktop the body becomes a
+            two-column layout with the sidebar fixed at 30% and the
+            main area scrolling independently. */}
+        <div className="flex flex-col md:flex-row md:h-[640px] md:max-h-[calc(85vh-160px)] md:overflow-hidden">
+          {/* Left sidebar — 30% on desktop, full width stacked on mobile */}
+          <div className="w-full md:w-[30%] bg-surface-card-hover px-5 py-5 md:p-6 border-b md:border-b-0 md:border-r border-border-default md:overflow-y-auto">
+            <div className="space-y-6">
+              {/* Program Email */}
+              <div>
+                <h3 className="text-fg-primary font-bold mb-2 text-sm uppercase tracking-wider">Program Email</h3>
+                {realProgramEmail ? (
+                  <div className="bg-green-900 bg-opacity-20 border border-green-600 border-opacity-30 rounded-lg p-3">
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="bg-green-600 text-white text-xs px-2 py-1 rounded font-bold">✓ VERIFIED</span>
+                    </div>
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="text-text-secondary text-sm">{realProgramEmail}</span>
+                      <button
+                        onClick={() => copyToClipboard(realProgramEmail)}
+                        className="text-text-tertiary hover:text-fg-primary text-xs"
+                        title="Copy email"
+                      >
+                        📋
+                      </button>
+                    </div>
+                    <p className="text-text-tertiary text-xs mb-3">
+                      Email the program — they forward to recruiting.
+                    </p>
+                    <button
+                      onClick={handleEmailProgram}
+                      className="w-full bg-green-600 hover:bg-green-700 text-white text-sm py-2 px-3 rounded font-bold"
+                    >
+                      EMAIL PROGRAM
+                    </button>
+                  </div>
+                ) : (
+                  <p className="text-text-tertiary text-sm">No program email on file</p>
+                )}
+              </div>
+
+              {/* Football program site */}
+              {footballUrl && (
+                <div>
+                  <h3 className="text-fg-primary font-bold mb-2 text-sm uppercase tracking-wider">Football Program</h3>
+                  <a
+                    href={footballUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-club-primary hover:text-club-primary-light text-sm underline break-all"
+                  >
+                    {footballUrl.replace(/^https?:\/\//i, '')}
+                  </a>
+                </div>
+              )}
+
+              {/* Athletics Website */}
+              {athleticsUrl && (
+                <div>
+                  <h3 className="text-fg-primary font-bold mb-2 text-sm uppercase tracking-wider">Athletics Website</h3>
+                  <a
+                    href={athleticsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-club-primary hover:text-club-primary-light text-sm underline break-all"
+                  >
+                    {athleticsUrl.replace(/^https?:\/\//i, '')}
+                  </a>
+                </div>
+              )}
+
+              {/* Academic Rank */}
+              <div>
+                <h3 className="text-fg-primary font-bold mb-2 text-sm uppercase tracking-wider">Academic Rank</h3>
+                <p className="text-text-tertiary text-sm">
+                  {school.academic_rank ? `#${school.academic_rank} US News` : 'Not ranked'}
+                </p>
+              </div>
+
+              {/* Enrollment */}
+              <div>
+                <h3 className="text-fg-primary font-bold mb-2 text-sm uppercase tracking-wider">Enrollment</h3>
+                <p className="text-text-tertiary text-sm">
+                  {school.enrollment ? school.enrollment.toLocaleString() : 'Unknown'}
+                </p>
+              </div>
+
+              {/* Region */}
+              {school.region && (
+                <div>
+                  <h3 className="text-fg-primary font-bold mb-2 text-sm uppercase tracking-wider">Region</h3>
+                  <p className="text-text-tertiary text-sm">{school.region}</p>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Right main area - 70% */}
+          <div className="flex-1 flex flex-col">
+            {/* Tabs */}
+            <div className="flex border-b border-border-default bg-surface-card overflow-x-auto">
+              {['COACHES', 'ABOUT SCHOOL', 'MY NOTES'].map((tab) => (
+                <button
+                  key={tab}
+                  onClick={() => setActiveTab(tab)}
+                  className={`px-6 py-4 text-sm font-bold transition-colors ${
+                    activeTab === tab
+                      ? 'text-club-primary border-b-2 border-club-primary'
+                      : 'text-text-tertiary hover:text-fg-primary'
+                  }`}
+                >
+                  {tab}
+                </button>
+              ))}
+            </div>
+
+            {/* Tab content — tighter padding on mobile so coach cards
+                aren't crammed against the edges. Desktop keeps the
+                generous p-6 since there's more room to breathe. */}
+            <div className="flex-1 px-5 py-5 md:p-6 md:overflow-y-auto">
+              {activeTab === 'COACHES' && (
+                <div className="space-y-4">
+                  {/* Real coaches */}
+                  {realCoaches.length > 0 ? (
+                    realCoaches.map((coach) => {
+                      const verification = getVerificationStatus(coach)
+                      return (
+                        <div
+                          key={coach.id}
+                          onClick={() => setActiveCoachPopover(coach)}
+                          className="bg-surface-card-hover hover:bg-surface-card rounded-lg p-4 cursor-pointer transition-colors border border-border-default"
+                        >
+                          <div className="flex items-start justify-between gap-3">
+                            <div className="flex-1 min-w-0">
+                              <h4 className="font-semibold text-fg-primary truncate">{coach.full_name || coach.name}</h4>
+                              <p className="text-sm text-text-secondary">{coach.title || 'Football Coach'}</p>
+                              {coach.email && (
+                                <p className="text-xs text-text-tertiary truncate flex items-center gap-1 mt-1">
+                                  <span className={`inline-block w-2 h-2 rounded-full ${verification.dot}`}/>
+                                  {coach.email}
+                                </p>
+                              )}
+                            </div>
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation()
+                                navigateToOutreach(coach, school)
+                              }}
+                              className="px-3 py-2 bg-club-primary hover:bg-club-primary-dark text-white text-xs font-semibold rounded shrink-0"
+                            >
+                              EMAIL COACH
+                            </button>
+                          </div>
+                        </div>
+                      )
+                    })
+                  ) : (
+                    <div className="bg-surface-card-hover rounded-lg p-4 border border-border-default">
+                      <p className="text-fg-primary font-semibold mb-1">No coaches loaded for this school yet</p>
+                      <p className="text-text-tertiary text-sm mb-3">
+                        Use the program's recruiting email or the staff directory link. Most football programs also have a recruiting questionnaire on their football site — fill it out so the staff has your info.
+                      </p>
+                      {(footballUrl || athleticsUrl) && (
+                        <div className="flex flex-wrap gap-2">
+                          {footballUrl && (
+                            <a
+                              href={footballUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-block bg-club-primary hover:bg-club-primary-dark text-white text-xs py-2 px-3 rounded font-bold"
+                            >
+                              FOOTBALL SITE &amp; QUESTIONNAIRE
+                            </a>
+                          )}
+                          {athleticsUrl && (
+                            <a
+                              href={athleticsUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-block border border-border-default hover:border-club-primary text-fg-primary text-xs py-2 px-3 rounded font-bold"
+                            >
+                              STAFF DIRECTORY
+                            </a>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  )}
+
+                  {/* Placeholder coaches section */}
+                  {placeholderCoaches.length > 0 && (
+                    <div className="mt-6">
+                      {realCoaches.length > 0 ? (
+                        <button
+                          onClick={() => setExpandedPlaceholders(!expandedPlaceholders)}
+                          className="w-full text-left bg-club-secondary-dark bg-opacity-20 border border-club-secondary border-opacity-30 rounded-lg p-3 text-club-secondary-light text-sm hover:bg-opacity-30"
+                        >
+                          ⚠️ {placeholderCoaches.length} unverified coach role{placeholderCoaches.length !== 1 ? 's' : ''} — help us add the current coach info
+                        </button>
+                      ) : (
+                        <div className="bg-club-secondary-dark bg-opacity-20 border border-club-secondary border-opacity-30 rounded-lg p-3 text-club-secondary-light text-sm">
+                          ⚠️ {placeholderCoaches.length} unverified coach role{placeholderCoaches.length !== 1 ? 's' : ''} — help us add the current coach info
+                        </div>
+                      )}
+
+                      {(expandedPlaceholders || realCoaches.length === 0) && (
+                        <div className="mt-2 space-y-2">
+                          {placeholderCoaches.map((coach) => (
+                            <div className="bg-surface-card-hover rounded-lg p-3 flex justify-between items-center" key={coach.id}>
+                              <div>
+                                <h5 className="text-fg-primary font-medium">{coach.name}</h5>
+                                <p className="text-text-secondary text-sm">{coach.title}</p>
+                              </div>
+                              <button
+                                onClick={() => setShowAddCoachModal(true)}
+                                className="bg-club-primary hover:bg-club-primary-dark text-white text-xs py-1 px-3 rounded font-bold"
+                              >
+                                ADD / UPDATE COACH
+                              </button>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {activeTab === 'ABOUT SCHOOL' && (
+                <div className="space-y-6">
+                  <div>
+                    <p className="text-text-secondary text-base leading-relaxed mb-4">
+                      {buildAboutDescription()}
+                    </p>
+
+                    {school.academic_rank && (
+                      <p className="text-text-secondary text-sm mb-4">
+                        Ranked #{school.academic_rank} nationally (US News)
+                      </p>
+                    )}
+
+                    {(footballUrl || athleticsUrl) && (
+                      <div className="mb-4 flex flex-wrap gap-2">
+                        {footballUrl && (
+                          <a
+                            href={footballUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block bg-club-primary hover:bg-club-primary-dark text-white text-sm py-2 px-4 rounded font-bold"
+                          >
+                            VISIT FOOTBALL SITE
+                          </a>
+                        )}
+                        {athleticsUrl && (
+                          <a
+                            href={athleticsUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block border border-border-default hover:border-club-primary text-fg-primary text-sm py-2 px-4 rounded font-bold"
+                          >
+                            VISIT ATHLETICS SITE
+                          </a>
+                        )}
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="bg-surface-card-hover rounded-lg p-4 border border-border-default">
+                    <p className="text-text-secondary text-sm">
+                      <strong>About this program</strong> — coming soon
+                    </p>
+                    <p className="text-text-tertiary text-xs mt-1">
+                      Program history, NFL alumni, recent bowl / playoff results, coaching staff and scheme
+                    </p>
+                  </div>
+                </div>
+              )}
+
+              {activeTab === 'MY NOTES' && (
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <p className="text-text-tertiary text-sm">Private to you. Track visit impressions, pros/cons, conversation notes.</p>
+                    <div className="text-xs min-h-[20px]">
+                      {saveStatus === 'saving' && <span className="text-club-secondary flex items-center gap-1"><Loader2 className="w-3 h-3 animate-spin" /> Saving...</span>}
+                      {saveStatus === 'saved' && <span className="text-green-400 flex items-center gap-1"><Check className="w-3 h-3" /> Saved</span>}
+                      {saveStatus === 'error' && <span className="text-red-400 flex items-center gap-1"><AlertCircle className="w-3 h-3" /> Error</span>}
+                    </div>
+                  </div>
+
+                  <textarea
+                    value={notes}
+                    onChange={handleNotesChange}
+                    onBlur={handleNotesBlur}
+                    placeholder="Add your private notes about this school..."
+                    className="w-full h-64 bg-surface-page text-fg-primary rounded-lg p-4 border border-border-default focus:border-club-primary focus:outline-none resize-none placeholder:text-text-tertiary"
+                  />
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+
+        {/* Coach Popover */}
+        {activeCoachPopover && (
+          <CoachPopover
+            coach={activeCoachPopover}
+            school={school}
+            onClose={() => setActiveCoachPopover(null)}
+            onEmailCoach={(coach) => {
+              setActiveCoachPopover(null)
+              navigateToOutreach(coach, school)
+            }}
+          />
+        )}
+      </div>
+    </div>
+  )
+}

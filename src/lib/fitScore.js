@@ -1,0 +1,295 @@
+// Shared fit score calculation for School Fit Quiz and Coach Finder
+// Extracted from CoachFinder.jsx to avoid duplication
+
+// Helper function for school size matching
+export const getSizeMatch = (sizePreference, enrollment) => {
+  if (!enrollment) return 5 // Default when missing data
+
+  if (sizePreference === 'no_preference') return 10
+
+  if (sizePreference === 'small' && enrollment < 5000) return 10
+  if (sizePreference === 'medium' && enrollment >= 5000 && enrollment <= 15000) return 10
+  if (sizePreference === 'large' && enrollment > 15000) return 10
+
+  // Partial credit for close matches
+  if (sizePreference === 'small' && enrollment < 8000) return 7
+  if (sizePreference === 'medium' && (enrollment < 20000 && enrollment >= 3000)) return 7
+  if (sizePreference === 'large' && enrollment > 12000) return 7
+
+  return 3 // Poor match
+}
+
+// Get user's region based on state (all 50 states + DC).
+// Regions match the `schools.region` values. 'Ivy League' is a school-only
+// region and is treated as Northeast for adjacency.
+const STATE_REGIONS = {
+  'Pacific Northwest': ['WA', 'OR', 'ID', 'AK'],
+  'California': ['CA', 'HI'],
+  'Southwest': ['AZ', 'NM', 'NV', 'TX', 'OK'],
+  'Mountain West': ['CO', 'UT', 'WY', 'MT'],
+  'Midwest': ['OH', 'MI', 'IN', 'IL', 'WI', 'MN', 'IA', 'MO', 'KS', 'NE', 'ND', 'SD'],
+  'Northeast': ['NY', 'PA', 'MA', 'CT', 'RI', 'NH', 'VT', 'ME'],
+  'Mid-Atlantic': ['NJ', 'DE', 'MD', 'DC', 'VA', 'WV'],
+  'Southeast': ['FL', 'GA', 'AL', 'MS', 'LA', 'AR', 'TN', 'SC', 'NC', 'KY']
+}
+const REGION_BY_STATE = Object.fromEntries(
+  Object.entries(STATE_REGIONS).flatMap(([region, states]) => states.map(st => [st, region]))
+)
+
+export const getUserRegion = (state) => {
+  if (!state) return 'Unknown'
+  return REGION_BY_STATE[String(state).trim().toUpperCase()] || 'Unknown'
+}
+
+// Check if regions are adjacent
+export const areAdjacentRegions = (region1, region2) => {
+  const norm = (r) => (r === 'Ivy League' ? 'Northeast' : r)
+  const a = norm(region1)
+  const b = norm(region2)
+  const adjacencies = {
+    'Pacific Northwest': ['California', 'Mountain West'],
+    'California': ['Pacific Northwest', 'Southwest', 'Mountain West'],
+    'Mountain West': ['Pacific Northwest', 'California', 'Southwest', 'Midwest'],
+    'Southwest': ['California', 'Mountain West', 'Midwest', 'Southeast'],
+    'Midwest': ['Mountain West', 'Southwest', 'Northeast', 'Mid-Atlantic', 'Southeast'],
+    'Northeast': ['Midwest', 'Mid-Atlantic'],
+    'Mid-Atlantic': ['Northeast', 'Midwest', 'Southeast'],
+    'Southeast': ['Mid-Atlantic', 'Midwest', 'Southwest']
+  }
+  return Boolean(adjacencies[a]?.includes(b) || adjacencies[b]?.includes(a))
+}
+
+// Comprehensive fit score using quiz responses (100-point algorithm)
+export const calculateQuizBasedFitScore = (school, quiz, profile) => {
+  let score = 0
+
+  // Subdivision match (20pts)
+  if (quiz.division_target && school.subdivision) {
+    const subdivisionMap = {
+      'fbs_only': ['FBS'],
+      'fcs_only': ['FCS'],
+      'fbs_fcs': ['FBS', 'FCS']
+    }
+    const acceptedSubdivisions = subdivisionMap[quiz.division_target] || []
+    if (acceptedSubdivisions.includes(school.subdivision)) {
+      score += 20
+    } else {
+      score += 5 // Partial credit: still a D1 program
+    }
+  } else {
+    score += 10 // Default when data missing
+  }
+
+  // Region match (15pts)
+  if (quiz.distance_from_home && school.region) {
+    const userState = profile?.athlete?.state || 'WA'
+    const userRegion = getUserRegion(userState)
+
+    if (quiz.distance_from_home === 'anywhere') {
+      score += 15 // No preference
+    } else if (quiz.distance_from_home === 'driving_distance') {
+      if (userRegion === school.region) {
+        score += 15 // Same region
+      } else {
+        score += 3 // Far from home
+      }
+    } else if (quiz.distance_from_home === 'same_region') {
+      if (userRegion === school.region) {
+        score += 15 // Same region
+      } else if (areAdjacentRegions(userRegion, school.region)) {
+        score += 10 // Adjacent region
+      } else {
+        score += 5 // Different region
+      }
+    }
+  } else {
+    score += 8 // Default when data missing
+  }
+
+  // Academic fit (15pts)
+  if (quiz.academic_priority && school.academic_rank) {
+    if (quiz.academic_priority === 'ivy_tier' && school.academic_rank <= 25) {
+      score += 15
+    } else if (quiz.academic_priority === 'strong_academic' && school.academic_rank <= 100) {
+      score += 15
+    } else if (quiz.academic_priority === 'balanced') {
+      score += 12 // Good balance
+    } else if (quiz.academic_priority === 'football_first') {
+      score += 15 // Football first, academics less critical
+    } else {
+      score += 8 // Partial match
+    }
+  } else {
+    score += 10 // Default when data missing
+  }
+
+  // School size (10pts)
+  if (quiz.school_size && school.enrollment) {
+    const sizeMatch = getSizeMatch(quiz.school_size, school.enrollment)
+    score += sizeMatch
+  } else {
+    score += 5 // Default when data missing
+  }
+
+  // Program prestige (10pts)
+  if (quiz.program_prestige && school.academic_rank) {
+    if (quiz.program_prestige === 'top_25' && school.academic_rank <= 25) {
+      score += 10
+    } else if (quiz.program_prestige === 'top_50' && school.academic_rank <= 50) {
+      score += 10
+    } else if (quiz.program_prestige === 'competitive_in_conference') {
+      score += 8 // Most schools qualify
+    } else if (quiz.program_prestige === 'any_program') {
+      score += 10 // No preference
+    } else {
+      score += 5 // Partial match
+    }
+  } else {
+    score += 5 // Default when data missing
+  }
+
+  // Cost sensitivity (10pts)
+  if (quiz.cost_sensitivity) {
+    // This would ideally use school cost data, but we'll use subdivision as proxy
+    if (quiz.cost_sensitivity === 'not_a_concern') {
+      score += 10
+    } else if (quiz.cost_sensitivity === 'some_aid') {
+      score += 8
+    } else if (quiz.cost_sensitivity === 'significant_aid_needed') {
+      // Favor FCS and smaller schools that might offer more aid
+      if (school.subdivision === 'FCS' || school.enrollment < 10000) {
+        score += 10
+      } else {
+        score += 6
+      }
+    }
+  } else {
+    score += 5 // Default when data missing
+  }
+
+  // Coach relationship (5pts)
+  if (quiz.coach_relationship_priority) {
+    // All coach types get points as this is preference-based
+    score += 5
+  } else {
+    score += 3 // Default when data missing
+  }
+
+  // Campus culture & support services (15pts)
+  let cultureScore = 0
+  if (quiz.campus_culture) {
+    // Give points based on culture match - simplified scoring
+    cultureScore += 8
+  } else {
+    cultureScore += 4
+  }
+
+  if (quiz.support_services_priority) {
+    // Support services availability varies by school size/resources
+    if (quiz.support_services_priority === 'less_critical') {
+      cultureScore += 7
+    } else {
+      // Favor larger schools with more resources
+      if (school.enrollment && school.enrollment > 15000) {
+        cultureScore += 7
+      } else {
+        cultureScore += 5
+      }
+    }
+  } else {
+    cultureScore += 3
+  }
+
+  score += cultureScore
+
+  return Math.min(score, 100)
+}
+
+// Main fit score calculation function.
+//
+// Used to be: returned `null` whenever profile.athlete didn't exist. That
+// silently broke the School Fit Quiz for every athlete who hadn't completed
+// their onboarding — they'd answer all 11 questions and see no results.
+//
+// New behavior: if the quiz is completed we run the full quiz-based 100-pt
+// algorithm regardless of whether the athlete row exists (calculateQuizBased
+// already defaults state to 'WA' and tolerates missing GPA). If only the
+// profile is partial, we still produce a basic score (capped at 70 to flag
+// partial data) instead of refusing to compute anything.
+export const calculateFitScore = (school, quizResponses, profile) => {
+  // If quiz is completed, use the comprehensive 100-point algorithm.
+  // This works without an athlete row because the quiz answers carry the
+  // user's actual preferences — the athlete table only contributes their
+  // state for region scoring, which defaults to 'WA' if missing.
+  if (quizResponses?.completed_at) {
+    return calculateQuizBasedFitScore(school, quizResponses, profile)
+  }
+
+  // No quiz yet — fall back to basic scoring using whatever profile
+  // signal we have. Capped at 70 to indicate partial data.
+  let score = 0
+
+  // Class year match (20 pts) - always give full points for now
+  score += 20
+
+  // Academic fit (25 pts) — uses GPA if available, otherwise a neutral default
+  const gpa = profile?.athlete?.gpa
+  if (school.academic_rank && gpa) {
+    if (gpa >= 3.7 && school.academic_rank <= 50) {
+      score += 25 // High GPA matches top 50 schools
+    } else if (gpa >= 3.3 && school.academic_rank <= 100) {
+      score += 20 // Good GPA matches top 100
+    } else if (gpa >= 3.0) {
+      score += 15 // Decent GPA
+    } else {
+      score += 10
+    }
+  } else {
+    score += 20 // Default when data missing
+  }
+
+  // Region preference (25 pts) — defaults to WA for new signups in PNW
+  const userState = profile?.athlete?.state || 'WA'
+  const userRegion = getUserRegion(userState)
+  if (userRegion === school.region) {
+    score += 25 // Perfect region match
+  } else if (areAdjacentRegions(userRegion, school.region)) {
+    score += 20 // Adjacent region
+  } else {
+    score += 10 // Different region
+  }
+
+  // Cap basic scoring at 70 to indicate incomplete data
+  return Math.min(score, 70)
+}
+
+// Get fit score badge styling and text
+export const getFitScoreBadge = (score, quizCompleted) => {
+  if (score === null) {
+    return { text: 'Complete Profile', className: 'bg-gray-600 text-gray-300' }
+  }
+
+  // Quiz completed scores (0-100)
+  if (quizCompleted) {
+    if (score >= 85) {
+      return { text: 'EXCELLENT FIT', className: 'bg-green-600 text-white' }
+    } else if (score >= 70) {
+      return { text: 'STRONG FIT', className: 'bg-green-500 text-white' }
+    } else if (score >= 55) {
+      return { text: 'GOOD FIT', className: 'bg-club-secondary text-white' }
+    } else if (score >= 40) {
+      return { text: 'FAIR FIT', className: 'bg-orange-600 text-white' }
+    } else {
+      return { text: 'STRETCH', className: 'bg-gray-600 text-white' }
+    }
+  }
+
+  // Basic scores (capped at 70, partial data)
+  if (score >= 60) {
+    return { text: 'STRONG FIT*', className: 'bg-club-secondary text-white' }
+  } else if (score >= 45) {
+    return { text: 'GOOD FIT*', className: 'bg-club-secondary text-white' }
+  } else {
+    return { text: 'STRETCH*', className: 'bg-gray-600 text-white' }
+  }
+}
