@@ -8,7 +8,7 @@
 // Needs internet access; run it somewhere with an open network (e.g. a Vercel Sandbox).
 import fs from 'fs'
 import path from 'path'
-import { fileURLToPath } from 'url'
+import { fileURLToPath, pathToFileURL } from 'url'
 import * as cheerio from 'cheerio'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
@@ -268,4 +268,6 @@ async function main() {
   console.log(`DONE schools=${out.length} coaches=${coaches.length} withEmail=${coaches.filter((c) => c.email).length} schoolsWithEmail=${out.filter((r) => r.coaches.some((c) => c.email) || r.program_email).length} questionnaires=${out.filter((r) => r.questionnaire_url).length}`)
 }
 
-main()
+export { get, parseCoaches, parseStaffDirectory, emailsIn, findQuestionnaire, mergePeople, clean, UA }
+
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) main()
