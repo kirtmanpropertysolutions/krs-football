@@ -27,7 +27,7 @@
  * automatically because every build produces a different bundle.)
  */
 
-const CACHE_VERSION = 'krsf-v3'
+const CACHE_VERSION = 'krsf-v4'
 const SHELL_CACHE = `${CACHE_VERSION}-shell`
 const ASSET_CACHE = `${CACHE_VERSION}-assets`
 

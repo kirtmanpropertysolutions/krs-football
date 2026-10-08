@@ -562,7 +562,9 @@ export default function Outreach() {
   // Update preview when template or selections change (sync-with-derived-async-state)
   useEffect(() => {
     const updatePreview = async () => {
-      if (selectedTemplate && athlete) {
+      // Don't wait for an athletes row: players who haven't saved their
+      // profile yet still get a preview, with [placeholders] for blanks.
+      if (selectedTemplate) {
         const newPreview = await getPreview()
         setPreview(newPreview)
       } else {
