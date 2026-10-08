@@ -266,30 +266,30 @@ export const calculateFitScore = (school, quizResponses, profile) => {
 // Get fit score badge styling and text
 export const getFitScoreBadge = (score, quizCompleted) => {
   if (score === null) {
-    return { text: 'Complete Profile', className: 'bg-gray-600 text-gray-300' }
+    return { text: 'Complete Profile', className: 'bg-line-input text-fg-soft' }
   }
 
   // Quiz completed scores (0-100)
   if (quizCompleted) {
     if (score >= 85) {
-      return { text: 'EXCELLENT FIT', className: 'bg-green-600 text-white' }
+      return { text: 'EXCELLENT FIT', className: 'bg-green-700 text-white' }
     } else if (score >= 70) {
-      return { text: 'STRONG FIT', className: 'bg-green-500 text-white' }
+      return { text: 'STRONG FIT', className: 'bg-green-700 text-white' }
     } else if (score >= 55) {
-      return { text: 'GOOD FIT', className: 'bg-club-secondary text-white' }
+      return { text: 'GOOD FIT', className: 'bg-club-secondary text-black' }
     } else if (score >= 40) {
-      return { text: 'FAIR FIT', className: 'bg-orange-600 text-white' }
+      return { text: 'FAIR FIT', className: 'bg-orange-700 text-white' }
     } else {
-      return { text: 'STRETCH', className: 'bg-gray-600 text-white' }
+      return { text: 'STRETCH', className: 'bg-neutral-solid text-white' }
     }
   }
 
   // Basic scores (capped at 70, partial data)
   if (score >= 60) {
-    return { text: 'STRONG FIT*', className: 'bg-club-secondary text-white' }
+    return { text: 'STRONG FIT*', className: 'bg-club-secondary text-black' }
   } else if (score >= 45) {
-    return { text: 'GOOD FIT*', className: 'bg-club-secondary text-white' }
+    return { text: 'GOOD FIT*', className: 'bg-club-secondary text-black' }
   } else {
-    return { text: 'STRETCH*', className: 'bg-gray-600 text-white' }
+    return { text: 'STRETCH*', className: 'bg-neutral-solid text-white' }
   }
 }

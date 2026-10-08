@@ -34,10 +34,27 @@
   --border-strong: #334155;
   --text-primary: #ffffff;
   --text-secondary: #94a3b8;
-  --text-tertiary: #64748b;
-  --text-muted: #475569;
+  --text-tertiary: #8b97ab;          /* AA (4.5:1+) on page, card and inset */
+  --text-muted: #8592a6;             /* AA on page and card */
   --accent-crimson-fg: #ffffff;       /* text on crimson buttons */
   --accent-gold-readable: #fbbf24;    /* gold that works against current bg */
+  --crimson-text: #e27391;            /* maroon used AS TEXT — brand maroon is too dark on navy */
+  --tier-elite: #fbbf24;
+  --tier-captain: #e27391;
+  --tier-starter: #e8909f;
+  --tier-squad: #94a3b8;
+  --tier-rookie: #8b97ab;
+
+  /* Inset surfaces, borders and soft text that used to be hard-coded
+     Tailwind grays (bg-gray-800, border-gray-600, text-gray-300...).
+     Dark values match the old grays exactly; light values are readable. */
+  --bg-inset: #1f2937;
+  --bg-inset-strong: #374151;
+  --border-input: #4b5563;
+  --border-subtle: #374151;
+  --text-soft: #d1d5db;
+  --text-dim: #9ca3af;
+  --text-faint: #8b95a5;
   --hero-glow: rgba(176, 48, 86, 0.06);
   --hero-glow-strong: rgba(176, 48, 86, 0.12);
   --grain-opacity: 0.6;
@@ -59,10 +76,23 @@ body.light {
   --border-strong: rgba(27, 42, 74, 0.18);
   --text-primary: #0f1729;
   --text-secondary: #475569;
-  --text-tertiary: #64748b;
-  --text-muted: #94a3b8;
+  --text-tertiary: #596577;
+  --text-muted: #5f6b7d;
   --accent-crimson-fg: #ffffff;        /* white on crimson is brand — unchanged */
-  --accent-gold-readable: #b8861a;     /* deeper gold for AA on white */
+  --accent-gold-readable: #7c5a0c;     /* deep gold, AA on white and cream */
+  --crimson-text: #9a2147;
+  --tier-elite: #7c5a0c;
+  --tier-captain: #9a2147;
+  --tier-starter: #a8355a;
+  --tier-squad: #475569;
+  --tier-rookie: #596577;
+  --bg-inset: #f5efe6;
+  --bg-inset-strong: #ebe3d6;
+  --border-input: #d3c9ba;
+  --border-subtle: #e8e0d4;
+  --text-soft: #334155;
+  --text-dim: #4b5563;
+  --text-faint: #596577;
   --hero-glow: rgba(176, 48, 86, 0.025);
   --hero-glow-strong: rgba(176, 48, 86, 0.05);
   --grain-opacity: 0.25;
@@ -206,7 +236,7 @@ body.light {
 
   .secondary-btn:hover {
     border-color: var(--crimson);
-    color: var(--crimson);
+    color: var(--crimson-text);
   }
   /* Primary club button */
   .btn-primary {
@@ -223,7 +253,7 @@ body.light {
   .btn-secondary {
     @apply bg-transparent font-bold uppercase px-6 py-3 rounded-lg transition-colors;
     border: 1px solid var(--club-primary);
-    color: var(--club-primary);
+    color: var(--crimson-text);
   }
 
   .btn-secondary:hover {
@@ -380,7 +410,7 @@ body.light {
     color: #1B2A4A;
     border: 1px solid #e8e0d4;
   }
-  .chip-crimson { background: rgba(176, 48, 86,0.15); color: #ff6b7a; border: 1px solid rgba(176, 48, 86,0.3); }
+  .chip-crimson { background: rgba(176, 48, 86,0.15); color: var(--crimson-text); border: 1px solid rgba(176, 48, 86,0.3); }
   body.light .chip-crimson { background: rgba(176, 48, 86,0.1); color: #8B1E3F; border-color: rgba(176, 48, 86,0.35); }
   .chip-gold { background: rgba(251,191,36,0.12); color: #fcd34d; border: 1px solid rgba(251,191,36,0.25); }
   body.light .chip-gold { background: rgba(184,134,26,0.1); color: #8a6510; border-color: rgba(184,134,26,0.3); }
@@ -550,7 +580,7 @@ body.light {
   }
 
   .mobile-tabbar-item.active {
-    color: var(--crimson);
+    color: var(--crimson-text);
   }
 
   .mobile-tabbar-item:active {
@@ -662,3 +692,234 @@ body.light {
     100% { transform: scale(1); opacity: 1; }
   }
 }
+
+/* ------------------------------------------------------------------
+   Light-mode readability for bright accent text.
+   text-green-400, text-red-400 etc. are tuned for the navy background
+   and drop below 2:1 contrast on white. In light mode every -100..-500
+   accent text shade is remapped to the -700 shade of the same hue.
+   (The theme audit, npm run audit:theme, enforces this stays fixed.)
+   ------------------------------------------------------------------ */
+body.light .text-red-100,
+body.light .hover\:text-red-100:hover,
+body.light .text-red-200,
+body.light .hover\:text-red-200:hover,
+body.light .text-red-300,
+body.light .hover\:text-red-300:hover,
+body.light .text-red-400,
+body.light .hover\:text-red-400:hover,
+body.light .text-red-500,
+body.light .hover\:text-red-500:hover { color: #991b1b; }
+body.light .text-green-100,
+body.light .hover\:text-green-100:hover,
+body.light .text-green-200,
+body.light .hover\:text-green-200:hover,
+body.light .text-green-300,
+body.light .hover\:text-green-300:hover,
+body.light .text-green-400,
+body.light .hover\:text-green-400:hover,
+body.light .text-green-500,
+body.light .hover\:text-green-500:hover { color: #166534; }
+body.light .text-emerald-100,
+body.light .hover\:text-emerald-100:hover,
+body.light .text-emerald-200,
+body.light .hover\:text-emerald-200:hover,
+body.light .text-emerald-300,
+body.light .hover\:text-emerald-300:hover,
+body.light .text-emerald-400,
+body.light .hover\:text-emerald-400:hover,
+body.light .text-emerald-500,
+body.light .hover\:text-emerald-500:hover { color: #065f46; }
+body.light .text-blue-100,
+body.light .hover\:text-blue-100:hover,
+body.light .text-blue-200,
+body.light .hover\:text-blue-200:hover,
+body.light .text-blue-300,
+body.light .hover\:text-blue-300:hover,
+body.light .text-blue-400,
+body.light .hover\:text-blue-400:hover,
+body.light .text-blue-500,
+body.light .hover\:text-blue-500:hover { color: #1e40af; }
+body.light .text-sky-100,
+body.light .hover\:text-sky-100:hover,
+body.light .text-sky-200,
+body.light .hover\:text-sky-200:hover,
+body.light .text-sky-300,
+body.light .hover\:text-sky-300:hover,
+body.light .text-sky-400,
+body.light .hover\:text-sky-400:hover,
+body.light .text-sky-500,
+body.light .hover\:text-sky-500:hover { color: #075985; }
+body.light .text-cyan-100,
+body.light .hover\:text-cyan-100:hover,
+body.light .text-cyan-200,
+body.light .hover\:text-cyan-200:hover,
+body.light .text-cyan-300,
+body.light .hover\:text-cyan-300:hover,
+body.light .text-cyan-400,
+body.light .hover\:text-cyan-400:hover,
+body.light .text-cyan-500,
+body.light .hover\:text-cyan-500:hover { color: #155e75; }
+body.light .text-teal-100,
+body.light .hover\:text-teal-100:hover,
+body.light .text-teal-200,
+body.light .hover\:text-teal-200:hover,
+body.light .text-teal-300,
+body.light .hover\:text-teal-300:hover,
+body.light .text-teal-400,
+body.light .hover\:text-teal-400:hover,
+body.light .text-teal-500,
+body.light .hover\:text-teal-500:hover { color: #115e59; }
+body.light .text-orange-100,
+body.light .hover\:text-orange-100:hover,
+body.light .text-orange-200,
+body.light .hover\:text-orange-200:hover,
+body.light .text-orange-300,
+body.light .hover\:text-orange-300:hover,
+body.light .text-orange-400,
+body.light .hover\:text-orange-400:hover,
+body.light .text-orange-500,
+body.light .hover\:text-orange-500:hover { color: #9a3412; }
+body.light .text-amber-100,
+body.light .hover\:text-amber-100:hover,
+body.light .text-amber-200,
+body.light .hover\:text-amber-200:hover,
+body.light .text-amber-300,
+body.light .hover\:text-amber-300:hover,
+body.light .text-amber-400,
+body.light .hover\:text-amber-400:hover,
+body.light .text-amber-500,
+body.light .hover\:text-amber-500:hover { color: #92400e; }
+body.light .text-yellow-100,
+body.light .hover\:text-yellow-100:hover,
+body.light .text-yellow-200,
+body.light .hover\:text-yellow-200:hover,
+body.light .text-yellow-300,
+body.light .hover\:text-yellow-300:hover,
+body.light .text-yellow-400,
+body.light .hover\:text-yellow-400:hover,
+body.light .text-yellow-500,
+body.light .hover\:text-yellow-500:hover { color: #854d0e; }
+body.light .text-lime-100,
+body.light .hover\:text-lime-100:hover,
+body.light .text-lime-200,
+body.light .hover\:text-lime-200:hover,
+body.light .text-lime-300,
+body.light .hover\:text-lime-300:hover,
+body.light .text-lime-400,
+body.light .hover\:text-lime-400:hover,
+body.light .text-lime-500,
+body.light .hover\:text-lime-500:hover { color: #3f6212; }
+body.light .text-purple-100,
+body.light .hover\:text-purple-100:hover,
+body.light .text-purple-200,
+body.light .hover\:text-purple-200:hover,
+body.light .text-purple-300,
+body.light .hover\:text-purple-300:hover,
+body.light .text-purple-400,
+body.light .hover\:text-purple-400:hover,
+body.light .text-purple-500,
+body.light .hover\:text-purple-500:hover { color: #6b21a8; }
+body.light .text-violet-100,
+body.light .hover\:text-violet-100:hover,
+body.light .text-violet-200,
+body.light .hover\:text-violet-200:hover,
+body.light .text-violet-300,
+body.light .hover\:text-violet-300:hover,
+body.light .text-violet-400,
+body.light .hover\:text-violet-400:hover,
+body.light .text-violet-500,
+body.light .hover\:text-violet-500:hover { color: #5b21b6; }
+body.light .text-indigo-100,
+body.light .hover\:text-indigo-100:hover,
+body.light .text-indigo-200,
+body.light .hover\:text-indigo-200:hover,
+body.light .text-indigo-300,
+body.light .hover\:text-indigo-300:hover,
+body.light .text-indigo-400,
+body.light .hover\:text-indigo-400:hover,
+body.light .text-indigo-500,
+body.light .hover\:text-indigo-500:hover { color: #3730a3; }
+body.light .text-pink-100,
+body.light .hover\:text-pink-100:hover,
+body.light .text-pink-200,
+body.light .hover\:text-pink-200:hover,
+body.light .text-pink-300,
+body.light .hover\:text-pink-300:hover,
+body.light .text-pink-400,
+body.light .hover\:text-pink-400:hover,
+body.light .text-pink-500,
+body.light .hover\:text-pink-500:hover { color: #9d174d; }
+body.light .text-rose-100,
+body.light .hover\:text-rose-100:hover,
+body.light .text-rose-200,
+body.light .hover\:text-rose-200:hover,
+body.light .text-rose-300,
+body.light .hover\:text-rose-300:hover,
+body.light .text-rose-400,
+body.light .hover\:text-rose-400:hover,
+body.light .text-rose-500,
+body.light .hover\:text-rose-500:hover { color: #9f1239; }
+body.light .text-fuchsia-100,
+body.light .hover\:text-fuchsia-100:hover,
+body.light .text-fuchsia-200,
+body.light .hover\:text-fuchsia-200:hover,
+body.light .text-fuchsia-300,
+body.light .hover\:text-fuchsia-300:hover,
+body.light .text-fuchsia-400,
+body.light .hover\:text-fuchsia-400:hover,
+body.light .text-fuchsia-500,
+body.light .hover\:text-fuchsia-500:hover { color: #86198f; }
+
+/* Dark accent fills (bg-green-900, bg-blue-800...) become pale tints in light mode. */
+body.light .bg-red-800,
+body.light .bg-red-900,
+body.light .bg-red-950 { background-color: #fee2e2; }
+body.light .bg-green-800,
+body.light .bg-green-900,
+body.light .bg-green-950 { background-color: #dcfce7; }
+body.light .bg-emerald-800,
+body.light .bg-emerald-900,
+body.light .bg-emerald-950 { background-color: #d1fae5; }
+body.light .bg-blue-800,
+body.light .bg-blue-900,
+body.light .bg-blue-950 { background-color: #dbeafe; }
+body.light .bg-sky-800,
+body.light .bg-sky-900,
+body.light .bg-sky-950 { background-color: #e0f2fe; }
+body.light .bg-cyan-800,
+body.light .bg-cyan-900,
+body.light .bg-cyan-950 { background-color: #cffafe; }
+body.light .bg-teal-800,
+body.light .bg-teal-900,
+body.light .bg-teal-950 { background-color: #ccfbf1; }
+body.light .bg-orange-800,
+body.light .bg-orange-900,
+body.light .bg-orange-950 { background-color: #ffedd5; }
+body.light .bg-amber-800,
+body.light .bg-amber-900,
+body.light .bg-amber-950 { background-color: #fef3c7; }
+body.light .bg-yellow-800,
+body.light .bg-yellow-900,
+body.light .bg-yellow-950 { background-color: #fef9c3; }
+body.light .bg-lime-800,
+body.light .bg-lime-900,
+body.light .bg-lime-950 { background-color: #ecfccb; }
+body.light .bg-purple-800,
+body.light .bg-purple-900,
+body.light .bg-purple-950 { background-color: #f3e8ff; }
+body.light .bg-violet-800,
+body.light .bg-violet-900,
+body.light .bg-violet-950 { background-color: #ede9fe; }
+body.light .bg-indigo-800,
+body.light .bg-indigo-900,
+body.light .bg-indigo-950 { background-color: #e0e7ff; }
+body.light .bg-pink-800,
+body.light .bg-pink-900,
+body.light .bg-pink-950 { background-color: #fce7f3; }
+body.light .bg-rose-800,
+body.light .bg-rose-900,
+body.light .bg-rose-950 { background-color: #ffe4e6; }
+body.light .bg-fuchsia-800,
+body.light .bg-fuchsia-900,
+body.light .bg-fuchsia-950 { background-color: #fae8ff; }

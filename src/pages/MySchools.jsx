@@ -9,16 +9,16 @@ import { MoreVertical } from 'lucide-react'
 import AthleteLayout from '../components/AthleteLayout.jsx'
 import SchoolDetailModal from '../components/SchoolDetailModal.jsx'
 import SchoolBadge from '../components/SchoolBadge.jsx'
-import { getSchoolColors, isLightColor } from '../lib/schoolColors'
+import { getSchoolColors, isLightColor, readableTextOn } from '../lib/schoolColors'
 import { calculateFitScore, getFitScoreBadge } from '../lib/fitScore.js'
 import { logActivity } from '../lib/activity.js'
 
 const STAGES = [
-  { id: 'interested', name: 'INTERESTED', hint: 'On your list', color: 'bg-text-muted', textColor: 'text-white' },
+  { id: 'interested', name: 'INTERESTED', hint: 'On your list', color: 'bg-neutral-solid', textColor: 'text-white' },
   { id: 'contacted', name: 'CONTACTED', hint: 'Emailed staff or filled out the questionnaire', color: 'bg-blue-600', textColor: 'text-white' },
   { id: 'visiting', name: 'VISITING', hint: 'Camp, junior day, or official / unofficial visit', color: 'bg-brand-gold', textColor: 'text-black' },
-  { id: 'offer', name: 'OFFER', hint: 'Scholarship or PWO offer', color: 'bg-orange-500', textColor: 'text-white' },
-  { id: 'committed', name: 'COMMITTED', hint: 'Verbal or signed', color: 'bg-green-600', textColor: 'text-white' }
+  { id: 'offer', name: 'OFFER', hint: 'Scholarship or PWO offer', color: 'bg-orange-700', textColor: 'text-white' },
+  { id: 'committed', name: 'COMMITTED', hint: 'Verbal or signed', color: 'bg-green-700', textColor: 'text-white' }
 ]
 
 // Subdivision (FBS/FCS) for a pipeline row — falls back to division for
@@ -76,7 +76,7 @@ function SchoolCard({ school, onEmailCoach, onViewSchool, onRemove, onChangeStag
       style={{
         ...style,
         borderLeft: `3px solid ${accentColor}`,
-        background: `linear-gradient(135deg, ${tintColor}10 0%, ${tintColor}05 50%, transparent 100%), #111827`
+        background: `linear-gradient(135deg, ${tintColor}10 0%, ${tintColor}05 50%, transparent 100%), var(--bg-card)`
       }}
       {...attributes}
       {...listeners}
@@ -98,7 +98,7 @@ function SchoolCard({ school, onEmailCoach, onViewSchool, onRemove, onChangeStag
 
       <div className="flex items-center gap-2 mb-2">
         {subdivisionOf(school) && (
-          <span className="px-2 py-1 rounded-lg text-[10px] font-medium text-white bg-text-muted">
+          <span className="px-2 py-1 rounded-lg text-[10px] font-medium text-white bg-neutral-solid">
             {subdivisionOf(school)}
           </span>
         )}
@@ -126,7 +126,7 @@ function SchoolCard({ school, onEmailCoach, onViewSchool, onRemove, onChangeStag
         </button>
 
         {showMenu && (
-          <div className="absolute right-0 top-8 bg-navy-800 border border-gray-600 rounded-lg py-2 min-w-[150px] z-20">
+          <div className="absolute right-0 top-8 bg-navy-800 border border-line-input rounded-lg py-2 min-w-[150px] z-20">
             <button
               onClick={() => {
                 onEmailCoach(school)
@@ -157,7 +157,7 @@ function SchoolCard({ school, onEmailCoach, onViewSchool, onRemove, onChangeStag
               </a>
             )}
 
-            <div className="border-t border-gray-600 my-2"></div>
+            <div className="border-t border-line-input my-2"></div>
 
             {STAGES.filter(stage => stage.id !== school.stage).map(stage => (
               <button
@@ -172,7 +172,7 @@ function SchoolCard({ school, onEmailCoach, onViewSchool, onRemove, onChangeStag
               </button>
             ))}
 
-            <div className="border-t border-gray-600 my-2"></div>
+            <div className="border-t border-line-input my-2"></div>
 
             <button
               onClick={() => {
@@ -211,8 +211,8 @@ function SchoolCardPreview({ school }) {
 
       {subdivisionOf(school) && (
         <span
-          className="inline-block px-2 py-1 rounded text-xs font-bold text-white"
-          style={{ backgroundColor: school.schools?.primary_color || '#dc2626' }}
+          className="inline-block px-2 py-1 rounded text-xs font-bold"
+          style={{ backgroundColor: school.schools?.primary_color || '#475569', color: readableTextOn(school.schools?.primary_color || '#475569') }}
         >
           {subdivisionOf(school)}
         </span>
@@ -257,7 +257,7 @@ function Column({ stage, schools, onEmailCoach, onViewSchool, onRemove, onChange
           <div className={`border-2 border-dashed rounded-lg p-8 text-center transition-colors ${
             isOver ? 'border-brand-primary bg-brand-primary bg-opacity-10' : 'border-card-border'
           }`} style={{ pointerEvents: 'none' }}>
-            <p className={`text-[13px] ${isOver ? 'text-brand-primary' : 'text-text-tertiary'}`}>
+            <p className={`text-[13px] ${isOver ? 'text-accent-crimson-text' : 'text-text-tertiary'}`}>
               Drop schools here
             </p>
             {stage.hint && (
@@ -293,7 +293,7 @@ function MobileSchoolCard({ school, setShowStageModal, setSelectedSchool }) {
     <div
       style={{
         borderLeft: `3px solid ${accentColor}`,
-        background: `linear-gradient(135deg, ${tintColor}10 0%, ${tintColor}05 50%, transparent 100%), #111827`
+        background: `linear-gradient(135deg, ${tintColor}10 0%, ${tintColor}05 50%, transparent 100%), var(--bg-card)`
       }}
       className="rounded-lg p-4 mb-3 border border-card-border border-l-0 relative"
     >
@@ -311,7 +311,7 @@ function MobileSchoolCard({ school, setShowStageModal, setSelectedSchool }) {
           </h3>
           <div className="flex items-center gap-2 mt-1">
             {subdivisionOf(school) && (
-              <span className="px-2 py-1 rounded text-xs font-medium text-white bg-text-muted">
+              <span className="px-2 py-1 rounded text-xs font-medium text-white bg-neutral-solid">
                 {subdivisionOf(school)}
               </span>
             )}
@@ -386,7 +386,7 @@ function MobileStageView({ groupedSchools, expandedSections, toggleSection, setS
                     />
                   ))
                 ) : (
-                  <div className="border-2 border-dashed border-gray-600 rounded-lg p-6 text-center">
+                  <div className="border-2 border-dashed border-line-input rounded-lg p-6 text-center">
                     <p className="text-text-tertiary text-sm">No schools in {stage.name.toLowerCase()}{stage.hint ? ` — ${stage.hint.toLowerCase()}` : ''}</p>
                   </div>
                 )}
@@ -663,7 +663,7 @@ export default function MySchools() {
         <div style={{ marginBottom: '28px' }}>
           <div className="flex items-center gap-3 mb-2">
             <div className="h-px w-8" style={{ background: 'var(--crimson)' }} />
-            <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson)' }}>Recruiting Pipeline</span>
+            <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson-text)' }}>Recruiting Pipeline</span>
           </div>
           <h1 className="display-font text-fg-primary" style={{ fontSize: '36px', margin: 0 }}>My Schools</h1>
           <p className="text-text-secondary text-sm mt-1">Track every football program in your recruiting pipeline</p>
@@ -674,7 +674,7 @@ export default function MySchools() {
             <p className="text-text-secondary mb-3 text-[13px]">No schools in your pipeline yet</p>
             <button
               onClick={() => navigate('/coach-finder')}
-              className="text-brand-gold text-[11px] hover:text-fg-primary transition-colors"
+              className="text-accent-gold text-[11px] hover:text-fg-primary transition-colors"
             >
               FIND SCHOOLS →
             </button>

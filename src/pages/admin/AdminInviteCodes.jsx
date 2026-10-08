@@ -263,7 +263,7 @@ Reply to this email if you have any trouble signing up.
           className="fixed top-6 right-6 z-50 design-card px-4 py-3 flex items-center gap-2 shadow-lg"
           style={{ borderColor: 'rgba(176, 48, 86,0.4)' }}
         >
-          <CheckCircle2 size={16} style={{ color: 'var(--crimson-3)' }} />
+          <CheckCircle2 size={16} style={{ color: 'var(--crimson-text)' }} />
           <span className="text-sm text-fg-primary">{toast}</span>
         </div>
       )}
@@ -272,7 +272,7 @@ Reply to this email if you have any trouble signing up.
       <div>
         <div className="flex items-center gap-3 mb-2">
           <div className="h-px w-8" style={{ background: 'var(--crimson)' }} />
-          <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson)' }}>
+          <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson-text)' }}>
             Onboarding
           </span>
         </div>
@@ -286,12 +286,12 @@ Reply to this email if you have any trouble signing up.
           className="design-card p-5 relative overflow-hidden"
           style={{
             borderColor: 'rgba(176, 48, 86,0.45)',
-            background: 'linear-gradient(135deg, rgba(176, 48, 86,0.10) 0%, rgba(176, 48, 86,0.02) 60%, transparent 100%), #111827'
+            background: 'linear-gradient(135deg, rgba(176, 48, 86,0.10) 0%, rgba(176, 48, 86,0.02) 60%, transparent 100%), var(--bg-card)'
           }}
         >
           <div className="flex items-center gap-3 mb-3">
             <div className="h-px w-8" style={{ background: 'var(--crimson)' }} />
-            <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson)' }}>
+            <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson-text)' }}>
               Code created — share it
             </span>
           </div>
@@ -349,11 +349,11 @@ Reply to this email if you have any trouble signing up.
                   placeholder="ISLANDERS2027"
                   value={newCode.code}
                   onChange={(e) => setNewCode({ ...newCode, code: e.target.value.toUpperCase() })}
-                  className="flex-1 px-3 py-2 bg-navy-800 border border-gray-600 rounded text-fg-primary placeholder-gray-400 focus:outline-none focus:border-brand-primary font-mono"
+                  className="flex-1 px-3 py-2 bg-navy-800 border border-line-input rounded text-fg-primary placeholder-fg-faint focus:outline-none focus:border-brand-primary font-mono"
                 />
                 <button
                   onClick={generateRandomCode}
-                  className="px-3 py-2 border border-gray-600 text-text-tertiary rounded hover:border-brand-primary hover:text-brand-primary transition-colors"
+                  className="px-3 py-2 border border-line-input text-text-tertiary rounded hover:border-brand-primary hover:text-accent-crimson-text transition-colors"
                   title="Generate Random"
                 >
                   <Shuffle size={16} />
@@ -366,7 +366,7 @@ Reply to this email if you have any trouble signing up.
               <select
                 value={newCode.role}
                 onChange={(e) => setNewCode({ ...newCode, role: e.target.value })}
-                className="w-full px-3 py-2 bg-navy-800 border border-gray-600 rounded text-fg-primary focus:outline-none focus:border-brand-primary"
+                className="w-full px-3 py-2 bg-navy-800 border border-line-input rounded text-fg-primary focus:outline-none focus:border-brand-primary"
               >
                 {ROLE_OPTIONS.map((r) => (
                   <option key={r.value} value={r.value}>{r.label}</option>
@@ -381,7 +381,7 @@ Reply to this email if you have any trouble signing up.
                 placeholder="Class of 2027"
                 value={newCode.label}
                 onChange={(e) => setNewCode({ ...newCode, label: e.target.value })}
-                className="w-full px-3 py-2 bg-navy-800 border border-gray-600 rounded text-fg-primary placeholder-gray-400 focus:outline-none focus:border-brand-primary"
+                className="w-full px-3 py-2 bg-navy-800 border border-line-input rounded text-fg-primary placeholder-fg-faint focus:outline-none focus:border-brand-primary"
               />
             </div>
 
@@ -392,7 +392,7 @@ Reply to this email if you have any trouble signing up.
                 min="1"
                 value={newCode.max_uses}
                 onChange={(e) => setNewCode({ ...newCode, max_uses: e.target.value })}
-                className="w-full px-3 py-2 bg-navy-800 border border-gray-600 rounded text-fg-primary focus:outline-none focus:border-brand-primary"
+                className="w-full px-3 py-2 bg-navy-800 border border-line-input rounded text-fg-primary focus:outline-none focus:border-brand-primary"
               />
             </div>
           </div>
@@ -423,7 +423,7 @@ Reply to this email if you have any trouble signing up.
                   <div className="flex items-center justify-between">
                     <div className="flex-1">
                       <div className="flex items-center gap-4 mb-2">
-                        <code className="text-fg-primary text-lg font-mono font-medium bg-gray-800 px-3 py-1 rounded">
+                        <code className="text-fg-primary text-lg font-mono font-medium bg-surface-inset px-3 py-1 rounded">
                           {code.code}
                         </code>
                         {code.label && (
@@ -433,7 +433,7 @@ Reply to this email if you have any trouble signing up.
                           <span className="chip chip-amber">Coaching staff</span>
                         )}
                         <span className={`px-2 py-1 rounded text-xs font-medium ${
-                          code.active ? 'bg-green-900 text-green-300' : 'bg-gray-800 text-text-tertiary'
+                          code.active ? 'bg-green-900 text-green-300' : 'bg-surface-inset text-text-tertiary'
                         }`}>
                           {code.active ? 'Active' : 'Expired'}
                         </span>
@@ -511,7 +511,7 @@ Reply to this email if you have any trouble signing up.
               <div className="h-px w-8" style={{ background: 'var(--crimson)' }} />
               <span
                 className="text-[10px] uppercase tracking-[0.22em] font-bold"
-                style={{ color: 'var(--crimson)' }}
+                style={{ color: 'var(--crimson-text)' }}
               >
                 Send invite
               </span>
@@ -525,7 +525,7 @@ Reply to this email if you have any trouble signing up.
             <div className="space-y-3 mb-5">
               <div>
                 <label className="block text-text-tertiary text-xs uppercase tracking-widest font-bold mb-1.5">
-                  Recipient email <span style={{ color: 'var(--crimson-3)' }}>*</span>
+                  Recipient email <span style={{ color: 'var(--crimson-text)' }}>*</span>
                 </label>
                 <input
                   type="email"

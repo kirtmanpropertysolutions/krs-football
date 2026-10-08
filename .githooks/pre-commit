@@ -21,3 +21,10 @@ if git diff --cached | grep -E "$PATTERNS" > /dev/null; then
   git diff --cached | grep -E "$PATTERNS" | head -5
   exit 1
 fi
+
+# Block changes that break light or dark mode (hard-coded grays, navy
+# backgrounds, maroon/gold text...). See scripts/check-theme.mjs.
+if ! node scripts/check-theme.mjs > /tmp/krsf-theme-check.txt 2>&1; then
+  cat /tmp/krsf-theme-check.txt
+  exit 1
+fi

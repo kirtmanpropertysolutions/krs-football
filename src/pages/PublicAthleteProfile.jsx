@@ -4,6 +4,7 @@ import { supabase } from '../lib/supabase'
 import BrandLogo from '../components/BrandLogo.jsx'
 import { BRAND } from '../lib/brand.js'
 import { positionLabel, MEASURABLES, STATS, statsForPosition, formatHeight } from '../lib/football.js'
+import { readableTextOn } from '../lib/schoolColors'
 import {
   Play,
   GraduationCap,
@@ -45,7 +46,7 @@ function HighlightPlayer({ clip, overlayName, overlayPosition, overlayJersey }) 
 
   if (clip.mux_playback_id) {
     return (
-      <div className="rounded-lg overflow-hidden border border-card-border relative" style={{ aspectRatio: '16 / 9', background: '#0a0e1a' }}>
+      <div className="rounded-lg overflow-hidden border border-card-border relative" style={{ aspectRatio: '16 / 9', background: '#0a0e1a' }} /* theme-ok: same in both themes */>
         {/* Mux web component */}
         <mux-player
           playback-id={clip.mux_playback_id}
@@ -110,11 +111,11 @@ function HighlightPlayer({ clip, overlayName, overlayPosition, overlayJersey }) 
       >
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="w-16 h-16 rounded-full flex items-center justify-center" style={{ background: 'rgba(255,255,255,0.95)' }}>
-            <Play size={28} className="ml-0.5" style={{ color: '#0a0e1a', fill: '#0a0e1a' }} />
+            <Play size={28} className="ml-0.5" style={{ color: '#0a0e1a', fill: '#0a0e1a' }} /* theme-ok: same in both themes */ />
           </div>
         </div>
         <div className="absolute bottom-4 left-5 right-5">
-          <div className="text-[10px] uppercase tracking-widest font-bold" style={{ color: 'var(--crimson-3)' }}>
+          <div className="text-[10px] uppercase tracking-widest font-bold" style={{ color: 'var(--crimson-text)' }}>
             Watch on {clip.source || 'external link'}
           </div>
         </div>
@@ -125,7 +126,7 @@ function HighlightPlayer({ clip, overlayName, overlayPosition, overlayJersey }) 
   return (
     <div
       className="rounded-lg border border-dashed border-card-border text-center text-text-tertiary text-sm py-10 flex flex-col items-center gap-2"
-      style={{ background: 'rgba(15,23,41,0.5)' }}
+      style={{ background: 'var(--bg-card-hover)' }}
     >
       <Film size={24} />
       No reel uploaded yet.
@@ -456,12 +457,12 @@ export default function PublicAthleteProfile() {
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-3 mb-2">
                 <div className="h-px w-8" style={{ background: 'var(--crimson)' }} />
-                <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson)' }}>
+                <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson-text)' }}>
                   Class of {gradYear} · {hs}
                 </span>
               </div>
               <h1 className="display-font text-[44px] md:text-[56px] text-fg-primary leading-[1.02] mb-1">{fullName}</h1>
-              <div className="display-font text-xl md:text-2xl tracking-[0.06em]" style={{ color: 'var(--crimson-3)' }}>
+              <div className="display-font text-xl md:text-2xl tracking-[0.06em]" style={{ color: 'var(--crimson-text)' }}>
                 {(positionsText || position).toUpperCase()}{jersey ? ` · #${jersey}` : ''}
               </div>
               <div className="text-text-secondary text-sm mt-2">
@@ -483,7 +484,7 @@ export default function PublicAthleteProfile() {
               <div className="flex items-center justify-between mb-2">
                 <span className="text-[10px] uppercase tracking-[0.18em] text-text-tertiary font-bold">{s.label}</span>
                 <div className="w-7 h-7 rounded-md flex items-center justify-center" style={{ background: 'rgba(176, 48, 86,0.12)' }}>
-                  <s.Icon size={13} style={{ color: 'var(--crimson-3)' }} />
+                  <s.Icon size={13} style={{ color: 'var(--crimson-text)' }} />
                 </div>
               </div>
               <div className="display-font text-2xl md:text-3xl text-fg-primary leading-tight">{s.value}</div>
@@ -495,7 +496,7 @@ export default function PublicAthleteProfile() {
         {measurables.length > 0 && (
           <div className="design-card p-6">
             <div className="flex items-center gap-3 mb-4">
-              <Ruler size={14} style={{ color: 'var(--crimson-3)' }} />
+              <Ruler size={14} style={{ color: 'var(--crimson-text)' }} />
               <h2 className="display-font text-lg text-fg-primary">Measurables</h2>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
@@ -516,7 +517,7 @@ export default function PublicAthleteProfile() {
         {seasonStats.length > 0 && (
           <div className="design-card p-6">
             <div className="flex items-center gap-3 mb-4">
-              <Trophy size={14} style={{ color: 'var(--crimson-3)' }} />
+              <Trophy size={14} style={{ color: 'var(--crimson-text)' }} />
               <h2 className="display-font text-lg text-fg-primary">Season stats</h2>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
@@ -578,7 +579,7 @@ export default function PublicAthleteProfile() {
           ) : (
             <div
               className="rounded-lg border border-dashed border-card-border text-center text-text-tertiary text-sm py-10 flex flex-col items-center gap-2"
-              style={{ background: 'rgba(15,23,41,0.5)' }}
+              style={{ background: 'var(--bg-card-hover)' }}
             >
               <Film size={24} />
               No reel uploaded yet.
@@ -645,7 +646,7 @@ export default function PublicAthleteProfile() {
           <div className="design-card p-6">
             <div className="flex items-center gap-3 mb-2">
               <div className="h-px w-6" style={{ background: 'var(--crimson)' }} />
-              <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson)' }}>Profile</span>
+              <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson-text)' }}>Profile</span>
             </div>
             <h3 className="display-font text-lg text-fg-primary mb-4">At a glance</h3>
             {/* GPA / SAT / ACT intentionally hidden on public view —
@@ -679,7 +680,7 @@ export default function PublicAthleteProfile() {
           <div className="design-card p-6">
             <div className="flex items-center gap-3 mb-2">
               <div className="h-px w-6" style={{ background: 'var(--crimson)' }} />
-              <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson)' }}>Target programs</span>
+              <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson-text)' }}>Target programs</span>
             </div>
             <h3 className="display-font text-lg text-fg-primary mb-4">
               {targetSchools.length > 0 ? `${targetSchools.length} programs on the list` : 'Building target list'}
@@ -691,8 +692,8 @@ export default function PublicAthleteProfile() {
                 {targetSchools.slice(0, 6).map((s, i) => (
                   <div key={i} className="flex items-center gap-3 p-2 rounded-md transition hover:bg-navy-800">
                     <div
-                      className="w-9 h-9 rounded-md flex items-center justify-center text-[10px] font-bold text-white flex-shrink-0"
-                      style={{ background: s.primary_color || 'var(--border-default)' }}
+                      className="w-9 h-9 rounded-md flex items-center justify-center text-[10px] font-bold flex-shrink-0"
+                      style={{ background: s.primary_color || '#475569', color: readableTextOn(s.primary_color || '#475569') }}
                     >
                       {(s.short_name || s.name).split(' ').map(w => w[0]).join('').slice(0, 3).toUpperCase()}
                     </div>
@@ -716,7 +717,7 @@ export default function PublicAthleteProfile() {
         >
           <div className="flex items-center gap-3 mb-3">
             <div className="h-px w-6" style={{ background: 'var(--crimson)' }} />
-            <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson)' }}>For coaches</span>
+            <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson-text)' }}>For coaches</span>
           </div>
           <h3 className="display-font text-2xl text-fg-primary mb-2">Want to talk to {firstName}?</h3>
           <p className="text-text-secondary text-sm leading-relaxed max-w-2xl mb-4">
@@ -750,7 +751,7 @@ export default function PublicAthleteProfile() {
           </div>
           <div className="text-[10px] uppercase tracking-[0.22em] text-text-tertiary">
             Powered by{' '}
-            <Link to="/login" className="hover:text-fg-primary" style={{ color: 'var(--crimson-3)' }}>
+            <Link to="/login" className="hover:text-fg-primary" style={{ color: 'var(--crimson-text)' }}>
               {BRAND.appName}
             </Link>
           </div>

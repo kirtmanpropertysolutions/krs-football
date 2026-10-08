@@ -5,12 +5,14 @@
   "type": "module",
   "scripts": {
     "presecure": "grep -rn 'sb_secret_\\|sb_publishable_\\|eyJhbGc' --include='*.js' --include='*.mjs' --include='*.jsx' --include='*.ts' --include='*.tsx' --include='*.sh' --exclude-dir=node_modules --exclude-dir=.git --exclude-dir=dist . && exit 1 || exit 0",
-    "predev": "npm run presecure",
-    "prebuild": "npm run presecure",
+    "predev": "npm run presecure && npm run check:theme",
+    "prebuild": "npm run presecure && npm run check:theme",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check:theme": "node scripts/check-theme.mjs",
+    "audit:theme": "node scripts/theme-audit/audit.mjs && node scripts/theme-audit/audit.mjs --no-build --viewport=mobile"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
@@ -34,11 +36,14 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
     "autoprefixer": "^10.5.0",
+    "axe-core": "^4.14.0",
     "eslint": "^9.39.4",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "express": "^5.2.1",
     "globals": "^17.5.0",
+    "playwright-core": "^1.64.0",
+    "pngjs": "^7.0.0",
     "postcss": "^8.5.10",
     "tailwindcss": "^3.4.19",
     "vercel": "^51.8.0",

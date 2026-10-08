@@ -92,7 +92,7 @@ export default function TierPromotionModal({ tier, onClose }) {
               style={{
                 borderColor: tier.color,
                 background:
-                  'linear-gradient(135deg, rgba(176, 48, 86,0.18) 0%, rgba(10,14,26,0.5) 100%)',
+                  'linear-gradient(135deg, rgba(176, 48, 86,0.18) 0%, var(--bg-card-hover) 100%)',
               }}
             >
               <Trophy size={36} style={{ color: tier.color }} strokeWidth={2} />

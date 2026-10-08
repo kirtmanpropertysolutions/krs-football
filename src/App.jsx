@@ -78,7 +78,7 @@ function App() {
 
   // Show loading screen when user is signed in but profile is still loading
   if (user && !profile) {
-    return <div style={{minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#0a0e1a', color: '#94a3b8'}}>Loading…</div>
+    return <div style={{minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--bg-page)', color: 'var(--text-secondary)'}}>Loading…</div>
   }
 
   // All authenticated routes are wrapped in a single Suspense boundary

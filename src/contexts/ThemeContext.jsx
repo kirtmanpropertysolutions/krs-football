@@ -6,7 +6,7 @@ import { ThemeContext } from './themeContext'
 const DEFAULT_THEME = {
   primary: '#B03056',
   secondary: '#fbbf24',
-  neutralDark: '#0a0e1a',
+  neutralDark: '#0a0e1a', // theme-ok: same in both themes
   logoUrl: null
 }
 

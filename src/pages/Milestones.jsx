@@ -140,20 +140,20 @@ export default function Milestones() {
                   key={t.id}
                   className="flex-1 min-w-[100px] rounded-lg px-3 py-2 border"
                   style={{
-                    borderColor: isCurrent ? t.color : '#1e293b',
+                    borderColor: isCurrent ? t.color : 'var(--border-default)',
                     background: isCurrent
                       ? 'rgba(176, 48, 86,0.08)'
                       : isPast
-                      ? 'rgba(15,23,41,0.6)'
+                      ? 'var(--kanban-col-bg)'
                       : 'transparent',
-                    opacity: !isPast && !isCurrent ? 0.55 : 1,
+                    opacity: 1,
                   }}
                 >
                   <div className="flex items-center gap-1.5 mb-0.5">
                     {isPast && <CheckCircle2 size={11} className="text-green-500" />}
                     <span
                       className="text-[10px] uppercase tracking-[0.12em] font-bold"
-                      style={{ color: isCurrent ? t.color : '#94a3b8' }}
+                      style={{ color: isCurrent ? t.color : 'var(--text-secondary)' }}
                     >
                       {t.name}
                     </span>
@@ -172,7 +172,7 @@ export default function Milestones() {
             style={{
               borderColor: tierInfo.tier.color,
               background:
-                'linear-gradient(135deg, rgba(176, 48, 86,0.15) 0%, rgba(10,14,26,0.5) 100%)',
+                'linear-gradient(135deg, rgba(176, 48, 86,0.15) 0%, var(--bg-card-hover) 100%)',
             }}
           >
             <Trophy size={22} style={{ color: tierInfo.tier.color }} />
@@ -237,9 +237,9 @@ export default function Milestones() {
                         isEarned
                           ? {
                               background:
-                                'linear-gradient(135deg, rgba(176, 48, 86,0.12) 0%, rgba(10,14,26,0.5) 100%)',
+                                'linear-gradient(135deg, rgba(176, 48, 86,0.12) 0%, var(--bg-card-hover) 100%)',
                             }
-                          : { background: 'rgba(15, 23, 41, 0.6)' }
+                          : { background: 'var(--kanban-col-bg)' }
                       }
                     >
                       {isEarned ? (
@@ -285,7 +285,7 @@ export default function Milestones() {
                 className="w-12 h-12 rounded-xl border border-red-900/40 flex items-center justify-center flex-shrink-0"
                 style={{
                   background:
-                    'linear-gradient(135deg, rgba(176, 48, 86,0.15) 0%, rgba(10,14,26,0.5) 100%)',
+                    'linear-gradient(135deg, rgba(176, 48, 86,0.15) 0%, var(--bg-card-hover) 100%)',
                 }}
               >
                 {earnedMap.has(detailMilestone.id) ? (

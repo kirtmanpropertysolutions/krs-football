@@ -52,6 +52,16 @@ export default {
         'accent-crimson': 'var(--crimson)',
         'accent-crimson-fg': 'var(--accent-crimson-fg)',
         'accent-gold': 'var(--accent-gold-readable)',
+        'accent-crimson-text': 'var(--crimson-text)',
+        // Solid gray for badges with white text (7:1 in both themes)
+        'neutral-solid': '#475569',
+        'surface-inset': 'var(--bg-inset)',
+        'surface-inset-strong': 'var(--bg-inset-strong)',
+        'line-input': 'var(--border-input)',
+        'line-subtle': 'var(--border-subtle)',
+        'fg-soft': 'var(--text-soft)',
+        'fg-dim': 'var(--text-dim)',
+        'fg-faint': 'var(--text-faint)',
 
         // Keep semantic colors constant across all clubs
         'success': '#10b981',
@@ -69,8 +79,8 @@ export default {
           900: 'var(--bg-card)',   // card background — adapts to theme
           800: 'var(--bg-card-hover)', // hover row / drawer — adapts to theme
           700: 'var(--border-default)', // subtle interactive divider — adapts
-          600: '#334155',
-          500: '#475569'
+          600: 'var(--border-input)',
+          500: 'var(--text-faint)'
         },
 
         // Light mode alternatives

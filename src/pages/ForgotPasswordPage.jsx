@@ -73,7 +73,7 @@ export default function ForgotPasswordPage() {
               className="w-14 h-14 rounded-2xl mx-auto mb-4 flex items-center justify-center border border-red-900/40"
               style={{
                 background:
-                  'linear-gradient(135deg, rgba(176, 48, 86,0.18) 0%, rgba(10,14,26,0.5) 100%)',
+                  'linear-gradient(135deg, rgba(176, 48, 86,0.18) 0%, var(--bg-card-hover) 100%)',
               }}
             >
               <Mail size={22} className="text-red-500" />
@@ -96,7 +96,7 @@ export default function ForgotPasswordPage() {
           <>
             <div className="flex items-center gap-3 mb-1">
               <div className="h-px w-6" style={{ background: 'var(--crimson)' }} />
-              <div className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson)' }}>
+              <div className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson-text)' }}>
                 Forgot password
               </div>
             </div>

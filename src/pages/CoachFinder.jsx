@@ -358,7 +358,7 @@ export default function CoachFinder() {
       <div className="p-8">
         {/* Toast notification */}
         {showToast && (
-          <div className="fixed top-4 right-4 z-50 bg-green-600 text-white px-4 py-2 rounded-lg">
+          <div className="fixed top-4 right-4 z-50 bg-green-700 text-white px-4 py-2 rounded-lg">
             {showToast}
           </div>
         )}
@@ -368,7 +368,7 @@ export default function CoachFinder() {
           <div>
             <div className="flex items-center gap-3 mb-2">
               <div className="h-px w-8" style={{ background: 'var(--crimson)' }} />
-              <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson)' }}>The Database</span>
+              <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson-text)' }}>The Database</span>
             </div>
             <h1 className="display-font text-4xl text-fg-primary mb-1">Coach Finder</h1>
             <p className="text-text-secondary text-sm">
@@ -410,12 +410,12 @@ export default function CoachFinder() {
             <div className="flex justify-between items-center mb-4">
               <div className="flex items-center gap-2">
                 <h2 className="display-font text-xl text-fg-primary">RECOMMENDED FOR YOU</h2>
-                <span className="text-xs text-brand-gold font-medium px-2 py-1 rounded bg-brand-gold bg-opacity-10">
+                <span className="text-xs text-accent-gold font-medium px-2 py-1 rounded bg-brand-gold bg-opacity-10">
                   Quiz complete
                 </span>
               </div>
             </div>
-            <div className="flex md:grid md:grid-cols-6 overflow-x-auto md:overflow-x-visible gap-3 snap-x md:snap-none snap-mandatory pb-2">
+            <div className="flex md:grid md:grid-cols-2 xl:grid-cols-3 overflow-x-auto md:overflow-x-visible gap-3 snap-x md:snap-none snap-mandatory pb-2">
               {getRecommendedSchools().map((school) => {
                 const fitScore = school.fitScore
                 const isInPipeline = pipeline.includes(school.name)
@@ -442,7 +442,7 @@ export default function CoachFinder() {
               Complete your profile to see personalized recommendations
               <button
                 onClick={() => navigate('/profile')}
-                className="text-club-primary ml-2 underline hover:text-club-primary"
+                className="text-accent-crimson-text ml-2 underline hover:text-accent-crimson-text"
               >
                 → Go to Profile
               </button>
@@ -580,9 +580,9 @@ export default function CoachFinder() {
               {/* Loading skeleton cards */}
               {loadingMore && Array.from({ length: 3 }).map((_, i) => (
                 <div key={`skeleton-${i}`} className="design-card p-4 animate-pulse">
-                  <div className="h-4 bg-gray-700 rounded mb-3 w-3/4" />
-                  <div className="h-3 bg-gray-800 rounded mb-2 w-1/2" />
-                  <div className="h-3 bg-gray-800 rounded w-2/3" />
+                  <div className="h-4 bg-surface-inset-strong rounded mb-3 w-3/4" />
+                  <div className="h-3 bg-surface-inset rounded mb-2 w-1/2" />
+                  <div className="h-3 bg-surface-inset rounded w-2/3" />
                 </div>
               ))}
             </div>

@@ -566,10 +566,29 @@ export function getSchoolColors(schoolName) {
   return DEFAULT_COLORS
 }
 
+function luminance(hex) {
+  const h = (hex || '').replace('#', '')
+  if (h.length < 6) return 0
+  return [0, 2, 4]
+    .map((i) => parseInt(h.slice(i, i + 2), 16) / 255)
+    .map((v) => (v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4))
+    .reduce((sum, v, i) => sum + v * [0.2126, 0.7152, 0.0722][i], 0)
+}
+
+// WCAG contrast ratio between two hex colors (1 to 21).
+export function contrastRatio(a, b) {
+  const [x, y] = [luminance(a), luminance(b)].sort((p, q) => q - p)
+  return (x + 0.05) / (y + 0.05)
+}
+
+// Black or white, whichever is easier to read on `bg`.
+export function readableTextOn(bg) {
+  if (!bg) return '#ffffff'
+  return contrastRatio(bg, '#000000') >= contrastRatio(bg, '#ffffff') ? '#000000' : '#ffffff'
+}
+
+// True when dark text reads better than white text on this color.
 export function isLightColor(hex) {
   if (!hex) return false
-  const r = parseInt(hex.slice(1, 3), 16)
-  const g = parseInt(hex.slice(3, 5), 16)
-  const b = parseInt(hex.slice(5, 7), 16)
-  return (0.299 * r + 0.587 * g + 0.114 * b) > 180
+  return readableTextOn(hex) === '#000000'
 }

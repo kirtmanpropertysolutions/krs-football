@@ -133,7 +133,7 @@ export default function InstallCTA() {
       <div
         className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 border border-red-900/40"
         style={{
-          background: 'linear-gradient(135deg, rgba(176, 48, 86,0.22) 0%, rgba(10,14,26,0.5) 100%)',
+          background: 'linear-gradient(135deg, rgba(176, 48, 86,0.22) 0%, var(--bg-card-hover) 100%)',
         }}
       >
         <Smartphone size={20} className="text-red-500" />

@@ -7,6 +7,7 @@ import { useAuth } from '../hooks/authContext'
 import { getFitScoreBadge } from '../lib/fitScore'
 import { logActivity } from '../lib/activity.js'
 import CoachPopover from './CoachPopover.jsx'
+import { readableTextOn } from '../lib/schoolColors'
 
 export default function SchoolDetailModal({
   school,
@@ -357,7 +358,8 @@ export default function SchoolDetailModal({
           className="sticky z-10 relative px-5 py-5 md:p-6 text-white"
           style={{
             top: 'env(safe-area-inset-top, 0px)',
-            background: `linear-gradient(135deg, ${school.primary_color}66 0%, #0F1E36 100%)`,
+            // Solid navy base under the tint so the header is dark in BOTH themes.
+            background: `linear-gradient(135deg, ${school.primary_color || '#0F1E36'}66 0%, #0F1E36 100%), #0F1E36`, // theme-ok: same in both themes
           }}
         >
           {/* Close button — pushed below the notch on iPhone via the
@@ -390,17 +392,17 @@ export default function SchoolDetailModal({
             <div className="flex items-center gap-3 mb-4">
               {(subdivision || school.division) && (
                 <span
-                  className="px-2 py-1 rounded text-xs font-bold text-white"
-                  style={{ backgroundColor: school.primary_color || '#dc2626' }}
+                  className="px-2 py-1 rounded text-xs font-bold"
+                  style={{ backgroundColor: school.primary_color || '#475569', color: readableTextOn(school.primary_color || '#475569') }}
                 >
                   {subdivision || school.division}
                 </span>
               )}
               {school.conference && (
-                <span className="text-text-secondary text-sm">{school.conference}</span>
+                <span className="text-white/80 text-sm">{school.conference}</span>
               )}
               {(school.city || school.state) && (
-                <span className="text-text-secondary text-sm">
+                <span className="text-white/80 text-sm">
                   {[school.city, school.state].filter(Boolean).join(', ')}
                 </span>
               )}
@@ -410,7 +412,7 @@ export default function SchoolDetailModal({
               <div className="relative">
                 <button
                   onClick={() => setShowRemoveDropdown(!showRemoveDropdown)}
-                  className="bg-green-600 text-white hover:bg-green-700 px-6 py-2 rounded font-bold flex items-center gap-2"
+                  className="bg-green-700 text-white hover:bg-green-800 px-6 py-2 rounded font-bold flex items-center gap-2"
                 >
                   ADDED ✓
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -458,7 +460,7 @@ export default function SchoolDetailModal({
                 {realProgramEmail ? (
                   <div className="bg-green-900 bg-opacity-20 border border-green-600 border-opacity-30 rounded-lg p-3">
                     <div className="flex items-center gap-2 mb-2">
-                      <span className="bg-green-600 text-white text-xs px-2 py-1 rounded font-bold">✓ VERIFIED</span>
+                      <span className="bg-green-700 text-white text-xs px-2 py-1 rounded font-bold">✓ VERIFIED</span>
                     </div>
                     <div className="flex items-center gap-2 mb-2">
                       <span className="text-text-secondary text-sm">{realProgramEmail}</span>
@@ -475,7 +477,7 @@ export default function SchoolDetailModal({
                     </p>
                     <button
                       onClick={handleEmailProgram}
-                      className="w-full bg-green-600 hover:bg-green-700 text-white text-sm py-2 px-3 rounded font-bold"
+                      className="w-full bg-green-700 hover:bg-green-800 text-white text-sm py-2 px-3 rounded font-bold"
                     >
                       EMAIL PROGRAM
                     </button>
@@ -493,7 +495,7 @@ export default function SchoolDetailModal({
                     href={footballUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-club-primary hover:text-club-primary-light text-sm underline break-all"
+                    className="text-accent-crimson-text hover:text-accent-crimson-text text-sm underline break-all"
                   >
                     {footballUrl.replace(/^https?:\/\//i, '')}
                   </a>
@@ -508,7 +510,7 @@ export default function SchoolDetailModal({
                     href={athleticsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-club-primary hover:text-club-primary-light text-sm underline break-all"
+                    className="text-accent-crimson-text hover:text-accent-crimson-text text-sm underline break-all"
                   >
                     {athleticsUrl.replace(/^https?:\/\//i, '')}
                   </a>
@@ -551,7 +553,7 @@ export default function SchoolDetailModal({
                   onClick={() => setActiveTab(tab)}
                   className={`px-6 py-4 text-sm font-bold transition-colors ${
                     activeTab === tab
-                      ? 'text-club-primary border-b-2 border-club-primary'
+                      ? 'text-accent-crimson-text border-b-2 border-club-primary'
                       : 'text-text-tertiary hover:text-fg-primary'
                   }`}
                 >
@@ -596,7 +598,7 @@ export default function SchoolDetailModal({
                               <h4 className="font-semibold text-fg-primary truncate">{coach.full_name || coach.name}</h4>
                               <p className="text-sm text-text-secondary">{coach.title || 'Football Coach'}</p>
                               {coach.is_recruiting_contact && (
-                                <span className="inline-block mt-1 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-club-primary/20 text-club-primary-light">
+                                <span className="inline-block mt-1 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-club-primary/20 text-accent-crimson-text">
                                   Recruiting contact
                                 </span>
                               )}
@@ -659,12 +661,12 @@ export default function SchoolDetailModal({
                       {realCoaches.length > 0 ? (
                         <button
                           onClick={() => setExpandedPlaceholders(!expandedPlaceholders)}
-                          className="w-full text-left bg-club-secondary-dark bg-opacity-20 border border-club-secondary border-opacity-30 rounded-lg p-3 text-club-secondary-light text-sm hover:bg-opacity-30"
+                          className="w-full text-left bg-club-secondary-dark bg-opacity-20 border border-club-secondary border-opacity-30 rounded-lg p-3 text-accent-gold text-sm hover:bg-opacity-30"
                         >
                           ⚠️ {placeholderCoaches.length} unverified coach role{placeholderCoaches.length !== 1 ? 's' : ''} — help us add the current coach info
                         </button>
                       ) : (
-                        <div className="bg-club-secondary-dark bg-opacity-20 border border-club-secondary border-opacity-30 rounded-lg p-3 text-club-secondary-light text-sm">
+                        <div className="bg-club-secondary-dark bg-opacity-20 border border-club-secondary border-opacity-30 rounded-lg p-3 text-accent-gold text-sm">
                           ⚠️ {placeholderCoaches.length} unverified coach role{placeholderCoaches.length !== 1 ? 's' : ''} — help us add the current coach info
                         </div>
                       )}
@@ -747,7 +749,7 @@ export default function SchoolDetailModal({
                   <div className="flex items-center justify-between mb-2">
                     <p className="text-text-tertiary text-sm">Private to you. Track visit impressions, pros/cons, conversation notes.</p>
                     <div className="text-xs min-h-[20px]">
-                      {saveStatus === 'saving' && <span className="text-club-secondary flex items-center gap-1"><Loader2 className="w-3 h-3 animate-spin" /> Saving...</span>}
+                      {saveStatus === 'saving' && <span className="text-accent-gold flex items-center gap-1"><Loader2 className="w-3 h-3 animate-spin" /> Saving...</span>}
                       {saveStatus === 'saved' && <span className="text-green-400 flex items-center gap-1"><Check className="w-3 h-3" /> Saved</span>}
                       {saveStatus === 'error' && <span className="text-red-400 flex items-center gap-1"><AlertCircle className="w-3 h-3" /> Error</span>}
                     </div>

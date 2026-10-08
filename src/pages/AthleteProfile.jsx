@@ -222,9 +222,9 @@ export default function AthleteProfile() {
         <div className="mb-8">
           <div className="flex justify-between items-center mb-3">
             <h2 className="display-font text-fg-primary text-xl">PROFILE COMPLETION</h2>
-            <span className="text-club-secondary font-bold">{completionPercentage}%</span>
+            <span className="text-accent-gold font-bold">{completionPercentage}%</span>
           </div>
-          <div className="w-full bg-gray-700 rounded-full h-3">
+          <div className="w-full bg-surface-inset-strong rounded-full h-3">
             <div
               className="bg-club-secondary h-3 rounded-full transition-all duration-500"
               style={{width: `${completionPercentage}%`}}
@@ -946,7 +946,7 @@ export default function AthleteProfile() {
               so the CDN never serves a stale version). */}
           <div className="card">
             <h3 className="display-font text-fg-primary text-xl mb-6">PROFILE PHOTO</h3>
-            <div className="border-2 border-dashed border-gray-600 rounded-lg p-6 text-center">
+            <div className="border-2 border-dashed border-line-input rounded-lg p-6 text-center">
               {athlete?.profile_photo_url ? (
                 <img
                   src={athlete.profile_photo_url}
@@ -954,7 +954,7 @@ export default function AthleteProfile() {
                   className="w-28 h-28 rounded-full mx-auto mb-4 object-cover border-2 border-red-700/40"
                 />
               ) : (
-                <div className="w-20 h-20 bg-gray-700 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl">
+                <div className="w-20 h-20 bg-surface-inset-strong rounded-full mx-auto mb-4 flex items-center justify-center text-2xl">
                   📷
                 </div>
               )}
@@ -1008,7 +1008,7 @@ export default function AthleteProfile() {
               emails or share with anyone — no sign-in needed to view.
             </p>
 
-            <div className="bg-navy-950 border border-gray-700 rounded-lg px-3 py-2 mb-3 flex items-center gap-2">
+            <div className="bg-navy-950 border border-line-subtle rounded-lg px-3 py-2 mb-3 flex items-center gap-2">
               <code className="flex-1 text-xs text-text-secondary truncate">
                 {typeof window !== 'undefined'
                   ? `${window.location.origin}/p/${user?.id || ''}`

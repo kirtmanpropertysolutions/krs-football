@@ -249,7 +249,7 @@ export default function AdminAthletes() {
       <div>
         <div className="flex items-center gap-3 mb-2">
           <div className="h-px w-8" style={{ background: 'var(--crimson)' }} />
-          <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson)' }}>
+          <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson-text)' }}>
             Program Roster
           </span>
         </div>
@@ -276,7 +276,7 @@ export default function AdminAthletes() {
                 placeholder="Search by name or email..."
                 value={searchQuery}
                 onChange={(e) => { setSearchQuery(e.target.value); setCurrentPage(1) }}
-                className="w-full pl-10 pr-4 py-2 bg-navy-800 border border-gray-600 rounded text-fg-primary placeholder-gray-400 focus:outline-none focus:border-brand-primary"
+                className="w-full pl-10 pr-4 py-2 bg-navy-800 border border-line-input rounded text-fg-primary placeholder-fg-faint focus:outline-none focus:border-brand-primary"
               />
             </div>
 
@@ -285,7 +285,7 @@ export default function AdminAthletes() {
               <select
                 value={classFilter}
                 onChange={(e) => { setClassFilter(e.target.value); setCurrentPage(1) }}
-                className="px-3 py-2 bg-navy-800 border border-gray-600 rounded text-fg-primary focus:outline-none focus:border-brand-primary"
+                className="px-3 py-2 bg-navy-800 border border-line-input rounded text-fg-primary focus:outline-none focus:border-brand-primary"
               >
                 {classYears.map(year => (
                   <option key={year} value={year}>{year}</option>
@@ -295,7 +295,7 @@ export default function AdminAthletes() {
               <select
                 value={positionFilter}
                 onChange={(e) => { setPositionFilter(e.target.value); setCurrentPage(1) }}
-                className="px-3 py-2 bg-navy-800 border border-gray-600 rounded text-fg-primary focus:outline-none focus:border-brand-primary"
+                className="px-3 py-2 bg-navy-800 border border-line-input rounded text-fg-primary focus:outline-none focus:border-brand-primary"
               >
                 {positions.map(position => (
                   <option key={position} value={position}>
@@ -306,7 +306,7 @@ export default function AdminAthletes() {
 
               <button
                 onClick={exportCSV}
-                className="flex items-center gap-2 px-4 py-2 border border-gray-600 text-fg-primary rounded hover:border-brand-primary hover:text-brand-primary transition-colors"
+                className="flex items-center gap-2 px-4 py-2 border border-line-input text-fg-primary rounded hover:border-brand-primary hover:text-accent-crimson-text transition-colors"
               >
                 <Download size={16} />
                 Export CSV
@@ -351,7 +351,7 @@ export default function AdminAthletes() {
           ) : (
             <>
               {/* Table Header — 8 columns: name(2) + class + position + size + status + last active + actions */}
-              <div className="hidden md:grid grid-cols-8 gap-4 p-4 border-b border-gray-700 text-xs text-text-tertiary uppercase font-medium tracking-wider">
+              <div className="hidden md:grid grid-cols-8 gap-4 p-4 border-b border-line-subtle text-xs text-text-tertiary uppercase font-medium tracking-wider">
                 <span className="col-span-2">Name</span>
                 <span>Class</span>
                 <span>Position</span>
@@ -366,14 +366,14 @@ export default function AdminAthletes() {
                   table (filled in their class year / position / etc). The
                   three phantom signups have profiles + org membership but no
                   athletes row, and we badge those clearly. */}
-              <div className="divide-y divide-gray-700">
+              <div className="divide-y divide-line-subtle">
                 {pagedAthletes.map((athlete) => {
                   const aRow = athlete.athletes?.[0]
                   const isIncomplete = !aRow
                   return (
                     <div
                       key={athlete.id}
-                      className="grid grid-cols-2 md:grid-cols-8 gap-4 p-4 hover:bg-gray-800 transition-colors"
+                      className="grid grid-cols-2 md:grid-cols-8 gap-4 p-4 hover:bg-surface-inset transition-colors"
                     >
                       <div className="col-span-2">
                         <div className="text-fg-primary font-medium flex items-center gap-2">
@@ -383,20 +383,20 @@ export default function AdminAthletes() {
                         </div>
                         <div className="text-text-tertiary text-sm">
                           {athlete.email || (
-                            <span className="text-gray-600">No email on file</span>
+                            <span className="text-fg-faint">No email on file</span>
                           )}
                         </div>
                       </div>
-                      <div className="text-gray-300 text-sm">
+                      <div className="text-fg-soft text-sm">
                         {aRow?.class_year || '—'}
                       </div>
-                      <div className="text-gray-300 text-sm">
+                      <div className="text-fg-soft text-sm">
                         {aRow?.position || '—'}
                         {aRow?.secondary_position && (
                           <span className="text-text-tertiary"> / {aRow.secondary_position}</span>
                         )}
                       </div>
-                      <div className="text-gray-300 text-sm">
+                      <div className="text-fg-soft text-sm">
                         {aRow?.height_cm || aRow?.weight
                           ? [formatHeight(aRow.height_cm), aRow.weight ? `${aRow.weight} lbs` : '']
                               .filter(Boolean)
@@ -435,11 +435,11 @@ export default function AdminAthletes() {
 
               {/* Pagination controls */}
               {totalPages > 1 && (
-                <div className="flex items-center justify-between p-4 border-t border-gray-700">
+                <div className="flex items-center justify-between p-4 border-t border-line-subtle">
                   <button
                     onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
                     disabled={currentPage === 1}
-                    className="px-3 py-1.5 text-sm border border-gray-600 rounded text-fg-primary disabled:opacity-30 hover:border-brand-primary hover:text-brand-primary transition-colors disabled:hover:border-gray-600 disabled:hover:text-fg-primary"
+                    className="px-3 py-1.5 text-sm border border-line-input rounded text-fg-primary disabled:opacity-30 hover:border-brand-primary hover:text-accent-crimson-text transition-colors disabled:hover:border-line-input disabled:hover:text-fg-primary"
                   >
                     ← Prev
                   </button>
@@ -449,7 +449,7 @@ export default function AdminAthletes() {
                   <button
                     onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
                     disabled={currentPage === totalPages}
-                    className="px-3 py-1.5 text-sm border border-gray-600 rounded text-fg-primary disabled:opacity-30 hover:border-brand-primary hover:text-brand-primary transition-colors disabled:hover:border-gray-600 disabled:hover:text-fg-primary"
+                    className="px-3 py-1.5 text-sm border border-line-input rounded text-fg-primary disabled:opacity-30 hover:border-brand-primary hover:text-accent-crimson-text transition-colors disabled:hover:border-line-input disabled:hover:text-fg-primary"
                   >
                     Next →
                   </button>

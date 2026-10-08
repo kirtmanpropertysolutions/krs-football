@@ -55,7 +55,7 @@ export function getSourceColor(source) {
     instagram: 'text-pink-400',
     tiktok: 'text-cyan-400',
     vimeo: 'text-sky-400',
-    other: 'text-gray-400'
+    other: 'text-fg-dim'
   }
-  return colors[source] || 'text-gray-400'
+  return colors[source] || 'text-fg-dim'
 }

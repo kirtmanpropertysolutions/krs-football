@@ -110,7 +110,7 @@ export default function ResetPasswordPage() {
           <>
             <div className="flex items-center gap-3 mb-1">
               <div className="h-px w-6" style={{ background: 'var(--crimson)' }} />
-              <div className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson)' }}>
+              <div className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson-text)' }}>
                 Set a new password
               </div>
             </div>

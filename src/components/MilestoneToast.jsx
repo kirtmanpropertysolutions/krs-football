@@ -38,7 +38,7 @@ export default function MilestoneToast({ milestone, onDismiss, duration = 3500 }
         className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 border border-red-900/40 toast-badge-pop"
         style={{
           background:
-            'linear-gradient(135deg, rgba(176, 48, 86,0.22) 0%, rgba(10,14,26,0.5) 100%)',
+            'linear-gradient(135deg, rgba(176, 48, 86,0.22) 0%, var(--bg-card-hover) 100%)',
         }}
       >
         <MilestoneIcon name={milestone.icon} size={20} className="text-amber-300" />

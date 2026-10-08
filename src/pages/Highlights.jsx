@@ -250,7 +250,7 @@ export default function Highlights() {
           <div>
             <div className="flex items-center gap-3 mb-2">
               <div className="h-px w-8" style={{ background: 'var(--crimson)' }} />
-              <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson)' }}>Your Reel</span>
+              <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson-text)' }}>Your Reel</span>
             </div>
             <h1 className="display-font text-4xl text-fg-primary mb-1">Highlights</h1>
             <p className="text-text-secondary text-sm">
@@ -269,7 +269,7 @@ export default function Highlights() {
         {/* Empty state */}
         {highlights.length === 0 ? (
           <div className="text-center py-16">
-            <div className="bg-navy-900 rounded-2xl p-12 border border-gray-700">
+            <div className="bg-navy-900 rounded-2xl p-12 border border-line-subtle">
               <div className="text-6xl mb-4">🎬</div>
               <h2 className="text-2xl font-bold text-fg-primary mb-4">Add your Hudl reel</h2>
               <p className="text-text-tertiary mb-8 max-w-md mx-auto">
@@ -292,7 +292,7 @@ export default function Highlights() {
                 className={`bg-navy-900 rounded-xl overflow-hidden border transition-colors group cursor-pointer ${
                   highlight.is_primary
                     ? 'lg:col-span-2 border-club-secondary bg-gradient-to-br from-navy-900 to-yellow-900/20'
-                    : 'border-gray-700 hover:border-gray-600'
+                    : 'border-line-subtle hover:border-line-input'
                 }`}
                 onClick={(e) => {
                   if (!e.target.closest('.menu-button')) {
@@ -322,7 +322,7 @@ export default function Highlights() {
 
                   {/* Source badge */}
                   <div className="absolute top-2 left-2">
-                    <span className={`px-2 py-1 rounded text-xs font-semibold bg-black/50 ${getSourceColor(highlight.source)}`}>
+                    <span className={`px-2 py-1 rounded text-xs font-semibold bg-black/70 text-white`}>
                       {getSourceLabel(highlight.source)}
                     </span>
                   </div>
@@ -386,7 +386,7 @@ export default function Highlights() {
                   )}
 
                   {highlight.is_primary && (
-                    <div className="text-club-secondary text-xs font-semibold mt-2">
+                    <div className="text-accent-gold text-xs font-semibold mt-2">
                       PRIMARY REEL
                     </div>
                   )}
@@ -399,8 +399,8 @@ export default function Highlights() {
         {/* Add/Edit Modal */}
         {showAddModal && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70" onClick={() => setShowAddModal(false)}>
-            <div className="bg-navy-900 border border-gray-700 rounded-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto" onClick={e => e.stopPropagation()}>
-              <div className="sticky top-0 bg-navy-900 border-b border-gray-700 p-6 flex items-center justify-between">
+            <div className="bg-navy-900 border border-line-subtle rounded-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto" onClick={e => e.stopPropagation()}>
+              <div className="sticky top-0 bg-navy-900 border-b border-line-subtle p-6 flex items-center justify-between">
                 <h2 className="text-xl font-bold text-fg-primary">
                   {editingHighlight ? 'Edit Highlight' : 'Add Highlight'}
                 </h2>
@@ -428,7 +428,7 @@ export default function Highlights() {
                     </p>
                   )}
                   {formData.url && !urlInfo.source && (
-                    <p className="text-club-secondary text-xs mt-1">
+                    <p className="text-accent-gold text-xs mt-1">
                       ⚠️ Source not recognized — will be saved as generic link
                     </p>
                   )}
@@ -493,7 +493,7 @@ export default function Highlights() {
                         disabled={formData.tags.includes(tag)}
                         className={`px-3 py-2 rounded text-xs font-medium transition-colors ${
                           formData.tags.includes(tag)
-                            ? 'bg-gray-700 text-text-muted cursor-not-allowed'
+                            ? 'bg-surface-inset-strong text-text-muted cursor-not-allowed'
                             : 'bg-navy-700 text-text-secondary hover:bg-navy-600'
                         }`}
                       >
@@ -533,7 +533,7 @@ export default function Highlights() {
                       type="checkbox"
                       checked={formData.is_primary}
                       onChange={(e) => setFormData(prev => ({ ...prev, is_primary: e.target.checked }))}
-                      className="rounded border-gray-600 bg-navy-800 text-club-primary"
+                      className="rounded border-line-input bg-navy-800 text-accent-crimson-text"
                     />
                     <span className="text-sm text-text-secondary">Set as primary highlight</span>
                   </label>
@@ -566,7 +566,7 @@ export default function Highlights() {
         {/* Delete confirmation */}
         {showDeleteConfirm && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70">
-            <div className="bg-navy-900 border border-gray-700 rounded-xl max-w-md w-full p-6">
+            <div className="bg-navy-900 border border-line-subtle rounded-xl max-w-md w-full p-6">
               <h3 className="text-lg font-bold text-fg-primary mb-4">Delete Highlight</h3>
               <p className="text-text-secondary mb-6">
                 Delete "{showDeleteConfirm.title}"? This cannot be undone.
@@ -610,7 +610,7 @@ function HighlightMenu({ highlight, onEdit, onSetPrimary, onDelete }) {
       </button>
 
       {showMenu && (
-        <div className="absolute right-0 top-6 bg-navy-800 border border-gray-600 rounded-lg py-2 min-w-[140px] z-10">
+        <div className="absolute right-0 top-6 bg-navy-800 border border-line-input rounded-lg py-2 min-w-[140px] z-10">
           {!highlight.is_primary && (
             <button
               onClick={(e) => {

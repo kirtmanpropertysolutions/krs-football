@@ -23,7 +23,7 @@ function StatCard({ label, value, loading, Icon, sub, to }) {
           className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
           style={{ background: 'rgba(176, 48, 86,0.12)' }}
         >
-          <Icon size={15} style={{ color: 'var(--crimson-3)' }} />
+          <Icon size={15} style={{ color: 'var(--crimson-text)' }} />
         </div>
       </div>
       <div className="display-font text-3xl text-fg-primary leading-none">
@@ -32,7 +32,7 @@ function StatCard({ label, value, loading, Icon, sub, to }) {
       {sub && <div className="text-[11px] text-text-tertiary mt-2">{sub}</div>}
       {to && (
         <div className="flex items-center gap-1 text-[10px] uppercase tracking-[0.12em] mt-3 font-bold opacity-0 group-hover:opacity-100 transition-opacity"
-             style={{ color: 'var(--crimson-3)' }}>
+             style={{ color: 'var(--crimson-text)' }}>
           View <ArrowUpRight size={10} />
         </div>
       )}
@@ -198,7 +198,7 @@ export default function AdminDashboard() {
       <div>
         <div className="flex items-center gap-3 mb-2">
           <div className="h-px w-8" style={{ background: 'var(--crimson)' }} />
-          <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson)' }}>
+          <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson-text)' }}>
             Coaching Staff · 2026 Season
           </span>
         </div>
@@ -260,7 +260,7 @@ export default function AdminDashboard() {
               <Link
                 to="/admin/athletes"
                 className="text-xs font-semibold flex items-center gap-1 hover:text-fg-primary transition-colors"
-                style={{ color: 'var(--crimson-3)' }}
+                style={{ color: 'var(--crimson-text)' }}
               >
                 View all <ArrowUpRight size={12} />
               </Link>
@@ -298,7 +298,7 @@ export default function AdminDashboard() {
                     >
                       <span className="text-fg-primary font-medium flex items-center gap-2.5">
                         <span
-                          className="w-7 h-7 rounded-full flex items-center justify-center text-[10px] font-bold flex-shrink-0"
+                          className="w-7 h-7 rounded-full flex items-center justify-center text-[10px] font-bold text-white flex-shrink-0"
                           style={{
                             background:
                               'linear-gradient(135deg, var(--crimson) 0%, var(--club-neutral-dark, #1B2A4A) 100%)'
@@ -351,7 +351,7 @@ export default function AdminDashboard() {
               <Link
                 to="/admin/announcements"
                 className="text-xs font-semibold flex items-center gap-1 hover:text-fg-primary transition-colors"
-                style={{ color: 'var(--crimson-3)' }}
+                style={{ color: 'var(--crimson-text)' }}
               >
                 Send <ArrowUpRight size={12} />
               </Link>

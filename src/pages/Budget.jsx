@@ -153,7 +153,7 @@ export default function Budget() {
               className="w-16 h-16 rounded-2xl mx-auto mb-5 flex items-center justify-center border border-red-900/40"
               style={{
                 background:
-                  'linear-gradient(135deg, rgba(176, 48, 86,0.18) 0%, rgba(10,14,26,0.5) 100%)',
+                  'linear-gradient(135deg, rgba(176, 48, 86,0.18) 0%, var(--bg-card-hover) 100%)',
               }}
             >
               <DollarSign size={26} className="text-red-500" strokeWidth={2} />
@@ -207,7 +207,7 @@ export default function Budget() {
           {/* Horizontal stacked bar — category breakdown */}
           {totals.grandTotal > 0 && (
             <>
-              <div className="h-4 rounded-full overflow-hidden flex" style={{ background: '#1e293b' }}>
+              <div className="h-4 rounded-full overflow-hidden flex" style={{ background: 'var(--border-default)' }}>
                 {totals.byCategory.map((cat) => {
                   const pct = (cat.total / totals.grandTotal) * 100
                   if (pct < 0.5) return null
@@ -249,7 +249,7 @@ export default function Budget() {
              style={{ borderColor: 'rgba(251,191,36,0.25)', background: 'rgba(251,191,36,0.04)' }}>
           <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5"
                style={{ background: 'rgba(251,191,36,0.15)' }}>
-            <Info size={14} style={{ color: 'var(--gold)' }} />
+            <Info size={14} style={{ color: 'var(--accent-gold-readable)' }} />
           </div>
           <div className="text-[12px] text-text-secondary leading-relaxed">
             <span className="font-semibold text-fg-primary">Real talk: </span>

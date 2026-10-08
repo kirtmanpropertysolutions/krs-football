@@ -32,11 +32,11 @@ import { calculateStreak } from './streaks.js'
  * Order matters: highest first so getTierForCount can short-circuit.
  */
 export const TIER_LADDER = [
-  { id: 'elite',        name: 'Elite',        min: 23, color: '#fbbf24' },
-  { id: 'captain',      name: 'Captain',      min: 16, color: '#B03056' },
-  { id: 'starter',      name: 'Starter',      min: 10, color: '#C94A70' },
-  { id: 'squad_player', name: 'Roster Player', min: 4, color: '#94a3b8' },
-  { id: 'rookie',       name: 'Rookie',       min: 0,  color: '#64748b' },
+  { id: 'elite',        name: 'Elite',        min: 23, color: 'var(--tier-elite)' },
+  { id: 'captain',      name: 'Captain',      min: 16, color: 'var(--tier-captain)' },
+  { id: 'starter',      name: 'Starter',      min: 10, color: 'var(--tier-starter)' },
+  { id: 'squad_player', name: 'Roster Player', min: 4, color: 'var(--tier-squad)' },
+  { id: 'rookie',       name: 'Rookie',       min: 0,  color: 'var(--tier-rookie)' },
 ]
 
 /**

@@ -366,7 +366,7 @@ export default function SchoolFitQuiz() {
         <div className="p-8 max-w-6xl mx-auto">
           {/* Toast notification */}
           {showToast && (
-            <div className="fixed top-4 right-4 z-50 bg-green-600 text-white px-4 py-2 rounded-lg">
+            <div className="fixed top-4 right-4 z-50 bg-green-700 text-white px-4 py-2 rounded-lg">
               {showToast}
             </div>
           )}
@@ -374,7 +374,7 @@ export default function SchoolFitQuiz() {
           <div style={{ marginBottom: '28px' }}>
             <div className="flex items-center gap-3 mb-2">
               <div className="h-px w-8" style={{ background: 'var(--crimson)' }} />
-              <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson)' }}>Quiz complete</span>
+              <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson-text)' }}>Quiz complete</span>
             </div>
             <h1 className="display-font text-fg-primary" style={{ fontSize: '36px', margin: 0 }}>Your top matches</h1>
             <p className="text-text-secondary text-sm mt-1">Schools recommended based on your quiz responses</p>
@@ -447,7 +447,7 @@ export default function SchoolFitQuiz() {
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-3 mb-2">
             <div className="h-px w-8" style={{ background: 'var(--crimson)' }} />
-            <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson)' }}>Find Your Fit</span>
+            <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson-text)' }}>Find Your Fit</span>
             <div className="h-px w-8" style={{ background: 'var(--crimson)' }} />
           </div>
           <h1 className="display-font text-4xl text-fg-primary mb-1">School Fit Quiz</h1>
@@ -460,9 +460,9 @@ export default function SchoolFitQuiz() {
         <div className="mb-8">
           <div className="flex justify-between items-center mb-3">
             <span className="text-fg-primary text-sm">{currentQuestion} of {QUESTIONS.length}</span>
-            <span className="text-club-secondary font-bold">{Math.round(progress)}%</span>
+            <span className="text-accent-gold font-bold">{Math.round(progress)}%</span>
           </div>
-          <div className="w-full bg-gray-700 rounded-full h-3">
+          <div className="w-full bg-surface-inset-strong rounded-full h-3">
             <div
               className="bg-club-secondary h-3 rounded-full transition-all duration-500"
               style={{width: `${progress}%`}}
@@ -489,7 +489,7 @@ export default function SchoolFitQuiz() {
                   className={`p-6 rounded-lg border-2 transition-all duration-200 text-left min-h-[56px] ${
                     isSelected
                       ? 'bg-club-primary border-club-primary text-white'
-                      : 'bg-navy-900 border-gray-600 text-gray-300 hover:border-club-primary hover:text-fg-primary'
+                      : 'bg-navy-900 border-line-input text-fg-soft hover:border-club-primary hover:text-fg-primary'
                   }`}
                 >
                   <div className="font-bold text-lg mb-1">{answer.label}</div>

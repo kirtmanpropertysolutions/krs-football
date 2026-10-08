@@ -78,7 +78,7 @@ export default function RecruitingScoreBreakdown({ score, breakdown, onClose }) 
                   <Link
                     to={s.cta.href}
                     onClick={onClose}
-                    className="inline-flex items-center gap-1 text-sm text-club-primary hover:text-club-primary-light font-medium"
+                    className="inline-flex items-center gap-1 text-sm text-accent-crimson-text hover:text-accent-crimson-text font-medium"
                   >
                     {s.cta.label} <ChevronRight className="w-4 h-4"/>
                   </Link>

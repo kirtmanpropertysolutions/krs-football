@@ -978,9 +978,9 @@ export default function Outreach() {
   // Stage pill component
   const StagePill = ({ stage }) => {
     const stageConfig = {
-      interested: { bg: 'bg-gray-700', text: 'text-text-secondary', label: 'INTERESTED' },
+      interested: { bg: 'bg-surface-inset-strong', text: 'text-fg-soft', label: 'INTERESTED' },
       contacted: { bg: 'bg-blue-600/20', text: 'text-blue-400', label: 'CONTACTED' },
-      visiting: { bg: 'bg-club-secondary/20', text: 'text-club-secondary', label: 'VISITING' },
+      visiting: { bg: 'bg-club-secondary/20', text: 'text-accent-gold', label: 'VISITING' },
       offer: { bg: 'bg-orange-500/20', text: 'text-orange-400', label: 'OFFER' },
       committed: { bg: 'bg-green-600/20', text: 'text-green-400', label: 'COMMITTED' }
     }
@@ -1007,7 +1007,7 @@ export default function Outreach() {
         className="hover:bg-card-hover border-l-2 rounded p-3 text-left transition-colors text-xs border border-card-border border-l-0"
         style={{
           borderLeftColor: accentColor,
-          background: `linear-gradient(135deg, ${tintColor}10 0%, ${tintColor}05 50%, transparent 100%), #111827`
+          background: `linear-gradient(135deg, ${tintColor}10 0%, ${tintColor}05 50%, transparent 100%), var(--bg-card)`
         }}
       >
         <div className="flex items-center gap-3 mb-2">
@@ -1052,7 +1052,7 @@ export default function Outreach() {
         <div style={{ marginBottom: '28px' }}>
           <div className="flex items-center gap-3 mb-2">
             <div className="h-px w-8" style={{ background: 'var(--crimson)' }} />
-            <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson)' }}>Coach Email</span>
+            <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson-text)' }}>Coach Email</span>
           </div>
           <h1 className="display-font text-fg-primary" style={{ fontSize: '36px', margin: 0 }}>Outreach</h1>
           <p className="text-text-secondary text-sm mt-1">Send from your own email — coaches reply to your inbox.</p>
@@ -1060,7 +1060,7 @@ export default function Outreach() {
 
         {/* Toast notification */}
         {showToast && (
-          <div className="fixed top-4 right-4 z-50 bg-green-600 text-white px-4 py-2 rounded-lg">
+          <div className="fixed top-4 right-4 z-50 bg-green-700 text-white px-4 py-2 rounded-lg">
             {showToast}
           </div>
         )}
@@ -1171,7 +1171,7 @@ export default function Outreach() {
                           href={/^https?:\/\//i.test(selectedSchool.recruiting_questionnaire_url) ? selectedSchool.recruiting_questionnaire_url : `https://${selectedSchool.recruiting_questionnaire_url}`}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-club-primary-light underline"
+                          className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-accent-crimson-text underline"
                         >
                           Fill out {selectedSchool?.short_name || selectedSchool?.name}'s recruiting questionnaire <ExternalLink className="w-3 h-3" />
                         </a>
@@ -1204,7 +1204,7 @@ export default function Outreach() {
                           <button
                             key={c.coach_id}
                             onClick={() => selectRecentCoach(c)}
-                            className="px-3 py-2 bg-navy-800 hover:bg-navy-700 border border-gray-700 rounded-full text-sm text-fg-primary flex items-center gap-2"
+                            className="px-3 py-2 bg-navy-800 hover:bg-navy-700 border border-line-subtle rounded-full text-sm text-fg-primary flex items-center gap-2"
                           >
                             <span className="w-6 h-6 rounded-full bg-club-primary text-white text-xs flex items-center justify-center font-semibold">
                               {c.coach_name?.charAt(0) || 'C'}
@@ -1250,12 +1250,12 @@ export default function Outreach() {
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     placeholder={pipelineWithStats.length > 0 ? "Search any school or coach..." : "Search for coaches or schools..."}
-                    className="w-full bg-navy-800 text-fg-primary rounded-lg px-4 py-3 border border-gray-600"
+                    className="w-full bg-navy-800 text-fg-primary rounded-lg px-4 py-3 border border-line-input"
                   />
 
                   {/* Search results */}
                   {searchQuery && filteredCoaches.length > 0 && (
-                    <div className="bg-navy-800 border border-gray-600 rounded-lg max-h-60 overflow-y-auto mt-2">
+                    <div className="bg-navy-800 border border-line-input rounded-lg max-h-60 overflow-y-auto mt-2">
                       {filteredCoaches.map((coach) => (
                         <button
                           key={coach.id}
@@ -1264,7 +1264,7 @@ export default function Outreach() {
                             setSelectedSchool(schools.find(s => s.id === coach.school_id))
                             setSearchQuery('')
                           }}
-                          className="w-full text-left px-4 py-3 hover:bg-navy-700 border-b border-gray-700 last:border-b-0"
+                          className="w-full text-left px-4 py-3 hover:bg-navy-700 border-b border-line-subtle last:border-b-0"
                         >
                           <div className="text-fg-primary font-medium">{coach.name}</div>
                           <div className="text-text-tertiary text-sm">
@@ -1289,7 +1289,7 @@ export default function Outreach() {
                     className={`p-4 rounded-lg border-2 text-center transition-colors ${
                       selectedTemplate?.id === template.id
                         ? 'bg-club-primary border-club-primary text-white'
-                        : 'bg-navy-900 border-gray-600 text-text-secondary hover:border-club-primary'
+                        : 'bg-navy-900 border-line-input text-text-secondary hover:border-club-primary'
                     }`}
                   >
                     <div className="text-lg mb-1">
@@ -1339,19 +1339,32 @@ export default function Outreach() {
                     upcoming_games: 'upcoming games'
                   }
 
-                  const friendlyMissing = missing.map(field => friendlyName[field] || field).join(', ')
+                  // School / coach fields come from Step 1, not the profile.
+                  const fromStep1 = ['school_name', 'school_short', 'coach_full_name', 'division', 'subdivision', 'conference']
+                  const profileMissing = missing.filter(field => !fromStep1.includes(field))
+                  const needsSchool = missing.some(field => fromStep1.includes(field))
+                  if (!profileMissing.length && !needsSchool) return null
+                  const friendlyMissing = profileMissing.map(field => friendlyName[field] || field.replace(/_/g, ' ')).join(', ')
 
                   return (
-                    <div className="bg-club-secondary/20 border border-club-secondary/50 rounded-lg p-3 mb-3">
-                      <div className="flex items-center gap-2">
-                        <AlertCircle className="w-4 h-4 text-club-secondary" />
-                        <span className="text-club-secondary-light text-sm">
-                          Missing: {friendlyMissing} —
-                          <Link to="/profile" className="text-club-secondary-light underline hover:text-club-secondary-light ml-1">
-                            Complete profile →
-                          </Link>
-                        </span>
-                      </div>
+                    <div className="bg-club-secondary/20 border border-club-secondary/50 rounded-lg p-3 mb-3 space-y-1">
+                      {needsSchool && (
+                        <div className="flex items-center gap-2">
+                          <AlertCircle className="w-4 h-4 text-accent-gold flex-shrink-0" />
+                          <span className="text-accent-gold text-sm">Pick a coach or school in Step 1 to fill in the school name.</span>
+                        </div>
+                      )}
+                      {profileMissing.length > 0 && (
+                        <div className="flex items-center gap-2">
+                          <AlertCircle className="w-4 h-4 text-accent-gold flex-shrink-0" />
+                          <span className="text-accent-gold text-sm">
+                            Missing from your profile: {friendlyMissing} —
+                            <Link to="/profile" className="text-accent-gold underline hover:text-accent-gold ml-1">
+                              Complete profile →
+                            </Link>
+                          </span>
+                        </div>
+                      )}
                     </div>
                   )
                 })()}
@@ -1363,7 +1376,7 @@ export default function Outreach() {
                     sent via Gmail compose URL as plain text anyway, so we
                     render it as text here too. The whitespace-pre-line keeps
                     line breaks intact. */}
-                <div className="bg-navy-900 rounded-lg p-4 border border-gray-600">
+                <div className="bg-navy-900 rounded-lg p-4 border border-line-input">
                   <div className="mb-3">
                     <label className="text-text-tertiary text-sm uppercase tracking-wider">Subject</label>
                     <div className="text-fg-primary bg-surface-card-hover border border-border-default rounded px-3 py-2 mt-1 font-mono text-sm">
@@ -1372,7 +1385,7 @@ export default function Outreach() {
                   </div>
                   <div>
                     <label className="text-text-tertiary text-sm uppercase tracking-wider">Body</label>
-                    <div className="text-fg-primary bg-gray-800 rounded px-3 py-2 mt-1 font-mono text-sm whitespace-pre-line max-h-60 overflow-y-auto">
+                    <div className="text-fg-primary bg-surface-inset rounded px-3 py-2 mt-1 font-mono text-sm whitespace-pre-line max-h-60 overflow-y-auto">
                       {preview.body}
                     </div>
                   </div>
@@ -1535,8 +1548,8 @@ export default function Outreach() {
                       )}
                     </div>
 
-                    <div className="mt-3 pt-3 border-t border-gray-700 flex items-center justify-between">
-                      <span className="text-xs text-club-primary font-semibold">WRITE TO COACH →</span>
+                    <div className="mt-3 pt-3 border-t border-line-subtle flex items-center justify-between">
+                      <span className="text-xs text-accent-crimson-text font-semibold">WRITE TO COACH →</span>
                     </div>
                   </button>
                 ))}
@@ -1561,7 +1574,7 @@ export default function Outreach() {
             {announcements.length === 0 ? (
               <div className="text-center py-12">
                 <div className="w-14 h-14 rounded-2xl mx-auto mb-4 flex items-center justify-center border border-red-900/40"
-                     style={{ background: 'linear-gradient(135deg, rgba(176, 48, 86,0.18) 0%, rgba(10,14,26,0.5) 100%)' }}>
+                     style={{ background: 'linear-gradient(135deg, rgba(176, 48, 86,0.18) 0%, var(--bg-card-hover) 100%)' }}>
                   <Mail size={22} className="text-red-500" />
                 </div>
                 <h3 className="display-font text-lg text-fg-primary mb-2">No messages yet</h3>

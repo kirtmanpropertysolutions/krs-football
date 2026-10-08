@@ -1,3 +1,4 @@
+import { readableTextOn } from '../lib/schoolColors'
 import { useState, useEffect, useCallback } from 'react'
 import { TrendingUp, Filter, Calendar, DollarSign, Tag, CheckCircle2, Clock, Sparkles, Trophy } from 'lucide-react'
 import AthleteLayout from '../components/AthleteLayout.jsx'
@@ -38,7 +39,7 @@ const DEMO_DEALS = [
     id: 'demo-3',
     brand: 'Under Armour Brand Athlete',
     logo_abbrev: 'UA',
-    logo_color: '#1F2937',
+    logo_color: '#1F2937', // theme-ok: same in both themes
     category: 'Apparel',
     payout_display: '$1,000 / month',
     expiration_date: '2026-08-01',
@@ -190,7 +191,7 @@ export default function NILDeals() {
               <div className="h-px w-8" style={{ background: 'var(--crimson)' }} />
               <span
                 className="text-[10px] uppercase tracking-[0.22em] font-bold"
-                style={{ color: 'var(--crimson)' }}
+                style={{ color: 'var(--crimson-text)' }}
               >
                 Program partnerships
               </span>
@@ -228,7 +229,7 @@ export default function NILDeals() {
             style={{ borderColor: 'rgba(251,191,36,0.25)', background: 'rgba(251,191,36,0.04)' }}
           >
             <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style={{ background: 'rgba(251,191,36,0.15)' }}>
-              <Sparkles size={15} style={{ color: 'var(--gold)' }} />
+              <Sparkles size={15} style={{ color: 'var(--accent-gold-readable)' }} />
             </div>
             <div className="text-sm text-text-secondary leading-relaxed">
               <span className="font-semibold text-fg-primary">Curated by your program.</span>{' '}
@@ -245,14 +246,14 @@ export default function NILDeals() {
             {Array.from({ length: 6 }).map((_, i) => (
               <div key={i} className="design-card p-5 animate-pulse">
                 <div className="flex items-start gap-3 mb-3">
-                  <div className="w-11 h-11 rounded-lg bg-gray-700 flex-shrink-0" />
+                  <div className="w-11 h-11 rounded-lg bg-surface-inset-strong flex-shrink-0" />
                   <div className="flex-1">
-                    <div className="h-4 bg-gray-700 rounded mb-2 w-3/4" />
-                    <div className="h-3 bg-gray-800 rounded w-1/2" />
+                    <div className="h-4 bg-surface-inset-strong rounded mb-2 w-3/4" />
+                    <div className="h-3 bg-surface-inset rounded w-1/2" />
                   </div>
                 </div>
-                <div className="h-3 bg-gray-800 rounded mb-2" />
-                <div className="h-3 bg-gray-800 rounded w-4/5" />
+                <div className="h-3 bg-surface-inset rounded mb-2" />
+                <div className="h-3 bg-surface-inset rounded w-4/5" />
               </div>
             ))}
           </div>
@@ -267,7 +268,7 @@ export default function NILDeals() {
               className="w-16 h-16 rounded-2xl mx-auto mb-5 flex items-center justify-center border border-red-900/40"
               style={{
                 background:
-                  'linear-gradient(135deg, rgba(176, 48, 86,0.18) 0%, rgba(10,14,26,0.5) 100%)',
+                  'linear-gradient(135deg, rgba(176, 48, 86,0.18) 0%, var(--bg-card-hover) 100%)',
               }}
             >
               <Trophy size={26} className="text-red-500" strokeWidth={2} />
@@ -302,14 +303,14 @@ export default function NILDeals() {
               return (
                 <div
                   key={d.id}
-                  className="design-card p-5 relative overflow-hidden transition hover:border-slate-600"
+                  className="design-card p-5 relative overflow-hidden transition hover:border-line-input"
                   style={d.featured ? { borderColor: 'rgba(176, 48, 86,0.45)' } : undefined}
                 >
                   {/* Featured ribbon */}
                   {d.featured && (
                     <div
                       className="absolute top-3 right-3 text-[9px] uppercase tracking-[0.18em] font-bold px-2 py-0.5 rounded"
-                      style={{ background: 'rgba(176, 48, 86,0.18)', color: '#ff6b7a' }}
+                      style={{ background: 'rgba(176, 48, 86,0.18)', color: 'var(--crimson-text)' }}
                     >
                       Featured
                     </div>
@@ -318,8 +319,8 @@ export default function NILDeals() {
                   {/* Brand header */}
                   <div className="flex items-start gap-3 mb-3">
                     <div
-                      className="w-11 h-11 rounded-lg flex items-center justify-center font-bold text-fg-primary text-[10px] flex-shrink-0"
-                      style={{ background: d.logo_color || '#1F2937', letterSpacing: '0.05em' }}
+                      className="w-11 h-11 rounded-lg flex items-center justify-center font-bold text-[10px] flex-shrink-0"
+                      style={{ background: d.logo_color || '#1F2937', color: readableTextOn(d.logo_color || '#1F2937'), letterSpacing: '0.05em' }} // theme-ok: same in both themes
                     >
                       {d.logo_abbrev || d.brand.slice(0, 4).toUpperCase()}
                     </div>
@@ -343,7 +344,7 @@ export default function NILDeals() {
                       <span className="text-text-tertiary flex items-center gap-1.5">
                         <DollarSign size={13} /> Payout
                       </span>
-                      <span className="font-semibold" style={{ color: 'var(--gold)' }}>
+                      <span className="font-semibold" style={{ color: 'var(--accent-gold-readable)' }}>
                         {d.payout_display || '—'}
                       </span>
                     </div>
@@ -387,14 +388,14 @@ export default function NILDeals() {
             {loadingMore && Array.from({ length: 3 }).map((_, i) => (
               <div key={`skeleton-${i}`} className="design-card p-5 animate-pulse">
                 <div className="flex items-start gap-3 mb-3">
-                  <div className="w-11 h-11 rounded-lg bg-gray-700 flex-shrink-0" />
+                  <div className="w-11 h-11 rounded-lg bg-surface-inset-strong flex-shrink-0" />
                   <div className="flex-1">
-                    <div className="h-4 bg-gray-700 rounded mb-2 w-3/4" />
-                    <div className="h-3 bg-gray-800 rounded w-1/2" />
+                    <div className="h-4 bg-surface-inset-strong rounded mb-2 w-3/4" />
+                    <div className="h-3 bg-surface-inset rounded w-1/2" />
                   </div>
                 </div>
-                <div className="h-3 bg-gray-800 rounded mb-2" />
-                <div className="h-3 bg-gray-800 rounded w-4/5" />
+                <div className="h-3 bg-surface-inset rounded mb-2" />
+                <div className="h-3 bg-surface-inset rounded w-4/5" />
               </div>
             ))}
           </div>
@@ -427,7 +428,7 @@ export default function NILDeals() {
               ].map((s, i) => (
                 <div key={i}>
                   <div className="flex items-center gap-2 mb-2">
-                    <s.Icon size={14} style={{ color: 'var(--crimson-3)' }} />
+                    <s.Icon size={14} style={{ color: 'var(--crimson-text)' }} />
                     <span className="text-[10px] uppercase tracking-widest font-bold text-text-tertiary">
                       {s.label}
                     </span>

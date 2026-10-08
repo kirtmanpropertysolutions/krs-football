@@ -79,7 +79,7 @@ export default function SignupPage() {
             <div className="h-px w-10" style={{ background: 'var(--crimson)' }} />
             <div
               className="text-[10px] tracking-[0.25em] uppercase font-bold"
-              style={{ color: 'var(--crimson)' }}
+              style={{ color: 'var(--crimson-text)' }}
             >
               KRS · Football Recruiting
             </div>
@@ -99,7 +99,7 @@ export default function SignupPage() {
 
           <h1 className="display-font text-[56px] leading-[1.02] mb-6 text-fg-primary">
             Welcome to your<br />
-            <span style={{ color: 'var(--crimson)' }}>team's recruiting</span><br />
+            <span style={{ color: 'var(--crimson-text)' }}>team's recruiting</span><br />
             engine.
           </h1>
 
@@ -118,7 +118,7 @@ export default function SignupPage() {
               'Measurables and stats coaches look for',
             ].map((line) => (
               <div key={line} className="flex items-center gap-2 text-sm text-text-secondary">
-                <CheckCircle2 size={14} style={{ color: 'var(--crimson-3)' }} />
+                <CheckCircle2 size={14} style={{ color: 'var(--crimson-text)' }} />
                 <span>{line}</span>
               </div>
             ))}
@@ -142,7 +142,7 @@ export default function SignupPage() {
             <div className="h-px w-6" style={{ background: 'var(--crimson)' }} />
             <div
               className="text-[10px] uppercase tracking-[0.22em] font-bold"
-              style={{ color: 'var(--crimson)' }}
+              style={{ color: 'var(--crimson-text)' }}
             >
               {codeFromUrl ? 'Invite received' : 'New athlete'}
             </div>
@@ -165,7 +165,7 @@ export default function SignupPage() {
           {needsConfirmation ? (
             <div className="space-y-5">
               <div className="flex items-start gap-3 rounded-lg border border-card-border px-4 py-4">
-                <CheckCircle2 size={20} className="flex-shrink-0 mt-0.5" style={{ color: 'var(--crimson-3)' }} />
+                <CheckCircle2 size={20} className="flex-shrink-0 mt-0.5" style={{ color: 'var(--crimson-text)' }} />
                 <div>
                   <div className="text-fg-primary font-semibold text-sm mb-1">Account created</div>
                   <p className="text-text-secondary text-sm">
@@ -286,7 +286,7 @@ export default function SignupPage() {
               <Link
                 to="/login"
                 className="font-semibold hover:underline"
-                style={{ color: 'var(--crimson-3)' }}
+                style={{ color: 'var(--crimson-text)' }}
               >
                 Sign in
               </Link>

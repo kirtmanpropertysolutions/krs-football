@@ -1,4 +1,4 @@
-import { getSchoolColors, isLightColor } from '../lib/schoolColors'
+import { getSchoolColors, contrastRatio, readableTextOn } from '../lib/schoolColors'
 
 function getMonogram(name) {
   if (!name) return '?'
@@ -10,11 +10,14 @@ function getMonogram(name) {
 export default function SchoolBadge({ schoolName, size = 'md' }) {
   const colors = getSchoolColors(schoolName)
   const dims = size === 'sm' ? { w: 28, fs: 10 } : size === 'lg' ? { w: 48, fs: 16 } : { w: 36, fs: 12 }
-  const textColor = isLightColor(colors.primary) ? '#000000' : (colors.secondary === '#FFFFFF' ? '#FFFFFF' : colors.secondary)
+  // School's second color when it's readable on the first, else black/white.
+  const textColor = colors.secondary && contrastRatio(colors.secondary, colors.primary) >= 4.5
+    ? colors.secondary
+    : readableTextOn(colors.primary)
   return (
     <div style={{
       width: `${dims.w}px`, height: `${dims.w}px`,
-      background: `linear-gradient(135deg, ${colors.primary} 0%, ${colors.primary}cc 100%)`,
+      background: colors.primary,
       color: textColor, borderRadius: '6px',
       display: 'flex', alignItems: 'center', justifyContent: 'center',
       fontWeight: 500, fontSize: `${dims.fs}px`,

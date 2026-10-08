@@ -42,7 +42,7 @@ export default function LoginPage() {
           {/* Eyebrow rule — editorial flourish */}
           <div className="flex items-center gap-3 mb-7">
             <div className="h-px w-10" style={{ background: 'var(--crimson)' }} />
-            <div className="text-[10px] tracking-[0.25em] uppercase font-bold" style={{ color: 'var(--crimson)' }}>
+            <div className="text-[10px] tracking-[0.25em] uppercase font-bold" style={{ color: 'var(--crimson-text)' }}>
               KRS · Football Recruiting
             </div>
           </div>
@@ -64,7 +64,7 @@ export default function LoginPage() {
                 className="relative rounded-2xl p-2 border border-red-900/30"
                 style={{
                   background:
-                    'linear-gradient(135deg, rgba(176, 48, 86,0.08) 0%, rgba(10,14,26,0.4) 100%)',
+                    'linear-gradient(135deg, rgba(176, 48, 86,0.08) 0%, var(--bg-card-hover) 100%)',
                 }}
               >
                 <BrandLogo size={96} />
@@ -86,7 +86,7 @@ export default function LoginPage() {
           <h1 className="display-font text-[64px] leading-[0.98] mb-6 text-fg-primary tracking-[-0.005em]">
             Every recruit.
             <br />
-            <span style={{ color: 'var(--crimson)' }}>Every program.</span>
+            <span style={{ color: 'var(--crimson-text)' }}>Every program.</span>
             <br />
             One playbook.
           </h1>
@@ -129,7 +129,7 @@ export default function LoginPage() {
 
           <div className="flex items-center gap-3 mb-1">
             <div className="h-px w-6" style={{ background: 'var(--crimson)' }} />
-            <div className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson)' }}>
+            <div className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson-text)' }}>
               Welcome back
             </div>
           </div>
@@ -207,7 +207,7 @@ export default function LoginPage() {
               <Link
                 to="/signup"
                 className="font-semibold hover:underline"
-                style={{ color: 'var(--crimson-3)' }}
+                style={{ color: 'var(--crimson-text)' }}
               >
                 Sign up with invite code
               </Link>

@@ -134,7 +134,7 @@ export default function AdminCamps() {
           <div className="h-px w-8" style={{ background: 'var(--crimson)' }} />
           <span
             className="text-[10px] uppercase tracking-[0.22em] font-bold"
-            style={{ color: 'var(--crimson)' }}
+            style={{ color: 'var(--crimson-text)' }}
           >
             Curated camp list
           </span>

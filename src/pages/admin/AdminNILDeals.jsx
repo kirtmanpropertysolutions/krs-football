@@ -1,3 +1,4 @@
+import { readableTextOn } from '../../lib/schoolColors'
 import { useState, useEffect, useCallback } from 'react'
 import { supabase } from '../../lib/supabase'
 import { useAuth } from '../../hooks/authContext'
@@ -13,7 +14,7 @@ const CLASS_YEARS = [2025, 2026, 2027, 2028, 2029, 2030, 2031]
 const BLANK_FORM = {
   brand:          '',
   logo_abbrev:    '',
-  logo_color:     '#1F2937',
+  logo_color:     '#1F2937', // theme-ok: same in both themes
   category:       'Apparel',
   deal_type:      'gear',
   value:          '',
@@ -84,7 +85,7 @@ export default function AdminNILDeals() {
     setForm({
       brand:           deal.brand           || '',
       logo_abbrev:     deal.logo_abbrev     || '',
-      logo_color:      deal.logo_color      || '#1F2937',
+      logo_color:      deal.logo_color      || '#1F2937', // theme-ok: same in both themes
       category:        deal.category        || 'Apparel',
       deal_type:       deal.deal_type       || 'gear',
       value:           deal.value           != null ? String(deal.value) : '',
@@ -211,7 +212,7 @@ export default function AdminNILDeals() {
         <div>
           <div className="flex items-center gap-3 mb-2">
             <div className="h-px w-8" style={{ background: 'var(--crimson)' }} />
-            <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson)' }}>
+            <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson-text)' }}>
               Sponsor Partnerships
             </span>
           </div>
@@ -234,7 +235,7 @@ export default function AdminNILDeals() {
         ].map(({ label, value, Icon }) => (
           <div key={label} className="design-card p-5">
             <div className="flex items-center gap-2 mb-2">
-              <Icon size={14} style={{ color: 'var(--crimson-3)' }} />
+              <Icon size={14} style={{ color: 'var(--crimson-text)' }} />
               <span className="text-[10px] uppercase tracking-widest font-bold text-text-tertiary">{label}</span>
             </div>
             <div className="display-font text-3xl text-fg-primary">{loading ? '—' : value}</div>
@@ -263,8 +264,8 @@ export default function AdminNILDeals() {
             >
               {/* Brand avatar */}
               <div
-                className="w-12 h-12 rounded-lg flex items-center justify-center font-bold text-fg-primary text-[11px] flex-shrink-0"
-                style={{ background: deal.logo_color || '#1F2937', letterSpacing: '0.05em' }}
+                className="w-12 h-12 rounded-lg flex items-center justify-center font-bold text-[11px] flex-shrink-0"
+                style={{ background: deal.logo_color || '#1F2937', color: readableTextOn(deal.logo_color || '#1F2937'), letterSpacing: '0.05em' }} // theme-ok: same in both themes
               >
                 {deal.logo_abbrev || deal.brand.slice(0, 4).toUpperCase()}
               </div>
@@ -278,7 +279,7 @@ export default function AdminNILDeals() {
                       {deal.featured && (
                         <span
                           className="text-[9px] uppercase tracking-[0.18em] font-bold px-1.5 py-0.5 rounded"
-                          style={{ background: 'rgba(176, 48, 86,0.18)', color: '#ff6b7a' }}
+                          style={{ background: 'rgba(176, 48, 86,0.18)', color: 'var(--crimson-text)' }}
                         >
                           Featured
                         </span>
@@ -312,7 +313,7 @@ export default function AdminNILDeals() {
 
                 <div className="flex flex-wrap items-center gap-x-5 gap-y-1 mt-2 text-sm">
                   {deal.payout_display && (
-                    <span className="flex items-center gap-1.5 font-semibold" style={{ color: 'var(--gold)' }}>
+                    <span className="flex items-center gap-1.5 font-semibold" style={{ color: 'var(--accent-gold-readable)' }}>
                       <DollarSign size={13} /> {deal.payout_display}
                     </span>
                   )}
@@ -338,7 +339,7 @@ export default function AdminNILDeals() {
                   className="w-8 h-8 rounded-md flex items-center justify-center text-text-tertiary hover:text-fg-primary hover:bg-navy-800 transition-colors"
                   title={deal.featured ? 'Unfeature' : 'Feature'}
                 >
-                  {deal.featured ? <Star size={14} style={{ color: 'var(--gold)' }} /> : <StarOff size={14} />}
+                  {deal.featured ? <Star size={14} style={{ color: 'var(--accent-gold-readable)' }} /> : <StarOff size={14} />}
                 </button>
                 <button
                   onClick={() => openEdit(deal)}
@@ -364,7 +365,7 @@ export default function AdminNILDeals() {
       {showModal && (
         <div
           className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto py-8 px-4"
-          style={{ background: 'rgba(5,8,18,0.82)', backdropFilter: 'blur(4px)' }}
+          style={{ background: 'rgba(0,0,0,0.6)', backdropFilter: 'blur(4px)' }}
           onClick={(e) => { if (e.target === e.currentTarget) closeModal() }}
         >
           <div
@@ -390,8 +391,8 @@ export default function AdminNILDeals() {
             </div>
 
             {error && (
-              <div className="flex items-start gap-2.5 p-3.5 rounded-lg mb-5 text-sm"
-                style={{ background: 'rgba(220,38,38,0.1)', borderLeft: '3px solid #dc2626', color: '#fca5a5' }}>
+              <div className="flex items-start gap-2.5 p-3.5 rounded-lg mb-5 text-sm text-red-300"
+                style={{ background: 'rgba(220,38,38,0.1)', borderLeft: '3px solid #dc2626' }}>
                 <AlertCircle size={15} className="flex-shrink-0 mt-0.5" />
                 {error}
               </div>
@@ -410,7 +411,7 @@ export default function AdminNILDeals() {
                     placeholder="e.g. Nike Football NW"
                     value={form.brand}
                     onChange={e => setForm(f => ({ ...f, brand: e.target.value }))}
-                    className="w-full px-3 py-2 bg-navy-800 border border-gray-600 rounded text-fg-primary placeholder-gray-500 focus:outline-none focus:border-brand-primary text-sm"
+                    className="w-full px-3 py-2 bg-navy-800 border border-line-input rounded text-fg-primary placeholder-fg-faint focus:outline-none focus:border-brand-primary text-sm"
                   />
                 </div>
                 <div>
@@ -423,7 +424,7 @@ export default function AdminNILDeals() {
                     maxLength={6}
                     value={form.logo_abbrev}
                     onChange={e => setForm(f => ({ ...f, logo_abbrev: e.target.value.toUpperCase() }))}
-                    className="w-full px-3 py-2 bg-navy-800 border border-gray-600 rounded text-fg-primary placeholder-gray-500 focus:outline-none focus:border-brand-primary text-sm"
+                    className="w-full px-3 py-2 bg-navy-800 border border-line-input rounded text-fg-primary placeholder-fg-faint focus:outline-none focus:border-brand-primary text-sm"
                   />
                 </div>
               </div>
@@ -437,7 +438,7 @@ export default function AdminNILDeals() {
                   <select
                     value={form.category}
                     onChange={e => setForm(f => ({ ...f, category: e.target.value }))}
-                    className="w-full px-3 py-2 bg-navy-800 border border-gray-600 rounded text-fg-primary focus:outline-none focus:border-brand-primary text-sm"
+                    className="w-full px-3 py-2 bg-navy-800 border border-line-input rounded text-fg-primary focus:outline-none focus:border-brand-primary text-sm"
                   >
                     {CATEGORIES.map(c => <option key={c} value={c}>{c}</option>)}
                   </select>
@@ -449,7 +450,7 @@ export default function AdminNILDeals() {
                   <select
                     value={form.deal_type}
                     onChange={e => setForm(f => ({ ...f, deal_type: e.target.value }))}
-                    className="w-full px-3 py-2 bg-navy-800 border border-gray-600 rounded text-fg-primary focus:outline-none focus:border-brand-primary text-sm"
+                    className="w-full px-3 py-2 bg-navy-800 border border-line-input rounded text-fg-primary focus:outline-none focus:border-brand-primary text-sm"
                   >
                     {DEAL_TYPES.map(t => <option key={t} value={t}>{t}</option>)}
                   </select>
@@ -463,11 +464,11 @@ export default function AdminNILDeals() {
                       type="color"
                       value={form.logo_color}
                       onChange={e => setForm(f => ({ ...f, logo_color: e.target.value }))}
-                      className="w-10 h-9 rounded cursor-pointer border border-gray-600 bg-navy-800 p-0.5"
+                      className="w-10 h-9 rounded cursor-pointer border border-line-input bg-navy-800 p-0.5"
                     />
                     <div
-                      className="flex-1 h-9 rounded-lg flex items-center justify-center text-fg-primary text-[11px] font-bold tracking-wide"
-                      style={{ background: form.logo_color }}
+                      className="flex-1 h-9 rounded-lg flex items-center justify-center text-[11px] font-bold tracking-wide"
+                      style={{ background: form.logo_color, color: readableTextOn(form.logo_color || '#1F2937') }} // theme-ok: same in both themes
                     >
                       {(form.logo_abbrev || form.brand.slice(0, 4)).toUpperCase() || 'LOGO'}
                     </div>
@@ -486,7 +487,7 @@ export default function AdminNILDeals() {
                     placeholder="e.g. $500 – $1,500 or Free membership"
                     value={form.payout_display}
                     onChange={e => setForm(f => ({ ...f, payout_display: e.target.value }))}
-                    className="w-full px-3 py-2 bg-navy-800 border border-gray-600 rounded text-fg-primary placeholder-gray-500 focus:outline-none focus:border-brand-primary text-sm"
+                    className="w-full px-3 py-2 bg-navy-800 border border-line-input rounded text-fg-primary placeholder-fg-faint focus:outline-none focus:border-brand-primary text-sm"
                   />
                 </div>
                 <div>
@@ -499,7 +500,7 @@ export default function AdminNILDeals() {
                     min="0"
                     value={form.value}
                     onChange={e => setForm(f => ({ ...f, value: e.target.value }))}
-                    className="w-full px-3 py-2 bg-navy-800 border border-gray-600 rounded text-fg-primary placeholder-gray-500 focus:outline-none focus:border-brand-primary text-sm"
+                    className="w-full px-3 py-2 bg-navy-800 border border-line-input rounded text-fg-primary placeholder-fg-faint focus:outline-none focus:border-brand-primary text-sm"
                   />
                 </div>
               </div>
@@ -514,7 +515,7 @@ export default function AdminNILDeals() {
                   placeholder="What's involved? What will athletes be expected to do?"
                   value={form.description}
                   onChange={e => setForm(f => ({ ...f, description: e.target.value }))}
-                  className="w-full px-3 py-2 bg-navy-800 border border-gray-600 rounded text-fg-primary placeholder-gray-500 focus:outline-none focus:border-brand-primary text-sm resize-vertical"
+                  className="w-full px-3 py-2 bg-navy-800 border border-line-input rounded text-fg-primary placeholder-fg-faint focus:outline-none focus:border-brand-primary text-sm resize-vertical"
                 />
               </div>
 
@@ -528,7 +529,7 @@ export default function AdminNILDeals() {
                   placeholder="e.g. D1-committed athletes · 2K+ Instagram followers"
                   value={form.requirements}
                   onChange={e => setForm(f => ({ ...f, requirements: e.target.value }))}
-                  className="w-full px-3 py-2 bg-navy-800 border border-gray-600 rounded text-fg-primary placeholder-gray-500 focus:outline-none focus:border-brand-primary text-sm resize-vertical"
+                  className="w-full px-3 py-2 bg-navy-800 border border-line-input rounded text-fg-primary placeholder-fg-faint focus:outline-none focus:border-brand-primary text-sm resize-vertical"
                 />
               </div>
 
@@ -542,7 +543,7 @@ export default function AdminNILDeals() {
                     type="date"
                     value={form.expiration_date}
                     onChange={e => setForm(f => ({ ...f, expiration_date: e.target.value }))}
-                    className="w-full px-3 py-2 bg-navy-800 border border-gray-600 rounded text-fg-primary focus:outline-none focus:border-brand-primary text-sm"
+                    className="w-full px-3 py-2 bg-navy-800 border border-line-input rounded text-fg-primary focus:outline-none focus:border-brand-primary text-sm"
                   />
                 </div>
                 <div>
@@ -552,7 +553,7 @@ export default function AdminNILDeals() {
                   <select
                     value={form.status}
                     onChange={e => setForm(f => ({ ...f, status: e.target.value }))}
-                    className="w-full px-3 py-2 bg-navy-800 border border-gray-600 rounded text-fg-primary focus:outline-none focus:border-brand-primary text-sm"
+                    className="w-full px-3 py-2 bg-navy-800 border border-line-input rounded text-fg-primary focus:outline-none focus:border-brand-primary text-sm"
                   >
                     <option value="Open">Open</option>
                     <option value="Closed">Closed</option>
@@ -610,7 +611,7 @@ export default function AdminNILDeals() {
                   type="button"
                   onClick={() => setForm(f => ({ ...f, featured: !f.featured }))}
                   className={`relative w-10 h-5 rounded-full transition-colors flex-shrink-0 ${
-                    form.featured ? 'bg-brand-primary' : 'bg-gray-700'
+                    form.featured ? 'bg-brand-primary' : 'bg-surface-inset-strong'
                   }`}
                 >
                   <span
@@ -655,7 +656,7 @@ export default function AdminNILDeals() {
       {deleteConfirm && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center px-4"
-          style={{ background: 'rgba(5,8,18,0.82)', backdropFilter: 'blur(4px)' }}
+          style={{ background: 'rgba(0,0,0,0.6)', backdropFilter: 'blur(4px)' }}
         >
           <div className="design-card p-7 w-full max-w-sm" style={{ background: 'var(--surface-1, #0d1323)' }}>
             <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4"

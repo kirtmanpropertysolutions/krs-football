@@ -66,7 +66,7 @@ function TopSchoolRow({ school, profile, onClick }) {
       <div className="flex-1 min-w-0">
         <h4 className="text-fg-primary font-medium text-[13px] truncate">{schoolName}</h4>
         <div className="flex items-center gap-2 mt-1">
-          <span className="px-2 py-0.5 rounded text-[10px] font-medium text-fg-primary bg-text-muted">
+          <span className="px-2 py-0.5 rounded text-[10px] font-medium text-white bg-neutral-solid">
             {school.schools?.subdivision || school.schools?.division || 'D1'}
           </span>
           {fitScore && (
@@ -95,7 +95,7 @@ function TierCard({ tierInfo, earnedTotal, catalogTotal }) {
           className="w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0 border"
           style={{
             borderColor: tier.color,
-            background: 'linear-gradient(135deg, rgba(176, 48, 86,0.18) 0%, rgba(10,14,26,0.5) 100%)',
+            background: 'linear-gradient(135deg, rgba(176, 48, 86,0.18) 0%, var(--bg-card-hover) 100%)',
           }}
         >
           <Trophy size={26} style={{ color: tier.color }} strokeWidth={2} />
@@ -203,9 +203,9 @@ function TrophyTile({ milestone, earned }) {
         earned
           ? {
               background:
-                'linear-gradient(135deg, rgba(176, 48, 86,0.12) 0%, rgba(10,14,26,0.5) 100%)',
+                'linear-gradient(135deg, rgba(176, 48, 86,0.12) 0%, var(--bg-card-hover) 100%)',
             }
-          : { background: 'rgba(15, 23, 41, 0.6)' }
+          : { background: 'var(--kanban-col-bg)' }
       }
       aria-label={`${milestone.name} — ${earned ? 'earned' : 'locked'}`}
     >

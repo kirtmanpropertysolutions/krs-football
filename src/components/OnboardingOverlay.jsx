@@ -189,7 +189,7 @@ export default function OnboardingOverlay() {
           <div className="h-px w-6" style={{ background: 'var(--crimson)' }} />
           <span
             className="text-[10px] uppercase tracking-[0.22em] font-bold"
-            style={{ color: 'var(--crimson)' }}
+            style={{ color: 'var(--crimson-text)' }}
           >
             {step.eyebrow}
           </span>

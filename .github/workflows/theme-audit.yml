@@ -1,0 +1,35 @@
+name: Theme audit (light + dark readability)
+
+# Renders every page in light and dark mode, desktop and phone size,
+# against a fake backend and fails if any text is hard to read.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run check:theme
+      - name: Install Chromium
+        run: npx playwright-core install --with-deps chromium
+      - name: Run audit
+        run: |
+          export CHROME_PATH="$(node -e "import('playwright-core').then(m => console.log(m.chromium.executablePath()))")"
+          npm run audit:theme -- --shots=theme-shots
+      - name: Upload screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: theme-screenshots
+          path: theme-shots
+          retention-days: 7

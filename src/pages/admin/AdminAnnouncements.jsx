@@ -153,7 +153,7 @@ export default function AdminAnnouncements() {
       <div>
         <div className="flex items-center gap-3 mb-2">
           <div className="h-px w-8" style={{ background: 'var(--crimson)' }} />
-          <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson)' }}>
+          <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson-text)' }}>
             Broadcasts
           </span>
         </div>
@@ -175,7 +175,7 @@ export default function AdminAnnouncements() {
                 placeholder="Weekly Update"
                 value={newAnnouncement.title}
                 onChange={(e) => setNewAnnouncement({ ...newAnnouncement, title: e.target.value })}
-                className="w-full px-3 py-2 bg-navy-800 border border-gray-600 rounded text-fg-primary placeholder-gray-400 focus:outline-none focus:border-brand-primary"
+                className="w-full px-3 py-2 bg-navy-800 border border-line-input rounded text-fg-primary placeholder-fg-faint focus:outline-none focus:border-brand-primary"
               />
             </div>
 
@@ -187,7 +187,7 @@ export default function AdminAnnouncements() {
                 rows={4}
                 value={newAnnouncement.body}
                 onChange={(e) => setNewAnnouncement({ ...newAnnouncement, body: e.target.value })}
-                className="w-full px-3 py-2 bg-navy-800 border border-gray-600 rounded text-fg-primary placeholder-gray-400 focus:outline-none focus:border-brand-primary resize-vertical"
+                className="w-full px-3 py-2 bg-navy-800 border border-line-input rounded text-fg-primary placeholder-fg-faint focus:outline-none focus:border-brand-primary resize-vertical"
               />
             </div>
 
@@ -199,7 +199,7 @@ export default function AdminAnnouncements() {
                 <select
                   value={newAnnouncement.audience}
                   onChange={(e) => setNewAnnouncement({ ...newAnnouncement, audience: e.target.value })}
-                  className="w-full px-3 py-2 bg-navy-800 border border-gray-600 rounded text-fg-primary focus:outline-none focus:border-brand-primary"
+                  className="w-full px-3 py-2 bg-navy-800 border border-line-input rounded text-fg-primary focus:outline-none focus:border-brand-primary"
                 >
                   {audiences.map(audience => (
                     <option key={audience} value={audience}>{audience}</option>
@@ -213,7 +213,7 @@ export default function AdminAnnouncements() {
                 <select
                   value={newAnnouncement.priority}
                   onChange={(e) => setNewAnnouncement({ ...newAnnouncement, priority: e.target.value })}
-                  className="w-full px-3 py-2 bg-navy-800 border border-gray-600 rounded text-fg-primary focus:outline-none focus:border-brand-primary"
+                  className="w-full px-3 py-2 bg-navy-800 border border-line-input rounded text-fg-primary focus:outline-none focus:border-brand-primary"
                 >
                   {priorities.map(priority => (
                     <option key={priority} value={priority}>{priority}</option>
@@ -227,7 +227,7 @@ export default function AdminAnnouncements() {
                 <select
                   value={newAnnouncement.send_now ? 'now' : 'later'}
                   onChange={(e) => setNewAnnouncement({ ...newAnnouncement, send_now: e.target.value === 'now' })}
-                  className="w-full px-3 py-2 bg-navy-800 border border-gray-600 rounded text-fg-primary focus:outline-none focus:border-brand-primary"
+                  className="w-full px-3 py-2 bg-navy-800 border border-line-input rounded text-fg-primary focus:outline-none focus:border-brand-primary"
                 >
                   <option value="now">Send Now</option>
                   <option value="later">Schedule for Later</option>
@@ -244,7 +244,7 @@ export default function AdminAnnouncements() {
                     type="date"
                     value={newAnnouncement.scheduled_date}
                     onChange={(e) => setNewAnnouncement({ ...newAnnouncement, scheduled_date: e.target.value })}
-                    className="w-full px-3 py-2 bg-navy-800 border border-gray-600 rounded text-fg-primary focus:outline-none focus:border-brand-primary"
+                    className="w-full px-3 py-2 bg-navy-800 border border-line-input rounded text-fg-primary focus:outline-none focus:border-brand-primary"
                   />
                 </div>
                 <div>
@@ -253,7 +253,7 @@ export default function AdminAnnouncements() {
                     type="time"
                     value={newAnnouncement.scheduled_time}
                     onChange={(e) => setNewAnnouncement({ ...newAnnouncement, scheduled_time: e.target.value })}
-                    className="w-full px-3 py-2 bg-navy-800 border border-gray-600 rounded text-fg-primary focus:outline-none focus:border-brand-primary"
+                    className="w-full px-3 py-2 bg-navy-800 border border-line-input rounded text-fg-primary focus:outline-none focus:border-brand-primary"
                   />
                 </div>
               </div>
@@ -268,7 +268,7 @@ export default function AdminAnnouncements() {
               >
                 {sending ? 'Sending...' : (newAnnouncement.send_now ? 'Send Announcement' : 'Schedule Announcement')}
               </button>
-              <button className="border border-gray-600 text-fg-primary px-6 py-2 rounded font-medium hover:border-brand-primary hover:text-brand-primary transition-colors">
+              <button className="border border-line-input text-fg-primary px-6 py-2 rounded font-medium hover:border-brand-primary hover:text-accent-crimson-text transition-colors">
                 <Eye size={16} className="inline mr-2" />
                 Preview
               </button>
@@ -299,7 +299,7 @@ export default function AdminAnnouncements() {
                           {announcement.priority}
                         </span>
                       </div>
-                      <p className="text-gray-300 text-sm mb-2">{announcement.body}</p>
+                      <p className="text-fg-soft text-sm mb-2">{announcement.body}</p>
                       <div className="flex items-center gap-4 text-xs text-text-tertiary">
                         <span className="flex items-center gap-1">
                           <Calendar size={12} />

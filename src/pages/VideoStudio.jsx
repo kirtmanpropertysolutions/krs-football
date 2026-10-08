@@ -131,7 +131,7 @@ function SortableClipRow({ clip, index, onRemove }) {
       {/* Thumbnail preview */}
       <div
         className="w-14 h-9 rounded flex items-center justify-center flex-shrink-0 overflow-hidden border border-card-border"
-        style={{ background: '#0a0e1a' }}
+        style={{ background: '#0a0e1a' }} // theme-ok: same in both themes
       >
         {clip.mux_playback_id ? (
           <img
@@ -355,10 +355,10 @@ function ClipDownloadMenu({ clip }) {
       {open && (
         <div
           className="absolute right-0 bottom-full mb-1.5 z-30 rounded-lg shadow-xl overflow-hidden"
-          style={{ minWidth: '240px', background: '#0f172a', border: '1px solid rgba(255,255,255,0.1)' }}
+          style={{ minWidth: '240px', background: 'var(--bg-elevated)', border: '1px solid var(--border-strong)' }}
         >
           <div className="px-3 py-1.5 text-[9px] uppercase tracking-widest text-text-tertiary font-bold"
-            style={{ borderBottom: '1px solid rgba(255,255,255,0.07)' }}>
+            style={{ borderBottom: '1px solid var(--border-default)' }}>
             Download format
           </div>
           <a
@@ -426,12 +426,12 @@ function ClipCard({ clip, onEdit, onDelete, onAddToReel, inReel }) {
 
   return (
     <div
-      className="rounded-lg overflow-hidden border border-card-border transition hover:border-slate-600 flex flex-col"
+      className="rounded-lg overflow-hidden border border-card-border transition hover:border-line-input flex flex-col"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
       {/* Thumbnail / player area */}
-      <div className="aspect-video relative overflow-hidden" style={{ background: '#0a0e1a' }}>
+      <div className="aspect-video relative overflow-hidden" style={{ background: '#0a0e1a' }} /* theme-ok: same in both themes */>
         {clip.mux_playback_id ? (
           <>
             <img
@@ -544,7 +544,7 @@ function VideoStudioComingSoon() {
         {/* Editorial eyebrow */}
         <div className="flex items-center gap-3 mb-6">
           <div className="h-px w-12 bg-accent-crimson" />
-          <span className="text-[11px] uppercase tracking-[0.18em] text-accent-crimson font-semibold">
+          <span className="text-[11px] uppercase tracking-[0.18em] text-accent-crimson-text font-semibold">
             Video Studio
           </span>
         </div>
@@ -553,7 +553,7 @@ function VideoStudioComingSoon() {
         <div className="hero-card crimson-glow-bg p-8 md:p-12 max-w-3xl">
           <div className="flex items-start gap-4 mb-6">
             <div className="w-14 h-14 rounded-xl bg-brand-primary/15 border border-brand-primary/30 flex items-center justify-center flex-shrink-0">
-              <Film className="text-accent-crimson" size={26} strokeWidth={2} />
+              <Film className="text-accent-crimson-text" size={26} strokeWidth={2} />
             </div>
             <div>
               <div className="flex items-center gap-2 mb-1">
@@ -565,7 +565,7 @@ function VideoStudioComingSoon() {
             </div>
           </div>
 
-          <p className="text-gray-300 text-base md:text-lg leading-relaxed mb-6">
+          <p className="text-fg-soft text-base md:text-lg leading-relaxed mb-6">
             Upload game footage directly from your phone, trim the moments
             that matter, and build a recruiting reel college coaches can
             stream from anywhere — all without leaving the app.
@@ -596,7 +596,7 @@ function VideoStudioComingSoon() {
           </div>
 
           {/* CTA — direct people to outreach in the meantime */}
-          <div className="border-t border-gray-800 pt-6">
+          <div className="border-t border-line-subtle pt-6">
             <p className="text-sm text-text-tertiary mb-3">
               In the meantime, add your Hudl or YouTube links — they'll
               show up on your public recruiting profile.
@@ -611,8 +611,8 @@ function VideoStudioComingSoon() {
         </div>
 
         {/* Quiet note for admins / testers */}
-        <p className="text-[11px] text-gray-600 mt-6 max-w-3xl">
-          Admin note: append <code className="text-gray-500">?preview=1</code>
+        <p className="text-[11px] text-fg-faint mt-6 max-w-3xl">
+          Admin note: append <code className="text-fg-faint">?preview=1</code>
           {' '}to the URL to preview the upload flow before launch.
         </p>
       </div>
@@ -627,7 +627,7 @@ function VideoStudioComingSoon() {
 function FeatureRow({ icon, title, detail }) {
   return (
     <div className="flex items-start gap-3">
-      <div className="w-8 h-8 rounded-lg bg-brand-primary/10 border border-brand-primary/20 text-accent-crimson flex items-center justify-center flex-shrink-0 mt-0.5">
+      <div className="w-8 h-8 rounded-lg bg-brand-primary/10 border border-brand-primary/20 text-accent-crimson-text flex items-center justify-center flex-shrink-0 mt-0.5">
         {icon}
       </div>
       <div>
@@ -969,8 +969,8 @@ function VideoStudioInner() {
     return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0a0e1a"/>
-      <stop offset="100%" stop-color="#131b2c"/>
+      <stop offset="0%" stop-color="#0a0e1a" /><!-- theme-ok: exported image -->
+      <stop offset="100%" stop-color="#131b2c" /><!-- theme-ok: exported image -->
     </linearGradient>
     <radialGradient id="glow" cx="0.18" cy="0.05" r="0.55">
       <stop offset="0%" stop-color="${BRAND.primaryColor}" stop-opacity="0.35"/>
@@ -1073,7 +1073,7 @@ function VideoStudioInner() {
             className="fixed top-6 right-6 z-50 design-card px-4 py-3 flex items-center gap-2 shadow-lg"
             style={{ borderColor: 'rgba(176, 48, 86,0.4)', maxWidth: '340px' }}
           >
-            <Sparkles size={14} style={{ color: 'var(--crimson-3)', flexShrink: 0 }} />
+            <Sparkles size={14} style={{ color: 'var(--crimson-text)', flexShrink: 0 }} />
             <span className="text-sm text-fg-primary">{toast}</span>
           </div>
         )}
@@ -1091,7 +1091,7 @@ function VideoStudioInner() {
         <div className="mb-6">
           <div className="flex items-center gap-3 mb-2">
             <div className="h-px w-8" style={{ background: 'var(--crimson)' }} />
-            <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson)' }}>
+            <span className="text-[10px] uppercase tracking-[0.22em] font-bold" style={{ color: 'var(--crimson-text)' }}>
               Content studio
             </span>
           </div>
@@ -1180,8 +1180,8 @@ function VideoStudioInner() {
                 {/* Drop zone */}
                 {uploadState === 'idle' || uploadState === 'error' ? (
                   <label
-                    className="block border-2 border-dashed border-card-border rounded-xl p-10 text-center cursor-pointer hover:border-slate-500 transition"
-                    style={{ background: 'rgba(10,14,26,0.4)' }}
+                    className="block border-2 border-dashed border-card-border rounded-xl p-10 text-center cursor-pointer hover:border-line-input transition"
+                    style={{ background: 'var(--bg-card-hover)' }}
                     onDragOver={e => e.preventDefault()}
                     onDrop={handleDrop}
                   >
@@ -1197,7 +1197,7 @@ function VideoStudioInner() {
                     )}
                   </label>
                 ) : (
-                  <div className="rounded-xl border border-card-border p-8 text-center" style={{ background: 'rgba(10,14,26,0.4)' }}>
+                  <div className="rounded-xl border border-card-border p-8 text-center" style={{ background: 'var(--bg-card-hover)' }}>
                     {uploadState === 'fetching' && (
                       <>
                         <Loader2 size={32} className="mx-auto mb-3 animate-spin text-text-tertiary" />
@@ -1218,14 +1218,14 @@ function VideoStudioInner() {
                     )}
                     {uploadState === 'polling' && (
                       <>
-                        <Loader2 size={32} className="mx-auto mb-3 animate-spin" style={{ color: 'var(--crimson-3)' }} />
+                        <Loader2 size={32} className="mx-auto mb-3 animate-spin" style={{ color: 'var(--crimson-text)' }} />
                         <p className="text-fg-primary font-medium mb-1">Upload complete — Mux is processing</p>
                         <p className="text-text-tertiary text-sm">This usually takes 30–90 seconds. We'll switch you to your library when it's ready.</p>
                       </>
                     )}
                     {uploadState === 'done' && (
                       <>
-                        <CheckCircle2 size={32} className="mx-auto mb-3" style={{ color: 'var(--crimson-3)' }} />
+                        <CheckCircle2 size={32} className="mx-auto mb-3" style={{ color: 'var(--crimson-text)' }} />
                         <p className="text-fg-primary font-medium mb-3">Clip is ready!</p>
                         <button onClick={() => { setUploadState('idle'); setStudioTab('library') }} className="brand-btn text-sm px-6">
                           View in My Clips
@@ -1235,8 +1235,8 @@ function VideoStudioInner() {
                   </div>
                 )}
 
-                <div className="mt-6 p-3.5 rounded-lg flex gap-2.5 text-xs"
-                  style={{ background: 'rgba(251,191,36,0.07)', border: '1px solid rgba(251,191,36,0.18)', color: '#fcd34d' }}>
+                <div className="mt-6 p-3.5 rounded-lg flex gap-2.5 text-xs text-amber-300"
+                  style={{ background: 'rgba(251,191,36,0.07)', border: '1px solid rgba(251,191,36,0.18)' }}>
                   <Sparkles size={13} className="flex-shrink-0 mt-0.5" />
                   <div>
                     Supported formats: MP4, MOV, MKV, AVI, and most other video files. Files are processed by Mux
@@ -1269,8 +1269,8 @@ function VideoStudioInner() {
                   <div>
                     {/* Processing clips notice */}
                     {pendingClips.length > 0 && (
-                      <div className="mb-4 p-3 rounded-lg flex items-center gap-2 text-sm"
-                        style={{ background: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.2)', color: '#fcd34d' }}>
+                      <div className="mb-4 p-3 rounded-lg flex items-center gap-2 text-sm text-amber-300"
+                        style={{ background: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.2)' }}>
                         <Loader2 size={14} className="animate-spin flex-shrink-0" />
                         {pendingClips.length} clip{pendingClips.length > 1 ? 's are' : ' is'} still processing — this page will update automatically.
                       </div>
@@ -1376,7 +1376,7 @@ function VideoStudioInner() {
                               key={clip.id}
                               className="flex items-center gap-3 p-2.5 rounded-lg border border-card-border bg-navy-900"
                             >
-                              <div className="w-12 h-8 rounded overflow-hidden flex-shrink-0 border border-card-border" style={{ background: '#0a0e1a' }}>
+                              <div className="w-12 h-8 rounded overflow-hidden flex-shrink-0 border border-card-border" style={{ background: '#0a0e1a' }} /* theme-ok: same in both themes */>
                                 {clip.mux_playback_id && (
                                   <img
                                     src={`https://image.mux.com/${clip.mux_playback_id}/thumbnail.jpg?width=48&height=32&fit_mode=smartcrop`}
@@ -1443,8 +1443,8 @@ function VideoStudioInner() {
                             <ChevronRight size={11} />
                             Clips play in this order on your public profile. Click <strong className="text-fg-primary">Save order</strong> to publish.
                           </div>
-                          <div className="mt-3 p-3 rounded-lg text-[11px]"
-                            style={{ background: 'rgba(255,0,0,0.06)', border: '1px solid rgba(255,0,0,0.15)', color: '#fca5a5' }}>
+                          <div className="mt-3 p-3 rounded-lg text-[11px] text-red-300"
+                            style={{ background: 'rgba(255,0,0,0.06)', border: '1px solid rgba(255,0,0,0.15)' }}>
                             <span className="font-semibold flex items-center gap-1.5 mb-0.5"><YoutubeIcon size={11} /> Uploading to YouTube?</span>
                             Download a clip using the <Download size={9} className="inline" /> button above, then tap <strong>Upload to YouTube</strong> to open YouTube Studio. Paste in your title and you're done.
                           </div>
@@ -1475,7 +1475,7 @@ function VideoStudioInner() {
 
             <div className="grid lg:grid-cols-[1fr_1.2fr] gap-6">
               {/* Live SVG preview */}
-              <div className="rounded-lg overflow-hidden border border-card-border" style={{ background: '#0a0e1a' }}>
+              <div className="rounded-lg overflow-hidden border border-card-border" style={{ background: '#0a0e1a' }} /* theme-ok: same in both themes */>
                 <div
                   ref={cardRef}
                   className="w-full"
@@ -1516,8 +1516,8 @@ function VideoStudioInner() {
                     />
                   </div>
                 ))}
-                <div className="sm:col-span-2 mt-2 p-3 rounded-lg flex gap-2 text-xs"
-                  style={{ background: 'rgba(251,191,36,0.08)', border: '1px solid rgba(251,191,36,0.2)', color: '#fcd34d' }}>
+                <div className="sm:col-span-2 mt-2 p-3 rounded-lg flex gap-2 text-xs text-amber-300"
+                  style={{ background: 'rgba(251,191,36,0.08)', border: '1px solid rgba(251,191,36,0.2)' }}>
                   <ImageIcon size={14} className="flex-shrink-0 mt-0.5" />
                   <div>
                     Edit any field above and the preview updates instantly. Click Download PNG when it looks right —

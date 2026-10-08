@@ -23,6 +23,7 @@ import BrandLogo from './BrandLogo.jsx'
 import { BRAND } from '../lib/brand.js'
 import ColorModeToggle from './ColorModeToggle.jsx'
 import InstallCTA from './InstallCTA.jsx'
+import { readableTextOn } from '../lib/schoolColors'
 
 /**
  * Pure helper — formats how long ago `iso` was, relative to the caller's `now`.
@@ -278,7 +279,7 @@ export default function AthleteLayout({ children }) {
           </div>
           <div
             className="text-[9px] tracking-[0.2em] uppercase mt-1"
-            style={{ color: 'var(--gold)' }}
+            style={{ color: 'var(--accent-gold-readable)' }}
           >
             {BRAND.location}
           </div>
@@ -316,7 +317,7 @@ export default function AthleteLayout({ children }) {
           <div className="design-card p-3">
             <div className="flex items-center gap-3 mb-2">
               <div
-                className="w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0"
+                className="w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm text-white flex-shrink-0"
                 style={{
                   background:
                     'linear-gradient(135deg, var(--crimson) 0%, var(--club-neutral-dark, #1B2A4A) 100%)',
@@ -396,7 +397,7 @@ export default function AthleteLayout({ children }) {
               <Search
                 size={16}
                 className="absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none"
-                style={{ color: '#64748b' }}
+                style={{ color: 'var(--text-tertiary)' }}
               />
               <input
                 type="text"
@@ -440,8 +441,8 @@ export default function AthleteLayout({ children }) {
                           className="w-full flex items-center gap-3 px-4 py-2.5 hover:bg-surface-card-hover text-left transition-colors"
                         >
                           <div
-                            className="w-8 h-8 rounded-md flex items-center justify-center text-[9px] font-bold text-white flex-shrink-0"
-                            style={{ background: s.primary_color || 'var(--border-default)' }}
+                            className="w-8 h-8 rounded-md flex items-center justify-center text-[9px] font-bold flex-shrink-0"
+                            style={{ background: s.primary_color || '#475569', color: readableTextOn(s.primary_color || '#475569') }}
                           >
                             {(s.short_name || s.name).split(' ').map((w) => w[0]).join('').slice(0, 3).toUpperCase()}
                           </div>
@@ -710,7 +711,7 @@ export default function AthleteLayout({ children }) {
               <div className="mt-6 design-card p-4">
                 <div className="flex items-center gap-3 mb-3">
                   <div
-                    className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm"
+                    className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm text-white"
                     style={{
                       background:
                         'linear-gradient(135deg, var(--crimson) 0%, var(--club-neutral-dark, #1B2A4A) 100%)',
